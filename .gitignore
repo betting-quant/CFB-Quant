@@ -22,3 +22,5 @@ reports/*.parquet
 *.log
 *.pid
 .DS_Store
+
+*.egg-info/
