@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import glob
@@ -311,8 +311,9 @@ def _history_features(
     include_std5: bool = True,
 ) -> tuple[pd.DataFrame, list[str]]:
     out = frame.copy()
+
     group = out[group_col]
-    season_groupers = [out[group_col], out[season_col]]
+    season = out[season_col]
 
     generated: dict[str, pd.Series] = {}
 
@@ -320,36 +321,147 @@ def _history_features(
         if metric not in out.columns:
             continue
 
-        values = pd.to_numeric(out[metric], errors="coerce")
+        values = pd.to_numeric(
+            out[metric],
+            errors="coerce",
+        )
 
-        # CRITICAL: shift before every rolling/expanding calculation.
-        shifted = values.groupby(group, sort=False).shift(1)
+        # CRITICAL LEAKAGE GUARD:
+        # Every historical statistic uses only games strictly before
+        # the current row.
+        shifted = values.groupby(
+            group,
+            sort=False,
+        ).shift(1)
 
-        generated[f"{prefix}{metric}_lag1"] = shifted
+        generated[
+            f"{prefix}{metric}_lag1"
+        ] = shifted
 
+        # Native groupby+rolling is substantially faster than
+        # groupby.transform(lambda ... rolling(...)).
         for window in windows:
-            generated[f"{prefix}{metric}_avg{window}"] = shifted.groupby(
-                group, sort=False
-            ).transform(lambda s, w=window: s.rolling(w, min_periods=1).mean())
+            rolled = (
+                shifted.groupby(
+                    group,
+                    sort=False,
+                )
+                .rolling(
+                    window=window,
+                    min_periods=1,
+                )
+                .mean()
+                .reset_index(
+                    level=0,
+                    drop=True,
+                )
+            )
+
+            generated[
+                f"{prefix}{metric}_avg{window}"
+            ] = rolled.reindex(out.index)
 
         if include_std5:
-            generated[f"{prefix}{metric}_std5"] = shifted.groupby(
-                group, sort=False
-            ).transform(lambda s: s.rolling(5, min_periods=2).std())
+            rolled_std = (
+                shifted.groupby(
+                    group,
+                    sort=False,
+                )
+                .rolling(
+                    window=5,
+                    min_periods=2,
+                )
+                .std()
+                .reset_index(
+                    level=0,
+                    drop=True,
+                )
+            )
 
-        generated[f"{prefix}{metric}_career_avg"] = shifted.groupby(
-            group, sort=False
-        ).transform(lambda s: s.expanding(min_periods=1).mean())
+            generated[
+                f"{prefix}{metric}_std5"
+            ] = rolled_std.reindex(out.index)
 
-        # Shift within the same season so Week 1 cannot inherit that season's
-        # current game as its own "season-to-date" history.
-        season_shifted = values.groupby(season_groupers, sort=False).shift(1)
-        generated[f"{prefix}{metric}_season_avg"] = season_shifted.groupby(
-            season_groupers, sort=False
-        ).transform(lambda s: s.expanding(min_periods=1).mean())
+        # Fast equivalent of:
+        #
+        # shifted.groupby(group).transform(
+        #     lambda s: s.expanding(min_periods=1).mean()
+        # )
+        #
+        # NaNs do not increase the observation count.
+        career_sum = (
+            shifted.fillna(0.0)
+            .groupby(
+                group,
+                sort=False,
+            )
+            .cumsum()
+        )
 
-    features = pd.DataFrame(generated, index=out.index)
-    out = pd.concat([out, features], axis=1)
+        career_count = (
+            shifted.notna()
+            .astype("int64")
+            .groupby(
+                group,
+                sort=False,
+            )
+            .cumsum()
+        )
+
+        career_avg = (
+            career_sum
+            / career_count.replace(0, np.nan)
+        )
+
+        generated[
+            f"{prefix}{metric}_career_avg"
+        ] = career_avg
+
+        # Shift again within player-season so the current game
+        # can never enter its own season-to-date history.
+        season_shifted = values.groupby(
+            [group, season],
+            sort=False,
+        ).shift(1)
+
+        season_sum = (
+            season_shifted.fillna(0.0)
+            .groupby(
+                [group, season],
+                sort=False,
+            )
+            .cumsum()
+        )
+
+        season_count = (
+            season_shifted.notna()
+            .astype("int64")
+            .groupby(
+                [group, season],
+                sort=False,
+            )
+            .cumsum()
+        )
+
+        season_avg = (
+            season_sum
+            / season_count.replace(0, np.nan)
+        )
+
+        generated[
+            f"{prefix}{metric}_season_avg"
+        ] = season_avg
+
+    features = pd.DataFrame(
+        generated,
+        index=out.index,
+    )
+
+    out = pd.concat(
+        [out, features],
+        axis=1,
+    )
+
     return out, list(generated)
 
 
@@ -628,3 +740,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
