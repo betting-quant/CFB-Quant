@@ -1,0 +1,1912 @@
+season,week,game_id,team,opponent,home_away
+2014,1,400548170,Air Force,Nicholls,home
+2014,1,400610198,Air Force,Western Michigan,home
+2014,1,400547835,Alabama,West Virginia,home
+2014,1,400610178,Alabama,Ohio State,away
+2014,1,400548177,Arizona,UNLV,home
+2014,1,400610181,Arizona,Boise State,home
+2014,1,400548255,Arizona State,Weber State,home
+2014,1,400610211,Arizona State,Duke,away
+2014,1,400548398,Arkansas,Auburn,away
+2014,1,400610223,Arkansas,Texas,away
+2014,1,400548405,Arkansas State,Montana State,home
+2014,1,400610200,Arkansas State,Toledo,home
+2014,1,400548398,Auburn,Arkansas,home
+2014,1,400610219,Auburn,Wisconsin,away
+2014,1,400547641,BYU,UConn,away
+2014,1,400610225,BYU,Memphis,away
+2014,1,400547648,Baylor,SMU,home
+2014,1,400610179,Baylor,Michigan State,home
+2014,1,400548169,Boise State,Ole Miss,away
+2014,1,400610181,Boise State,Arizona,away
+2014,1,400547728,Boston College,Massachusetts,away
+2014,1,400610210,Boston College,Penn State,away
+2014,1,400548003,Bowling Green,Western Kentucky,away
+2014,1,400610201,Bowling Green,South Alabama,home
+2014,1,400548092,Central Michigan,Chattanooga,home
+2014,1,400610205,Central Michigan,Western Kentucky,away
+2014,1,400547740,Clemson,Georgia,away
+2014,1,400610208,Clemson,Oklahoma,home
+2014,1,400548171,Colorado State,Colorado,away
+2014,1,400610221,Colorado State,Utah,home
+2014,1,400547751,Duke,Elon,home
+2014,1,400610211,Duke,Arizona State,home
+2014,1,400547643,East Carolina,North Carolina Central,home
+2014,1,400610228,East Carolina,Florida,away
+2014,1,400547762,Florida State,Oklahoma State,away
+2014,1,400610177,Florida State,Oregon,home
+2014,1,400548172,Fresno State,USC,away
+2014,1,400610204,Fresno State,Rice,away
+2014,1,400547740,Georgia,Clemson,home
+2014,1,400610215,Georgia,Louisville,away
+2014,1,400547772,Georgia Tech,Wofford,home
+2014,1,400610180,Georgia Tech,Mississippi State,home
+2014,1,400547644,Houston,UTSA,home
+2014,1,400610213,Houston,Pittsburgh,away
+2014,1,400547904,Illinois,Youngstown State,home
+2014,1,400610222,Illinois,Louisiana Tech,away
+2014,1,400547928,Iowa,Northern Iowa,home
+2014,1,400610224,Iowa,Tennessee,away
+2014,1,400547839,Kansas State,Stephen F. Austin,home
+2014,1,400610218,Kansas State,UCLA,away
+2014,1,400548000,LSU,Wisconsin,home
+2014,1,400610214,LSU,Notre Dame,home
+2014,1,400548406,Louisiana,Southern,home
+2014,1,400610197,Louisiana,Nevada,home
+2014,1,400547834,Louisiana Tech,Oklahoma,away
+2014,1,400610222,Louisiana Tech,Illinois,home
+2014,1,400547786,Louisville,Miami,home
+2014,1,400610215,Louisville,Georgia,home
+2014,1,400548005,Marshall,Miami (OH),away
+2014,1,400610203,Marshall,Northern Illinois,away
+2014,1,400547936,Maryland,James Madison,home
+2014,1,400610206,Maryland,Stanford,away
+2014,1,400547645,Memphis,Austin Peay,home
+2014,1,400610225,Memphis,BYU,home
+2014,1,400547786,Miami,Louisville,away
+2014,1,400610216,Miami,South Carolina,away
+2014,1,400547952,Michigan State,Jacksonville State,home
+2014,1,400610179,Michigan State,Baylor,away
+2014,1,400547960,Minnesota,Eastern Illinois,home
+2014,1,400610217,Minnesota,Missouri,home
+2014,1,400548009,Mississippi State,Southern Miss,home
+2014,1,400610180,Mississippi State,Georgia Tech,away
+2014,1,400548401,Missouri,South Dakota State,home
+2014,1,400610217,Missouri,Minnesota,away
+2014,1,400547802,NC State,Georgia Southern,home
+2014,1,400610209,NC State,UCF,away
+2014,1,400547982,Navy,Ohio State,home
+2014,1,400610199,Navy,San Diego State,away
+2014,1,400547968,Nebraska,Florida Atlantic,home
+2014,1,400610220,Nebraska,USC,away
+2014,1,400548174,Nevada,Southern Utah,home
+2014,1,400610197,Nevada,Louisiana,away
+2014,1,400547795,North Carolina,Liberty,home
+2014,1,400610212,North Carolina,Rutgers,home
+2014,1,400548091,Northern Illinois,Presbyterian,home
+2014,1,400610203,Northern Illinois,Marshall,home
+2014,1,400548008,Notre Dame,Rice,home
+2014,1,400610214,Notre Dame,LSU,away
+2014,1,400547982,Ohio State,Navy,away
+2014,1,400610178,Ohio State,Alabama,home
+2014,1,400610325,Ohio State,Oregon,home
+2014,1,400547834,Oklahoma,Louisiana Tech,home
+2014,1,400610208,Oklahoma,Clemson,away
+2014,1,400547762,Oklahoma State,Florida State,home
+2014,1,400610227,Oklahoma State,Washington,home
+2014,1,400548169,Ole Miss,Boise State,home
+2014,1,400610182,Ole Miss,TCU,away
+2014,1,400548257,Oregon,South Dakota,home
+2014,1,400610177,Oregon,Florida State,away
+2014,1,400610325,Oregon,Ohio State,away
+2014,1,400547642,Penn State,UCF,away
+2014,1,400610210,Penn State,Boston College,home
+2014,1,400547808,Pittsburgh,Delaware,home
+2014,1,400610213,Pittsburgh,Houston,home
+2014,1,400548008,Rice,Notre Dame,away
+2014,1,400610204,Rice,Fresno State,home
+2014,1,400547993,Rutgers,Washington State,away
+2014,1,400610212,Rutgers,North Carolina,away
+2014,1,400548175,San Diego State,Northern Arizona,home
+2014,1,400610199,San Diego State,Navy,home
+2014,1,400548402,South Carolina,Texas A&M,home
+2014,1,400610216,South Carolina,Miami,home
+2014,1,400548259,Stanford,UC Davis,home
+2014,1,400610206,Stanford,Maryland,home
+2014,1,400547837,TCU,Samford,home
+2014,1,400610182,TCU,Ole Miss,home
+2014,1,400548178,Tennessee,Utah State,home
+2014,1,400610224,Tennessee,Iowa,home
+2014,1,400547836,Texas,North Texas,home
+2014,1,400610223,Texas,Arkansas,home
+2014,1,400548402,Texas A&M,South Carolina,away
+2014,1,400610226,Texas A&M,West Virginia,away
+2014,1,400548096,Toledo,New Hampshire,home
+2014,1,400610200,Toledo,Arkansas State,away
+2014,1,400547642,UCF,Penn State,home
+2014,1,400610209,UCF,NC State,home
+2014,1,400547820,UCLA,Virginia,away
+2014,1,400610218,UCLA,Kansas State,home
+2014,1,400548172,USC,Fresno State,home
+2014,1,400610220,USC,Nebraska,home
+2014,1,400548011,UTEP,New Mexico,away
+2014,1,400610202,UTEP,Utah State,home
+2014,1,400548256,Utah,Idaho State,home
+2014,1,400610221,Utah,Colorado State,away
+2014,1,400548178,Utah State,Tennessee,away
+2014,1,400610202,Utah State,UTEP,away
+2014,1,400547825,Virginia Tech,William & Mary,home
+2014,1,400610207,Virginia Tech,Cincinnati,home
+2014,1,400548173,Washington,Hawai'i,away
+2014,1,400610227,Washington,Oklahoma State,away
+2014,1,400547835,West Virginia,Alabama,away
+2014,1,400610226,West Virginia,Texas A&M,home
+2014,1,400548003,Western Kentucky,Bowling Green,home
+2014,1,400610205,Western Kentucky,Central Michigan,home
+2014,1,400547988,Western Michigan,Purdue,away
+2014,1,400610198,Western Michigan,Air Force,away
+2014,1,400548000,Wisconsin,LSU,away
+2014,1,400610219,Wisconsin,Auburn,home
+2015,1,400787111,Air Force,Morgan State,home
+2015,1,400852723,Air Force,California,home
+2015,1,400763404,Akron,Oklahoma,away
+2015,1,400852708,Akron,Utah State,away
+2015,1,400603827,Alabama,Wisconsin,home
+2015,1,400852732,Alabama,Michigan State,home
+2015,1,400852743,Alabama,Clemson,away
+2015,1,400787412,App State,Howard,home
+2015,1,400852685,App State,Ohio,home
+2015,1,400756882,Arizona,UTSA,home
+2015,1,400852668,Arizona,New Mexico,away
+2015,1,400603838,Arizona State,Texas A&M,away
+2015,1,400852742,Arizona State,West Virginia,home
+2015,1,400603828,Arkansas,UTEP,home
+2015,1,400852740,Arkansas,Kansas State,home
+2015,1,400756884,Arkansas State,USC,away
+2015,1,400852686,Arkansas State,Louisiana Tech,away
+2015,1,400603829,Auburn,Louisville,home
+2015,1,400852727,Auburn,Memphis,away
+2015,1,400763495,BYU,Nebraska,away
+2015,1,400852684,BYU,Utah,away
+2015,1,400764855,Baylor,SMU,away
+2015,1,400852724,Baylor,North Carolina,home
+2015,1,400756888,Boise State,Washington,home
+2015,1,400852710,Boise State,Northern Illinois,away
+2015,1,400834350,Bowling Green,Tennessee,away
+2015,1,400852711,Bowling Green,Georgia Southern,home
+2015,1,400756890,California,Grambling,home
+2015,1,400852723,California,Air Force,away
+2015,1,400763399,Central Michigan,Oklahoma State,home
+2015,1,400852722,Central Michigan,Minnesota,away
+2015,1,400764856,Cincinnati,Alabama A&M,home
+2015,1,400852714,Cincinnati,San Diego State,home
+2015,1,400756898,Clemson,Wofford,home
+2015,1,400852733,Clemson,Oklahoma,home
+2015,1,400852743,Clemson,Alabama,home
+2015,1,400787112,Colorado State,Savannah State,home
+2015,1,400852725,Colorado State,Nevada,home
+2015,1,400756894,Duke,Tulane,away
+2015,1,400852718,Duke,Indiana,home
+2015,1,400603830,Florida,New Mexico State,home
+2015,1,400852735,Florida,Michigan,home
+2015,1,400756899,Florida State,Texas State,home
+2015,1,400852731,Florida State,Houston,home
+2015,1,400603831,Georgia,UL Monroe,home
+2015,1,400852739,Georgia,Penn State,home
+2015,1,400763407,Georgia Southern,West Virginia,away
+2015,1,400852711,Georgia Southern,Bowling Green,away
+2015,1,400763587,Georgia State,Charlotte,home
+2015,1,400852683,Georgia State,San José State,home
+2015,1,400764858,Houston,Tennessee Tech,home
+2015,1,400852731,Houston,Florida State,away
+2015,1,400763472,Indiana,Southern Illinois,home
+2015,1,400852718,Indiana,Duke,away
+2015,1,400763473,Iowa,Illinois State,home
+2015,1,400852737,Iowa,Stanford,home
+2015,1,400763402,Kansas State,South Dakota,home
+2015,1,400852740,Kansas State,Arkansas,away
+2015,1,400763589,Louisiana Tech,Southern,home
+2015,1,400852686,Louisiana Tech,Arkansas State,home
+2015,1,400603829,Louisville,Auburn,away
+2015,1,400852729,Louisville,Texas A&M,home
+2015,1,400763498,Marshall,Purdue,home
+2015,1,400852715,Marshall,UConn,home
+2015,1,400764859,Memphis,Missouri State,home
+2015,1,400852727,Memphis,Auburn,home
+2015,1,400756900,Miami,Bethune-Cookman,home
+2015,1,400852716,Miami,Washington State,away
+2015,1,400756883,Michigan,Utah,away
+2015,1,400852735,Michigan,Florida,away
+2015,1,400763470,Michigan State,Western Michigan,away
+2015,1,400852732,Michigan State,Alabama,away
+2015,1,400763590,Middle Tennessee,Jackson State,home
+2015,1,400852713,Middle Tennessee,Western Michigan,away
+2015,1,400763398,Minnesota,TCU,home
+2015,1,400852722,Minnesota,Central Michigan,home
+2015,1,400603836,Mississippi State,Southern Miss,away
+2015,1,400852728,Mississippi State,NC State,home
+2015,1,400756901,NC State,Troy,home
+2015,1,400852728,NC State,Mississippi State,away
+2015,1,400764860,Navy,Colgate,home
+2015,1,400852721,Navy,Pittsburgh,home
+2015,1,400763495,Nebraska,BYU,home
+2015,1,400852720,Nebraska,UCLA,home
+2015,1,400787108,Nevada,UC Davis,home
+2015,1,400852725,Nevada,Colorado State,away
+2015,1,400787114,New Mexico,Mississippi Valley State,home
+2015,1,400852668,New Mexico,Arizona,home
+2015,1,400603840,North Carolina,South Carolina,away
+2015,1,400852724,North Carolina,Baylor,away
+2015,1,400787115,Northern Illinois,UNLV,home
+2015,1,400852710,Northern Illinois,Boise State,home
+2015,1,400756891,Northwestern,Stanford,home
+2015,1,400852734,Northwestern,Tennessee,away
+2015,1,400763403,Notre Dame,Texas,home
+2015,1,400852736,Notre Dame,Ohio State,away
+2015,1,400787302,Ohio,Idaho,away
+2015,1,400852685,Ohio,App State,away
+2015,1,400756905,Ohio State,Virginia Tech,away
+2015,1,400852736,Ohio State,Notre Dame,home
+2015,1,400763404,Oklahoma,Akron,home
+2015,1,400852733,Oklahoma,Clemson,away
+2015,1,400763399,Oklahoma State,Central Michigan,away
+2015,1,400852738,Oklahoma State,Ole Miss,away
+2015,1,400603835,Ole Miss,UT Martin,home
+2015,1,400852738,Ole Miss,Oklahoma State,home
+2015,1,400756886,Oregon,Eastern Washington,home
+2015,1,400852741,Oregon,TCU,away
+2015,1,400763497,Penn State,Temple,away
+2015,1,400852739,Penn State,Georgia,away
+2015,1,400756902,Pittsburgh,Youngstown State,home
+2015,1,400852721,Pittsburgh,Navy,away
+2015,1,400791346,San Diego State,San Diego,home
+2015,1,400852714,San Diego State,Cincinnati,away
+2015,1,400787109,San José State,New Hampshire,home
+2015,1,400852683,San José State,Georgia State,away
+2015,1,400764861,South Florida,Florida A&M,home
+2015,1,400852687,South Florida,Western Kentucky,home
+2015,1,400603836,Southern Miss,Mississippi State,home
+2015,1,400852717,Southern Miss,Washington,home
+2015,1,400756891,Stanford,Northwestern,away
+2015,1,400852737,Stanford,Iowa,away
+2015,1,400763398,TCU,Minnesota,away
+2015,1,400852741,TCU,Oregon,home
+2015,1,400763497,Temple,Penn State,home
+2015,1,400852709,Temple,Toledo,away
+2015,1,400834350,Tennessee,Bowling Green,home
+2015,1,400852734,Tennessee,Northwestern,home
+2015,1,400603838,Texas A&M,Arizona State,home
+2015,1,400852729,Texas A&M,Louisville,away
+2015,1,400763406,Texas Tech,Sam Houston,home
+2015,1,400852726,Texas Tech,LSU,home
+2015,1,400763592,Tulsa,Florida Atlantic,home
+2015,1,400852719,Tulsa,Virginia Tech,away
+2015,1,400756904,UCLA,Virginia,home
+2015,1,400852720,UCLA,Nebraska,away
+2015,1,400764854,UConn,Villanova,home
+2015,1,400852715,UConn,Marshall,away
+2015,1,400756884,USC,Arkansas State,home
+2015,1,400852730,USC,Wisconsin,away
+2015,1,400756883,Utah,Michigan,home
+2015,1,400852684,Utah,BYU,home
+2015,1,400787110,Utah State,Southern Utah,home
+2015,1,400852708,Utah State,Akron,home
+2015,1,400756905,Virginia Tech,Ohio State,home
+2015,1,400852719,Virginia Tech,Tulsa,home
+2015,1,400756888,Washington,Boise State,away
+2015,1,400852717,Washington,Southern Miss,away
+2015,1,400756889,Washington State,Portland State,home
+2015,1,400852716,Washington State,Miami,home
+2015,1,400763407,West Virginia,Georgia Southern,home
+2015,1,400852742,West Virginia,Arizona State,away
+2015,1,400603839,Western Kentucky,Vanderbilt,away
+2015,1,400852687,Western Kentucky,South Florida,away
+2015,1,400763470,Western Michigan,Michigan State,home
+2015,1,400852713,Western Michigan,Middle Tennessee,home
+2015,1,400603827,Wisconsin,Alabama,away
+2015,1,400852730,Wisconsin,USC,home
+2016,1,400869175,Air Force,Abilene Christian,home
+2016,1,400928102,Air Force,South Alabama,home
+2016,1,400868969,Alabama,USC,home
+2016,1,400876107,Alabama,Washington,home
+2016,1,400876570,Alabama,Clemson,home
+2016,1,400868977,App State,Tennessee,away
+2016,1,400876040,App State,Toledo,away
+2016,1,400868970,Arkansas,Louisiana Tech,home
+2016,1,400876101,Arkansas,Virginia Tech,away
+2016,1,400869265,Arkansas State,Toledo,home
+2016,1,400903611,Arkansas State,UCF,away
+2016,1,400868910,Army,Temple,away
+2016,1,400876093,Army,North Texas,away
+2016,1,400868971,Auburn,Clemson,home
+2016,1,400876112,Auburn,Oklahoma,away
+2016,1,400868922,BYU,Arizona,away
+2016,1,400876044,BYU,Wyoming,away
+2016,1,400868876,Baylor,Northwestern State,home
+2016,1,400876096,Baylor,Boise State,home
+2016,1,400869176,Boise State,Louisiana,away
+2016,1,400876096,Boise State,Baylor,away
+2016,1,400869424,Boston College,Georgia Tech,home
+2016,1,400876091,Boston College,Maryland,home
+2016,1,400869257,Central Michigan,Presbyterian,home
+2016,1,400876042,Central Michigan,Tulsa,away
+2016,1,400868971,Clemson,Auburn,away
+2016,1,400876108,Clemson,Ohio State,home
+2016,1,400876570,Clemson,Alabama,away
+2016,1,400869093,Colorado,Colorado State,home
+2016,1,400876102,Colorado,Oklahoma State,home
+2016,1,400869093,Colorado State,Colorado,away
+2016,1,400876045,Colorado State,Idaho,home
+2016,1,400869263,Eastern Michigan,Mississippi Valley State,home
+2016,1,400876046,Eastern Michigan,Old Dominion,away
+2016,1,400868957,Florida,Massachusetts,home
+2016,1,400876109,Florida,Iowa,away
+2016,1,400868979,Florida State,Ole Miss,home
+2016,1,400876105,Florida State,Michigan,home
+2016,1,400868972,Georgia,North Carolina,away
+2016,1,400876103,Georgia,TCU,away
+2016,1,400869424,Georgia Tech,Boston College,away
+2016,1,400876113,Georgia Tech,Kentucky,away
+2016,1,400869090,Hawai'i,California,away
+2016,1,400869180,Hawai'i,Michigan,away
+2016,1,400876049,Hawai'i,Middle Tennessee,away
+2016,1,400869507,Houston,Oklahoma,home
+2016,1,400876039,Houston,San Diego State,away
+2016,1,400869725,Idaho,Montana State,home
+2016,1,400876045,Idaho,Colorado State,away
+2016,1,400869342,Indiana,Florida International,away
+2016,1,400903226,Indiana,Utah,away
+2016,1,400869262,Iowa,Miami (OH),home
+2016,1,400876109,Iowa,Florida,home
+2016,1,400869094,Kansas State,Stanford,away
+2016,1,400876099,Kansas State,Texas A&M,home
+2016,1,400868973,Kentucky,Southern Miss,home
+2016,1,400876113,Kentucky,Georgia Tech,home
+2016,1,400868974,LSU,Wisconsin,away
+2016,1,400876106,LSU,Louisville,away
+2016,1,400869176,Louisiana,Boise State,home
+2016,1,400876041,Louisiana,Southern Miss,home
+2016,1,400868970,Louisiana Tech,Arkansas,away
+2016,1,400876047,Louisiana Tech,Navy,away
+2016,1,400869341,Louisville,Charlotte,home
+2016,1,400876106,Louisville,LSU,home
+2016,1,400869653,Maryland,Howard,home
+2016,1,400876091,Maryland,Boston College,away
+2016,1,400869508,Memphis,Southeast Missouri State,home
+2016,1,400876043,Memphis,Western Kentucky,away
+2016,1,400869718,Miami,Florida A&M,home
+2016,1,400876098,Miami,West Virginia,home
+2016,1,400869262,Miami (OH),Iowa,away
+2016,1,400876090,Miami (OH),Mississippi State,away
+2016,1,400869180,Michigan,Hawai'i,home
+2016,1,400876105,Michigan,Florida State,away
+2016,1,400869344,Middle Tennessee,Alabama A&M,home
+2016,1,400876049,Middle Tennessee,Hawai'i,home
+2016,1,400869092,Minnesota,Oregon State,home
+2016,1,400876095,Minnesota,Washington State,away
+2016,1,400868975,Mississippi State,South Alabama,home
+2016,1,400876090,Mississippi State,Miami (OH),home
+2016,1,400869422,NC State,William & Mary,home
+2016,1,400876092,NC State,Vanderbilt,away
+2016,1,400869509,Navy,Fordham,home
+2016,1,400876047,Navy,Louisiana Tech,home
+2016,1,400869179,Nebraska,Fresno State,home
+2016,1,400876104,Nebraska,Tennessee,away
+2016,1,400869177,New Mexico,South Dakota,home
+2016,1,400876038,New Mexico,UTSA,away
+2016,1,400868972,North Carolina,Georgia,home
+2016,1,400878692,North Carolina,Stanford,home
+2016,1,400869345,North Texas,SMU,home
+2016,1,400876093,North Texas,Army,home
+2016,1,400869267,Northwestern,Western Michigan,home
+2016,1,400876097,Northwestern,Pittsburgh,home
+2016,1,400869264,Ohio,Texas State,home
+2016,1,400876048,Ohio,Troy,away
+2016,1,400869260,Ohio State,Bowling Green,home
+2016,1,400876108,Ohio State,Clemson,away
+2016,1,400869507,Oklahoma,Houston,away
+2016,1,400876112,Oklahoma,Auburn,home
+2016,1,400869619,Oklahoma State,SE Louisiana,home
+2016,1,400876102,Oklahoma State,Colorado,away
+2016,1,400869346,Old Dominion,Hampton,home
+2016,1,400876046,Old Dominion,Eastern Michigan,home
+2016,1,400869261,Penn State,Kent State,home
+2016,1,400876111,Penn State,USC,home
+2016,1,400869426,Pittsburgh,Villanova,home
+2016,1,400876097,Pittsburgh,Northwestern,away
+2016,1,400869182,San Diego State,New Hampshire,home
+2016,1,400876039,San Diego State,Houston,home
+2016,1,400868975,South Alabama,Mississippi State,away
+2016,1,400928102,South Alabama,Air Force,away
+2016,1,400868968,South Carolina,Vanderbilt,away
+2016,1,400876100,South Carolina,South Florida,home
+2016,1,400869506,South Florida,Towson,home
+2016,1,400876100,South Florida,South Carolina,away
+2016,1,400868973,Southern Miss,Kentucky,away
+2016,1,400876041,Southern Miss,Louisiana,away
+2016,1,400869094,Stanford,Kansas State,home
+2016,1,400878692,Stanford,North Carolina,away
+2016,1,400869624,TCU,South Dakota State,home
+2016,1,400876103,TCU,Georgia,home
+2016,1,400868910,Temple,Army,home
+2016,1,400876094,Temple,Wake Forest,away
+2016,1,400868977,Tennessee,App State,home
+2016,1,400876104,Tennessee,Nebraska,home
+2016,1,400868978,Texas A&M,UCLA,home
+2016,1,400876099,Texas A&M,Kansas State,away
+2016,1,400869265,Toledo,Arkansas State,away
+2016,1,400876040,Toledo,App State,home
+2016,1,400869810,Troy,Austin Peay,home
+2016,1,400876048,Troy,Ohio,home
+2016,1,400869183,Tulsa,San José State,home
+2016,1,400876042,Tulsa,Central Michigan,home
+2016,1,400869504,UCF,South Carolina State,home
+2016,1,400903611,UCF,Arkansas State,home
+2016,1,400868969,USC,Alabama,away
+2016,1,400876111,USC,Penn State,away
+2016,1,400869349,UTSA,Alabama State,home
+2016,1,400876038,UTSA,New Mexico,home
+2016,1,400869091,Utah,Southern Utah,home
+2016,1,400903226,Utah,Indiana,home
+2016,1,400868968,Vanderbilt,South Carolina,home
+2016,1,400876092,Vanderbilt,NC State,home
+2016,1,400869428,Virginia Tech,Liberty,home
+2016,1,400876101,Virginia Tech,Arkansas,home
+2016,1,400869421,Wake Forest,Tulane,home
+2016,1,400876094,Wake Forest,Temple,home
+2016,1,400869097,Washington,Rutgers,home
+2016,1,400876107,Washington,Alabama,away
+2016,1,400869098,Washington State,Eastern Washington,home
+2016,1,400876095,Washington State,Minnesota,home
+2016,1,400868976,West Virginia,Missouri,home
+2016,1,400876098,West Virginia,Miami,away
+2016,1,400869347,Western Kentucky,Rice,home
+2016,1,400876043,Western Kentucky,Memphis,home
+2016,1,400869267,Western Michigan,Northwestern,away
+2016,1,400876110,Western Michigan,Wisconsin,away
+2016,1,400868974,Wisconsin,LSU,home
+2016,1,400876110,Wisconsin,Western Michigan,home
+2016,1,400869178,Wyoming,Northern Illinois,home
+2016,1,400876044,Wyoming,BYU,home
+2017,1,400935237,Akron,Penn State,away
+2017,1,400953386,Akron,Florida Atlantic,away
+2017,1,400933827,Alabama,Florida State,home
+2017,1,400953413,Alabama,Clemson,away
+2017,1,400953415,Alabama,Georgia,away
+2017,1,400933831,App State,Georgia,away
+2017,1,400953392,App State,Toledo,away
+2017,1,400935251,Arizona,Northern Arizona,home
+2017,1,400959398,Arizona,Purdue,away
+2017,1,400935247,Arizona State,New Mexico State,home
+2017,1,400953417,Arizona State,NC State,home
+2017,1,400935235,Arkansas State,Nebraska,away
+2017,1,400953325,Arkansas State,Middle Tennessee,home
+2017,1,400934570,Army,Fordham,home
+2017,1,400953391,Army,San Diego State,home
+2017,1,400933829,Auburn,Georgia Southern,home
+2017,1,400953411,Auburn,UCF,home
+2017,1,400933833,BYU,LSU,away
+2017,1,400945031,BYU,Portland State,home
+2017,1,400944830,Boise State,Troy,home
+2017,1,400953323,Boise State,Oregon,away
+2017,1,400937446,Boston College,Northern Illinois,away
+2017,1,400953398,Boston College,Iowa,home
+2017,1,400944890,Central Michigan,Rhode Island,home
+2017,1,400953389,Central Michigan,Wyoming,away
+2017,1,400937447,Clemson,Kent State,home
+2017,1,400953413,Clemson,Alabama,home
+2017,1,400935249,Colorado State,Colorado,away
+2017,1,400935282,Colorado State,Oregon State,home
+2017,1,400953324,Colorado State,Marshall,home
+2017,1,400937448,Duke,North Carolina Central,home
+2017,1,400953394,Duke,Northern Illinois,away
+2017,1,400938592,Florida Atlantic,Navy,home
+2017,1,400953386,Florida Atlantic,Akron,home
+2017,1,400938591,Florida International,UCF,away
+2017,1,400953387,Florida International,Temple,home
+2017,1,400933827,Florida State,Alabama,away
+2017,1,400953397,Florida State,Southern Miss,home
+2017,1,400945248,Fresno State,Incarnate Word,home
+2017,1,400953393,Fresno State,Houston,away
+2017,1,400933831,Georgia,App State,home
+2017,1,400953412,Georgia,Oklahoma,away
+2017,1,400953415,Georgia,Alabama,home
+2017,1,400944826,Georgia State,Tennessee State,home
+2017,1,400953409,Georgia State,Western Kentucky,home
+2017,1,400938887,Hawai'i,Massachusetts,away
+2017,1,400945249,Hawai'i,Western Carolina,home
+2017,1,400935233,Iowa,Wyoming,home
+2017,1,400953398,Iowa,Boston College,away
+2017,1,400934488,Iowa State,Northern Iowa,home
+2017,1,400953406,Iowa State,Memphis,away
+2017,1,400934491,Kansas State,Central Arkansas,home
+2017,1,400953396,Kansas State,UCLA,away
+2017,1,400933832,Kentucky,Southern Miss,away
+2017,1,400953403,Kentucky,Northwestern,away
+2017,1,400933833,LSU,BYU,home
+2017,1,400953414,LSU,Notre Dame,home
+2017,1,400938593,Louisiana Tech,Northwestern State,home
+2017,1,400954523,Louisiana Tech,SMU,away
+2017,1,400935238,Louisville,Purdue,away
+2017,1,400953405,Louisville,Mississippi State,away
+2017,1,400938594,Marshall,Miami (OH),home
+2017,1,400953324,Marshall,Colorado State,away
+2017,1,400938887,Massachusetts,Hawai'i,home
+2017,1,400938888,Massachusetts,Coastal Carolina,away
+2017,1,400941789,Memphis,UL Monroe,home
+2017,1,400953406,Memphis,Iowa State,home
+2017,1,400937449,Miami,Bethune-Cookman,home
+2017,1,400953408,Miami,Wisconsin,home
+2017,1,400933830,Michigan,Florida,away
+2017,1,400953410,Michigan,South Carolina,away
+2017,1,400935234,Michigan State,Bowling Green,home
+2017,1,400959397,Michigan State,Washington State,home
+2017,1,400933839,Middle Tennessee,Vanderbilt,home
+2017,1,400953325,Middle Tennessee,Arkansas State,away
+2017,1,400933835,Mississippi State,Charleston Southern,home
+2017,1,400953405,Mississippi State,Louisville,home
+2017,1,400933836,Missouri,Missouri State,home
+2017,1,400953399,Missouri,Texas,home
+2017,1,400933837,NC State,South Carolina,away
+2017,1,400953417,NC State,Arizona State,away
+2017,1,400938592,Navy,Florida Atlantic,away
+2017,1,400953400,Navy,Virginia,home
+2017,1,400935247,New Mexico State,Arizona State,away
+2017,1,400966332,New Mexico State,Utah State,away
+2017,1,400938595,North Texas,Lamar,home
+2017,1,400953322,North Texas,Troy,home
+2017,1,400937446,Northern Illinois,Boston College,home
+2017,1,400953394,Northern Illinois,Duke,home
+2017,1,400935236,Northwestern,Nevada,home
+2017,1,400953403,Northwestern,Kentucky,home
+2017,1,400934573,Notre Dame,Temple,home
+2017,1,400953414,Notre Dame,LSU,away
+2017,1,400944892,Ohio,Hampton,home
+2017,1,400953388,Ohio,UAB,home
+2017,1,400935229,Ohio State,Indiana,away
+2017,1,400953404,Ohio State,USC,home
+2017,1,400934492,Oklahoma,UTEP,home
+2017,1,400953412,Oklahoma,Georgia,home
+2017,1,400934493,Oklahoma State,Tulsa,home
+2017,1,400953416,Oklahoma State,Virginia Tech,home
+2017,1,400935253,Oregon,Southern Utah,home
+2017,1,400953323,Oregon,Boise State,home
+2017,1,400935254,Oregon State,Portland State,home
+2017,1,400935282,Oregon State,Colorado State,away
+2017,1,400935237,Penn State,Akron,home
+2017,1,400953407,Penn State,Washington,home
+2017,1,400935254,Portland State,Oregon State,away
+2017,1,400945031,Portland State,BYU,away
+2017,1,400935238,Purdue,Louisville,home
+2017,1,400959398,Purdue,Arizona,home
+2017,1,400941792,SMU,Stephen F. Austin,home
+2017,1,400954523,SMU,Louisiana Tech,home
+2017,1,400945250,San Diego State,UC Davis,home
+2017,1,400953391,San Diego State,Army,away
+2017,1,400941786,San José State,South Florida,home
+2017,1,400945251,San José State,Cal Poly,home
+2017,1,400933837,South Carolina,NC State,home
+2017,1,400953410,South Carolina,Michigan,home
+2017,1,400941786,South Florida,San José State,away
+2017,1,400941791,South Florida,Stony Brook,home
+2017,1,400953390,South Florida,Texas Tech,home
+2017,1,400933832,Southern Miss,Kentucky,home
+2017,1,400953397,Southern Miss,Florida State,away
+2017,1,400935257,Stanford,Rice,away
+2017,1,400953401,Stanford,TCU,away
+2017,1,400934494,TCU,Jackson State,home
+2017,1,400953401,TCU,Stanford,home
+2017,1,400934573,Temple,Notre Dame,away
+2017,1,400953387,Temple,Florida International,away
+2017,1,400934495,Texas,Maryland,home
+2017,1,400953399,Texas,Missouri,away
+2017,1,400933838,Texas A&M,UCLA,away
+2017,1,400953402,Texas A&M,Wake Forest,home
+2017,1,400934496,Texas Tech,Eastern Washington,home
+2017,1,400953390,Texas Tech,South Florida,away
+2017,1,400944889,Toledo,Elon,home
+2017,1,400953392,Toledo,App State,home
+2017,1,400944830,Troy,Boise State,away
+2017,1,400953322,Troy,North Texas,away
+2017,1,400938597,UAB,Alabama A&M,home
+2017,1,400953388,UAB,Ohio,away
+2017,1,400938591,UCF,Florida International,home
+2017,1,400953411,UCF,Auburn,away
+2017,1,400933838,UCLA,Texas A&M,home
+2017,1,400953396,UCLA,Kansas State,home
+2017,1,400935252,USC,Western Michigan,home
+2017,1,400953404,USC,Ohio State,away
+2017,1,400935248,Utah,North Dakota,home
+2017,1,400953395,Utah,West Virginia,away
+2017,1,400935231,Utah State,Wisconsin,away
+2017,1,400966332,Utah State,New Mexico State,home
+2017,1,400937452,Virginia,William & Mary,home
+2017,1,400953400,Virginia,Navy,away
+2017,1,400934497,Virginia Tech,West Virginia,home
+2017,1,400953416,Virginia Tech,Oklahoma State,away
+2017,1,400937445,Wake Forest,Presbyterian,home
+2017,1,400953402,Wake Forest,Texas A&M,away
+2017,1,400935250,Washington,Rutgers,away
+2017,1,400953407,Washington,Penn State,away
+2017,1,400935255,Washington State,Montana State,home
+2017,1,400959397,Washington State,Michigan State,away
+2017,1,400934497,West Virginia,Virginia Tech,away
+2017,1,400953395,West Virginia,Utah,home
+2017,1,400938599,Western Kentucky,Eastern Kentucky,home
+2017,1,400953409,Western Kentucky,Georgia State,away
+2017,1,400935231,Wisconsin,Utah State,home
+2017,1,400953408,Wisconsin,Miami,away
+2017,1,400935233,Wyoming,Iowa,away
+2017,1,400953389,Wyoming,Central Michigan,home
+2018,1,401012246,Alabama,Louisville,home
+2018,1,401032078,Alabama,Oklahoma,home
+2018,1,401032087,Alabama,Clemson,home
+2018,1,401013349,App State,Penn State,away
+2018,1,401032057,App State,Middle Tennessee,home
+2018,1,401012677,Arizona State,UTSA,home
+2018,1,401032055,Arizona State,Fresno State,away
+2018,1,401021652,Arkansas State,Southeast Missouri State,home
+2018,1,401035252,Arkansas State,Nevada,away
+2018,1,401013089,Army,Duke,away
+2018,1,401032064,Army,Houston,home
+2018,1,401012248,Auburn,Washington,home
+2018,1,401032073,Auburn,Purdue,home
+2018,1,401012676,BYU,Arizona,away
+2018,1,401032062,BYU,Western Michigan,home
+2018,1,401013026,Baylor,Abilene Christian,home
+2018,1,401032072,Baylor,Vanderbilt,away
+2018,1,401020674,Buffalo,Delaware State,home
+2018,1,401032065,Buffalo,Troy,away
+2018,1,401012684,California,North Carolina,home
+2018,1,401032069,California,TCU,away
+2018,1,401012679,Cincinnati,UCLA,away
+2018,1,401032080,Cincinnati,Virginia Tech,away
+2018,1,401013088,Clemson,Furman,home
+2018,1,401032079,Clemson,Notre Dame,home
+2018,1,401032087,Clemson,Alabama,away
+2018,1,401012680,Colorado State,Colorado,home
+2018,1,401022510,Colorado State,Hawai'i,home
+2018,1,401013089,Duke,Army,home
+2018,1,401032070,Duke,Temple,home
+2018,1,401020672,Eastern Michigan,Monmouth,home
+2018,1,401032056,Eastern Michigan,Georgia Southern,home
+2018,1,401012249,Florida,Charleston Southern,home
+2018,1,401032076,Florida,Michigan,away
+2018,1,401012851,Florida International,Indiana,home
+2018,1,401032061,Florida International,Toledo,away
+2018,1,401022516,Fresno State,Idaho,home
+2018,1,401032055,Fresno State,Arizona State,home
+2018,1,401012250,Georgia,Austin Peay,home
+2018,1,401032086,Georgia,Texas,home
+2018,1,401021653,Georgia Southern,South Carolina State,home
+2018,1,401032056,Georgia Southern,Eastern Michigan,away
+2018,1,401013090,Georgia Tech,Alcorn State,home
+2018,1,401032068,Georgia Tech,Minnesota,home
+2018,1,401019475,Hawai'i,Navy,home
+2018,1,401022510,Hawai'i,Colorado State,away
+2018,1,401032066,Hawai'i,Louisiana Tech,away
+2018,1,401014977,Houston,Rice,away
+2018,1,401032064,Houston,Army,away
+2018,1,401012862,Iowa,Northern Illinois,home
+2018,1,401032083,Iowa,Mississippi State,home
+2018,1,401012251,Kentucky,Central Michigan,home
+2018,1,401032088,Kentucky,Penn State,away
+2018,1,401013095,LSU,Miami,home
+2018,1,401032084,LSU,UCF,away
+2018,1,401021654,Louisiana,Grambling,home
+2018,1,401035253,Louisiana,Tulane,home
+2018,1,401014974,Louisiana Tech,South Alabama,away
+2018,1,401032066,Louisiana Tech,Hawai'i,home
+2018,1,401014975,Marshall,Miami (OH),away
+2018,1,401032060,Marshall,South Florida,away
+2018,1,401013087,Massachusetts,Boston College,away
+2018,1,401013357,Massachusetts,Duquesne,home
+2018,1,401019474,Memphis,Mercer,home
+2018,1,401032063,Memphis,Wake Forest,away
+2018,1,401013095,Miami,LSU,away
+2018,1,401032071,Miami,Wisconsin,away
+2018,1,401012888,Michigan,Notre Dame,away
+2018,1,401032076,Michigan,Florida,home
+2018,1,401012880,Michigan State,Utah State,home
+2018,1,401035254,Michigan State,Oregon,away
+2018,1,401012259,Middle Tennessee,Vanderbilt,away
+2018,1,401032057,Middle Tennessee,App State,away
+2018,1,401013328,Minnesota,New Mexico State,home
+2018,1,401032068,Minnesota,Georgia Tech,away
+2018,1,401012254,Mississippi State,Stephen F. Austin,home
+2018,1,401032083,Mississippi State,Iowa,away
+2018,1,401012255,Missouri,UT Martin,home
+2018,1,401032081,Missouri,Oklahoma State,away
+2018,1,401013091,NC State,James Madison,home
+2018,1,401032082,NC State,Texas A&M,away
+2018,1,401022517,Nevada,Portland State,home
+2018,1,401035252,Nevada,Arkansas State,home
+2018,1,401013328,New Mexico State,Minnesota,away
+2018,1,401013437,New Mexico State,Wyoming,home
+2018,1,401014976,North Texas,SMU,home
+2018,1,401032054,North Texas,Utah State,home
+2018,1,401012862,Northern Illinois,Iowa,away
+2018,1,401032058,Northern Illinois,UAB,home
+2018,1,401013342,Northwestern,Purdue,away
+2018,1,401035250,Northwestern,Utah,away
+2018,1,401012888,Notre Dame,Michigan,home
+2018,1,401032079,Notre Dame,Clemson,away
+2018,1,401020675,Ohio,Howard,home
+2018,1,401032059,Ohio,San Diego State,home
+2018,1,401012682,Ohio State,Oregon State,home
+2018,1,401032085,Ohio State,Washington,home
+2018,1,401013065,Oklahoma,Florida Atlantic,home
+2018,1,401032078,Oklahoma,Alabama,away
+2018,1,401013489,Oklahoma State,Missouri State,home
+2018,1,401032081,Oklahoma State,Missouri,home
+2018,1,401012681,Oregon,Bowling Green,home
+2018,1,401035254,Oregon,Michigan State,home
+2018,1,401013349,Penn State,App State,home
+2018,1,401032088,Penn State,Kentucky,home
+2018,1,401013092,Pittsburgh,UAlbany,home
+2018,1,401035251,Pittsburgh,Stanford,home
+2018,1,401013342,Purdue,Northwestern,home
+2018,1,401032073,Purdue,Auburn,away
+2018,1,401014972,Rice,Prairie View A&M,home
+2018,1,401014977,Rice,Houston,home
+2018,1,401022512,San Diego State,Stanford,away
+2018,1,401032059,San Diego State,Ohio,away
+2018,1,401012256,South Carolina,Coastal Carolina,home
+2018,1,401032077,South Carolina,Virginia,away
+2018,1,401019472,South Florida,Elon,home
+2018,1,401032060,South Florida,Marshall,home
+2018,1,401022512,Stanford,San Diego State,home
+2018,1,401035251,Stanford,Pittsburgh,away
+2018,1,401020673,Syracuse,Western Michigan,away
+2018,1,401032074,Syracuse,West Virginia,home
+2018,1,401013072,TCU,Southern,home
+2018,1,401032069,TCU,California,home
+2018,1,401019473,Temple,Villanova,home
+2018,1,401032070,Temple,Duke,away
+2018,1,401012872,Texas,Maryland,away
+2018,1,401032086,Texas,Georgia,away
+2018,1,401012258,Texas A&M,Northwestern State,home
+2018,1,401032082,Texas A&M,NC State,home
+2018,1,401020676,Toledo,VMI,home
+2018,1,401032061,Toledo,Florida International,home
+2018,1,401021656,Troy,Boise State,home
+2018,1,401032065,Troy,Buffalo,home
+2018,1,401013086,Tulane,Wake Forest,home
+2018,1,401035253,Tulane,Louisiana,away
+2018,1,401014979,UAB,Savannah State,home
+2018,1,401032058,UAB,Northern Illinois,away
+2018,1,401019470,UCF,UConn,away
+2018,1,401032084,UCF,LSU,home
+2018,1,401012675,Utah,Weber State,home
+2018,1,401035250,Utah,Northwestern,home
+2018,1,401012880,Utah State,Michigan State,away
+2018,1,401032054,Utah State,North Texas,away
+2018,1,401012259,Vanderbilt,Middle Tennessee,home
+2018,1,401032072,Vanderbilt,Baylor,home
+2018,1,401013094,Virginia,Richmond,home
+2018,1,401032077,Virginia,South Carolina,home
+2018,1,401013096,Virginia Tech,Florida State,away
+2018,1,401032080,Virginia Tech,Cincinnati,home
+2018,1,401013086,Wake Forest,Tulane,away
+2018,1,401032063,Wake Forest,Memphis,home
+2018,1,401012248,Washington,Auburn,away
+2018,1,401032085,Washington,Ohio State,away
+2018,1,401012683,Washington State,Wyoming,away
+2018,1,401032075,Washington State,Iowa State,home
+2018,1,401012257,West Virginia,Tennessee,away
+2018,1,401032074,West Virginia,Syracuse,away
+2018,1,401020673,Western Michigan,Syracuse,home
+2018,1,401032062,Western Michigan,BYU,away
+2018,1,401013354,Wisconsin,Western Kentucky,home
+2018,1,401032071,Wisconsin,Miami,home
+2018,1,401012683,Wyoming,Washington State,home
+2018,1,401013437,Wyoming,New Mexico State,away
+2019,1,401117494,Air Force,Colgate,home
+2019,1,401135275,Air Force,Washington State,away
+2019,1,401110720,Alabama,Duke,home
+2019,1,401135286,Alabama,Michigan,home
+2019,1,401121934,App State,East Tennessee State,home
+2019,1,401135267,App State,UAB,away
+2019,1,401114153,Arizona State,Kent State,home
+2019,1,401136255,Arizona State,Florida State,home
+2019,1,401117858,Arkansas State,SMU,home
+2019,1,401135265,Arkansas State,Florida International,home
+2019,1,401110722,Auburn,Oregon,home
+2019,1,401135287,Auburn,Minnesota,home
+2019,1,401114223,BYU,Utah,home
+2019,1,401135269,BYU,Hawai'i,home
+2019,1,401112073,Baylor,Stephen F. Austin,home
+2019,1,401135289,Baylor,Georgia,home
+2019,1,401112431,Boise State,Florida State,away
+2019,1,401135266,Boise State,Washington,away
+2019,1,401112435,Boston College,Virginia Tech,home
+2019,1,401135290,Boston College,Cincinnati,away
+2019,1,401119255,Buffalo,Robert Morris,home
+2019,1,401135260,Buffalo,Charlotte,away
+2019,1,401114174,California,UC Davis,home
+2019,1,401136254,California,Illinois,away
+2019,1,401119253,Central Michigan,UAlbany,home
+2019,1,401135263,Central Michigan,San Diego State,away
+2019,1,401135260,Charlotte,Buffalo,home
+2019,1,401135910,Charlotte,Gardner-Webb,home
+2019,1,401117854,Cincinnati,UCLA,home
+2019,1,401135290,Cincinnati,Boston College,home
+2019,1,401111653,Clemson,Georgia Tech,home
+2019,1,401135279,Clemson,Ohio State,away
+2019,1,401135295,Clemson,LSU,away
+2019,1,401119256,Eastern Michigan,Coastal Carolina,away
+2019,1,401135271,Eastern Michigan,Pittsburgh,home
+2019,1,401110723,Florida,Miami,home
+2019,1,401135282,Florida,Virginia,away
+2019,1,401112251,Florida Atlantic,Ohio State,away
+2019,1,401135264,Florida Atlantic,SMU,home
+2019,1,401114236,Florida International,Tulane,away
+2019,1,401135265,Florida International,Arkansas State,away
+2019,1,401112431,Florida State,Boise State,home
+2019,1,401136255,Florida State,Arizona State,away
+2019,1,401110732,Georgia,Vanderbilt,away
+2019,1,401135289,Georgia,Baylor,away
+2019,1,401110725,Georgia Southern,LSU,away
+2019,1,401147693,Georgia Southern,Liberty,home
+2019,1,401110730,Georgia State,Tennessee,away
+2019,1,401147695,Georgia State,Wyoming,home
+2019,1,401114164,Hawai'i,Arizona,home
+2019,1,401135269,Hawai'i,BYU,away
+2019,1,401112145,Illinois,Akron,home
+2019,1,401136254,Illinois,California,home
+2019,1,401112157,Indiana,Ball State,away
+2019,1,401135291,Indiana,Tennessee,away
+2019,1,401112191,Iowa,Miami (OH),home
+2019,1,401136253,Iowa,USC,home
+2019,1,401112085,Iowa State,Northern Iowa,home
+2019,1,401135276,Iowa State,Notre Dame,home
+2019,1,401112106,Kansas State,Nicholls,home
+2019,1,401135284,Kansas State,Navy,home
+2019,1,401114153,Kent State,Arizona State,away
+2019,1,401135261,Kent State,Utah State,home
+2019,1,401110724,Kentucky,Toledo,home
+2019,1,401135283,Kentucky,Virginia Tech,home
+2019,1,401110725,LSU,Georgia Southern,home
+2019,1,401135278,LSU,Oklahoma,home
+2019,1,401135295,LSU,Clemson,home
+2019,1,401112434,Liberty,Syracuse,home
+2019,1,401147693,Liberty,Georgia Southern,away
+2019,1,401110727,Louisiana,Mississippi State,home
+2019,1,401135294,Louisiana,Miami (OH),away
+2019,1,401112135,Louisiana Tech,Texas,away
+2019,1,401135270,Louisiana Tech,Miami,away
+2019,1,401112436,Louisville,Notre Dame,home
+2019,1,401135281,Louisville,Mississippi State,home
+2019,1,401114240,Marshall,VMI,home
+2019,1,401135268,Marshall,UCF,home
+2019,1,401110726,Memphis,Ole Miss,home
+2019,1,401135277,Memphis,Penn State,away
+2019,1,401110723,Miami,Florida,away
+2019,1,401135270,Miami,Louisiana Tech,home
+2019,1,401112191,Miami (OH),Iowa,away
+2019,1,401135294,Miami (OH),Louisiana,home
+2019,1,401112222,Michigan,Middle Tennessee,home
+2019,1,401135286,Michigan,Alabama,away
+2019,1,401112212,Michigan State,Tulsa,home
+2019,1,401135273,Michigan State,Wake Forest,away
+2019,1,401112229,Minnesota,South Dakota State,home
+2019,1,401135287,Minnesota,Auburn,away
+2019,1,401110727,Mississippi State,Louisiana,away
+2019,1,401135281,Mississippi State,Louisville,away
+2019,1,401117857,Navy,Holy Cross,home
+2019,1,401135284,Navy,Kansas State,away
+2019,1,401112262,Nevada,Purdue,home
+2019,1,401135292,Nevada,Ohio,home
+2019,1,401110729,North Carolina,South Carolina,home
+2019,1,401135272,North Carolina,Temple,away
+2019,1,401112436,Notre Dame,Louisville,away
+2019,1,401135276,Notre Dame,Iowa State,away
+2019,1,401119259,Ohio,Rhode Island,home
+2019,1,401135292,Ohio,Nevada,away
+2019,1,401112251,Ohio State,Florida Atlantic,home
+2019,1,401135279,Ohio State,Clemson,home
+2019,1,401112114,Oklahoma,Houston,home
+2019,1,401135278,Oklahoma,LSU,away
+2019,1,401112122,Oklahoma State,Oregon State,away
+2019,1,401135274,Oklahoma State,Texas A&M,away
+2019,1,401110722,Oregon,Auburn,away
+2019,1,401135288,Oregon,Wisconsin,away
+2019,1,401112257,Penn State,Idaho,home
+2019,1,401135277,Penn State,Memphis,home
+2019,1,401112433,Pittsburgh,Virginia,home
+2019,1,401135271,Pittsburgh,Eastern Michigan,away
+2019,1,401117858,SMU,Arkansas State,away
+2019,1,401135264,SMU,Florida Atlantic,away
+2019,1,401117496,San Diego State,Weber State,home
+2019,1,401135263,San Diego State,Central Michigan,home
+2019,1,401114243,Southern Miss,Alcorn State,home
+2019,1,401135293,Southern Miss,Tulane,away
+2019,1,401117859,Temple,Bucknell,home
+2019,1,401135272,Temple,North Carolina,home
+2019,1,401110730,Tennessee,Georgia State,home
+2019,1,401135291,Tennessee,Indiana,home
+2019,1,401112135,Texas,Louisiana Tech,home
+2019,1,401135285,Texas,Utah,home
+2019,1,401110731,Texas A&M,Texas State,home
+2019,1,401135274,Texas A&M,Oklahoma State,home
+2019,1,401114236,Tulane,Florida International,home
+2019,1,401135293,Tulane,Southern Miss,home
+2019,1,401114237,UAB,Alabama State,home
+2019,1,401135267,UAB,App State,home
+2019,1,401117853,UCF,Florida A&M,home
+2019,1,401135268,UCF,Marshall,away
+2019,1,401114218,USC,Fresno State,home
+2019,1,401136253,USC,Iowa,away
+2019,1,401114223,Utah,BYU,away
+2019,1,401135285,Utah,Texas,away
+2019,1,401112430,Utah State,Wake Forest,away
+2019,1,401135261,Utah State,Kent State,away
+2019,1,401112433,Virginia,Pittsburgh,away
+2019,1,401135282,Virginia,Florida,home
+2019,1,401112435,Virginia Tech,Boston College,away
+2019,1,401135283,Virginia Tech,Kentucky,away
+2019,1,401112430,Wake Forest,Utah State,home
+2019,1,401135273,Wake Forest,Michigan State,home
+2019,1,401114233,Washington,Eastern Washington,home
+2019,1,401135266,Washington,Boise State,home
+2019,1,401114228,Washington State,New Mexico State,home
+2019,1,401135275,Washington State,Air Force,home
+2019,1,401114246,Western Kentucky,Central Arkansas,home
+2019,1,401135280,Western Kentucky,Western Michigan,away
+2019,1,401119258,Western Michigan,Monmouth,home
+2019,1,401135280,Western Michigan,Western Kentucky,home
+2019,1,401117856,Wisconsin,South Florida,away
+2019,1,401135288,Wisconsin,Oregon,home
+2019,1,401110728,Wyoming,Missouri,home
+2019,1,401147695,Wyoming,Georgia State,away
+2020,1,401240152,Alabama,Notre Dame,home
+2020,1,401240174,Alabama,Ohio State,home
+2020,1,401235700,Army,Middle Tennessee,home
+2020,1,401256197,Army,West Virginia,home
+2020,1,401234576,BYU,Navy,away
+2020,1,401256137,BYU,UCF,home
+2020,1,401237353,Marshall,Eastern Kentucky,home
+2020,1,401256141,Marshall,Buffalo,away
+2020,1,401212553,Memphis,Arkansas State,home
+2020,1,401256139,Memphis,Florida Atlantic,away
+2020,1,401207098,North Texas,Houston Christian,home
+2020,1,401256135,North Texas,App State,home
+2020,1,401240173,Ohio State,Clemson,away
+2020,1,401240174,Ohio State,Alabama,away
+2021,1,401310861,Air Force,Lafayette,home
+2021,1,401331222,Air Force,Louisville,away
+2021,1,401281942,Alabama,Miami,away
+2021,1,401331235,Alabama,Cincinnati,home
+2021,1,401331242,Alabama,Georgia,home
+2021,1,401300993,App State,East Carolina,home
+2021,1,401331166,App State,Western Kentucky,home
+2021,1,401309835,Arizona State,Southern Utah,home
+2021,1,401331232,Arizona State,Wisconsin,home
+2021,1,401281943,Arkansas,Rice,home
+2021,1,401331236,Arkansas,Penn State,home
+2021,1,401309601,Army,Georgia State,away
+2021,1,401331215,Army,Missouri,home
+2021,1,401281944,Auburn,Akron,home
+2021,1,401331221,Auburn,Houston,home
+2021,1,401309841,BYU,Arizona,away
+2021,1,401331168,BYU,UAB,home
+2021,1,401309540,Ball State,Western Illinois,home
+2021,1,401331218,Ball State,Georgia State,home
+2021,1,401287893,Baylor,Texas State,away
+2021,1,401331240,Baylor,Ole Miss,away
+2021,1,401281950,Central Michigan,Missouri,away
+2021,1,401331654,Central Michigan,Washington State,home
+2021,1,401300996,Cincinnati,Miami (OH),home
+2021,1,401331235,Cincinnati,Alabama,away
+2021,1,401281946,Clemson,Georgia,home
+2021,1,401331227,Clemson,Iowa State,away
+2021,1,401328545,Coastal Carolina,The Citadel,home
+2021,1,401331165,Coastal Carolina,Northern Illinois,home
+2021,1,401309541,Eastern Michigan,Saint Francis,home
+2021,1,401331169,Eastern Michigan,Liberty,away
+2021,1,401281945,Florida,Florida Atlantic,home
+2021,1,401331216,Florida,UCF,home
+2021,1,401286187,Fresno State,UConn,home
+2021,1,401309838,Fresno State,Oregon,away
+2021,1,401331167,Fresno State,UTEP,home
+2021,1,401281946,Georgia,Clemson,away
+2021,1,401331234,Georgia,Michigan,away
+2021,1,401331242,Georgia,Alabama,away
+2021,1,401309601,Georgia State,Army,home
+2021,1,401331218,Georgia State,Ball State,away
+2021,1,401309833,Hawai'i,UCLA,away
+2021,1,401310698,Hawai'i,Portland State,home
+2021,1,401287886,Houston,Texas Tech,home
+2021,1,401331221,Houston,Auburn,away
+2021,1,401282179,Illinois,UTSA,home
+2021,1,401282714,Illinois,Nebraska,home
+2021,1,401282723,Iowa,Indiana,home
+2021,1,401331237,Iowa,Kentucky,away
+2021,1,401287887,Iowa State,Northern Iowa,home
+2021,1,401331227,Iowa State,Clemson,home
+2021,1,401287889,Kansas State,Stanford,home
+2021,1,401331241,Kansas State,LSU,home
+2021,1,401282053,Kent State,Texas A&M,away
+2021,1,401331213,Kent State,Wyoming,away
+2021,1,401281947,Kentucky,UL Monroe,home
+2021,1,401331237,Kentucky,Iowa,home
+2021,1,401281948,LSU,UCLA,away
+2021,1,401331241,LSU,Kansas State,away
+2021,1,401286294,Liberty,Campbell,home
+2021,1,401331169,Liberty,Eastern Michigan,home
+2021,1,401287892,Louisiana,Texas,away
+2021,1,401331171,Louisiana,Marshall,away
+2021,1,401282055,Louisville,Ole Miss,away
+2021,1,401331222,Louisville,Air Force,home
+2021,1,401282174,Marshall,Navy,away
+2021,1,401331171,Marshall,Louisiana,home
+2021,1,401282764,Maryland,West Virginia,home
+2021,1,401331226,Maryland,Virginia Tech,away
+2021,1,401300996,Miami (OH),Cincinnati,away
+2021,1,401391158,Miami (OH),North Texas,home
+2021,1,401282772,Michigan,Western Michigan,home
+2021,1,401331234,Michigan,Georgia,home
+2021,1,401282782,Michigan State,Northwestern,away
+2021,1,401331231,Michigan State,Pittsburgh,home
+2021,1,401282173,Middle Tennessee,Monmouth,home
+2021,1,401331164,Middle Tennessee,Toledo,away
+2021,1,401282789,Minnesota,Ohio State,home
+2021,1,401331224,Minnesota,West Virginia,home
+2021,1,401281949,Mississippi State,Louisiana Tech,home
+2021,1,401331223,Mississippi State,Texas Tech,away
+2021,1,401281950,Missouri,Central Michigan,home
+2021,1,401331215,Missouri,Army,away
+2021,1,401282714,Nebraska,Illinois,away
+2021,1,401327913,Nebraska,Fordham,home
+2021,1,401309837,Nevada,California,away
+2021,1,401331219,Nevada,Western Michigan,home
+2021,1,401282049,New Mexico State,UTEP,home
+2021,1,401310699,New Mexico State,San Diego State,away
+2021,1,401309937,North Carolina,Virginia Tech,away
+2021,1,401331229,North Carolina,South Carolina,away
+2021,1,401282175,North Texas,Northwestern State,home
+2021,1,401391158,North Texas,Miami (OH),away
+2021,1,401282610,Northern Illinois,Georgia Tech,away
+2021,1,401331165,Northern Illinois,Coastal Carolina,away
+2021,1,401282614,Notre Dame,Florida State,away
+2021,1,401331238,Notre Dame,Oklahoma State,home
+2021,1,401282789,Ohio State,Minnesota,away
+2021,1,401331239,Ohio State,Utah,home
+2021,1,401287894,Oklahoma,Tulane,home
+2021,1,401331228,Oklahoma,Oregon,home
+2021,1,401287890,Oklahoma State,Missouri State,home
+2021,1,401331238,Oklahoma State,Notre Dame,away
+2021,1,401282608,Old Dominion,Wake Forest,away
+2021,1,401331172,Old Dominion,Tulsa,away
+2021,1,401282055,Ole Miss,Louisville,home
+2021,1,401331240,Ole Miss,Baylor,home
+2021,1,401309838,Oregon,Fresno State,home
+2021,1,401331228,Oregon,Oklahoma,away
+2021,1,401282819,Oregon State,Purdue,away
+2021,1,401331170,Oregon State,Utah State,home
+2021,1,401282815,Penn State,Wisconsin,away
+2021,1,401331236,Penn State,Arkansas,away
+2021,1,401282612,Pittsburgh,Massachusetts,home
+2021,1,401331231,Pittsburgh,Michigan State,away
+2021,1,401282819,Purdue,Oregon State,home
+2021,1,401331230,Purdue,Tennessee,home
+2021,1,401282822,Rutgers,Temple,home
+2021,1,401331233,Rutgers,Wake Forest,home
+2021,1,401310699,San Diego State,New Mexico State,home
+2021,1,401331214,San Diego State,UTSA,home
+2021,1,401309842,San José State,USC,away
+2021,1,401310693,San José State,Southern Utah,home
+2021,1,401281951,South Carolina,Eastern Illinois,home
+2021,1,401331229,South Carolina,North Carolina,home
+2021,1,401309835,Southern Utah,Arizona State,away
+2021,1,401310693,Southern Utah,San José State,away
+2021,1,401281952,Tennessee,Bowling Green,home
+2021,1,401331230,Tennessee,Purdue,away
+2021,1,401287886,Texas Tech,Houston,away
+2021,1,401331223,Texas Tech,Mississippi State,home
+2021,1,401309543,Toledo,Norfolk State,home
+2021,1,401331164,Toledo,Middle Tennessee,home
+2021,1,401300994,Tulsa,UC Davis,home
+2021,1,401331172,Tulsa,Old Dominion,home
+2021,1,401282050,UAB,Jacksonville State,away
+2021,1,401331168,UAB,BYU,away
+2021,1,401300995,UCF,Boise State,home
+2021,1,401331216,UCF,Florida,away
+2021,1,401281948,UCLA,LSU,home
+2021,1,401309833,UCLA,Hawai'i,home
+2021,1,401286187,UConn,Fresno State,away
+2021,1,401286188,UConn,Holy Cross,home
+2021,1,401282049,UTEP,New Mexico State,away
+2021,1,401282178,UTEP,Bethune-Cookman,home
+2021,1,401331167,UTEP,Fresno State,away
+2021,1,401282179,UTSA,Illinois,away
+2021,1,401331214,UTSA,San Diego State,away
+2021,1,401309834,Utah,Weber State,home
+2021,1,401331239,Utah,Ohio State,away
+2021,1,401309840,Utah State,Washington State,away
+2021,1,401331170,Utah State,Oregon State,away
+2021,1,401309937,Virginia Tech,North Carolina,home
+2021,1,401331226,Virginia Tech,Maryland,home
+2021,1,401282608,Wake Forest,Old Dominion,home
+2021,1,401331233,Wake Forest,Rutgers,away
+2021,1,401309840,Washington State,Utah State,home
+2021,1,401331654,Washington State,Central Michigan,away
+2021,1,401282764,West Virginia,Maryland,away
+2021,1,401331224,West Virginia,Minnesota,away
+2021,1,401282180,Western Kentucky,UT Martin,home
+2021,1,401331166,Western Kentucky,App State,away
+2021,1,401282772,Western Michigan,Michigan,away
+2021,1,401331219,Western Michigan,Nevada,away
+2021,1,401282815,Wisconsin,Penn State,home
+2021,1,401331232,Wisconsin,Arizona State,away
+2021,1,401310697,Wyoming,Montana State,home
+2021,1,401331213,Wyoming,Kent State,home
+2022,1,401415209,Air Force,Northern Iowa,home
+2022,1,401442040,Air Force,Baylor,home
+2022,1,401403854,Alabama,Utah State,home
+2022,1,401442018,Alabama,Kansas State,away
+2022,1,401403855,Arkansas,Cincinnati,home
+2022,1,401442030,Arkansas,Kansas,home
+2022,1,401415612,BYU,South Florida,away
+2022,1,401441997,BYU,SMU,home
+2022,1,401424416,Baylor,UAlbany,home
+2022,1,401442040,Baylor,Air Force,away
+2022,1,401403969,Boise State,Oregon State,away
+2022,1,401442001,Boise State,North Texas,home
+2022,1,401403971,Bowling Green,UCLA,away
+2022,1,401442037,Bowling Green,New Mexico State,home
+2022,1,401405066,Buffalo,Maryland,away
+2022,1,401441998,Buffalo,Georgia Southern,home
+2022,1,401426530,Charlotte,Florida Atlantic,away
+2022,1,401426535,Charlotte,William & Mary,home
+2022,1,401403855,Cincinnati,Arkansas,away
+2022,1,401441995,Cincinnati,Louisville,away
+2022,1,401411101,Clemson,Georgia Tech,away
+2022,1,401442019,Clemson,Tennessee,home
+2022,1,401404134,Coastal Carolina,Army,home
+2022,1,401442002,Coastal Carolina,East Carolina,away
+2022,1,401411094,Duke,Temple,home
+2022,1,401442008,Duke,UCF,home
+2022,1,401411096,East Carolina,NC State,home
+2022,1,401442002,East Carolina,Coastal Carolina,home
+2022,1,401416590,Eastern Michigan,Eastern Kentucky,home
+2022,1,401442004,Eastern Michigan,San José State,away
+2022,1,401403857,Florida,Utah,home
+2022,1,401441999,Florida,Oregon State,away
+2022,1,401426530,Florida Atlantic,Charlotte,home
+2022,1,401426536,Florida Atlantic,Ohio,away
+2022,1,401403867,Florida State,LSU,home
+2022,1,401411090,Florida State,Duquesne,home
+2022,1,401442033,Florida State,Oklahoma,home
+2022,1,401413224,Fresno State,Cal Poly,home
+2022,1,401442038,Fresno State,Washington State,home
+2022,1,401403858,Georgia,Oregon,home
+2022,1,401442010,Georgia,TCU,home
+2022,1,401442015,Georgia,Ohio State,home
+2022,1,401420777,Georgia Southern,Morgan State,home
+2022,1,401441998,Georgia Southern,Buffalo,away
+2022,1,401403853,Hawai'i,Vanderbilt,home
+2022,1,401426543,Hawai'i,Western Kentucky,home
+2022,1,401426542,Houston,UTSA,away
+2022,1,401442042,Houston,Louisiana,home
+2022,1,401405058,Illinois,Wyoming,home
+2022,1,401405061,Illinois,Indiana,away
+2022,1,401442011,Illinois,Mississippi State,home
+2022,1,401405062,Iowa,South Dakota State,home
+2022,1,401442017,Iowa,Kentucky,away
+2022,1,401404052,Kansas,Tennessee Tech,home
+2022,1,401442030,Kansas,Arkansas,away
+2022,1,401404056,Kansas State,South Dakota,home
+2022,1,401442018,Kansas State,Alabama,home
+2022,1,401403859,Kentucky,Miami (OH),home
+2022,1,401442017,Kentucky,Iowa,home
+2022,1,401403867,LSU,Florida State,away
+2022,1,401442012,LSU,Purdue,away
+2022,1,401404157,Liberty,Southern Miss,away
+2022,1,401442006,Liberty,Toledo,away
+2022,1,401421121,Louisiana,SE Louisiana,home
+2022,1,401442042,Louisiana,Houston,away
+2022,1,401411099,Louisville,Syracuse,away
+2022,1,401441995,Louisville,Cincinnati,home
+2022,1,401415015,Marshall,Norfolk State,home
+2022,1,401442003,Marshall,UConn,away
+2022,1,401405066,Maryland,Buffalo,home
+2022,1,401442035,Maryland,NC State,away
+2022,1,401403861,Memphis,Mississippi State,away
+2022,1,401442000,Memphis,Utah State,away
+2022,1,401403859,Miami (OH),Kentucky,away
+2022,1,401441993,Miami (OH),UAB,away
+2022,1,401405067,Michigan,Colorado State,home
+2022,1,401442016,Michigan,TCU,home
+2022,1,401426538,Middle Tennessee,James Madison,away
+2022,1,401442009,Middle Tennessee,San Diego State,away
+2022,1,401405060,Minnesota,New Mexico State,home
+2022,1,401442032,Minnesota,Syracuse,home
+2022,1,401403861,Mississippi State,Memphis,home
+2022,1,401442011,Mississippi State,Illinois,away
+2022,1,401426537,Missouri,Louisiana Tech,home
+2022,1,401442007,Missouri,Wake Forest,home
+2022,1,401411096,NC State,East Carolina,away
+2022,1,401442035,NC State,Maryland,home
+2022,1,401405059,Nebraska,Northwestern,away
+2022,1,401405063,Nebraska,North Dakota,home
+2022,1,401409235,Nevada,New Mexico State,away
+2022,1,401415212,Nevada,Texas State,home
+2022,1,401405060,New Mexico State,Minnesota,away
+2022,1,401409235,New Mexico State,Nevada,home
+2022,1,401442037,New Mexico State,Bowling Green,away
+2022,1,401411091,North Carolina,Florida A&M,home
+2022,1,401411095,North Carolina,App State,away
+2022,1,401470891,North Carolina,Oregon,home
+2022,1,401426531,North Texas,UTEP,away
+2022,1,401426539,North Texas,SMU,home
+2022,1,401442001,North Texas,Boise State,away
+2022,1,401404124,Notre Dame,Ohio State,away
+2022,1,401442036,Notre Dame,South Carolina,away
+2022,1,401426536,Ohio,Florida Atlantic,home
+2022,1,401443543,Ohio,Wyoming,away
+2022,1,401404124,Ohio State,Notre Dame,home
+2022,1,401442015,Ohio State,Georgia,away
+2022,1,401426541,Oklahoma,UTEP,home
+2022,1,401442033,Oklahoma,Florida State,away
+2022,1,401416569,Oklahoma State,Central Michigan,home
+2022,1,401442005,Oklahoma State,Wisconsin,home
+2022,1,401403860,Ole Miss,Troy,home
+2022,1,401442031,Ole Miss,Texas Tech,home
+2022,1,401403858,Oregon,Georgia,away
+2022,1,401470891,Oregon,North Carolina,away
+2022,1,401403969,Oregon State,Boise State,home
+2022,1,401441999,Oregon State,Florida,home
+2022,1,401405064,Penn State,Purdue,away
+2022,1,401442014,Penn State,Utah,away
+2022,1,401411092,Pittsburgh,West Virginia,home
+2022,1,401443542,Pittsburgh,UCLA,away
+2022,1,401405064,Purdue,Penn State,home
+2022,1,401442012,Purdue,LSU,home
+2022,1,401426540,Rice,USC,away
+2022,1,401442041,Rice,Southern Miss,away
+2022,1,401426539,SMU,North Texas,away
+2022,1,401441997,SMU,BYU,away
+2022,1,401403967,San Diego State,Arizona,home
+2022,1,401442009,San Diego State,Middle Tennessee,home
+2022,1,401415213,San José State,Portland State,home
+2022,1,401442004,San José State,Eastern Michigan,home
+2022,1,401421116,South Alabama,Nicholls,home
+2022,1,401442039,South Alabama,Western Kentucky,home
+2022,1,401403863,South Carolina,Georgia State,home
+2022,1,401442036,South Carolina,Notre Dame,home
+2022,1,401404157,Southern Miss,Liberty,home
+2022,1,401442041,Southern Miss,Rice,home
+2022,1,401411099,Syracuse,Louisville,home
+2022,1,401442032,Syracuse,Minnesota,away
+2022,1,401403966,TCU,Colorado,away
+2022,1,401442010,TCU,Georgia,away
+2022,1,401442016,TCU,Michigan,away
+2022,1,401403864,Tennessee,Ball State,home
+2022,1,401442019,Tennessee,Clemson,away
+2022,1,401404059,Texas,UL Monroe,home
+2022,1,401442034,Texas,Washington,away
+2022,1,401404055,Texas Tech,Murray State,home
+2022,1,401442031,Texas Tech,Ole Miss,away
+2022,1,401441990,Toledo,Long Island University,home
+2022,1,401442006,Toledo,Liberty,home
+2022,1,401403860,Troy,Ole Miss,away
+2022,1,401441994,Troy,UTSA,home
+2022,1,401414778,Tulane,Massachusetts,home
+2022,1,401442013,Tulane,USC,away
+2022,1,401426534,UAB,Alabama A&M,home
+2022,1,401441993,UAB,Miami (OH),home
+2022,1,401415610,UCF,South Carolina State,home
+2022,1,401442008,UCF,Duke,away
+2022,1,401403971,UCLA,Bowling Green,home
+2022,1,401443542,UCLA,Pittsburgh,home
+2022,1,401404146,UConn,Utah State,away
+2022,1,401404147,UConn,Central Connecticut,home
+2022,1,401442003,UConn,Marshall,home
+2022,1,401426540,USC,Rice,home
+2022,1,401442013,USC,Tulane,home
+2022,1,401426531,UTEP,North Texas,home
+2022,1,401426541,UTEP,Oklahoma,away
+2022,1,401426542,UTSA,Houston,home
+2022,1,401441994,UTSA,Troy,away
+2022,1,401403857,Utah,Florida,away
+2022,1,401442014,Utah,Penn State,home
+2022,1,401403854,Utah State,Alabama,away
+2022,1,401404146,Utah State,UConn,home
+2022,1,401442000,Utah State,Memphis,home
+2022,1,401403853,Vanderbilt,Hawai'i,away
+2022,1,401403866,Vanderbilt,Elon,home
+2022,1,401411093,Wake Forest,VMI,home
+2022,1,401442007,Wake Forest,Missouri,away
+2022,1,401403973,Washington,Kent State,home
+2022,1,401442034,Washington,Texas,home
+2022,1,401403974,Washington State,Idaho,home
+2022,1,401442038,Washington State,Fresno State,away
+2022,1,401426532,Western Kentucky,Austin Peay,home
+2022,1,401426543,Western Kentucky,Hawai'i,away
+2022,1,401442039,Western Kentucky,South Alabama,away
+2022,1,401405065,Wisconsin,Illinois State,home
+2022,1,401442005,Wisconsin,Oklahoma State,away
+2022,1,401405058,Wyoming,Illinois,away
+2022,1,401415211,Wyoming,Tulsa,home
+2022,1,401443543,Wyoming,Ohio,home
+2023,1,401532570,Air Force,Robert Morris,home
+2023,1,401551742,Air Force,James Madison,home
+2023,1,401520149,Alabama,Middle Tennessee,home
+2023,1,401551786,Alabama,Michigan,away
+2023,1,401531835,App State,Gardner-Webb,home
+2023,1,401551731,App State,Miami (OH),home
+2023,1,401523989,Arizona,Northern Arizona,home
+2023,1,401551765,Arizona,Oklahoma,away
+2023,1,401525822,Arkansas State,Oklahoma,away
+2023,1,401551741,Arkansas State,Northern Illinois,away
+2023,1,401520151,Auburn,Massachusetts,home
+2023,1,401551770,Auburn,Maryland,away
+2023,1,401523997,Boise State,Washington,away
+2023,1,401551752,Boise State,UCLA,home
+2023,1,401525464,Boston College,Northern Illinois,home
+2023,1,401551750,Boston College,SMU,home
+2023,1,401520160,Bowling Green,Liberty,away
+2023,1,401551756,Bowling Green,Minnesota,away
+2023,1,401523991,California,North Texas,away
+2023,1,401551753,California,Texas Tech,away
+2023,1,401525468,Clemson,Duke,away
+2023,1,401551766,Clemson,Kentucky,away
+2023,1,401523995,Coastal Carolina,UCLA,away
+2023,1,401551746,Coastal Carolina,San José State,away
+2023,1,401525468,Duke,Clemson,home
+2023,1,401551739,Duke,Troy,home
+2023,1,401532394,Eastern Michigan,Howard,home
+2023,1,401551755,Eastern Michigan,South Alabama,home
+2023,1,401520146,Florida International,Louisiana Tech,away
+2023,1,401520153,Florida International,Maine,home
+2023,1,401520182,Florida State,LSU,home
+2023,1,401551773,Florida State,Georgia,home
+2023,1,401520170,Fresno State,Purdue,away
+2023,1,401551732,Fresno State,New Mexico State,home
+2023,1,401520154,Georgia,UT Martin,home
+2023,1,401551773,Georgia,Florida State,away
+2023,1,401531836,Georgia Southern,The Citadel,home
+2023,1,401551733,Georgia Southern,Ohio,away
+2023,1,401531834,Georgia State,Rhode Island,home
+2023,1,401551743,Georgia State,Utah State,away
+2023,1,401525462,Georgia Tech,Louisville,home
+2023,1,401551754,Georgia Tech,UCF,away
+2023,1,401520147,Hawai'i,Vanderbilt,away
+2023,1,401523988,Hawai'i,Stanford,home
+2023,1,401520157,Iowa,Utah State,home
+2023,1,401551780,Iowa,Tennessee,away
+2023,1,401525820,Iowa State,Northern Iowa,home
+2023,1,401551767,Iowa State,Memphis,home
+2023,1,401520145,Jacksonville State,UTEP,home
+2023,1,401520158,Jacksonville State,East Tennessee State,home
+2023,1,401551751,Jacksonville State,Louisiana,away
+2023,1,401531837,James Madison,Bucknell,home
+2023,1,401551742,James Madison,Air Force,away
+2023,1,401525815,Kansas,Missouri State,home
+2023,1,401551757,Kansas,UNLV,away
+2023,1,401525821,Kansas State,Southeast Missouri State,home
+2023,1,401551764,Kansas State,NC State,home
+2023,1,401520159,Kentucky,Ball State,home
+2023,1,401551766,Kentucky,Clemson,home
+2023,1,401520182,LSU,Florida State,away
+2023,1,401551778,LSU,Wisconsin,home
+2023,1,401520160,Liberty,Bowling Green,home
+2023,1,401551782,Liberty,Oregon,away
+2023,1,401531839,Louisiana,Northwestern State,home
+2023,1,401551751,Louisiana,Jacksonville State,home
+2023,1,401520146,Louisiana Tech,Florida International,home
+2023,1,401520172,Louisiana Tech,SMU,away
+2023,1,401525462,Louisville,Georgia Tech,away
+2023,1,401581109,Louisville,USC,away
+2023,1,401531838,Marshall,UAlbany,home
+2023,1,401551735,Marshall,UTSA,home
+2023,1,401520161,Maryland,Towson,home
+2023,1,401551770,Maryland,Auburn,home
+2023,1,401520151,Massachusetts,Auburn,away
+2023,1,401525450,Massachusetts,New Mexico State,away
+2023,1,401531426,Memphis,Bethune-Cookman,home
+2023,1,401551767,Memphis,Iowa State,away
+2023,1,401525463,Miami,Miami (OH),home
+2023,1,401551762,Miami,Rutgers,home
+2023,1,401525463,Miami (OH),Miami,away
+2023,1,401551731,Miami (OH),App State,away
+2023,1,401520162,Michigan,East Carolina,home
+2023,1,401551786,Michigan,Alabama,home
+2023,1,401551789,Michigan,Washington,home
+2023,1,401520148,Minnesota,Nebraska,home
+2023,1,401551756,Minnesota,Bowling Green,home
+2023,1,401520165,Missouri,South Dakota,home
+2023,1,401551768,Missouri,Ohio State,away
+2023,1,401520174,NC State,UConn,away
+2023,1,401551764,NC State,Kansas State,away
+2023,1,401520166,New Mexico State,Western Illinois,home
+2023,1,401525450,New Mexico State,Massachusetts,home
+2023,1,401551732,New Mexico State,Fresno State,away
+2023,1,401520167,North Carolina,South Carolina,home
+2023,1,401551761,North Carolina,West Virginia,away
+2023,1,401525464,Northern Illinois,Boston College,away
+2023,1,401551741,Northern Illinois,Arkansas State,home
+2023,1,401520171,Northwestern,Rutgers,away
+2023,1,401551744,Northwestern,Utah,home
+2023,1,401525434,Notre Dame,Navy,home
+2023,1,401525435,Notre Dame,Tennessee State,home
+2023,1,401551798,Notre Dame,Oregon State,home
+2023,1,401532392,Ohio,San Diego State,away
+2023,1,401532395,Ohio,Long Island University,home
+2023,1,401551733,Ohio,Georgia Southern,home
+2023,1,401520156,Ohio State,Indiana,away
+2023,1,401551768,Ohio State,Missouri,home
+2023,1,401525822,Oklahoma,Arkansas State,home
+2023,1,401551765,Oklahoma,Arizona,home
+2023,1,401525823,Oklahoma State,Central Arkansas,home
+2023,1,401551749,Oklahoma State,Texas A&M,home
+2023,1,401525467,Old Dominion,Virginia Tech,away
+2023,1,401551469,Old Dominion,Western Kentucky,home
+2023,1,401520168,Ole Miss,Mercer,home
+2023,1,401551769,Ole Miss,Penn State,away
+2023,1,401523992,Oregon,Portland State,home
+2023,1,401551782,Oregon,Liberty,home
+2023,1,401532573,Oregon State,San José State,away
+2023,1,401551798,Oregon State,Notre Dame,away
+2023,1,401520169,Penn State,West Virginia,home
+2023,1,401551769,Penn State,Ole Miss,home
+2023,1,401525824,Rice,Texas,away
+2023,1,401551748,Rice,Texas State,home
+2023,1,401520171,Rutgers,Northwestern,home
+2023,1,401551762,Rutgers,Miami,away
+2023,1,401520172,SMU,Louisiana Tech,home
+2023,1,401551750,SMU,Boston College,away
+2023,1,401532392,San Diego State,Ohio,home
+2023,1,401532571,San Diego State,Idaho State,home
+2023,1,401523986,San José State,USC,away
+2023,1,401532573,San José State,Oregon State,home
+2023,1,401551746,San José State,Coastal Carolina,home
+2023,1,401531347,South Alabama,Tulane,away
+2023,1,401551755,South Alabama,Eastern Michigan,away
+2023,1,401520181,South Florida,Western Kentucky,away
+2023,1,401551737,South Florida,Syracuse,away
+2023,1,401525466,Syracuse,Colgate,home
+2023,1,401551737,Syracuse,South Florida,home
+2023,1,401520179,Tennessee,Virginia,home
+2023,1,401551780,Tennessee,Iowa,home
+2023,1,401525824,Texas,Rice,home
+2023,1,401551788,Texas,Washington,away
+2023,1,401520173,Texas A&M,New Mexico,home
+2023,1,401551749,Texas A&M,Oklahoma State,away
+2023,1,401525817,Texas State,Baylor,away
+2023,1,401551748,Texas State,Rice,away
+2023,1,401525825,Texas Tech,Wyoming,away
+2023,1,401551753,Texas Tech,California,home
+2023,1,401520155,Toledo,Illinois,away
+2023,1,401554566,Toledo,Wyoming,away
+2023,1,401531841,Troy,Stephen F. Austin,home
+2023,1,401551739,Troy,Duke,away
+2023,1,401531347,Tulane,South Alabama,home
+2023,1,401551758,Tulane,Virginia Tech,home
+2023,1,401525816,UCF,Kent State,home
+2023,1,401551754,UCF,Georgia Tech,home
+2023,1,401523995,UCLA,Coastal Carolina,home
+2023,1,401551752,UCLA,Boise State,away
+2023,1,401532572,UNLV,Bryant,home
+2023,1,401551757,UNLV,Kansas,home
+2023,1,401523986,USC,San José State,home
+2023,1,401523996,USC,Nevada,home
+2023,1,401581109,USC,Louisville,home
+2023,1,401520145,UTEP,Jacksonville State,away
+2023,1,401520177,UTEP,Incarnate Word,home
+2023,1,401525819,UTSA,Houston,away
+2023,1,401551735,UTSA,Marshall,away
+2023,1,401520176,Utah,Florida,home
+2023,1,401551744,Utah,Northwestern,away
+2023,1,401520157,Utah State,Iowa,away
+2023,1,401551743,Utah State,Georgia State,home
+2023,1,401520147,Vanderbilt,Hawai'i,home
+2023,1,401520178,Vanderbilt,Alabama A&M,home
+2023,1,401525467,Virginia Tech,Old Dominion,home
+2023,1,401551758,Virginia Tech,Tulane,away
+2023,1,401523997,Washington,Boise State,home
+2023,1,401551788,Washington,Texas,home
+2023,1,401551789,Washington,Michigan,away
+2023,1,401520169,West Virginia,Penn State,away
+2023,1,401551761,West Virginia,North Carolina,home
+2023,1,401520181,Western Kentucky,South Florida,home
+2023,1,401551469,Western Kentucky,Old Dominion,away
+2023,1,401520180,Wisconsin,Buffalo,home
+2023,1,401551778,Wisconsin,LSU,away
+2023,1,401525825,Wyoming,Texas Tech,home
+2023,1,401554566,Wyoming,Toledo,home
+2024,1,401628319,Alabama,Western Kentucky,home
+2024,1,401677102,Alabama,Michigan,away
+2024,1,401636609,Arizona State,Wyoming,home
+2024,1,401677182,Arizona State,Texas,home
+2024,1,401628320,Arkansas,Arkansas-Pine Bluff,home
+2024,1,401677092,Arkansas,Texas Tech,home
+2024,1,401632064,Arkansas State,Central Arkansas,home
+2024,1,401677089,Arkansas State,Bowling Green,away
+2024,1,401645319,Army,Lehigh,home
+2024,1,401677100,Army,Louisiana Tech,home
+2024,1,401634240,BYU,Southern Illinois,home
+2024,1,401677099,BYU,Colorado,away
+2024,1,401636610,Baylor,Tarleton State,home
+2024,1,401677104,Baylor,LSU,away
+2024,1,401643700,Boise State,Georgia Southern,away
+2024,1,401677181,Boise State,Penn State,home
+2024,1,401634306,Boston College,Florida State,away
+2024,1,401677095,Boston College,Nebraska,away
+2024,1,401644729,Bowling Green,Fordham,home
+2024,1,401677089,Bowling Green,Arkansas State,home
+2024,1,401644727,Buffalo,Lafayette,home
+2024,1,401677108,Buffalo,Liberty,away
+2024,1,401634301,California,UC Davis,home
+2024,1,401677081,California,UNLV,away
+2024,1,401628323,Clemson,Georgia,away
+2024,1,401677176,Clemson,Texas,away
+2024,1,401640998,Coastal Carolina,Jacksonville State,away
+2024,1,401677085,Coastal Carolina,UTSA,away
+2024,1,401634206,Colorado,North Dakota State,home
+2024,1,401677099,Colorado,BYU,home
+2024,1,401628331,Colorado State,Texas,away
+2024,1,401677188,Colorado State,Miami (OH),home
+2024,1,401628584,Duke,Elon,home
+2024,1,401677105,Duke,Ole Miss,away
+2024,1,401645320,East Carolina,Norfolk State,home
+2024,1,401677098,East Carolina,NC State,away
+2024,1,401628322,Florida,Miami,home
+2024,1,401677084,Florida,Tulane,home
+2024,1,401634306,Florida State,Boston College,home
+2024,1,401635525,Florida State,Georgia Tech,away
+2024,1,401628452,Fresno State,Michigan,away
+2024,1,401677086,Fresno State,Northern Illinois,home
+2024,1,401628323,Georgia,Clemson,home
+2024,1,401677184,Georgia,Notre Dame,home
+2024,1,401643700,Georgia Southern,Boise State,home
+2024,1,401677082,Georgia Southern,Sam Houston,away
+2024,1,401634302,Georgia Tech,Georgia State,home
+2024,1,401635525,Georgia Tech,Florida State,home
+2024,1,401677091,Georgia Tech,Vanderbilt,away
+2024,1,401628459,Hawai'i,UCLA,home
+2024,1,401643858,Hawai'i,Delaware State,home
+2024,1,401654845,Illinois,Eastern Illinois,home
+2024,1,401677103,Illinois,South Carolina,home
+2024,1,401628449,Indiana,Florida International,home
+2024,1,401677179,Indiana,Notre Dame,away
+2024,1,401628450,Iowa,Illinois State,home
+2024,1,401677101,Iowa,Missouri,away
+2024,1,401634197,Iowa State,North Dakota,home
+2024,1,401677097,Iowa State,Miami,away
+2024,1,401640998,Jacksonville State,Coastal Carolina,home
+2024,1,401677083,Jacksonville State,Ohio,home
+2024,1,401643774,James Madison,Charlotte,away
+2024,1,401677079,James Madison,Western Kentucky,home
+2024,1,401636612,Kansas State,UT Martin,home
+2024,1,401677088,Kansas State,Rutgers,home
+2024,1,401628334,LSU,USC,home
+2024,1,401677104,LSU,Baylor,home
+2024,1,401628586,Liberty,Campbell,home
+2024,1,401677108,Liberty,Buffalo,home
+2024,1,401636380,Louisiana,Grambling,home
+2024,1,401677096,Louisiana,TCU,away
+2024,1,401641007,Louisiana Tech,Nicholls,home
+2024,1,401677100,Louisiana Tech,Army,away
+2024,1,401632062,Louisville,Austin Peay,home
+2024,1,401677190,Louisville,Washington,away
+2024,1,401645321,Memphis,North Alabama,home
+2024,1,401677080,Memphis,West Virginia,away
+2024,1,401628322,Miami,Florida,away
+2024,1,401677097,Miami,Iowa State,home
+2024,1,401644683,Miami (OH),Northwestern,away
+2024,1,401677188,Miami (OH),Colorado State,away
+2024,1,401628452,Michigan,Fresno State,home
+2024,1,401677102,Michigan,Alabama,home
+2024,1,401628448,Minnesota,North Carolina,home
+2024,1,401677107,Minnesota,Virginia Tech,away
+2024,1,401628327,Missouri,Murray State,home
+2024,1,401677101,Missouri,Iowa,home
+2024,1,401634299,NC State,Western Carolina,home
+2024,1,401677098,NC State,East Carolina,home
+2024,1,401645322,Navy,Bucknell,home
+2024,1,401677090,Navy,Oklahoma,home
+2024,1,401628454,Nebraska,UTEP,home
+2024,1,401677095,Nebraska,Boston College,home
+2024,1,401643696,Nevada,SMU,home
+2024,1,401643701,Nevada,Troy,away
+2024,1,401636608,New Mexico,Arizona,away
+2024,1,401643697,New Mexico,Montana State,home
+2024,1,401628448,North Carolina,Minnesota,away
+2024,1,401677094,North Carolina,UConn,home
+2024,1,401643775,North Texas,South Alabama,away
+2024,1,401677106,North Texas,Texas State,away
+2024,1,401644731,Northern Illinois,Western Illinois,home
+2024,1,401677086,Northern Illinois,Fresno State,away
+2024,1,401628332,Notre Dame,Texas A&M,away
+2024,1,401677179,Notre Dame,Indiana,home
+2024,1,401677184,Notre Dame,Georgia,away
+2024,1,401677189,Notre Dame,Penn State,away
+2024,1,401677192,Notre Dame,Ohio State,home
+2024,1,401634304,Ohio,Syracuse,away
+2024,1,401677083,Ohio,Jacksonville State,away
+2024,1,401628455,Ohio State,Akron,home
+2024,1,401677177,Ohio State,Tennessee,home
+2024,1,401677183,Ohio State,Oregon,away
+2024,1,401677191,Ohio State,Texas,away
+2024,1,401677192,Ohio State,Notre Dame,away
+2024,1,401628328,Oklahoma,Temple,home
+2024,1,401677090,Oklahoma,Navy,away
+2024,1,401628325,Ole Miss,Furman,home
+2024,1,401677105,Ole Miss,Duke,home
+2024,1,401628456,Oregon,Idaho,home
+2024,1,401677183,Oregon,Ohio State,home
+2024,1,401628457,Penn State,West Virginia,away
+2024,1,401677178,Penn State,SMU,home
+2024,1,401677181,Penn State,Boise State,away
+2024,1,401677189,Penn State,Notre Dame,home
+2024,1,401634305,Pittsburgh,Kent State,home
+2024,1,401677180,Pittsburgh,Toledo,away
+2024,1,401628458,Rutgers,Howard,home
+2024,1,401677088,Rutgers,Kansas State,away
+2024,1,401634303,SMU,Houston Christian,home
+2024,1,401643696,SMU,Nevada,away
+2024,1,401677178,SMU,Penn State,away
+2024,1,401641039,Sam Houston,Rice,away
+2024,1,401677082,Sam Houston,Georgia Southern,home
+2024,1,401643698,San José State,Sacramento State,home
+2024,1,401677087,San José State,South Florida,home
+2024,1,401643775,South Alabama,North Texas,home
+2024,1,401677077,South Alabama,Western Michigan,away
+2024,1,401628329,South Carolina,Old Dominion,home
+2024,1,401677103,South Carolina,Illinois,away
+2024,1,401636363,South Florida,Bethune-Cookman,home
+2024,1,401677087,South Florida,San José State,away
+2024,1,401634304,Syracuse,Ohio,home
+2024,1,401729867,Syracuse,Washington State,away
+2024,1,401634300,TCU,Stanford,away
+2024,1,401677096,TCU,Louisiana,home
+2024,1,401628330,Tennessee,Chattanooga,home
+2024,1,401677177,Tennessee,Ohio State,away
+2024,1,401628331,Texas,Colorado State,home
+2024,1,401677176,Texas,Clemson,home
+2024,1,401677182,Texas,Arizona State,away
+2024,1,401677191,Texas,Ohio State,home
+2024,1,401628332,Texas A&M,Notre Dame,home
+2024,1,401677093,Texas A&M,USC,away
+2024,1,401643776,Texas State,Lamar,home
+2024,1,401677106,Texas State,North Texas,home
+2024,1,401636613,Texas Tech,Abilene Christian,home
+2024,1,401677092,Texas Tech,Arkansas,away
+2024,1,401644728,Toledo,Duquesne,home
+2024,1,401677180,Toledo,Pittsburgh,home
+2024,1,401645317,Tulane,SE Louisiana,home
+2024,1,401677084,Tulane,Florida,away
+2024,1,401628451,UConn,Maryland,away
+2024,1,401677094,UConn,North Carolina,away
+2024,1,401636611,UNLV,Houston,away
+2024,1,401677081,UNLV,California,home
+2024,1,401628334,USC,LSU,away
+2024,1,401677093,USC,Texas A&M,home
+2024,1,401641015,UTSA,Kennesaw State,home
+2024,1,401677085,UTSA,Coastal Carolina,home
+2024,1,401628333,Vanderbilt,Virginia Tech,home
+2024,1,401677091,Vanderbilt,Georgia Tech,home
+2024,1,401628333,Virginia Tech,Vanderbilt,away
+2024,1,401677107,Virginia Tech,Minnesota,home
+2024,1,401628460,Washington,Weber State,home
+2024,1,401677190,Washington,Louisville,home
+2024,1,401637159,Washington State,Portland State,home
+2024,1,401729867,Washington State,Syracuse,home
+2024,1,401628457,West Virginia,Penn State,home
+2024,1,401677080,West Virginia,Memphis,home
+2024,1,401628319,Western Kentucky,Alabama,away
+2024,1,401677079,Western Kentucky,James Madison,away
+2024,1,401628461,Western Michigan,Wisconsin,away
+2024,1,401677077,Western Michigan,South Alabama,home
+2025,1,401752665,Alabama,Florida State,away
+2025,1,401769072,Alabama,Indiana,away
+2025,1,401779840,Alabama,Oklahoma,away
+2025,1,401761589,App State,Charlotte,away
+2025,1,401778324,App State,Georgia Southern,home
+2025,1,401756849,Arizona,Hawai'i,home
+2025,1,401831583,Arizona,SMU,away
+2025,1,401756850,Arizona State,Northern Arizona,home
+2025,1,401778329,Arizona State,Duke,away
+2025,1,401761591,Arkansas State,Southeast Missouri State,home
+2025,1,401838053,Arkansas State,Missouri State,home
+2025,1,401762432,Army,Tarleton State,home
+2025,1,401778318,Army,UConn,home
+2025,1,401756851,BYU,Portland State,home
+2025,1,401778319,BYU,Georgia Tech,home
+2025,1,401762522,Boise State,South Florida,away
+2025,1,401778302,Boise State,Washington,away
+2025,1,401752936,California,Oregon State,away
+2025,1,401778312,California,Hawai'i,away
+2025,1,401760358,Central Michigan,San José State,away
+2025,1,401778313,Central Michigan,Northwestern,away
+2025,1,401752796,Cincinnati,Nebraska,home
+2025,1,401778333,Cincinnati,Navy,home
+2025,1,401752671,Clemson,LSU,home
+2025,1,401778317,Clemson,Penn State,home
+2025,1,401754616,Coastal Carolina,Virginia,away
+2025,1,401778325,Coastal Carolina,Louisiana Tech,away
+2025,1,401757219,Delaware,Delaware State,home
+2025,1,401778305,Delaware,Louisiana,home
+2025,1,401754517,Duke,Elon,home
+2025,1,401778329,Duke,Arizona State,home
+2025,1,401754373,East Carolina,NC State,away
+2025,1,401778316,East Carolina,Pittsburgh,home
+2025,1,401766898,Florida International,Bethune-Cookman,home
+2025,1,401778315,Florida International,UTSA,away
+2025,1,401756847,Fresno State,Kansas,away
+2025,1,401760361,Fresno State,Georgia Southern,home
+2025,1,401778320,Fresno State,Miami (OH),home
+2025,1,401752669,Georgia,Marshall,home
+2025,1,401769073,Georgia,Ole Miss,home
+2025,1,401760361,Georgia Southern,Fresno State,away
+2025,1,401778324,Georgia Southern,App State,away
+2025,1,401754375,Georgia Tech,Colorado,away
+2025,1,401778319,Georgia Tech,BYU,away
+2025,1,401754516,Hawai'i,Stanford,home
+2025,1,401756849,Hawai'i,Arizona,away
+2025,1,401778312,Hawai'i,California,home
+2025,1,401756852,Houston,Stephen F. Austin,home
+2025,1,401778323,Houston,LSU,home
+2025,1,401752795,Illinois,Western Illinois,home
+2025,1,401778326,Illinois,Tennessee,home
+2025,1,401752806,Indiana,Old Dominion,home
+2025,1,401769072,Indiana,Alabama,home
+2025,1,401769074,Indiana,Oregon,home
+2025,1,401769076,Indiana,Miami,home
+2025,1,401752799,Iowa,UAlbany,home
+2025,1,401778328,Iowa,Vanderbilt,away
+2025,1,401756846,Iowa State,Kansas State,away
+2025,1,401756853,Iowa State,South Dakota,home
+2025,1,401756848,Jacksonville State,UCF,away
+2025,1,401778303,Jacksonville State,Troy,home
+2025,1,401761590,James Madison,Weber State,home
+2025,1,401779843,James Madison,Oregon,away
+2025,1,401756847,Kansas,Fresno State,home
+2025,1,401756854,Kansas,Wagner,home
+2025,1,401756846,Kansas State,Iowa State,home
+2025,1,401756855,Kansas State,North Dakota,home
+2025,1,401754374,Kennesaw State,Wake Forest,away
+2025,1,401778306,Kennesaw State,Western Michigan,away
+2025,1,401752671,LSU,Clemson,away
+2025,1,401778323,LSU,Houston,away
+2025,1,401761592,Louisiana,Rice,home
+2025,1,401778305,Louisiana,Delaware,away
+2025,1,401757221,Louisiana Tech,SE Louisiana,home
+2025,1,401778325,Louisiana Tech,Coastal Carolina,home
+2025,1,401754519,Louisville,Eastern Kentucky,home
+2025,1,401778309,Louisville,Toledo,home
+2025,1,401762433,Memphis,Chattanooga,home
+2025,1,401778307,Memphis,NC State,away
+2025,1,401754522,Miami,Notre Dame,home
+2025,1,401769070,Miami,Ohio State,away
+2025,1,401769075,Miami,Ole Miss,away
+2025,1,401769076,Miami,Indiana,away
+2025,1,401779841,Miami,Texas A&M,away
+2025,1,401762791,Miami (OH),Wisconsin,away
+2025,1,401778320,Miami (OH),Fresno State,away
+2025,1,401752808,Michigan,New Mexico,home
+2025,1,401778330,Michigan,Texas,away
+2025,1,401752793,Minnesota,Buffalo,home
+2025,1,401778314,Minnesota,New Mexico,home
+2025,1,401752673,Mississippi State,Southern Miss,away
+2025,1,401778334,Mississippi State,Wake Forest,home
+2025,1,401752674,Missouri,Central Arkansas,home
+2025,1,401778322,Missouri,Virginia,home
+2025,1,401752798,Missouri State,USC,away
+2025,1,401838053,Missouri State,Arkansas State,away
+2025,1,401754373,NC State,East Carolina,home
+2025,1,401778307,NC State,Memphis,home
+2025,1,401762434,Navy,VMI,home
+2025,1,401778333,Navy,Cincinnati,away
+2025,1,401752796,Nebraska,Cincinnati,away
+2025,1,401778331,Nebraska,Utah,away
+2025,1,401752808,New Mexico,Michigan,away
+2025,1,401778314,New Mexico,Minnesota,away
+2025,1,401762435,North Texas,Lamar,home
+2025,1,401778321,North Texas,San Diego State,away
+2025,1,401752803,Northwestern,Tulane,away
+2025,1,401778313,Northwestern,Central Michigan,home
+2025,1,401752794,Ohio,Rutgers,away
+2025,1,401778311,Ohio,UNLV,home
+2025,1,401752677,Ohio State,Texas,home
+2025,1,401769070,Ohio State,Miami,home
+2025,1,401752675,Oklahoma,Illinois State,home
+2025,1,401779840,Oklahoma,Alabama,home
+2025,1,401752806,Old Dominion,Indiana,away
+2025,1,401778304,Old Dominion,South Florida,away
+2025,1,401752672,Ole Miss,Georgia State,home
+2025,1,401769073,Ole Miss,Georgia,away
+2025,1,401769075,Ole Miss,Miami,home
+2025,1,401779842,Ole Miss,Tulane,home
+2025,1,401752804,Oregon,Montana State,home
+2025,1,401769071,Oregon,Texas Tech,away
+2025,1,401769074,Oregon,Indiana,away
+2025,1,401779843,Oregon,James Madison,home
+2025,1,401752807,Penn State,Nevada,home
+2025,1,401778317,Penn State,Clemson,away
+2025,1,401754520,Pittsburgh,Duquesne,home
+2025,1,401778316,Pittsburgh,East Carolina,away
+2025,1,401761592,Rice,Louisiana,away
+2025,1,401778332,Rice,Texas State,away
+2025,1,401754521,SMU,East Texas A&M,home
+2025,1,401831583,SMU,Arizona,home
+2025,1,401757218,Sam Houston,Western Kentucky,away
+2025,1,401757224,Sam Houston,UNLV,home
+2025,1,401760357,San Diego State,Stony Brook,home
+2025,1,401778321,San Diego State,North Texas,home
+2025,1,401762522,South Florida,Boise State,home
+2025,1,401778304,South Florida,Old Dominion,home
+2025,1,401752673,Southern Miss,Mississippi State,home
+2025,1,401778310,Southern Miss,Western Kentucky,home
+2025,1,401754523,TCU,North Carolina,away
+2025,1,401778327,TCU,USC,home
+2025,1,401752676,Tennessee,Syracuse,home
+2025,1,401778326,Tennessee,Illinois,away
+2025,1,401752677,Texas,Ohio State,away
+2025,1,401778330,Texas,Michigan,home
+2025,1,401752678,Texas A&M,UTSA,home
+2025,1,401779841,Texas A&M,Miami,home
+2025,1,401761594,Texas State,Eastern Michigan,home
+2025,1,401778332,Texas State,Rice,home
+2025,1,401756877,Texas Tech,Arkansas-Pine Bluff,home
+2025,1,401769071,Texas Tech,Oregon,home
+2025,1,401752670,Toledo,Kentucky,away
+2025,1,401778309,Toledo,Louisville,away
+2025,1,401761595,Troy,Nicholls,home
+2025,1,401778303,Troy,Jacksonville State,away
+2025,1,401752803,Tulane,Northwestern,home
+2025,1,401779842,Tulane,Ole Miss,away
+2025,1,401757167,UConn,Central Connecticut,home
+2025,1,401778318,UConn,Army,away
+2025,1,401757224,UNLV,Sam Houston,away
+2025,1,401760371,UNLV,Idaho State,home
+2025,1,401778311,UNLV,Ohio,away
+2025,1,401752798,USC,Missouri State,home
+2025,1,401778327,USC,TCU,away
+2025,1,401752678,UTSA,Texas A&M,away
+2025,1,401778315,UTSA,Florida International,home
+2025,1,401752800,Utah,UCLA,away
+2025,1,401778331,Utah,Nebraska,home
+2025,1,401757225,Utah State,UTEP,home
+2025,1,401778308,Utah State,Washington State,home
+2025,1,401752679,Vanderbilt,Charleston Southern,home
+2025,1,401778328,Vanderbilt,Iowa,home
+2025,1,401754616,Virginia,Coastal Carolina,home
+2025,1,401778322,Virginia,Missouri,away
+2025,1,401754374,Wake Forest,Kennesaw State,home
+2025,1,401778334,Wake Forest,Mississippi State,away
+2025,1,401752805,Washington,Colorado State,home
+2025,1,401778302,Washington,Boise State,home
+2025,1,401752947,Washington State,Idaho,home
+2025,1,401778308,Washington State,Utah State,away
+2025,1,401757218,Western Kentucky,Sam Houston,home
+2025,1,401757226,Western Kentucky,North Alabama,home
+2025,1,401778310,Western Kentucky,Southern Miss,away
+2025,1,401752802,Western Michigan,Michigan State,away
+2025,1,401778306,Western Michigan,Kennesaw State,home
+2026,1,401864495,Eastern Michigan,San José State,home
+2026,1,401866408,Eastern Michigan,Sacramento State,home
+2026,1,401858212,Florida State,SMU,home
+2026,1,401864570,Florida State,New Mexico State,home
+2026,1,401858201,Hawai'i,Stanford,away
+2026,1,401864497,Hawai'i,UNLV,home
+2026,1,401864577,Jacksonville State,North Dakota State,away
+2026,1,401868140,Jacksonville State,Eastern Kentucky,home
+2026,1,401862693,Memphis,UNLV,away
+2026,1,401862695,Memphis,Arkansas State,home
+2026,1,401864570,New Mexico State,Florida State,away
+2026,1,401870790,New Mexico State,Mercyhurst,home
+2026,1,401864499,North Dakota State,Fordham,home
+2026,1,401864577,North Dakota State,Jacksonville State,home
+2026,1,401866408,Sacramento State,Eastern Michigan,away
+2026,1,401866411,Sacramento State,Mississippi Valley State,home
+2026,1,401864494,San José State,USC,away
+2026,1,401864495,San José State,Eastern Michigan,away
+2026,1,401858201,Stanford,Hawai'i,home
+2026,1,401858206,Stanford,Miami,home
+2026,1,401862693,UNLV,Memphis,home
+2026,1,401864497,UNLV,Hawai'i,away
+2026,1,401858436,USC,Fresno State,home
+2026,1,401864494,USC,San José State,home

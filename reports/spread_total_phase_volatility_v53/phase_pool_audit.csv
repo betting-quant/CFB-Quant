@@ -1,0 +1,16 @@
+phase,evaluation_games,prior_phase_games,prior_total_games,phase_sampling_applied,evaluated_season,max_residual_season
+postseason,26,40,774,True,2020,2019
+regular_week_5_plus,447,546,774,True,2020,2019
+regular_weeks_1_4,61,188,774,True,2020,2019
+postseason,38,66,1308,True,2021,2020
+regular_week_5_plus,527,993,1308,True,2021,2020
+regular_weeks_1_4,205,249,1308,True,2021,2020
+postseason,42,104,2078,True,2022,2021
+regular_week_5_plus,524,1520,2078,True,2022,2021
+regular_weeks_1_4,210,454,2078,True,2022,2021
+postseason,42,146,2854,True,2023,2022
+regular_week_5_plus,534,2044,2854,True,2023,2022
+regular_weeks_1_4,216,664,2854,True,2023,2022
+postseason,46,188,3646,True,2024,2023
+regular_week_5_plus,558,2578,3646,True,2024,2023
+regular_weeks_1_4,194,880,3646,True,2024,2023

@@ -1,0 +1,2 @@
+all_games,games,margin_mae,total_mae,original_margin_mae,original_total_mae,margin_bias,total_bias,margin_80_covered,total_80_covered,margin_lower_tail,margin_upper_tail,total_lower_tail,total_upper_tail,home_win_brier
+all,5990,13.7386,12.9681,13.7414,12.9854,-0.4587,-0.2964,0.8289,0.8259,0.0833,0.0878,0.0833,0.0908,0.1789

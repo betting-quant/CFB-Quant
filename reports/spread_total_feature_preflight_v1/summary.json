@@ -1,0 +1,19 @@
+{
+  "team_game_rows": 21258,
+  "games": 10629,
+  "feature_count": 267,
+  "complete_pairs": 10629,
+  "incomplete_pairs": 0,
+  "opponent_identity_mismatches_on_complete_pairs": 0,
+  "repeated_team_week_rows": 1911,
+  "no_variation_features": 0,
+  "mostly_missing_features_over_50pct": 0,
+  "available_game_time_columns": [],
+  "available_snapshot_time_columns": [],
+  "warnings": [
+    "Rolling features and chronological model training do not prove source availability at historical kickoff.",
+    "Some FBS/FCS matchups may yield incomplete pairs; FBS-only eligibility must be separately verified.",
+    "Comparing with retrospective CFBD ratings can introduce hindsight unless historical snapshots are available.",
+    "Do not declare this model betting-ready based on this preflight."
+  ]
+}

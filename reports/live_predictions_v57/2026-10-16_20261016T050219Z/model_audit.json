@@ -1,0 +1,70 @@
+{
+  "version": "v5.7 research-only",
+  "generated_at_utc": "2026-10-16T05:02:16.165010+00:00",
+  "snapshot_metadata": {
+    "history_games": 10824,
+    "history_team_rows": 21648,
+    "2026_completed_history_games": 455,
+    "2026_history_rows": 910,
+    "historical_files": 13,
+    "slate_date_eastern": "2026-10-16",
+    "asof_utc": "2026-10-16T04:34:15.345800+00:00",
+    "slate_games": 3,
+    "slate_team_rows": 6,
+    "feature_count": 287,
+    "v3_historical_parity": true,
+    "v45_historical_parity": true,
+    "missing_v3_feature_values": 0,
+    "advanced_coverage_2026": [
+      {
+        "season": 2026,
+        "rows": 916,
+        "matched": 910,
+        "coverage_pct": 99.34
+      }
+    ],
+    "no_current_game_outcomes": true,
+    "warnings": [
+      "Historical source snapshots not audited as point-in-time. No models trained or predictions produced.",
+      "Current season 2026 caches can change after games; archive source snapshots before predicting."
+    ],
+    "schedule_sha256": "5b2c66054eeb64c369849b4613bb9b21968b77b20971e1d78544ab5a908e135a",
+    "advanced_2026_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+    "created_at_utc": "2026-10-16T04:41:05.779859+00:00"
+  },
+  "snapshot_validation": {
+    "snapshot_folder": "C:\\Users\\DC\\Documents\\Quant-Models\\CFB-Quant\\reports\\live_feature_bridge_v56\\2026-10-16_20261016T044105Z",
+    "snapshot_sha256": "004f730717003d81e5e593fd529859ff724134c12c7565ecf2ca8f3f5e57b863",
+    "original_games": 3,
+    "excluded_started_games": 0,
+    "started_games_included_as_archive": 0,
+    "eligible_games": 3,
+    "snapshot_asof_utc": "2026-10-16T04:34:15.345800+00:00"
+  },
+  "v3_training": {
+    "training_rows": 20492,
+    "training_seasons": "2014-2025",
+    "features": 267,
+    "excluded_outside_2014_2025": {
+      "2026": 520
+    },
+    "historical_sha256": "4f51a7efbf761de5b50ea78d43ff9cc7d630a1cd0a751c6a5d01da99ac7657cb"
+  },
+  "v45_training": {
+    "training_rows": 20492,
+    "training_seasons": "2014-2025",
+    "features": 287,
+    "excluded_outside_2014_2025": {},
+    "historical_sha256": "5d2faced1e4228678980d66dce7cfa70274e475479deb9ced76a9b59d3c88732"
+  },
+  "residual_calibration": {
+    "residual_games": 4444,
+    "residual_seasons": "2019-2024",
+    "confirmed_fbs_fbs": true,
+    "pairing_sha256": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+    "universe_sha256": "26bc2dfba31df887aff4672798242b1dd14c9ba8b6fba531db8961a460933964"
+  },
+  "samples": 10000,
+  "seed": 57,
+  "disclaimer": "Exploratory probabilities, not prospectively calibrated; no market odds or expected-value claims; historical source timestamps not fully audited."
+}

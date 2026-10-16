@@ -1,0 +1,20 @@
+{
+  "model_input_game_count": 10629,
+  "model_input_team_game_rows": 21258,
+  "repeated_team_week_rows": 1911,
+  "repeated_weeks": [
+    1
+  ],
+  "raw_team_game_files_found": 13,
+  "date_source": null,
+  "selected_kickoff_column": null,
+  "kickoff_field_candidates": {
+    "raw_team_games": [],
+    "matchup_features": []
+  },
+  "games_with_parsed_kickoff": 0,
+  "games_without_parsed_kickoff": 10629,
+  "chronological_inversions_in_model_order": 0,
+  "source_snapshot_columns_in_features": [],
+  "interpretation": "Kickoff times unavailable: ordering not verified; schedule timestamps must be added."
+}

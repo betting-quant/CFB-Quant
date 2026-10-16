@@ -1,0 +1,228 @@
+away_team,home_team,player_name,target,line,over_odds,under_odds,sportsbook
+Northwestern,Indiana,Aidan Chiles,passing_yards,171.5,-115,-115,AiGC
+Northwestern,Indiana,Aidan Chiles,pass_attempts,28.5,-110,-120,AiGC
+Northwestern,Indiana,Aidan Chiles,completions,15.5,100,-130,AiGC
+Northwestern,Indiana,Aidan Chiles,rushing_yards,5.5,-115,-115,AiGC
+Northwestern,Indiana,Aidan Chiles,rush_attempts,8.5,-115,-115,AiGC
+Northwestern,Indiana,Josh Hoover,passing_yards,256.5,-115,-115,AiGC
+Northwestern,Indiana,Josh Hoover,pass_attempts,26.5,-105,-125,AiGC
+Northwestern,Indiana,Josh Hoover,completions,18.5,-135,105,AiGC
+Northwestern,Indiana,Caleb Komolafe,rushing_yards,34.5,-115,-115,AiGC
+Northwestern,Indiana,Caleb Komolafe,rush_attempts,10.5,110,-140,AiGC
+Northwestern,Indiana,Turbo Richard,rushing_yards,88.5,-115,-115,AiGC
+Northwestern,Indiana,Turbo Richard,rush_attempts,15.5,-120,-110,AiGC
+Northwestern,Indiana,Luke Dehnicke,receiving_yards,19.5,-115,-115,AiGC
+Northwestern,Indiana,Caleb Komolafe,receiving_yards,12.5,-115,-115,AiGC
+Northwestern,Indiana,Drew Wagner,receiving_yards,16.5,-115,-115,AiGC
+Northwestern,Indiana,Griffin Wilde,receiving_yards,57.5,-115,-115,AiGC
+Northwestern,Indiana,Charlie Becker,receiving_yards,81.5,-115,-115,AiGC
+Northwestern,Indiana,Nick Marsh,receiving_yards,68.5,-115,-115,AiGC
+Northwestern,Indiana,Shazz Preston,receiving_yards,20.5,-115,-115,AiGC
+Northwestern,Indiana,Turbo Richard,receiving_yards,6.5,-115,-115,AiGC
+Northwestern,Indiana,Luke Dehnicke,receptions,1.5,-170,135,AiGC
+Northwestern,Indiana,Caleb Komolafe,receptions,1.5,-150,120,AiGC
+Northwestern,Indiana,Drew Wagner,receptions,1.5,-180,140,AiGC
+Northwestern,Indiana,Griffin Wilde,receptions,4.5,-115,-115,AiGC
+Northwestern,Indiana,Charlie Becker,receptions,4.5,-135,105,AiGC
+Northwestern,Indiana,Nick Marsh,receptions,5.5,115,-145,AiGC
+Northwestern,Indiana,Shazz Preston,receptions,1.5,-170,135,AiGC
+Northwestern,Indiana,Turbo Richard,receptions,1.5,140,-180,AiGC
+Liberty,Coastal Carolina,Deshawn Purdie,passing_yards,209.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Deuce Bailey,passing_yards,211.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Peyton Jones,rushing_yards,65.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Deshawn Purdie,rushing_yards,21.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Deuce Bailey,rushing_yards,32.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Jevon Edwards,rushing_yards,51.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Makai Jackson,receiving_yards,54.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Jamari Person,receiving_yards,41.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Bryce Randolph,receiving_yards,17.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Clayton Coppock,receiving_yards,36.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Karmello English,receiving_yards,43.5,-115,-115,AiGC
+Liberty,Coastal Carolina,Tristian Gardner,receiving_yards,29.5,-115,-115,AiGC
+Colorado,Baylor,Micah Welch,receiving_yards,1.5,-115,-115,AiGC
+Colorado,Baylor,Micah Welch,receptions,0.5,-165,130,AiGC
+Colorado,Baylor,Micah Welch,rushing_yards,35.5,-115,-115,AiGC
+Colorado,Baylor,Micah Welch,rush_attempts,8.5,-135,105,AiGC
+Clemson,California,Tait Reynolds,passing_yards,215.5,-115,-115,AiGC
+Clemson,California,Jaron-Keawe Sagapolutele,passing_yards,255.5,-115,-115,AiGC
+Clemson,California,Gideon Davidson,rushing_yards,83.5,-115,-115,AiGC
+Clemson,California,Tait Reynolds,rushing_yards,36.5,-115,-115,AiGC
+Clemson,California,Adam Mohammed,rushing_yards,87.5,-115,-115,AiGC
+Clemson,California,T.J. Moore,receiving_yards,57.5,-115,-115,AiGC
+Clemson,California,Bryant Wesco Jr.,receiving_yards,56.5,-115,-115,AiGC
+Clemson,California,Chase Hendricks,receiving_yards,52.5,-115,-115,AiGC
+Clemson,California,Mason Mini,receiving_yards,30.5,-115,-115,AiGC
+Clemson,California,Adam Mohammed,receiving_yards,25.5,-115,-115,AiGC
+Clemson,California,Ian Strong,receiving_yards,67.5,-115,-115,AiGC
+Texas,Tennessee,Arch Manning,passing_yards,251.5,-115,-115,AiGC
+Texas,Tennessee,Arch Manning,pass_attempts,30.5,-120,-110,AiGC
+Texas,Tennessee,Arch Manning,completions,19.5,-130,100,AiGC
+Texas,Tennessee,Arch Manning,rushing_yards,28.5,-115,-115,AiGC
+Texas,Tennessee,Arch Manning,rush_attempts,8.5,-130,100,AiGC
+Texas,Tennessee,Faizon Brandon,passing_yards,203.5,-115,-115,AiGC
+Texas,Tennessee,Raleek Brown,rushing_yards,50.5,-115,-115,AiGC
+Texas,Tennessee,Daylan Smothers,rushing_yards,59.5,-115,-115,AiGC
+Texas,Tennessee,DeSean Bishop,rushing_yards,80.5,-115,-115,AiGC
+Texas,Tennessee,Cam Coleman,receiving_yards,61.5,-115,-115,AiGC
+Texas,Tennessee,Emmett Mosley V,receiving_yards,37.5,-115,-115,AiGC
+Texas,Tennessee,Daylan Smothers,receiving_yards,13.5,-115,-115,AiGC
+Texas,Tennessee,Ryan Wingo,receiving_yards,51.5,-115,-115,AiGC
+Texas,Tennessee,DeSean Bishop,receiving_yards,8.5,-115,-115,AiGC
+Texas,Tennessee,Radarius Jackson,receiving_yards,28.5,-115,-115,AiGC
+Texas,Tennessee,Mike Matthews,receiving_yards,60.5,-115,-115,AiGC
+Texas,Tennessee,Braylon Staley,receiving_yards,48.5,-115,-115,AiGC
+Notre Dame,Purdue,C.J. Carr,passing_yards,243.5,-115,-115,AiGC
+Notre Dame,Purdue,Ryan Browne,passing_yards,201.5,-115,-115,AiGC
+Notre Dame,Purdue,Ryan Browne,pass_attempts,30.5,-115,-115,AiGC
+Notre Dame,Purdue,Ryan Browne,completions,17.5,-110,-120,AiGC
+Notre Dame,Purdue,Fame Ijeboi,rushing_yards,42.5,-115,-115,AiGC
+Notre Dame,Purdue,Ryan Browne,rush_attempts,6.5,115,-145,AiGC
+Notre Dame,Purdue,Fame Ijeboi,rush_attempts,12.5,-115,-115,AiGC
+Notre Dame,Purdue,Jordan Faison,receiving_yards,68.5,-115,-115,AiGC
+Notre Dame,Purdue,Micah Gilbert,receiving_yards,53.5,-115,-115,AiGC
+Notre Dame,Purdue,George Burhenn,receiving_yards,10.5,-115,-115,AiGC
+Notre Dame,Purdue,Fame Ijeboi,receiving_yards,14.5,-115,-115,AiGC
+Notre Dame,Purdue,Chauncey Magwood,receiving_yards,37.5,-115,-115,AiGC
+Notre Dame,Purdue,De'Nylon Morissette,receiving_yards,18.5,-115,-115,AiGC
+Notre Dame,Purdue,Xavier Townsend,receiving_yards,39.5,-115,-115,AiGC
+Notre Dame,Purdue,Asaad Waseem,receiving_yards,44.5,-115,-115,AiGC
+Notre Dame,Purdue,George Burhenn,receptions,1.5,125,-160,AiGC
+Notre Dame,Purdue,Fame Ijeboi,receptions,2.5,-115,-115,AiGC
+Notre Dame,Purdue,Chauncey Magwood,receptions,2.5,-180,140,AiGC
+Notre Dame,Purdue,De'Nylon Morissette,receptions,1.5,-135,105,AiGC
+Notre Dame,Purdue,Xavier Townsend,receptions,3.5,-115,-115,AiGC
+Notre Dame,Purdue,Asaad Waseem,receptions,3.5,-115,-115,AiGC
+Wake Forest,Louisville,Gio Lopez,passing_yards,260.5,-115,-115,AiGC
+Wake Forest,Louisville,Lincoln Kienholz,passing_yards,253.5,-115,-115,AiGC
+Wake Forest,Louisville,Lincoln Kienholz,pass_attempts,27.5,-115,-115,AiGC
+Wake Forest,Louisville,Lincoln Kienholz,completions,18.5,105,-135,AiGC
+Wake Forest,Louisville,Isaac Brown,rushing_yards,74.5,-115,-115,AiGC
+Wake Forest,Louisville,Keyjuan Brown,rushing_yards,86.5,-115,-115,AiGC
+Wake Forest,Louisville,Isaac Brown,rush_attempts,12.5,-115,-115,AiGC
+Wake Forest,Louisville,Keyjuan Brown,rush_attempts,12.5,-130,100,AiGC
+Wake Forest,Louisville,Carlos Hernandez,receiving_yards,72.5,-115,-115,AiGC
+Wake Forest,Louisville,Antonio Meeks,receiving_yards,29.5,-115,-115,AiGC
+Wake Forest,Louisville,Treyshun Hurry,receiving_yards,36.5,-115,-115,AiGC
+Wake Forest,Louisville,Tre Richardson,receiving_yards,67.5,-115,-115,AiGC
+Wake Forest,Louisville,Treyshun Hurry,receptions,2.5,-125,-105,AiGC
+Wake Forest,Louisville,Lawayne McCoy,receptions,3.5,120,-150,AiGC
+Wake Forest,Louisville,Tre Richardson,receptions,4.5,-115,-115,AiGC
+Ole Miss,Florida,Trinidad Chambliss,passing_yards,290.5,-115,-115,AiGC
+Ole Miss,Florida,Aaron Philo,passing_yards,231.5,-115,-115,AiGC
+Ole Miss,Florida,Trinidad Chambliss,rushing_yards,24.5,-115,-115,AiGC
+Ole Miss,Florida,Kewan Lacy,rushing_yards,61.5,-115,-115,AiGC
+Ole Miss,Florida,Jadan Baugh,rushing_yards,111.5,-115,-115,AiGC
+Ole Miss,Florida,Aaron Philo,rushing_yards,16.5,-115,-115,AiGC
+Ole Miss,Florida,Deuce Alexander,receiving_yards,74.5,-115,-115,AiGC
+Ole Miss,Florida,Horatio Fields,receiving_yards,47.5,-115,-115,AiGC
+Ole Miss,Florida,Kewan Lacy,receiving_yards,13.5,-115,-115,AiGC
+Ole Miss,Florida,Caleb Odom,receiving_yards,44.5,-115,-115,AiGC
+Ole Miss,Florida,Traylon Ray,receiving_yards,32.5,-115,-115,AiGC
+Ole Miss,Florida,Jadan Baugh,receiving_yards,11.5,-115,-115,AiGC
+Ole Miss,Florida,Vernell Brown III,receiving_yards,63.5,-115,-115,AiGC
+Ole Miss,Florida,Bailey Stockton,receiving_yards,19.5,-115,-115,AiGC
+Ole Miss,Florida,Dallas Wilson,receiving_yards,52.5,-115,-115,AiGC
+Ole Miss,Florida,Deuce Alexander,receptions,5.5,-140,110,AiGC
+Ole Miss,Florida,Horatio Fields,receptions,3.5,-160,125,AiGC
+Ole Miss,Florida,Kewan Lacy,receptions,2.5,115,-145,AiGC
+Ole Miss,Florida,Caleb Odom,receptions,3.5,-155,122,AiGC
+Ole Miss,Florida,Traylon Ray,receptions,2.5,-160,125,AiGC
+Ole Miss,Florida,Vernell Brown III,receptions,4.5,-130,100,AiGC
+Ole Miss,Florida,Bailey Stockton,receptions,2.5,140,-180,AiGC
+Ole Miss,Florida,Dallas Wilson,receptions,3.5,-135,105,AiGC
+Iowa,Michigan,Hank Brown,passing_yards,176.5,-115,-115,AiGC
+Iowa,Michigan,Bryce Underwood,passing_yards,166.5,-115,-115,AiGC
+Iowa,Michigan,Hank Brown,pass_attempts,27.5,-115,-115,AiGC
+Iowa,Michigan,Bryce Underwood,pass_attempts,24.5,-115,-115,AiGC
+Iowa,Michigan,Hank Brown,completions,17.5,-125,-105,AiGC
+Iowa,Michigan,Bryce Underwood,completions,15.5,-105,-125,AiGC
+Iowa,Michigan,Hank Brown,rushing_yards,7.5,-115,-115,AiGC
+Iowa,Michigan,Jordan Marshall,rushing_yards,53.5,-115,-115,AiGC
+Iowa,Michigan,Bryce Underwood,rushing_yards,34.5,-115,-115,AiGC
+Iowa,Michigan,Hank Brown,rush_attempts,5.5,-150,120,AiGC
+Iowa,Michigan,Jordan Marshall,rush_attempts,12.5,-115,-115,AiGC
+Iowa,Michigan,Bryce Underwood,rush_attempts,9.5,-130,100,AiGC
+Iowa,Michigan,Tony Diaz,receiving_yards,71.5,-115,-115,AiGC
+Iowa,Michigan,Reece Vander Zee,receiving_yards,21.5,-115,-115,AiGC
+Iowa,Michigan,DJ Vonnahme,receiving_yards,26.5,-115,-115,AiGC
+Iowa,Michigan,JJ Buchanan,receiving_yards,52.5,-115,-115,AiGC
+Iowa,Michigan,Andrew Marsh,receiving_yards,42.5,-115,-115,AiGC
+Iowa,Michigan,Jordan Marshall,receiving_yards,4.5,-115,-115,AiGC
+Iowa,Michigan,Tony Diaz,receptions,6.5,-150,120,AiGC
+Iowa,Michigan,Reece Vander Zee,receptions,2.5,140,-180,AiGC
+Iowa,Michigan,DJ Vonnahme,receptions,2.5,-165,130,AiGC
+Iowa,Michigan,JJ Buchanan,receptions,3.5,-165,130,AiGC
+Iowa,Michigan,Andrew Marsh,receptions,4.5,-110,-120,AiGC
+Iowa,Michigan,Jordan Marshall,receptions,1.5,172,-225,AiGC
+Vanderbilt,Auburn,Jared Curtis,passing_yards,230.5,-115,-115,AiGC
+Vanderbilt,Auburn,Byrum Brown,passing_yards,260.5,-115,-115,AiGC
+Vanderbilt,Auburn,Sedrick Alexander,rushing_yards,40.5,-115,-115,AiGC
+Vanderbilt,Auburn,Jared Curtis,rushing_yards,19.5,-115,-115,AiGC
+Vanderbilt,Auburn,Byrum Brown,rushing_yards,62.5,-115,-115,AiGC
+Vanderbilt,Auburn,Jeremiah Cobb,rushing_yards,57.5,-115,-115,AiGC
+Vanderbilt,Auburn,Sedrick Alexander,receiving_yards,13.5,-115,-115,AiGC
+Vanderbilt,Auburn,Tristen Brown,receiving_yards,34.5,-115,-115,AiGC
+Vanderbilt,Auburn,Jayvontay Conner,receiving_yards,25.5,-115,-115,AiGC
+Vanderbilt,Auburn,Junior Sherrill,receiving_yards,71.5,-115,-115,AiGC
+Vanderbilt,Auburn,Jeremiah Cobb,receiving_yards,10.5,-115,-115,AiGC
+Vanderbilt,Auburn,Jake Johnson,receiving_yards,12.5,-115,-115,AiGC
+Vanderbilt,Auburn,Jeremiah Koger,receiving_yards,47.5,-115,-115,AiGC
+Vanderbilt,Auburn,Chas Nimrod,receiving_yards,51.5,-115,-115,AiGC
+Vanderbilt,Auburn,Keshaun Singleton,receiving_yards,73.5,-115,-115,AiGC
+Utah,Iowa State,Devon Dampier,passing_yards,218.5,-115,-115,AiGC
+Utah,Iowa State,Jaylen Raynor,passing_yards,162.5,-115,-115,AiGC
+Utah,Iowa State,Devon Dampier,rushing_yards,44.5,-115,-115,AiGC
+Utah,Iowa State,Byrd Ficklin,rushing_yards,27.5,-115,-115,AiGC
+Utah,Iowa State,Wayshawn Parker,rushing_yards,63.5,-115,-115,AiGC
+Utah,Iowa State,Aiden Flora,rushing_yards,76.5,-115,-115,AiGC
+Utah,Iowa State,Jaylen Raynor,rushing_yards,14.5,-115,-115,AiGC
+Utah,Iowa State,Aiden Flora,rush_attempts,16.5,-115,-115,AiGC
+Utah,Iowa State,Noah Bennee,receiving_yards,21.5,-115,-115,AiGC
+Utah,Iowa State,Ricky Johnson,receiving_yards,25.5,-115,-115,AiGC
+Utah,Iowa State,Wayshawn Parker,receiving_yards,16.5,-115,-115,AiGC
+Utah,Iowa State,Braden Pegan,receiving_yards,62.5,-115,-115,AiGC
+Utah,Iowa State,Vince Benetti,receiving_yards,9.5,-115,-115,AiGC
+Utah,Iowa State,Aiden Flora,receiving_yards,7.5,-115,-115,AiGC
+Utah,Iowa State,Tyler Fortenberry,receiving_yards,10.5,-115,-115,AiGC
+Utah,Iowa State,Omari Hayes,receiving_yards,28.5,-115,-115,AiGC
+Utah,Iowa State,Carter Pabst,receiving_yards,15.5,-115,-115,AiGC
+Utah,Iowa State,Vince Benetti,receptions,1.5,100,-130,AiGC
+Utah,Iowa State,Omari Hayes,receptions,2.5,-115,-115,AiGC
+Oregon,USC,Dante Moore,passing_yards,278.5,-115,-115,AiGC
+Oregon,USC,Jayden Maiava,passing_yards,272.5,-115,-115,AiGC
+Oregon,USC,Jordon Davison,rushing_yards,60.5,-115,-115,AiGC
+Oregon,USC,Dierre Hill Jr.,rushing_yards,51.5,-115,-115,AiGC
+Oregon,USC,Dante Moore,rushing_yards,1.5,-115,-115,AiGC
+Oregon,USC,Waymond Jordan,rushing_yards,41.5,-115,-115,AiGC
+Oregon,USC,King Miller,rushing_yards,70.5,-115,-115,AiGC
+Oregon,USC,Messiah Hampton,receiving_yards,35.5,-115,-115,AiGC
+Oregon,USC,Dakorien Moore,receiving_yards,63.5,-115,-115,AiGC
+Oregon,USC,Evan Stewart,receiving_yards,68.5,-115,-115,AiGC
+Oregon,USC,Mark Bowman,receiving_yards,40.5,-115,-115,AiGC
+Oregon,USC,Kayden Dixon-Wyatt,receiving_yards,62.5,-115,-115,AiGC
+Oregon,USC,Tanook Hines,receiving_yards,37.5,-115,-115,AiGC
+Oregon,USC,King Miller,receiving_yards,4.5,-120,-110,AiGC
+Oregon,USC,Zacharyus Williams,receiving_yards,34.5,-115,-115,AiGC
+Oregon,USC,Dakorien Moore,receptions,4.5,-115,-115,AiGC
+Oregon,USC,Evan Stewart,receptions,4.5,-125,-105,AiGC
+Oregon,USC,Mark Bowman,receptions,3.5,-125,-105,AiGC
+Oregon,USC,Kayden Dixon-Wyatt,receptions,4.5,-115,-115,AiGC
+Arizona,Washington State,Noah Fifita,passing_yards,256.5,-115,-115,AiGC
+Arizona,Washington State,Caden Pinnick,passing_yards,164.5,-115,-115,AiGC
+Arizona,Washington State,Noah Fifita,rushing_yards,12.5,-115,-115,AiGC
+Arizona,Washington State,Kedrick Reescano,rushing_yards,49.5,-115,-115,AiGC
+Arizona,Washington State,Caden Pinnick,rushing_yards,38.5,-115,-115,AiGC
+Arizona,Washington State,Kirby Vorhees,rushing_yards,44.5,-115,-115,AiGC
+Georgia Tech,Stanford,Alberto Mendoza,passing_yards,227.5,-115,-115,AiGC
+Georgia Tech,Stanford,Davis Warren,passing_yards,209.5,-115,-115,AiGC
+Georgia Tech,Stanford,Davis Warren,pass_attempts,32.5,-115,-115,AiGC
+Georgia Tech,Stanford,Davis Warren,completions,19.5,-110,-120,AiGC
+Georgia Tech,Stanford,Justice Haynes,rushing_yards,81.5,-115,-115,AiGC
+Georgia Tech,Stanford,Micah Ford,rushing_yards,77.5,-115,-115,AiGC
+Georgia Tech,Stanford,Jordan Allen,receiving_yards,55.5,-115,-115,AiGC
+Georgia Tech,Stanford,Dalen Penson,receiving_yards,49.5,-115,-115,AiGC
+Georgia Tech,Stanford,Benji Blackburn,receiving_yards,42.5,-115,-115,AiGC
+Georgia Tech,Stanford,Micah Ford,receiving_yards,12.5,-115,-115,AiGC
+Georgia Tech,Stanford,Caden High,receiving_yards,49.5,-115,-115,AiGC
+Georgia Tech,Stanford,Benji Blackburn,receptions,4.5,-120,-110,AiGC
+Georgia Tech,Stanford,Caden High,receptions,5.5,122,-155,AiGC

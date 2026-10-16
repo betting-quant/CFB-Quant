@@ -13,6 +13,7 @@ import pandas as pd
 DEFAULT_INPUT_GLOB = "data/processed/team_games_*.parquet"
 DEFAULT_OUTPUT = "data/processed/cfb_matchup_features_v0_1.parquet"
 DEFAULT_MANIFEST = "reports/cfb_matchup_feature_manifest_v0_1.json"
+DEFAULT_KICKOFF_MAP = "reports/spread_total_schedule_chronology_v2/team_game_kickoff_map.csv"
 
 SEASON_TYPE_ORDER = {
     "regular": 0,
@@ -99,22 +100,59 @@ def _sort_frame(
         .astype(int)
     )
 
-    return out.sort_values(
-        [
-            "season",
-            "_season_type_order",
-            "week",
-            "game_id",
-            "team",
-        ],
-        kind="mergesort",
-    ).reset_index(
-        drop=True
-    )
+    # The production loader requires a kickoff map. The legacy fallback
+    # supports older unit tests that construct small frames directly.
+    if "kickoff_utc" in out.columns:
+        out["kickoff_utc"] = pd.to_datetime(out["kickoff_utc"], utc=True, errors="coerce")
+        if out["kickoff_utc"].isna().any():
+            raise ValueError("Missing/invalid kickoff_utc: refusing unsafe chronological sort")
+        order = ["season", "kickoff_utc", "game_id", "team"]
+    else:
+        order = ["season", "_season_type_order", "week", "game_id", "team"]
+    return out.sort_values(order, kind="mergesort").reset_index(drop=True)
+
+
+def attach_verified_kickoff(
+    data: pd.DataFrame,
+    kickoff_map: str | Path = DEFAULT_KICKOFF_MAP,
+) -> pd.DataFrame:
+    """Fail closed unless every source team-game has a matching kickoff UTC."""
+    path = Path(kickoff_map)
+    if not path.is_file():
+        raise FileNotFoundError(f"Missing kickoff map {path}; run audit_schedule_chronology_v2.py")
+    sched = pd.read_csv(path)
+    required = {"game_id", "season", "team", "home_away", "kickoff_utc"}
+    if not required.issubset(sched.columns):
+        raise ValueError(f"Schedule map missing {sorted(required - set(sched.columns))}")
+    if not (required - {"kickoff_utc"}).issubset(data.columns):
+        raise ValueError("Team history is missing identifying columns")
+    out = data.drop(columns=["kickoff_utc"], errors="ignore").copy()
+    sched = sched[list(required)].copy()
+    for frame in (out, sched):
+        frame["_chrono_id"] = frame["game_id"].astype("string").str.replace(r"\.0$", "", regex=True)
+        frame["_chrono_side"] = frame["home_away"].astype("string").str.strip().str.lower()
+        frame["_chrono_team"] = frame["team"].astype("string").str.strip()
+        frame["_chrono_season"] = pd.to_numeric(frame["season"], errors="raise").astype(int)
+    sched["kickoff_utc"] = pd.to_datetime(sched["kickoff_utc"], utc=True, errors="coerce")
+    if sched["kickoff_utc"].isna().any():
+        raise ValueError("Schedule has missing kickoff UTC")
+    if sched.groupby("_chrono_id")["kickoff_utc"].nunique().gt(1).any():
+        raise ValueError("Conflicting kickoff times for a game")
+    join_keys = ["_chrono_id", "_chrono_season", "_chrono_team", "_chrono_side"]
+    if sched.duplicated(join_keys).any():
+        raise ValueError("Duplicate schedule team-game rows")
+    out = out.merge(sched[join_keys + ["kickoff_utc"]], on=join_keys,
+                    how="left", validate="one_to_one")
+    if out["kickoff_utc"].isna().any():
+        sample = out.loc[out["kickoff_utc"].isna(), ["game_id", "team"]].head(5)
+        raise ValueError(f"Unmatched kickoff; feature build stopped:\n{sample.to_string(index=False)}")
+    return out.drop(columns=join_keys)
 
 
 def load_team_history(
     input_glob: str = DEFAULT_INPUT_GLOB,
+    *,
+    kickoff_map: str = DEFAULT_KICKOFF_MAP,
 ) -> pd.DataFrame:
     files = sorted(
         glob.glob(
@@ -171,9 +209,8 @@ def load_team_history(
             f"columns: {missing}"
         )
 
-    data = _sort_frame(
-        data
-    )
+    data = attach_verified_kickoff(data, kickoff_map)
+    data = _sort_frame(data)
 
     dupes = data.duplicated(
         [
@@ -496,18 +533,13 @@ def build_defense_history(
         rename.values()
     )
 
-    defense = defense.sort_values(
-        [
-            "season",
-            "_season_type_order",
-            "week",
-            "game_id",
-            "defense_team",
-        ],
-        kind="mergesort",
-    ).reset_index(
-        drop=True
-    )
+    if "kickoff_utc" in defense.columns:
+        if defense["kickoff_utc"].isna().any():
+            raise ValueError("Cannot build defense history without kickoff UTC")
+        defense_order = ["season", "kickoff_utc", "game_id", "defense_team"]
+    else:
+        defense_order = ["season", "_season_type_order", "week", "game_id", "defense_team"]
+    defense = defense.sort_values(defense_order, kind="mergesort").reset_index(drop=True)
 
     defense[
         "def_games_before"
@@ -676,18 +708,7 @@ def build_features(
             f"{missing_features[:20]}"
         )
 
-    frame = frame.sort_values(
-        [
-            "season",
-            "_season_type_order",
-            "week",
-            "game_id",
-            "team",
-        ],
-        kind="mergesort",
-    ).reset_index(
-        drop=True
-    )
+    frame = _sort_frame(frame)
 
     return (
         frame,
@@ -743,6 +764,9 @@ def write_manifest(
         "feature_count": len(
             feature_cols
         ),
+        "chronology_source": DEFAULT_KICKOFF_MAP,
+        "chronology_sort": "season,kickoff_utc,game_id,team",
+        "upstream_source_snapshot_verified": False,
         "feature_columns": feature_cols,
         "target_columns_retained_for_training_only": [
             c
@@ -805,6 +829,10 @@ def main() -> None:
         "--manifest",
         default=DEFAULT_MANIFEST,
     )
+    parser.add_argument(
+        "--kickoff-map",
+        default=DEFAULT_KICKOFF_MAP,
+    )
 
     args = parser.parse_args()
 
@@ -819,7 +847,8 @@ def main() -> None:
     )
 
     data = load_team_history(
-        args.input_glob
+        args.input_glob,
+        kickoff_map=args.kickoff_map,
     )
 
     frame, feature_cols = (

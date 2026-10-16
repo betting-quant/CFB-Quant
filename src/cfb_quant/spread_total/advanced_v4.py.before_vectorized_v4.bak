@@ -1,0 +1,303 @@
+"""CFB-Quant v4: point-in-time advanced-game feature builder.
+
+CFBD advanced game stats are postgame data. ONLY historical, lagged
+features (from earlier kickoffs) may enter the predictive manifest.
+No current-game advanced statistics appear in the output parquet.
+
+Commands:
+    python -m cfb_quant.spread_total.advanced_v4 fetch --years 2023
+    python -m cfb_quant.spread_total.advanced_v4 fetch --years 2014-2025
+    python -m cfb_quant.spread_total.advanced_v4 build --max-year 2025
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+import pandas as pd
+import requests
+
+API_URL = "https://api.collegefootballdata.com/stats/game/advanced"
+CACHE_DIR = Path("data/raw/cfbd/advanced_game_v4")
+BASE = Path("data/processed/cfb_matchup_features_kickoff_v3.parquet")
+BASE_MANIFEST = Path("reports/cfb_matchup_feature_manifest_kickoff_v3.json")
+DEST = Path("data/processed/cfb_matchup_features_advanced_v4.parquet")
+DEST_MANIFEST = Path("reports/cfb_matchup_feature_manifest_advanced_v4.json")
+REPORT = Path("reports/advanced_v4_feature_coverage.csv")
+
+# Predeclare schema fields. Never infer arbitrary numeric paths or use game scores.
+METRIC_PATHS = {
+    "ppa": ("ppa",),
+    "success_rate": ("successRate",),
+    "explosiveness": ("explosiveness",),
+    "passing_ppa": ("passingPlays", "ppa"),
+    "passing_success_rate": ("passingPlays", "successRate"),
+    "passing_explosiveness": ("passingPlays", "explosiveness"),
+    "rushing_ppa": ("rushingPlays", "ppa"),
+    "rushing_success_rate": ("rushingPlays", "successRate"),
+    "rushing_explosiveness": ("rushingPlays", "explosiveness"),
+    "passing_down_ppa": ("passingDowns", "ppa"),
+    "passing_down_success_rate": ("passingDowns", "successRate"),
+    "standard_down_ppa": ("standardDowns", "ppa"),
+    "standard_down_success_rate": ("standardDowns", "successRate"),
+    "line_yards": ("lineYards",),
+    "stuff_rate": ("stuffRate",),
+    "power_success": ("powerSuccess",),
+    "drives": ("drives",),
+    "plays": ("plays",),
+}
+
+
+def _key(root: Path) -> str | None:
+    for key in ("CFBD_API_KEY", "COLLEGE_FOOTBALL_DATA_API_KEY"):
+        if os.environ.get(key):
+            return os.environ[key].strip()
+    path = root / ".env"
+    if path.is_file():
+        for raw in path.read_text(encoding="utf-8-sig").splitlines():
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            if k.strip() in ("CFBD_API_KEY", "COLLEGE_FOOTBALL_DATA_API_KEY"):
+                return v.strip().strip('"\'') or None
+    return None
+
+
+def _cache_path(root: Path, year: int) -> Path:
+    return root / CACHE_DIR / f"advanced_{year}.json"
+
+
+def fetch_one(root: Path, year: int, *, force: bool = False, session: Any = requests) -> tuple[int, str]:
+    target = _cache_path(root, year)
+    if target.exists() and not force:
+        records = json.loads(target.read_text(encoding="utf-8"))
+        if not isinstance(records, list):
+            raise ValueError(f"Invalid cached JSON list: {target}")
+        return len(records), "cached"
+    token = _key(root)
+    if not token:
+        raise RuntimeError("No CFBD_API_KEY in environment or .env. Keep your key private.")
+    response = session.get(
+        API_URL,
+        params={"year": year, "seasonType": "both", "excludeGarbageTime": "false"},
+        headers={"Authorization": f"Bearer {token}"},
+        timeout=90,
+    )
+    response.raise_for_status()
+    records = response.json()
+    if not isinstance(records, list) or not records or not all(isinstance(r, dict) for r in records):
+        raise ValueError(f"Unexpected/empty CFBD advanced game data for {year}; not caching")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    # Atomic staging to avoid truncated caches. --force preserves prior raw payload backup.
+    if target.exists() and force:
+        backup = target.with_suffix(f".{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.bak.json")
+        backup.write_bytes(target.read_bytes())
+    payload = json.dumps(records, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    pending = target.with_suffix(".pending")
+    pending.write_bytes(payload)
+    pending.replace(target)
+    metadata = {
+        "year": year, "source": API_URL,
+        "parameters": {"year": year, "seasonType": "both", "excludeGarbageTime": "false"},
+        "downloaded_at_utc": datetime.now(timezone.utc).isoformat(),
+        "record_count": len(records), "sha256": hashlib.sha256(payload).hexdigest(),
+        "note": "Postgame facts; use only after prior kickoff in predictive features.",
+    }
+    target.with_suffix(".meta.json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
+    return len(records), "downloaded"
+
+
+def _get_path(obj: Any, path: tuple[str, ...]) -> float:
+    for segment in path:
+        if not isinstance(obj, dict):
+            return float("nan")
+        obj = obj.get(segment)
+    # Explicitly reject booleans and non-finite numerical types.
+    if isinstance(obj, bool) or obj is None:
+        return float("nan")
+    try:
+        val = float(obj)
+    except (TypeError, ValueError):
+        return float("nan")
+    return val if np.isfinite(val) else float("nan")
+
+
+def flatten_records(raw: list[dict[str, Any]]) -> pd.DataFrame:
+    rows = []
+    for r in raw:
+        if r.get("gameId") is None or not r.get("team"):
+            continue
+        row: dict[str, Any] = {"game_id": str(r["gameId"]), "team": str(r["team"]).strip()}
+        for side in ("offense", "defense"):
+            for metric, path in METRIC_PATHS.items():
+                row[f"raw_adv_{side}_{metric}"] = _get_path(r.get(side), path)
+        rows.append(row)
+    if not rows:
+        raise ValueError("No team-game advanced records found in source")
+    out = pd.DataFrame(rows)
+    if out.duplicated(["game_id", "team"]).any():
+        samples = out.loc[out.duplicated(["game_id", "team"], keep=False), ["game_id", "team"]].head(8)
+        raise ValueError(f"Duplicate CFBD advanced team-game rows:\n{samples}")
+    return out
+
+
+def make_lagged_features(base: pd.DataFrame, advanced: pd.DataFrame) -> tuple[pd.DataFrame, list[str], pd.DataFrame]:
+    """Join raw advanced observations, then shift before computing *all* features.
+
+    Never makes current-game advanced statistics available as model inputs.
+    Historical features use exact kickoff order rather than week or game ID.
+    """
+    required = {"game_id", "season", "team", "kickoff_utc"}
+    missing = required - set(base.columns)
+    if missing:
+        raise ValueError(f"Corrected v3 features lack required columns: {sorted(missing)}")
+    if base.duplicated(["game_id", "team"]).any():
+        raise ValueError("Duplicate team-game rows in base v3 data")
+    out = base.copy()
+    out["game_id"] = out["game_id"].astype(str).str.replace(r"\.0$", "", regex=True)
+    out["team"] = out["team"].astype(str).str.strip()
+    out["kickoff_utc"] = pd.to_datetime(out["kickoff_utc"], utc=True, errors="coerce")
+    if out["kickoff_utc"].isna().any():
+        raise ValueError("Null kickoff time: cannot construct chronological advanced features")
+    rawcols = [c for c in advanced.columns if c.startswith("raw_adv_")]
+    if not rawcols:
+        raise ValueError("No advanced stats found")
+    if advanced.duplicated(["game_id", "team"]).any():
+        raise ValueError("Duplicate team-game advanced rows")
+    joined = out.merge(advanced[["game_id", "team", *rawcols]], on=["game_id", "team"], how="left", validate="one_to_one", indicator="_advanced_join")
+    if len(joined) != len(out):
+        raise AssertionError("Advanced join changed row count")
+    joined = joined.sort_values(["kickoff_utc", "game_id", "team"], kind="mergesort").reset_index(drop=True)
+    tied = joined.duplicated(["team", "kickoff_utc"], keep=False)
+    if tied.any():
+        raise ValueError(f"Two games have the same kickoff for a team; require manual review: {joined.loc[tied, ['game_id','team','kickoff_utc']].head(8)}")
+    made = {}
+    for col in rawcols:
+        metric = col.removeprefix("raw_adv_")
+        rawvals = pd.to_numeric(joined[col], errors="coerce")
+        shifted = rawvals.groupby(joined.team, sort=False).shift(1)
+        made[f"adv_{metric}_lag1"] = shifted
+        for window in (3, 5):
+            made[f"adv_{metric}_avg{window}"] = shifted.groupby(joined.team, sort=False).transform(
+                lambda s, n=window: s.rolling(n, min_periods=1).mean()
+            )
+        season_group = [joined.team, joined.season]
+        season_shift = rawvals.groupby(season_group, sort=False).shift(1)
+        made[f"adv_{metric}_season_avg"] = season_shift.groupby(season_group, sort=False).transform(
+            lambda s: s.expanding(min_periods=1).mean()
+        )
+    generated = pd.DataFrame(made, index=joined.index)
+    colnames = list(generated.columns)
+    if set(colnames) & set(base.columns):
+        raise ValueError("Advanced features collide with existing base features")
+    enriched = pd.concat([joined.drop(columns=[*rawcols, "_advanced_join"]), generated], axis=1)
+    # Retain original row order, but features remain calculated chronologically.
+    enriched = enriched.sort_values(["game_id", "team"], kind="mergesort").reset_index(drop=True)
+    coverage = joined.groupby("season", dropna=False).agg(
+        team_games=("game_id", "size"),
+        advanced_joined=("_advanced_join", lambda s: int(s.eq("both").sum())),
+    ).reset_index()
+    coverage["coverage_pct"] = (100 * coverage.advanced_joined / coverage.team_games).round(1)
+    return enriched, colnames, coverage
+
+
+def load_all_years(root: Path, years: list[int]) -> pd.DataFrame:
+    records = []
+    missing = []
+    for year in years:
+        path = _cache_path(root, year)
+        if not path.exists():
+            missing.append(year)
+            continue
+        batch = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(batch, list):
+            raise ValueError(f"Unexpected JSON format: {path}")
+        records.extend(batch)
+        print(f"{year}: {len(batch)} raw advanced rows loaded")
+    if missing:
+        raise FileNotFoundError(f"Missing advanced-game caches for {missing}. Fetch those seasons first.")
+    return flatten_records(records)
+
+
+def years_from_arg(spec: str) -> list[int]:
+    if "-" in spec:
+        a, b = spec.split("-", 1)
+        first, last = int(a), int(b)
+        if last < first or last - first > 30:
+            raise ValueError("Invalid season range")
+        return list(range(first, last + 1))
+    return sorted({int(p.strip()) for p in spec.split(",") if p.strip()})
+
+
+def build(root: Path, max_year: int = 2025) -> None:
+    base_path = root / BASE
+    manifest_path = root / BASE_MANIFEST
+    if not base_path.exists() or not manifest_path.exists():
+        raise FileNotFoundError("Missing corrected v3 parquet or manifest; do not rebuild the baseline")
+    base = pd.read_parquet(base_path)
+    base = base.loc[pd.to_numeric(base.season, errors="raise").le(max_year)].copy()
+    years = sorted(int(y) for y in base.season.unique())
+    advanced = load_all_years(root, years)
+    enriched, columns, coverage = make_lagged_features(base, advanced)
+    old_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    before = list(old_manifest["feature_columns"])
+    if any(col not in enriched.columns for col in before):
+        raise ValueError("Existing v3 manifest features missing from enriched data")
+    output_manifest = dict(old_manifest)
+    output_manifest["feature_columns"] = before + columns
+    output_manifest["advanced_v4"] = {
+        "version": "v4_experimental", "feature_count_added": len(columns),
+        "strictly_shifted": True, "matched_source": "CFBD /stats/game/advanced",
+        "source_data_is_retrieved_postgame": True,
+        "not_approved_for_live_betting": True,
+        "note": "Advanced features have no current-game stats. Needs temporal OOF validation, source audit and market test.",
+    }
+    # Preserve existing baseline; refuse to overwrite existing v4 artifacts without a separate deliberate delete.
+    dest, dest_manifest, report = root / DEST, root / DEST_MANIFEST, root / REPORT
+    for path in (dest, dest_manifest, report):
+        if path.exists():
+            raise FileExistsError(f"Experimental output already exists (not overwriting): {path}")
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest_manifest.parent.mkdir(parents=True, exist_ok=True)
+    enriched.to_parquet(dest, index=False)
+    dest_manifest.write_text(json.dumps(output_manifest, indent=2), encoding="utf-8")
+    coverage.to_csv(report, index=False)
+    print("\nADVANCED V4 EXPERIMENTAL FEATURES BUILT")
+    print(f"Rows: {len(enriched)}; games: {enriched.game_id.nunique()}; added lagged features: {len(columns)}")
+    print(f"Data: {dest}")
+    print(f"Manifest: {dest_manifest}")
+    print(f"Coverage: {report}")
+    print(coverage.to_string(index=False))
+    print("WARNING: This creates experimental inputs; no improved accuracy or +EV claim can be made.")
+
+
+def main() -> None:
+    p = argparse.ArgumentParser(description=__doc__)
+    sub = p.add_subparsers(dest="command", required=True)
+    fetch = sub.add_parser("fetch", help="Fetch and archive CFBD advanced game stats")
+    fetch.add_argument("--years", required=True, help="One year (2023), list (2022,2023), or range (2014-2025)")
+    fetch.add_argument("--force", action="store_true", help="Refetch; saves backup of prior cache")
+    builder = sub.add_parser("build", help="Build lagged features and new manifest without modifying v3")
+    builder.add_argument("--max-year", type=int, default=2025)
+    args = p.parse_args()
+    root = Path.cwd()
+    if args.command == "fetch":
+        years = years_from_arg(args.years)
+        print(f"Requested {len(years)} year(s) of advanced game stats. Existing caches won't use API requests.")
+        for year in years:
+            n, kind = fetch_one(root, year, force=args.force)
+            print(f"{year}: {n} rows ({kind})")
+        print("Next: inspect raw cache or build with all training years present.")
+    elif args.command == "build":
+        build(root, max_year=args.max_year)
+
+
+if __name__ == "__main__":
+    main()

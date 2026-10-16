@@ -1,0 +1,13 @@
+{
+  "year": 2026,
+  "source": "https://api.collegefootballdata.com/stats/game/advanced",
+  "parameters": {
+    "year": 2026,
+    "seasonType": "both",
+    "excludeGarbageTime": "false"
+  },
+  "downloaded_at_utc": "2026-10-10T08:10:38.435241+00:00",
+  "record_count": 1428,
+  "sha256": "dd0caf47eff26751ac229d95a61ed5df80e6455501e2ecbd60609fcba1007535",
+  "note": "Postgame facts; use only after prior kickoff in predictive features."
+}

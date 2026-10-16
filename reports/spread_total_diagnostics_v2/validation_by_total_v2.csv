@@ -1,0 +1,5 @@
+projected_total_quartile,games,margin_mae,total_mae,original_margin_mae,original_total_mae,margin_bias,total_bias,margin_80_covered,total_80_covered,margin_lower_tail,margin_upper_tail,total_lower_tail,total_upper_tail,home_win_brier
+Q1_low,1498,13.4099,12.0482,13.3823,12.0947,-0.8543,-1.1281,0.8371,0.8545,0.0748,0.0881,0.0634,0.0821,0.1908
+Q2,1497,13.6233,12.9143,13.6181,12.9467,-0.5159,-1.4887,0.8337,0.8283,0.0775,0.0888,0.0681,0.1035,0.1749
+Q3,1497,13.6717,12.9661,13.6914,12.9662,-0.4294,0.6084,0.831,0.8223,0.0848,0.0842,0.0962,0.0815,0.1726
+Q4_high,1498,14.2496,13.9436,14.2736,13.9337,-0.0353,0.8228,0.8138,0.7984,0.0961,0.0901,0.1055,0.0961,0.1771

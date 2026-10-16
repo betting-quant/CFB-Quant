@@ -1,0 +1,4 @@
+phase,team_game_rows,mean_feature_missing_pct,median_row_missing_pct
+postseason,960,1.9050405742821475,0.0
+regular_week_5_plus,13068,2.1732189675669416,0.0
+regular_weeks_1_to_4,7230,11.363907149258448,9.737827715355806

@@ -1,0 +1,25 @@
+{
+  "audit": {
+    "existing_games": 260,
+    "existing_team_rows": 520,
+    "completed_fbs_involved_week4_to_6": 142,
+    "completed_by_week": {
+      "4": 71,
+      "5": 59,
+      "6": 12
+    },
+    "added_by_week": {
+      "4": 71,
+      "5": 59,
+      "6": 12
+    },
+    "added_games": 142,
+    "added_team_rows": 284,
+    "result_games": 402,
+    "result_team_rows": 804,
+    "nulls_new_rows": {}
+  },
+  "backup": "C:\\Users\\DC\\Documents\\Quant-Models\\CFB-Quant\\data\\backups\\team_history_2026\\20261010T080829Z\\team_games_2026.parquet",
+  "updated_file": "C:\\Users\\DC\\Documents\\Quant-Models\\CFB-Quant\\data\\processed\\team_games_2026.parquet",
+  "applied_at_utc": "20261010T080829Z"
+}

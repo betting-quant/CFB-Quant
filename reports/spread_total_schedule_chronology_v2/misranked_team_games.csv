@@ -1,0 +1,73 @@
+season,team,game_id,opponent,season_type,week,kickoff_utc,original_rank,chronological_rank
+2017,BYU,400945031,Portland State,regular,1,2017-08-26 19:00:00+00:00,2,1
+2017,BYU,400933833,LSU,regular,1,2017-09-03 01:30:00+00:00,1,2
+2017,Colorado State,400935282,Oregon State,regular,1,2017-08-26 18:30:00+00:00,2,1
+2017,Colorado State,400935249,Colorado,regular,1,2017-09-02 00:00:00+00:00,1,2
+2017,Oregon State,400935282,Colorado State,regular,1,2017-08-26 18:30:00+00:00,2,1
+2017,Oregon State,400935254,Portland State,regular,1,2017-09-02 18:00:00+00:00,1,2
+2017,Portland State,400945031,BYU,regular,1,2017-08-26 19:00:00+00:00,2,1
+2017,Portland State,400935254,Oregon State,regular,1,2017-09-02 18:00:00+00:00,1,2
+2018,Colorado State,401022510,Hawai'i,regular,1,2018-08-25 23:30:00+00:00,2,1
+2018,Colorado State,401012680,Colorado,regular,1,2018-09-01 01:30:00+00:00,1,2
+2018,Hawai'i,401022510,Colorado State,regular,1,2018-08-25 23:30:00+00:00,2,1
+2018,Hawai'i,401019475,Navy,regular,1,2018-09-02 03:00:00+00:00,1,2
+2018,Massachusetts,401013357,Duquesne,regular,1,2018-08-25 21:30:00+00:00,2,1
+2018,Massachusetts,401013087,Boston College,regular,1,2018-09-01 17:00:00+00:00,1,2
+2018,New Mexico State,401013437,Wyoming,regular,1,2018-08-26 02:00:00+00:00,2,1
+2018,New Mexico State,401013328,Minnesota,regular,1,2018-08-30 23:00:00+00:00,1,2
+2018,Wyoming,401013437,New Mexico State,regular,1,2018-08-26 02:00:00+00:00,2,1
+2018,Wyoming,401012683,Washington State,regular,1,2018-09-01 19:30:00+00:00,1,2
+2021,Illinois,401282714,Nebraska,regular,1,2021-08-28 17:20:00+00:00,2,1
+2021,Illinois,401282179,UTSA,regular,1,2021-09-04 23:30:00+00:00,1,2
+2021,San José State,401310693,Southern Utah,regular,1,2021-08-29 02:00:00+00:00,2,1
+2021,San José State,401309842,USC,regular,1,2021-09-04 21:00:00+00:00,1,2
+2021,Southern Utah,401310693,San José State,regular,1,2021-08-29 02:00:00+00:00,2,1
+2021,Southern Utah,401309835,Arizona State,regular,1,2021-09-03 02:30:00+00:00,1,2
+2021,UCLA,401309833,Hawai'i,regular,1,2021-08-28 19:30:00+00:00,2,1
+2021,UCLA,401281948,LSU,regular,1,2021-09-05 00:30:00+00:00,1,2
+2022,Florida State,401411090,Duquesne,regular,1,2022-08-27 21:00:00+00:00,2,1
+2022,Florida State,401403867,LSU,regular,1,2022-09-04 23:30:00+00:00,1,2
+2022,Georgia,401442015,Ohio State,postseason,1,2023-01-01 01:00:00+00:00,15,14
+2022,Georgia,401442010,TCU,postseason,1,2023-01-10 00:30:00+00:00,14,15
+2022,New Mexico State,401409235,Nevada,regular,1,2022-08-28 02:00:00+00:00,2,1
+2022,New Mexico State,401405060,Minnesota,regular,1,2022-09-02 01:00:00+00:00,1,2
+2022,TCU,401442016,Michigan,postseason,1,2022-12-31 21:00:00+00:00,15,14
+2022,TCU,401442010,Georgia,postseason,1,2023-01-10 00:30:00+00:00,14,15
+2022,Utah State,401404146,UConn,regular,1,2022-08-27 20:00:00+00:00,2,1
+2022,Utah State,401403854,Alabama,regular,1,2022-09-03 23:30:00+00:00,1,2
+2023,Massachusetts,401525450,New Mexico State,regular,1,2023-08-26 23:00:00+00:00,2,1
+2023,Massachusetts,401520151,Auburn,regular,1,2023-09-02 19:30:00+00:00,1,2
+2023,New Mexico State,401525450,Massachusetts,regular,1,2023-08-26 23:00:00+00:00,2,1
+2023,New Mexico State,401520166,Western Illinois,regular,1,2023-09-03 01:00:00+00:00,1,2
+2024,Florida State,401635525,Georgia Tech,regular,1,2024-08-24 16:00:00+00:00,2,1
+2024,Florida State,401634306,Boston College,regular,1,2024-09-02 23:30:00+00:00,1,2
+2024,Georgia Tech,401635525,Florida State,regular,1,2024-08-24 16:00:00+00:00,2,1
+2024,Georgia Tech,401634302,Georgia State,regular,1,2024-09-01 00:00:00+00:00,1,2
+2024,Hawai'i,401643858,Delaware State,regular,1,2024-08-25 03:59:00+00:00,2,1
+2024,Hawai'i,401628459,UCLA,regular,1,2024-08-31 23:30:00+00:00,1,2
+2024,New Mexico,401643697,Montana State,regular,1,2024-08-24 20:00:00+00:00,2,1
+2024,New Mexico,401636608,Arizona,regular,1,2024-09-01 02:30:00+00:00,1,2
+2024,SMU,401643696,Nevada,regular,1,2024-08-25 00:00:00+00:00,2,1
+2024,SMU,401634303,Houston Christian,regular,1,2024-09-01 00:00:00+00:00,1,2
+2025,Alabama,401779840,Oklahoma,postseason,1,2025-12-20 01:00:00+00:00,15,14
+2025,Alabama,401769072,Indiana,postseason,1,2026-01-01 21:00:00+00:00,14,15
+2025,Miami,401779841,Texas A&M,postseason,1,2025-12-20 17:00:00+00:00,16,13
+2025,Miami,401769070,Ohio State,postseason,1,2026-01-01 00:30:00+00:00,13,14
+2025,Miami,401769075,Ole Miss,postseason,1,2026-01-09 00:30:00+00:00,14,15
+2025,Miami,401769076,Indiana,postseason,1,2026-01-20 00:30:00+00:00,15,16
+2025,Ole Miss,401779842,Tulane,postseason,1,2025-12-20 20:30:00+00:00,15,13
+2025,Ole Miss,401769073,Georgia,postseason,1,2026-01-02 01:00:00+00:00,13,14
+2025,Ole Miss,401769075,Miami,postseason,1,2026-01-09 00:30:00+00:00,14,15
+2025,Oregon,401779843,James Madison,postseason,1,2025-12-21 00:30:00+00:00,15,13
+2025,Oregon,401769071,Texas Tech,postseason,1,2026-01-01 17:00:00+00:00,13,14
+2025,Oregon,401769074,Indiana,postseason,1,2026-01-10 00:30:00+00:00,14,15
+2025,UNLV,401760371,Idaho State,regular,1,2025-08-23 20:00:00+00:00,2,1
+2025,UNLV,401757224,Sam Houston,regular,1,2025-08-30 01:30:00+00:00,1,2
+2026,Eastern Michigan,401866408,Sacramento State,regular,1,2026-08-29 22:30:00+00:00,2,1
+2026,Eastern Michigan,401864495,San José State,regular,1,2026-09-04 22:30:00+00:00,1,2
+2026,Florida State,401864570,New Mexico State,regular,1,2026-08-29 23:00:00+00:00,2,1
+2026,Florida State,401858212,SMU,regular,1,2026-09-07 23:30:00+00:00,1,2
+2026,North Dakota State,401864577,Jacksonville State,regular,1,2026-08-29 21:30:00+00:00,2,1
+2026,North Dakota State,401864499,Fordham,regular,1,2026-09-05 19:30:00+00:00,1,2
+2026,USC,401864494,San José State,regular,1,2026-08-29 19:00:00+00:00,2,1
+2026,USC,401858436,Fresno State,regular,1,2026-09-05 01:00:00+00:00,1,2
