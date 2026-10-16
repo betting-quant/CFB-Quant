@@ -1,0 +1,23 @@
+{
+  "audit": {
+    "existing_games": 402,
+    "existing_team_rows": 804,
+    "completed_fbs_involved_week4_to_6": 188,
+    "completed_by_week": {
+      "4": 71,
+      "5": 59,
+      "6": 58
+    },
+    "added_by_week": {
+      "6": 46
+    },
+    "added_games": 46,
+    "added_team_rows": 92,
+    "result_games": 448,
+    "result_team_rows": 896,
+    "nulls_new_rows": {}
+  },
+  "backup": "C:\\Users\\dlaplante\\CFB-Quant\\data\\backups\\team_history_2026\\20261016T195004Z\\team_games_2026.parquet",
+  "updated_file": "C:\\Users\\dlaplante\\CFB-Quant\\data\\processed\\team_games_2026.parquet",
+  "applied_at_utc": "20261016T195004Z"
+}

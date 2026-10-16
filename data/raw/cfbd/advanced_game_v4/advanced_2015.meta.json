@@ -1,0 +1,13 @@
+{
+  "year": 2015,
+  "source": "https://api.collegefootballdata.com/stats/game/advanced",
+  "parameters": {
+    "year": 2015,
+    "seasonType": "both",
+    "excludeGarbageTime": "false"
+  },
+  "downloaded_at_utc": "2026-10-16T19:24:43.668498+00:00",
+  "record_count": 1726,
+  "sha256": "59c7050fa144954a8e7431b71b1418fdceb6985f24b75ed96605a75dc078bf77",
+  "note": "Postgame facts; use only after prior kickoff in predictive features."
+}

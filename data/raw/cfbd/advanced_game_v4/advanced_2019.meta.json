@@ -1,0 +1,13 @@
+{
+  "year": 2019,
+  "source": "https://api.collegefootballdata.com/stats/game/advanced",
+  "parameters": {
+    "year": 2019,
+    "seasonType": "both",
+    "excludeGarbageTime": "false"
+  },
+  "downloaded_at_utc": "2026-10-16T19:25:11.242478+00:00",
+  "record_count": 1774,
+  "sha256": "c90c3ef8b962543b9aa5bfcc17d6df42c161f076bf05ee10ccfce532e96f6d50",
+  "note": "Postgame facts; use only after prior kickoff in predictive features."
+}
