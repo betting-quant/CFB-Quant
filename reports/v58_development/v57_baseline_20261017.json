@@ -1,0 +1,18 @@
+{
+  "model": "CFB-Quant v5.7",
+  "evaluation": "retrospective_asof_reconstruction",
+  "game_date": "2026-10-17",
+  "forecast_created_date": "2026-10-19",
+  "games": 49,
+  "spread_mae": 10.842537159104516,
+  "total_mae": 13.083847251400405,
+  "spread_median_ae": 10.685566362305432,
+  "total_median_ae": 12.273252675583803,
+  "spread_rmse": 13.573620546095391,
+  "total_rmse": 16.36000866412606,
+  "winner_accuracy": 0.6938775510204082,
+  "total_bias": 1.592370661452726,
+  "point_in_time_verified": false,
+  "eligible_for_model_selection": false,
+  "notes": "Retrospective diagnostic only. Do not train or tune using this slate."
+}

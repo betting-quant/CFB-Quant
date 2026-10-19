@@ -1,0 +1,935 @@
+season,game_id,home_team,home_fbs,season_type,week,away_team,away_fbs,universe_status,phase
+2025,401756846,Kansas State,True,regular,1,Iowa State,True,fbs_fbs,regular_weeks_1_4
+2025,401760371,UNLV,True,regular,1,Idaho State,False,other,regular_weeks_1_4
+2025,401756847,Kansas,True,regular,1,Fresno State,True,fbs_fbs,regular_weeks_1_4
+2025,401757218,Western Kentucky,True,regular,1,Sam Houston,True,fbs_fbs,regular_weeks_1_4
+2025,401754516,Hawai'i,True,regular,1,Stanford,True,fbs_fbs,regular_weeks_1_4
+2025,401762522,South Florida,True,regular,1,Boise State,True,fbs_fbs,regular_weeks_1_4
+2025,401752794,Rutgers,True,regular,1,Ohio,True,fbs_fbs,regular_weeks_1_4
+2025,401762790,Bowling Green,True,regular,1,Lafayette,False,other,regular_weeks_1_4
+2025,401754373,NC State,True,regular,1,East Carolina,True,fbs_fbs,regular_weeks_1_4
+2025,401756848,UCF,True,regular,1,Jacksonville State,True,fbs_fbs,regular_weeks_1_4
+2025,401757219,Delaware,True,regular,1,Delaware State,False,other,regular_weeks_1_4
+2025,401761588,UL Monroe,True,regular,1,Saint Francis,False,other,regular_weeks_1_4
+2025,401762789,Akron,True,regular,1,Wyoming,True,fbs_fbs,regular_weeks_1_4
+2025,401752674,Missouri,True,regular,1,Central Arkansas,False,other,regular_weeks_1_4
+2025,401754517,Duke,True,regular,1,Elon,False,other,regular_weeks_1_4
+2025,401756876,Oklahoma State,True,regular,1,UT Martin,False,other,regular_weeks_1_4
+2025,401752793,Minnesota,True,regular,1,Buffalo,True,fbs_fbs,regular_weeks_1_4
+2025,401756852,Houston,True,regular,1,Stephen F. Austin,False,other,regular_weeks_1_4
+2025,401762430,UAB,True,regular,1,Alabama State,False,other,regular_weeks_1_4
+2025,401752796,Cincinnati,True,regular,1,Nebraska,True,fbs_fbs,regular_weeks_1_4
+2025,401762791,Wisconsin,True,regular,1,Miami (OH),True,fbs_fbs,regular_weeks_1_4
+2025,401760357,San Diego State,True,regular,1,Stony Brook,False,other,regular_weeks_1_4
+2025,401762432,Army,True,regular,1,Tarleton State,False,other,regular_weeks_1_4
+2025,401752802,Michigan State,True,regular,1,Western Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401754374,Wake Forest,True,regular,1,Kennesaw State,True,fbs_fbs,regular_weeks_1_4
+2025,401761589,Charlotte,True,regular,1,App State,True,fbs_fbs,regular_weeks_1_4
+2025,401766898,Florida International,True,regular,1,Bethune-Cookman,False,other,regular_weeks_1_4
+2025,401752795,Illinois,True,regular,1,Western Illinois,False,other,regular_weeks_1_4
+2025,401756854,Kansas,True,regular,1,Wagner,False,other,regular_weeks_1_4
+2025,401752667,Baylor,True,regular,1,Auburn,True,fbs_fbs,regular_weeks_1_4
+2025,401754375,Colorado,True,regular,1,Georgia Tech,True,fbs_fbs,regular_weeks_1_4
+2025,401757224,Sam Houston,True,regular,1,UNLV,True,fbs_fbs,regular_weeks_1_4
+2025,401760358,San José State,True,regular,1,Central Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401752673,Southern Miss,True,regular,1,Mississippi State,True,fbs_fbs,regular_weeks_1_4
+2025,401752676,Tennessee,True,regular,1,Syracuse,True,fbs_fbs,regular_weeks_1_4
+2025,401752677,Ohio State,True,regular,1,Texas,True,fbs_fbs,regular_weeks_1_4
+2025,401752797,Maryland,True,regular,1,Florida Atlantic,True,fbs_fbs,regular_weeks_1_4
+2025,401752801,Purdue,True,regular,1,Ball State,True,fbs_fbs,regular_weeks_1_4
+2025,401752803,Tulane,True,regular,1,Northwestern,True,fbs_fbs,regular_weeks_1_4
+2025,401754520,Pittsburgh,True,regular,1,Duquesne,False,other,regular_weeks_1_4
+2025,401762434,Navy,True,regular,1,VMI,False,other,regular_weeks_1_4
+2025,401762792,Kent State,True,regular,1,Merrimack,False,other,regular_weeks_1_4
+2025,401752670,Kentucky,True,regular,1,Toledo,True,fbs_fbs,regular_weeks_1_4
+2025,401754518,Boston College,True,regular,1,Fordham,False,other,regular_weeks_1_4
+2025,401756878,West Virginia,True,regular,1,Robert Morris,False,other,regular_weeks_1_4
+2025,401757167,UConn,True,regular,1,Central Connecticut,False,other,regular_weeks_1_4
+2025,401752806,Indiana,True,regular,1,Old Dominion,True,fbs_fbs,regular_weeks_1_4
+2025,401754519,Louisville,True,regular,1,Eastern Kentucky,False,other,regular_weeks_1_4
+2025,401752665,Florida State,True,regular,1,Alabama,True,fbs_fbs,regular_weeks_1_4
+2025,401752669,Georgia,True,regular,1,Marshall,True,fbs_fbs,regular_weeks_1_4
+2025,401752807,Penn State,True,regular,1,Nevada,True,fbs_fbs,regular_weeks_1_4
+2025,401756853,Iowa State,True,regular,1,South Dakota,False,other,regular_weeks_1_4
+2025,401760359,Air Force,True,regular,1,Bucknell,False,other,regular_weeks_1_4
+2025,401762456,Massachusetts,True,regular,1,Temple,True,fbs_fbs,regular_weeks_1_4
+2025,401762793,Northern Illinois,True,regular,1,Holy Cross,False,other,regular_weeks_1_4
+2025,401752804,Oregon,True,regular,1,Montana State,False,other,regular_weeks_1_4
+2025,401757220,Liberty,True,regular,1,Maine,False,other,regular_weeks_1_4
+2025,401752666,Arkansas,True,regular,1,Alabama A&M,False,other,regular_weeks_1_4
+2025,401762433,Memphis,True,regular,1,Chattanooga,False,other,regular_weeks_1_4
+2025,401752675,Oklahoma,True,regular,1,Illinois State,False,other,regular_weeks_1_4
+2025,401752799,Iowa,True,regular,1,UAlbany,False,other,regular_weeks_1_4
+2025,401754616,Virginia,True,regular,1,Coastal Carolina,True,fbs_fbs,regular_weeks_1_4
+2025,401761590,James Madison,True,regular,1,Weber State,False,other,regular_weeks_1_4
+2025,401752668,Florida,True,regular,1,Long Island University,False,other,regular_weeks_1_4
+2025,401752678,Texas A&M,True,regular,1,UTSA,True,fbs_fbs,regular_weeks_1_4
+2025,401752679,Vanderbilt,True,regular,1,Charleston Southern,False,other,regular_weeks_1_4
+2025,401756855,Kansas State,True,regular,1,North Dakota,False,other,regular_weeks_1_4
+2025,401757222,Middle Tennessee,True,regular,1,Austin Peay,False,other,regular_weeks_1_4
+2025,401757226,Western Kentucky,True,regular,1,North Alabama,False,other,regular_weeks_1_4
+2025,401761591,Arkansas State,True,regular,1,Southeast Missouri State,False,other,regular_weeks_1_4
+2025,401761593,South Alabama,True,regular,1,Morgan State,False,other,regular_weeks_1_4
+2025,401761595,Troy,True,regular,1,Nicholls,False,other,regular_weeks_1_4
+2025,401752671,Clemson,True,regular,1,LSU,True,fbs_fbs,regular_weeks_1_4
+2025,401752798,USC,True,regular,1,Missouri State,True,fbs_fbs,regular_weeks_1_4
+2025,401752808,Michigan,True,regular,1,New Mexico,True,fbs_fbs,regular_weeks_1_4
+2025,401756877,Texas Tech,True,regular,1,Arkansas-Pine Bluff,False,other,regular_weeks_1_4
+2025,401757221,Louisiana Tech,True,regular,1,SE Louisiana,False,other,regular_weeks_1_4
+2025,401757225,Utah State,True,regular,1,UTEP,True,fbs_fbs,regular_weeks_1_4
+2025,401752672,Ole Miss,True,regular,1,Georgia State,True,fbs_fbs,regular_weeks_1_4
+2025,401756851,BYU,True,regular,1,Portland State,False,other,regular_weeks_1_4
+2025,401761592,Louisiana,True,regular,1,Rice,True,fbs_fbs,regular_weeks_1_4
+2025,401761594,Texas State,True,regular,1,Eastern Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401762435,North Texas,True,regular,1,Lamar,False,other,regular_weeks_1_4
+2025,401762457,Tulsa,True,regular,1,Abilene Christian,False,other,regular_weeks_1_4
+2025,401754521,SMU,True,regular,1,East Texas A&M,False,other,regular_weeks_1_4
+2025,401757223,New Mexico State,True,regular,1,Bryant,False,other,regular_weeks_1_4
+2025,401760361,Fresno State,True,regular,1,Georgia Southern,True,fbs_fbs,regular_weeks_1_4
+2025,401752947,Washington State,True,regular,1,Idaho,False,other,regular_weeks_1_4
+2025,401756850,Arizona State,True,regular,1,Northern Arizona,False,other,regular_weeks_1_4
+2025,401752936,Oregon State,True,regular,1,California,True,fbs_fbs,regular_weeks_1_4
+2025,401756849,Arizona,True,regular,1,Hawai'i,True,fbs_fbs,regular_weeks_1_4
+2025,401752800,UCLA,True,regular,1,Utah,True,fbs_fbs,regular_weeks_1_4
+2025,401752805,Washington,True,regular,1,Colorado State,True,fbs_fbs,regular_weeks_1_4
+2025,401752680,South Carolina,True,regular,1,Virginia Tech,True,fbs_fbs,regular_weeks_1_4
+2025,401754522,Miami,True,regular,1,Notre Dame,True,fbs_fbs,regular_weeks_1_4
+2025,401754523,North Carolina,True,regular,1,TCU,True,fbs_fbs,regular_weeks_1_4
+2025,401754528,Louisville,True,regular,2,James Madison,True,fbs_fbs,regular_weeks_1_4
+2025,401752817,Northwestern,True,regular,2,Western Illinois,False,other,regular_weeks_1_4
+2025,401752826,Maryland,True,regular,2,Northern Illinois,True,fbs_fbs,regular_weeks_1_4
+2025,401760363,Boise State,True,regular,2,Eastern Washington,False,other,regular_weeks_1_4
+2025,401752693,Texas,True,regular,2,San José State,True,fbs_fbs,regular_weeks_1_4
+2025,401752811,Penn State,True,regular,2,Florida International,True,fbs_fbs,regular_weeks_1_4
+2025,401752812,Indiana,True,regular,2,Kennesaw State,True,fbs_fbs,regular_weeks_1_4
+2025,401752813,Minnesota,True,regular,2,Northwestern State,False,other,regular_weeks_1_4
+2025,401752822,Iowa State,True,regular,2,Iowa,True,fbs_fbs,regular_weeks_1_4
+2025,401752825,Duke,True,regular,2,Illinois,True,fbs_fbs,regular_weeks_1_4
+2025,401754524,NC State,True,regular,2,Virginia,True,fbs_fbs,regular_weeks_1_4
+2025,401754525,SMU,True,regular,2,Baylor,True,fbs_fbs,regular_weeks_1_4
+2025,401754529,Pittsburgh,True,regular,2,Central Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401754618,Syracuse,True,regular,2,UConn,True,fbs_fbs,regular_weeks_1_4
+2025,401754621,Florida State,True,regular,2,East Texas A&M,False,other,regular_weeks_1_4
+2025,401756885,Texas Tech,True,regular,2,Kent State,True,fbs_fbs,regular_weeks_1_4
+2025,401757227,Jacksonville State,True,regular,2,Liberty,True,fbs_fbs,regular_weeks_1_4
+2025,401752694,Texas A&M,True,regular,2,Utah State,True,fbs_fbs,regular_weeks_1_4
+2025,401754620,Wake Forest,True,regular,2,Western Carolina,False,other,regular_weeks_1_4
+2025,401762462,Temple,True,regular,2,Howard,False,other,regular_weeks_1_4
+2025,401760366,New Mexico,True,regular,2,Idaho State,False,other,regular_weeks_1_4
+2025,401752685,Georgia,True,regular,2,Austin Peay,False,other,regular_weeks_1_4
+2025,401752686,Kentucky,True,regular,2,Ole Miss,True,fbs_fbs,regular_weeks_1_4
+2025,401752689,Missouri,True,regular,2,Kansas,True,fbs_fbs,regular_weeks_1_4
+2025,401752692,Tennessee,True,regular,2,East Tennessee State,False,other,regular_weeks_1_4
+2025,401752815,Ohio State,True,regular,2,Grambling,False,other,regular_weeks_1_4
+2025,401752818,Rutgers,True,regular,2,Miami (OH),True,fbs_fbs,regular_weeks_1_4
+2025,401752824,Oregon,True,regular,2,Oklahoma State,True,fbs_fbs,regular_weeks_1_4
+2025,401752937,Oregon State,True,regular,2,Fresno State,True,fbs_fbs,regular_weeks_1_4
+2025,401754622,Georgia Tech,True,regular,2,Gardner-Webb,False,other,regular_weeks_1_4
+2025,401754637,Clemson,True,regular,2,Troy,True,fbs_fbs,regular_weeks_1_4
+2025,401756880,Cincinnati,True,regular,2,Bowling Green,True,fbs_fbs,regular_weeks_1_4
+2025,401756881,Colorado,True,regular,2,Delaware,True,fbs_fbs,regular_weeks_1_4
+2025,401761596,App State,True,regular,2,Lindenwood,False,other,regular_weeks_1_4
+2025,401761603,UTSA,True,regular,2,Texas State,True,fbs_fbs,regular_weeks_1_4
+2025,401762458,Navy,True,regular,2,UAB,True,fbs_fbs,regular_weeks_1_4
+2025,401762461,Western Michigan,True,regular,2,North Texas,True,fbs_fbs,regular_weeks_1_4
+2025,401762794,Buffalo,True,regular,2,Saint Francis,False,other,regular_weeks_1_4
+2025,401762816,Massachusetts,True,regular,2,Bryant,False,other,regular_weeks_1_4
+2025,401752820,Wisconsin,True,regular,2,Middle Tennessee,True,fbs_fbs,regular_weeks_1_4
+2025,401756883,Ohio,True,regular,2,West Virginia,True,fbs_fbs,regular_weeks_1_4
+2025,401760367,Wyoming,True,regular,2,Northern Iowa,False,other,regular_weeks_1_4
+2025,401752684,Florida,True,regular,2,South Florida,True,fbs_fbs,regular_weeks_1_4
+2025,401752682,Arkansas,True,regular,2,Arkansas State,True,fbs_fbs,regular_weeks_1_4
+2025,401760365,Nevada,True,regular,2,Sacramento State,False,other,regular_weeks_1_4
+2025,401761602,Southern Miss,True,regular,2,Jackson State,False,other,regular_weeks_1_4
+2025,401754530,California,True,regular,2,Texas Southern,False,other,regular_weeks_1_4
+2025,401756887,Utah,True,regular,2,Cal Poly,False,other,regular_weeks_1_4
+2025,401757228,Marshall,True,regular,2,Missouri State,True,fbs_fbs,regular_weeks_1_4
+2025,401761599,Old Dominion,True,regular,2,North Carolina Central,False,other,regular_weeks_1_4
+2025,401762459,East Carolina,True,regular,2,Campbell,False,other,regular_weeks_1_4
+2025,401762460,Florida Atlantic,True,regular,2,Florida A&M,False,other,regular_weeks_1_4
+2025,401752691,South Carolina,True,regular,2,South Carolina State,False,other,regular_weeks_1_4
+2025,401754527,Charlotte,True,regular,2,North Carolina,True,fbs_fbs,regular_weeks_1_4
+2025,401754641,Miami,True,regular,2,Bethune-Cookman,False,other,regular_weeks_1_4
+2025,401756882,Kansas State,True,regular,2,Army,True,fbs_fbs,regular_weeks_1_4
+2025,401756884,Rice,True,regular,2,Houston,True,fbs_fbs,regular_weeks_1_4
+2025,401756886,UCF,True,regular,2,North Carolina A&T,False,other,regular_weeks_1_4
+2025,401757232,Toledo,True,regular,2,Western Kentucky,True,fbs_fbs,regular_weeks_1_4
+2025,401760364,Colorado State,True,regular,2,Northern Colorado,False,other,regular_weeks_1_4
+2025,401761598,Georgia State,True,regular,2,Memphis,True,fbs_fbs,regular_weeks_1_4
+2025,401761601,South Alabama,True,regular,2,Tulane,True,fbs_fbs,regular_weeks_1_4
+2025,401762795,Eastern Michigan,True,regular,2,Long Island University,False,other,regular_weeks_1_4
+2025,401752683,Auburn,True,regular,2,Ball State,True,fbs_fbs,regular_weeks_1_4
+2025,401752687,LSU,True,regular,2,Louisiana Tech,True,fbs_fbs,regular_weeks_1_4
+2025,401752688,Mississippi State,True,regular,2,Arizona State,True,fbs_fbs,regular_weeks_1_4
+2025,401752690,Oklahoma,True,regular,2,Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401752695,Virginia Tech,True,regular,2,Vanderbilt,True,fbs_fbs,regular_weeks_1_4
+2025,401752810,Nebraska,True,regular,2,Akron,True,fbs_fbs,regular_weeks_1_4
+2025,401752814,USC,True,regular,2,Georgia Southern,True,fbs_fbs,regular_weeks_1_4
+2025,401752816,Michigan State,True,regular,2,Boston College,True,fbs_fbs,regular_weeks_1_4
+2025,401752819,Purdue,True,regular,2,Southern Illinois,False,other,regular_weeks_1_4
+2025,401761597,Coastal Carolina,True,regular,2,Charleston Southern,False,other,regular_weeks_1_4
+2025,401752681,Alabama,True,regular,2,UL Monroe,True,fbs_fbs,regular_weeks_1_4
+2025,401752823,UNLV,True,regular,2,UCLA,True,fbs_fbs,regular_weeks_1_4
+2025,401761600,Louisiana,True,regular,2,McNeese,False,other,regular_weeks_1_4
+2025,401757229,New Mexico State,True,regular,2,Tulsa,True,fbs_fbs,regular_weeks_1_4
+2025,401757231,UTEP,True,regular,2,UT Martin,False,other,regular_weeks_1_4
+2025,401756879,Arizona,True,regular,2,Weber State,False,other,regular_weeks_1_4
+2025,401752948,Washington State,True,regular,2,San Diego State,True,fbs_fbs,regular_weeks_1_4
+2025,401754526,BYU,True,regular,2,Stanford,True,fbs_fbs,regular_weeks_1_4
+2025,401752821,Washington,True,regular,2,UC Davis,False,other,regular_weeks_1_4
+2025,401757230,Hawai'i,True,regular,2,Sam Houston,True,fbs_fbs,regular_weeks_1_4
+2025,401754531,Wake Forest,True,regular,3,NC State,True,fbs_fbs,regular_weeks_1_4
+2025,401752836,Indiana,True,regular,3,Indiana State,False,other,regular_weeks_1_4
+2025,401754532,Syracuse,True,regular,3,Colgate,False,other,regular_weeks_1_4
+2025,401756893,Houston,True,regular,3,Colorado,True,fbs_fbs,regular_weeks_1_4
+2025,401756888,Arizona,True,regular,3,Kansas State,True,fbs_fbs,regular_weeks_1_4
+2025,401752837,UCLA,True,regular,3,New Mexico,True,fbs_fbs,regular_weeks_1_4
+2025,401752696,Alabama,True,regular,3,Wisconsin,True,fbs_fbs,regular_weeks_1_4
+2025,401752703,Temple,True,regular,3,Oklahoma,True,fbs_fbs,regular_weeks_1_4
+2025,401752828,Nebraska,True,regular,3,Houston Christian,False,other,regular_weeks_1_4
+2025,401752831,Northwestern,True,regular,3,Oregon,True,fbs_fbs,regular_weeks_1_4
+2025,401752838,Maryland,True,regular,3,Towson,False,other,regular_weeks_1_4
+2025,401752839,Michigan,True,regular,3,Central Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401754619,Virginia,True,regular,3,William & Mary,False,other,regular_weeks_1_4
+2025,401754623,Georgia Tech,True,regular,3,Clemson,True,fbs_fbs,regular_weeks_1_4
+2025,401756891,Baylor,True,regular,3,Samford,False,other,regular_weeks_1_4
+2025,401761608,Troy,True,regular,3,Memphis,True,fbs_fbs,regular_weeks_1_4
+2025,401762817,Kent State,True,regular,3,Buffalo,True,fbs_fbs,regular_weeks_1_4
+2025,401752697,Auburn,True,regular,3,South Alabama,True,fbs_fbs,regular_weeks_1_4
+2025,401752702,Missouri,True,regular,3,Louisiana,True,fbs_fbs,regular_weeks_1_4
+2025,401762818,Ball State,True,regular,3,New Hampshire,False,other,regular_weeks_1_4
+2025,401757168,Delaware,True,regular,3,UConn,True,fbs_fbs,regular_weeks_1_4
+2025,401752705,Tennessee,True,regular,3,Georgia,True,fbs_fbs,regular_weeks_1_4
+2025,401752832,Purdue,True,regular,3,USC,True,fbs_fbs,regular_weeks_1_4
+2025,401752833,Rutgers,True,regular,3,Norfolk State,False,other,regular_weeks_1_4
+2025,401752834,Michigan State,True,regular,3,Youngstown State,False,other,regular_weeks_1_4
+2025,401752835,Penn State,True,regular,3,Villanova,False,other,regular_weeks_1_4
+2025,401752938,Texas Tech,True,regular,3,Oregon State,True,fbs_fbs,regular_weeks_1_4
+2025,401752949,North Texas,True,regular,3,Washington State,True,fbs_fbs,regular_weeks_1_4
+2025,401754615,Missouri State,True,regular,3,SMU,True,fbs_fbs,regular_weeks_1_4
+2025,401754638,West Virginia,True,regular,3,Pittsburgh,True,fbs_fbs,regular_weeks_1_4
+2025,401754639,North Carolina,True,regular,3,Richmond,False,other,regular_weeks_1_4
+2025,401756892,Cincinnati,True,regular,3,Northwestern State,False,other,regular_weeks_1_4
+2025,401762467,UTSA,True,regular,3,Incarnate Word,False,other,regular_weeks_1_4
+2025,401762819,Toledo,True,regular,3,Morgan State,False,other,regular_weeks_1_4
+2025,401756890,Arkansas State,True,regular,3,Iowa State,True,fbs_fbs,regular_weeks_1_4
+2025,401752706,Texas,True,regular,3,UTEP,True,fbs_fbs,regular_weeks_1_4
+2025,401754535,Miami,True,regular,3,South Florida,True,fbs_fbs,regular_weeks_1_4
+2025,401757256,Bowling Green,True,regular,3,Liberty,True,fbs_fbs,regular_weeks_1_4
+2025,401757258,Nevada,True,regular,3,Middle Tennessee,True,fbs_fbs,regular_weeks_1_4
+2025,401752701,Mississippi State,True,regular,3,Alcorn State,False,other,regular_weeks_1_4
+2025,401757233,Florida International,True,regular,3,Florida Atlantic,True,fbs_fbs,regular_weeks_1_4
+2025,401757235,Kennesaw State,True,regular,3,Merrimack,False,other,regular_weeks_1_4
+2025,401761606,Marshall,True,regular,3,Eastern Kentucky,False,other,regular_weeks_1_4
+2025,401762464,Charlotte,True,regular,3,Monmouth,False,other,regular_weeks_1_4
+2025,401752700,Ole Miss,True,regular,3,Arkansas,True,fbs_fbs,regular_weeks_1_4
+2025,401752827,Ohio State,True,regular,3,Ohio,True,fbs_fbs,regular_weeks_1_4
+2025,401752829,Illinois,True,regular,3,Western Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401754536,Virginia Tech,True,regular,3,Old Dominion,True,fbs_fbs,regular_weeks_1_4
+2025,401757234,Georgia Southern,True,regular,3,Jacksonville State,True,fbs_fbs,regular_weeks_1_4
+2025,401761605,Georgia State,True,regular,3,Murray State,False,other,regular_weeks_1_4
+2025,401761607,Southern Miss,True,regular,3,App State,True,fbs_fbs,regular_weeks_1_4
+2025,401762466,Rice,True,regular,3,Prairie View A&M,False,other,regular_weeks_1_4
+2025,401752698,Kentucky,True,regular,3,Eastern Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401752699,LSU,True,regular,3,Florida,True,fbs_fbs,regular_weeks_1_4
+2025,401752707,Notre Dame,True,regular,3,Texas A&M,True,fbs_fbs,regular_weeks_1_4
+2025,401752830,Iowa,True,regular,3,Massachusetts,True,fbs_fbs,regular_weeks_1_4
+2025,401757257,Louisiana Tech,True,regular,3,New Mexico State,True,fbs_fbs,regular_weeks_1_4
+2025,401761604,Coastal Carolina,True,regular,3,East Carolina,True,fbs_fbs,regular_weeks_1_4
+2025,401752704,South Carolina,True,regular,3,Vanderbilt,True,fbs_fbs,regular_weeks_1_4
+2025,401754534,Tulane,True,regular,3,Duke,True,fbs_fbs,regular_weeks_1_4
+2025,401756894,TCU,True,regular,3,Abilene Christian,False,other,regular_weeks_1_4
+2025,401756895,Wyoming,True,regular,3,Utah,True,fbs_fbs,regular_weeks_1_4
+2025,401762465,Tulsa,True,regular,3,Navy,True,fbs_fbs,regular_weeks_1_4
+2025,401762463,UAB,True,regular,3,Akron,True,fbs_fbs,regular_weeks_1_4
+2025,401760368,Utah State,True,regular,3,Air Force,True,fbs_fbs,regular_weeks_1_4
+2025,401760369,Fresno State,True,regular,3,Southern,False,other,regular_weeks_1_4
+2025,401752840,California,True,regular,3,Minnesota,True,fbs_fbs,regular_weeks_1_4
+2025,401754533,Stanford,True,regular,3,Boston College,True,fbs_fbs,regular_weeks_1_4
+2025,401756889,Arizona State,True,regular,3,Texas State,True,fbs_fbs,regular_weeks_1_4
+2025,401760370,Hawai'i,True,regular,3,Portland State,False,other,regular_weeks_1_4
+2025,401762468,Charlotte,True,regular,4,Rice,True,fbs_fbs,regular_weeks_1_4
+2025,401756900,Oklahoma State,True,regular,4,Tulsa,True,fbs_fbs,regular_weeks_1_4
+2025,401752844,Rutgers,True,regular,4,Iowa,True,fbs_fbs,regular_weeks_1_4
+2025,401752708,Memphis,True,regular,4,Arkansas,True,fbs_fbs,regular_weeks_1_4
+2025,401752845,Wisconsin,True,regular,4,Maryland,True,fbs_fbs,regular_weeks_1_4
+2025,401754537,Clemson,True,regular,4,Syracuse,True,fbs_fbs,regular_weeks_1_4
+2025,401754617,Virginia Tech,True,regular,4,Wofford,False,other,regular_weeks_1_4
+2025,401754636,TCU,True,regular,4,SMU,True,fbs_fbs,regular_weeks_1_4
+2025,401754642,Louisville,True,regular,4,Bowling Green,True,fbs_fbs,regular_weeks_1_4
+2025,401756901,Utah,True,regular,4,Texas Tech,True,fbs_fbs,regular_weeks_1_4
+2025,401760376,Miami (OH),True,regular,4,UNLV,True,fbs_fbs,regular_weeks_1_4
+2025,401762469,Army,True,regular,4,North Texas,True,fbs_fbs,regular_weeks_1_4
+2025,401762470,South Florida,True,regular,4,South Carolina State,False,other,regular_weeks_1_4
+2025,401752715,Tennessee,True,regular,4,UAB,True,fbs_fbs,regular_weeks_1_4
+2025,401762822,Central Michigan,True,regular,4,Wagner,False,other,regular_weeks_1_4
+2025,401752841,Oregon,True,regular,4,Oregon State,True,fbs_fbs,regular_weeks_1_4
+2025,401752711,Ole Miss,True,regular,4,Tulane,True,fbs_fbs,regular_weeks_1_4
+2025,401752714,Oklahoma,True,regular,4,Auburn,True,fbs_fbs,regular_weeks_1_4
+2025,401752846,Nebraska,True,regular,4,Michigan,True,fbs_fbs,regular_weeks_1_4
+2025,401752848,Notre Dame,True,regular,4,Purdue,True,fbs_fbs,regular_weeks_1_4
+2025,401754541,Florida State,True,regular,4,Kent State,True,fbs_fbs,regular_weeks_1_4
+2025,401754640,UCF,True,regular,4,North Carolina,True,fbs_fbs,regular_weeks_1_4
+2025,401757169,UConn,True,regular,4,Ball State,True,fbs_fbs,regular_weeks_1_4
+2025,401757262,Liberty,True,regular,4,James Madison,True,fbs_fbs,regular_weeks_1_4
+2025,401761610,Eastern Michigan,True,regular,4,Louisiana,True,fbs_fbs,regular_weeks_1_4
+2025,401761613,Buffalo,True,regular,4,Troy,True,fbs_fbs,regular_weeks_1_4
+2025,401762820,Western Michigan,True,regular,4,Toledo,True,fbs_fbs,regular_weeks_1_4
+2025,401762823,Ohio,True,regular,4,Gardner-Webb,False,other,regular_weeks_1_4
+2025,401754538,Duke,True,regular,4,NC State,True,fbs_fbs,regular_weeks_1_4
+2025,401752712,Mississippi State,True,regular,4,Northern Illinois,True,fbs_fbs,regular_weeks_1_4
+2025,401754542,Georgia Tech,True,regular,4,Temple,True,fbs_fbs,regular_weeks_1_4
+2025,401760375,San José State,True,regular,4,Idaho,False,other,regular_weeks_1_4
+2025,401756899,Kansas,True,regular,4,West Virginia,True,fbs_fbs,regular_weeks_1_4
+2025,401757259,Florida International,True,regular,4,Delaware,True,fbs_fbs,regular_weeks_1_4
+2025,401757261,Kennesaw State,True,regular,4,Arkansas State,True,fbs_fbs,regular_weeks_1_4
+2025,401762821,Akron,True,regular,4,Duquesne,False,other,regular_weeks_1_4
+2025,401752713,Missouri,True,regular,4,South Carolina,True,fbs_fbs,regular_weeks_1_4
+2025,401757260,Jacksonville State,True,regular,4,Murray State,False,other,regular_weeks_1_4
+2025,401757264,Middle Tennessee,True,regular,4,Marshall,True,fbs_fbs,regular_weeks_1_4
+2025,401757265,Missouri State,True,regular,4,UT Martin,False,other,regular_weeks_1_4
+2025,401757268,Western Kentucky,True,regular,4,Nevada,True,fbs_fbs,regular_weeks_1_4
+2025,401760372,Air Force,True,regular,4,Boise State,True,fbs_fbs,regular_weeks_1_4
+2025,401761609,Georgia Southern,True,regular,4,Maine,False,other,regular_weeks_1_4
+2025,401761611,South Alabama,True,regular,4,Coastal Carolina,True,fbs_fbs,regular_weeks_1_4
+2025,401752709,Miami,True,regular,4,Florida,True,fbs_fbs,regular_weeks_1_4
+2025,401752716,Vanderbilt,True,regular,4,Georgia State,True,fbs_fbs,regular_weeks_1_4
+2025,401752842,Washington State,True,regular,4,Washington,True,fbs_fbs,regular_weeks_1_4
+2025,401752843,Indiana,True,regular,4,Illinois,True,fbs_fbs,regular_weeks_1_4
+2025,401754539,Virginia,True,regular,4,Stanford,True,fbs_fbs,regular_weeks_1_4
+2025,401756896,Baylor,True,regular,4,Arizona State,True,fbs_fbs,regular_weeks_1_4
+2025,401756898,East Carolina,True,regular,4,BYU,True,fbs_fbs,regular_weeks_1_4
+2025,401757263,Louisiana Tech,True,regular,4,Southern Miss,True,fbs_fbs,regular_weeks_1_4
+2025,401752710,LSU,True,regular,4,SE Louisiana,False,other,regular_weeks_1_4
+2025,401752723,Texas,True,regular,4,Sam Houston,True,fbs_fbs,regular_weeks_1_4
+2025,401760377,Utah State,True,regular,4,McNeese,False,other,regular_weeks_1_4
+2025,401761612,Texas State,True,regular,4,Nicholls,False,other,regular_weeks_1_4
+2025,401757267,UTEP,True,regular,4,UL Monroe,True,fbs_fbs,regular_weeks_1_4
+2025,401760373,Colorado State,True,regular,4,UTSA,True,fbs_fbs,regular_weeks_1_4
+2025,401756897,Colorado,True,regular,4,Wyoming,True,fbs_fbs,regular_weeks_1_4
+2025,401754540,San Diego State,True,regular,4,California,True,fbs_fbs,regular_weeks_1_4
+2025,401752847,USC,True,regular,4,Michigan State,True,fbs_fbs,regular_weeks_1_4
+2025,401760374,Hawai'i,True,regular,4,Fresno State,True,fbs_fbs,regular_weeks_1_4
+2025,401762471,East Carolina,True,regular,5,Army,True,fbs_fbs,regular_week_5_plus
+2025,401754543,Virginia,True,regular,5,Florida State,True,fbs_fbs,regular_week_5_plus
+2025,401756902,Arizona State,True,regular,5,TCU,True,fbs_fbs,regular_week_5_plus
+2025,401752939,Oregon State,True,regular,5,Houston,True,fbs_fbs,regular_week_5_plus
+2025,401752717,Arkansas,True,regular,5,Notre Dame,True,fbs_fbs,regular_week_5_plus
+2025,401752849,Minnesota,True,regular,5,Rutgers,True,fbs_fbs,regular_week_5_plus
+2025,401752850,Illinois,True,regular,5,USC,True,fbs_fbs,regular_week_5_plus
+2025,401754545,Syracuse,True,regular,5,Duke,True,fbs_fbs,regular_week_5_plus
+2025,401754546,Wake Forest,True,regular,5,Georgia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401754547,Pittsburgh,True,regular,5,Louisville,True,fbs_fbs,regular_week_5_plus
+2025,401756905,Kansas,True,regular,5,Cincinnati,True,fbs_fbs,regular_week_5_plus
+2025,401756906,Kansas State,True,regular,5,UCF,True,fbs_fbs,regular_week_5_plus
+2025,401761617,North Texas,True,regular,5,South Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401762825,Ohio,True,regular,5,Bowling Green,True,fbs_fbs,regular_week_5_plus
+2025,401752725,Vanderbilt,True,regular,5,Utah State,True,fbs_fbs,regular_week_5_plus
+2025,401762826,Central Michigan,True,regular,5,Eastern Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401761614,James Madison,True,regular,5,Georgia Southern,True,fbs_fbs,regular_week_5_plus
+2025,401761616,UL Monroe,True,regular,5,Arkansas State,True,fbs_fbs,regular_week_5_plus
+2025,401752719,Ole Miss,True,regular,5,LSU,True,fbs_fbs,regular_week_5_plus
+2025,401752724,Texas A&M,True,regular,5,Auburn,True,fbs_fbs,regular_week_5_plus
+2025,401752851,Northwestern,True,regular,5,UCLA,True,fbs_fbs,regular_week_5_plus
+2025,401752852,Washington,True,regular,5,Ohio State,True,fbs_fbs,regular_week_5_plus
+2025,401752853,Iowa,True,regular,5,Indiana,True,fbs_fbs,regular_week_5_plus
+2025,401754544,Boston College,True,regular,5,California,True,fbs_fbs,regular_week_5_plus
+2025,401756907,Oklahoma State,True,regular,5,Baylor,True,fbs_fbs,regular_week_5_plus
+2025,401756908,West Virginia,True,regular,5,Utah,True,fbs_fbs,regular_week_5_plus
+2025,401757170,Buffalo,True,regular,5,UConn,True,fbs_fbs,regular_week_5_plus
+2025,401760380,Northern Illinois,True,regular,5,San Diego State,True,fbs_fbs,regular_week_5_plus
+2025,401762473,Navy,True,regular,5,Rice,True,fbs_fbs,regular_week_5_plus
+2025,401762824,Toledo,True,regular,5,Akron,True,fbs_fbs,regular_week_5_plus
+2025,401762827,Miami (OH),True,regular,5,Lindenwood,False,other,regular_week_5_plus
+2025,401757274,New Mexico,True,regular,5,New Mexico State,True,fbs_fbs,regular_week_5_plus
+2025,401760378,Air Force,True,regular,5,Hawai'i,True,fbs_fbs,regular_week_5_plus
+2025,401762474,Tulsa,True,regular,5,Tulane,True,fbs_fbs,regular_week_5_plus
+2025,401752720,Mississippi State,True,regular,5,Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401757270,Kennesaw State,True,regular,5,Middle Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401757271,Old Dominion,True,regular,5,Liberty,True,fbs_fbs,regular_week_5_plus
+2025,401762828,Western Michigan,True,regular,5,Rhode Island,False,other,regular_week_5_plus
+2025,401754548,NC State,True,regular,5,Virginia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401756904,Iowa State,True,regular,5,Arizona,True,fbs_fbs,regular_week_5_plus
+2025,401757269,Southern Miss,True,regular,5,Jacksonville State,True,fbs_fbs,regular_week_5_plus
+2025,401757273,Missouri State,True,regular,5,Western Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401762472,Florida Atlantic,True,regular,5,Memphis,True,fbs_fbs,regular_week_5_plus
+2025,401752718,Georgia,True,regular,5,Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401752721,Missouri,True,regular,5,Massachusetts,True,fbs_fbs,regular_week_5_plus
+2025,401752854,Penn State,True,regular,5,Oregon,True,fbs_fbs,regular_week_5_plus
+2025,401752950,Colorado State,True,regular,5,Washington State,True,fbs_fbs,regular_week_5_plus
+2025,401754549,Stanford,True,regular,5,San José State,True,fbs_fbs,regular_week_5_plus
+2025,401760379,Boise State,True,regular,5,App State,True,fbs_fbs,regular_week_5_plus
+2025,401752722,South Carolina,True,regular,5,Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401761615,Louisiana,True,regular,5,Marshall,True,fbs_fbs,regular_week_5_plus
+2025,401757272,UTEP,True,regular,5,Louisiana Tech,True,fbs_fbs,regular_week_5_plus
+2025,401756903,Colorado,True,regular,5,BYU,True,fbs_fbs,regular_week_5_plus
+2025,401757275,New Mexico State,True,regular,6,Sam Houston,True,fbs_fbs,regular_week_5_plus
+2025,401757276,Delaware,True,regular,6,Western Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401762475,South Florida,True,regular,6,Charlotte,True,fbs_fbs,regular_week_5_plus
+2025,401760384,San José State,True,regular,6,New Mexico,True,fbs_fbs,regular_week_5_plus
+2025,401756909,BYU,True,regular,6,West Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401760382,San Diego State,True,regular,6,Colorado State,True,fbs_fbs,regular_week_5_plus
+2025,401752728,Georgia,True,regular,6,Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401752856,Michigan,True,regular,6,Wisconsin,True,fbs_fbs,regular_week_5_plus
+2025,401752861,Purdue,True,regular,6,Illinois,True,fbs_fbs,regular_week_5_plus
+2025,401754550,Pittsburgh,True,regular,6,Boston College,True,fbs_fbs,regular_week_5_plus
+2025,401754552,North Carolina,True,regular,6,Clemson,True,fbs_fbs,regular_week_5_plus
+2025,401756911,Baylor,True,regular,6,Kansas State,True,fbs_fbs,regular_week_5_plus
+2025,401756912,Cincinnati,True,regular,6,Iowa State,True,fbs_fbs,regular_week_5_plus
+2025,401760381,Navy,True,regular,6,Air Force,True,fbs_fbs,regular_week_5_plus
+2025,401762476,UAB,True,regular,6,Army,True,fbs_fbs,regular_week_5_plus
+2025,401762830,Ball State,True,regular,6,Ohio,True,fbs_fbs,regular_week_5_plus
+2025,401754556,Virginia Tech,True,regular,6,Wake Forest,True,fbs_fbs,regular_week_5_plus
+2025,401762479,Temple,True,regular,6,UTSA,True,fbs_fbs,regular_week_5_plus
+2025,401754557,NC State,True,regular,6,Campbell,False,other,regular_week_5_plus
+2025,401762832,Massachusetts,True,regular,6,Western Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401756910,Arizona,True,regular,6,Oklahoma State,True,fbs_fbs,regular_week_5_plus
+2025,401752726,Alabama,True,regular,6,Vanderbilt,True,fbs_fbs,regular_week_5_plus
+2025,401752727,Florida,True,regular,6,Texas,True,fbs_fbs,regular_week_5_plus
+2025,401752855,UCLA,True,regular,6,Penn State,True,fbs_fbs,regular_week_5_plus
+2025,401752857,Maryland,True,regular,6,Washington,True,fbs_fbs,regular_week_5_plus
+2025,401752858,Northwestern,True,regular,6,UL Monroe,True,fbs_fbs,regular_week_5_plus
+2025,401752940,App State,True,regular,6,Oregon State,True,fbs_fbs,regular_week_5_plus
+2025,401754554,Louisville,True,regular,6,Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401754555,SMU,True,regular,6,Syracuse,True,fbs_fbs,regular_week_5_plus
+2025,401757165,Notre Dame,True,regular,6,Boise State,True,fbs_fbs,regular_week_5_plus
+2025,401757171,UConn,True,regular,6,Florida International,True,fbs_fbs,regular_week_5_plus
+2025,401761618,Georgia State,True,regular,6,James Madison,True,fbs_fbs,regular_week_5_plus
+2025,401762829,Akron,True,regular,6,Central Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401762831,Buffalo,True,regular,6,Eastern Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401762873,Northern Illinois,True,regular,6,Miami (OH),True,fbs_fbs,regular_week_5_plus
+2025,401752729,Oklahoma,True,regular,6,Kent State,True,fbs_fbs,regular_week_5_plus
+2025,401752860,Nebraska,True,regular,6,Michigan State,True,fbs_fbs,regular_week_5_plus
+2025,401761620,Arkansas State,True,regular,6,Texas State,True,fbs_fbs,regular_week_5_plus
+2025,401761619,Old Dominion,True,regular,6,Coastal Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401756913,Houston,True,regular,6,Texas Tech,True,fbs_fbs,regular_week_5_plus
+2025,401760385,Wyoming,True,regular,6,UNLV,True,fbs_fbs,regular_week_5_plus
+2025,401761621,Troy,True,regular,6,South Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401762477,Rice,True,regular,6,Florida Atlantic,True,fbs_fbs,regular_week_5_plus
+2025,401752730,Texas A&M,True,regular,6,Mississippi State,True,fbs_fbs,regular_week_5_plus
+2025,401752859,Ohio State,True,regular,6,Minnesota,True,fbs_fbs,regular_week_5_plus
+2025,401754553,Florida State,True,regular,6,Miami,True,fbs_fbs,regular_week_5_plus
+2025,401756914,TCU,True,regular,6,Colorado,True,fbs_fbs,regular_week_5_plus
+2025,401756915,UCF,True,regular,6,Kansas,True,fbs_fbs,regular_week_5_plus
+2025,401762478,Memphis,True,regular,6,Tulsa,True,fbs_fbs,regular_week_5_plus
+2025,401754551,California,True,regular,6,Duke,True,fbs_fbs,regular_week_5_plus
+2025,401760383,Fresno State,True,regular,6,Nevada,True,fbs_fbs,regular_week_5_plus
+2025,401757278,Middle Tennessee,True,regular,7,Missouri State,True,fbs_fbs,regular_week_5_plus
+2025,401757277,UTEP,True,regular,7,Liberty,True,fbs_fbs,regular_week_5_plus
+2025,401757280,Kennesaw State,True,regular,7,Louisiana Tech,True,fbs_fbs,regular_week_5_plus
+2025,401762480,Tulane,True,regular,7,East Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401757279,Sam Houston,True,regular,7,Jacksonville State,True,fbs_fbs,regular_week_5_plus
+2025,401761622,Georgia Southern,True,regular,7,Southern Miss,True,fbs_fbs,regular_week_5_plus
+2025,401762481,North Texas,True,regular,7,South Florida,True,fbs_fbs,regular_week_5_plus
+2025,401752862,Washington,True,regular,7,Rutgers,True,fbs_fbs,regular_week_5_plus
+2025,401760388,Colorado State,True,regular,7,Fresno State,True,fbs_fbs,regular_week_5_plus
+2025,401752734,Missouri,True,regular,7,Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401752863,Michigan State,True,regular,7,UCLA,True,fbs_fbs,regular_week_5_plus
+2025,401752865,Illinois,True,regular,7,Ohio State,True,fbs_fbs,regular_week_5_plus
+2025,401754559,Florida State,True,regular,7,Pittsburgh,True,fbs_fbs,regular_week_5_plus
+2025,401754561,SMU,True,regular,7,Stanford,True,fbs_fbs,regular_week_5_plus
+2025,401756917,Cincinnati,True,regular,7,UCF,True,fbs_fbs,regular_week_5_plus
+2025,401756920,Oklahoma State,True,regular,7,Houston,True,fbs_fbs,regular_week_5_plus
+2025,401761625,James Madison,True,regular,7,Louisiana,True,fbs_fbs,regular_week_5_plus
+2025,401762483,Army,True,regular,7,Charlotte,True,fbs_fbs,regular_week_5_plus
+2025,401762833,Akron,True,regular,7,Miami (OH),True,fbs_fbs,regular_week_5_plus
+2025,401762835,Bowling Green,True,regular,7,Toledo,True,fbs_fbs,regular_week_5_plus
+2025,401752733,Ole Miss,True,regular,7,Washington State,True,fbs_fbs,regular_week_5_plus
+2025,401762836,Eastern Michigan,True,regular,7,Northern Illinois,True,fbs_fbs,regular_week_5_plus
+2025,401762837,Kent State,True,regular,7,Massachusetts,True,fbs_fbs,regular_week_5_plus
+2025,401752736,Texas,True,regular,7,Oklahoma,True,fbs_fbs,regular_week_5_plus
+2025,401752866,Penn State,True,regular,7,Northwestern,True,fbs_fbs,regular_week_5_plus
+2025,401752867,Maryland,True,regular,7,Nebraska,True,fbs_fbs,regular_week_5_plus
+2025,401752870,Oregon,True,regular,7,Indiana,True,fbs_fbs,regular_week_5_plus
+2025,401754560,Georgia Tech,True,regular,7,Virginia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401754562,Notre Dame,True,regular,7,NC State,True,fbs_fbs,regular_week_5_plus
+2025,401754563,Oregon State,True,regular,7,Wake Forest,True,fbs_fbs,regular_week_5_plus
+2025,401756918,Colorado,True,regular,7,Iowa State,True,fbs_fbs,regular_week_5_plus
+2025,401756919,Kansas State,True,regular,7,TCU,True,fbs_fbs,regular_week_5_plus
+2025,401760386,UNLV,True,regular,7,Air Force,True,fbs_fbs,regular_week_5_plus
+2025,401761624,Georgia State,True,regular,7,App State,True,fbs_fbs,regular_week_5_plus
+2025,401761626,Marshall,True,regular,7,Old Dominion,True,fbs_fbs,regular_week_5_plus
+2025,401762834,Western Michigan,True,regular,7,Ball State,True,fbs_fbs,regular_week_5_plus
+2025,401762484,Temple,True,regular,7,Navy,True,fbs_fbs,regular_week_5_plus
+2025,401752735,Tennessee,True,regular,7,Arkansas,True,fbs_fbs,regular_week_5_plus
+2025,401762482,Florida Atlantic,True,regular,7,UAB,True,fbs_fbs,regular_week_5_plus
+2025,401752737,Texas A&M,True,regular,7,Florida,True,fbs_fbs,regular_week_5_plus
+2025,401752869,Wisconsin,True,regular,7,Iowa,True,fbs_fbs,regular_week_5_plus
+2025,401760391,Wyoming,True,regular,7,San José State,True,fbs_fbs,regular_week_5_plus
+2025,401761623,Coastal Carolina,True,regular,7,UL Monroe,True,fbs_fbs,regular_week_5_plus
+2025,401752731,Auburn,True,regular,7,Georgia,True,fbs_fbs,regular_week_5_plus
+2025,401752864,Minnesota,True,regular,7,Purdue,True,fbs_fbs,regular_week_5_plus
+2025,401752868,USC,True,regular,7,Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401754558,Boston College,True,regular,7,Clemson,True,fbs_fbs,regular_week_5_plus
+2025,401756921,Texas Tech,True,regular,7,Kansas,True,fbs_fbs,regular_week_5_plus
+2025,401762485,UTSA,True,regular,7,Rice,True,fbs_fbs,regular_week_5_plus
+2025,401752732,LSU,True,regular,7,South Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401756916,Arizona,True,regular,7,BYU,True,fbs_fbs,regular_week_5_plus
+2025,401761627,Texas State,True,regular,7,Troy,True,fbs_fbs,regular_week_5_plus
+2025,401760387,Boise State,True,regular,7,New Mexico,True,fbs_fbs,regular_week_5_plus
+2025,401756922,Utah,True,regular,7,Arizona State,True,fbs_fbs,regular_week_5_plus
+2025,401760390,Nevada,True,regular,7,San Diego State,True,fbs_fbs,regular_week_5_plus
+2025,401760389,Hawai'i,True,regular,7,Utah State,True,fbs_fbs,regular_week_5_plus
+2025,401757282,Liberty,True,regular,8,New Mexico State,True,fbs_fbs,regular_week_5_plus
+2025,401761628,South Alabama,True,regular,8,Arkansas State,True,fbs_fbs,regular_week_5_plus
+2025,401757281,Western Kentucky,True,regular,8,Florida International,True,fbs_fbs,regular_week_5_plus
+2025,401757283,Jacksonville State,True,regular,8,Delaware,True,fbs_fbs,regular_week_5_plus
+2025,401757284,Sam Houston,True,regular,8,UTEP,True,fbs_fbs,regular_week_5_plus
+2025,401762486,East Carolina,True,regular,8,Tulsa,True,fbs_fbs,regular_week_5_plus
+2025,401754564,Miami,True,regular,8,Louisville,True,fbs_fbs,regular_week_5_plus
+2025,401752872,Minnesota,True,regular,8,Nebraska,True,fbs_fbs,regular_week_5_plus
+2025,401760396,Utah State,True,regular,8,San José State,True,fbs_fbs,regular_week_5_plus
+2025,401754371,California,True,regular,8,North Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401752745,Vanderbilt,True,regular,8,LSU,True,fbs_fbs,regular_week_5_plus
+2025,401752873,Michigan,True,regular,8,Washington,True,fbs_fbs,regular_week_5_plus
+2025,401754566,Duke,True,regular,8,Georgia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401754569,Boston College,True,regular,8,UConn,True,fbs_fbs,regular_week_5_plus
+2025,401756925,Houston,True,regular,8,Arizona,True,fbs_fbs,regular_week_5_plus
+2025,401756927,TCU,True,regular,8,Baylor,True,fbs_fbs,regular_week_5_plus
+2025,401762488,Tulane,True,regular,8,Army,True,fbs_fbs,regular_week_5_plus
+2025,401762839,Bowling Green,True,regular,8,Central Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401762841,Miami (OH),True,regular,8,Eastern Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401752744,South Carolina,True,regular,8,Oklahoma,True,fbs_fbs,regular_week_5_plus
+2025,401756928,UCF,True,regular,8,West Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401762842,Toledo,True,regular,8,Kent State,True,fbs_fbs,regular_week_5_plus
+2025,401762840,Massachusetts,True,regular,8,Buffalo,True,fbs_fbs,regular_week_5_plus
+2025,401752874,Northwestern,True,regular,8,Purdue,True,fbs_fbs,regular_week_5_plus
+2025,401761633,UL Monroe,True,regular,8,Troy,True,fbs_fbs,regular_week_5_plus
+2025,401752739,Arkansas,True,regular,8,Texas A&M,True,fbs_fbs,regular_week_5_plus
+2025,401752742,Georgia,True,regular,8,Ole Miss,True,fbs_fbs,regular_week_5_plus
+2025,401752877,Wisconsin,True,regular,8,Ohio State,True,fbs_fbs,regular_week_5_plus
+2025,401752878,Indiana,True,regular,8,Michigan State,True,fbs_fbs,regular_week_5_plus
+2025,401754565,Clemson,True,regular,8,SMU,True,fbs_fbs,regular_week_5_plus
+2025,401760392,Air Force,True,regular,8,Wyoming,True,fbs_fbs,regular_week_5_plus
+2025,401760393,Boise State,True,regular,8,UNLV,True,fbs_fbs,regular_week_5_plus
+2025,401761629,App State,True,regular,8,Coastal Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401761631,James Madison,True,regular,8,Old Dominion,True,fbs_fbs,regular_week_5_plus
+2025,401761632,Marshall,True,regular,8,Texas State,True,fbs_fbs,regular_week_5_plus
+2025,401762489,Charlotte,True,regular,8,Temple,True,fbs_fbs,regular_week_5_plus
+2025,401762491,North Texas,True,regular,8,UTSA,True,fbs_fbs,regular_week_5_plus
+2025,401762838,Ball State,True,regular,8,Akron,True,fbs_fbs,regular_week_5_plus
+2025,401762843,Ohio,True,regular,8,Northern Illinois,True,fbs_fbs,regular_week_5_plus
+2025,401756923,Arizona State,True,regular,8,Texas Tech,True,fbs_fbs,regular_week_5_plus
+2025,401762487,UAB,True,regular,8,Memphis,True,fbs_fbs,regular_week_5_plus
+2025,401752741,Florida,True,regular,8,Mississippi State,True,fbs_fbs,regular_week_5_plus
+2025,401761668,Louisiana,True,regular,8,Southern Miss,True,fbs_fbs,regular_week_5_plus
+2025,401752876,Rutgers,True,regular,8,Oregon,True,fbs_fbs,regular_week_5_plus
+2025,401752951,Virginia,True,regular,8,Washington State,True,fbs_fbs,regular_week_5_plus
+2025,401752743,Kentucky,True,regular,8,Texas,True,fbs_fbs,regular_week_5_plus
+2025,401752875,Iowa,True,regular,8,Penn State,True,fbs_fbs,regular_week_5_plus
+2025,401752879,UCLA,True,regular,8,Maryland,True,fbs_fbs,regular_week_5_plus
+2025,401760394,Colorado State,True,regular,8,Hawai'i,True,fbs_fbs,regular_week_5_plus
+2025,401761630,Georgia Southern,True,regular,8,Georgia State,True,fbs_fbs,regular_week_5_plus
+2025,401752738,Alabama,True,regular,8,Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401752871,Notre Dame,True,regular,8,USC,True,fbs_fbs,regular_week_5_plus
+2025,401754568,Syracuse,True,regular,8,Pittsburgh,True,fbs_fbs,regular_week_5_plus
+2025,401762490,South Florida,True,regular,8,Florida Atlantic,True,fbs_fbs,regular_week_5_plus
+2025,401752740,Auburn,True,regular,8,Missouri,True,fbs_fbs,regular_week_5_plus
+2025,401756924,BYU,True,regular,8,Utah,True,fbs_fbs,regular_week_5_plus
+2025,401756926,Oklahoma State,True,regular,8,Cincinnati,True,fbs_fbs,regular_week_5_plus
+2025,401760395,New Mexico,True,regular,8,Nevada,True,fbs_fbs,regular_week_5_plus
+2025,401752941,Oregon State,True,regular,8,Lafayette,False,other,regular_week_5_plus
+2025,401754567,Stanford,True,regular,8,Florida State,True,fbs_fbs,regular_week_5_plus
+2025,401757285,Florida International,True,regular,9,Kennesaw State,True,fbs_fbs,regular_week_5_plus
+2025,401757286,Louisiana Tech,True,regular,9,Western Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401757287,Delaware,True,regular,9,Middle Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401757288,New Mexico State,True,regular,9,Missouri State,True,fbs_fbs,regular_week_5_plus
+2025,401761634,Georgia State,True,regular,9,South Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401762492,Charlotte,True,regular,9,North Texas,True,fbs_fbs,regular_week_5_plus
+2025,401754372,Virginia Tech,True,regular,9,California,True,fbs_fbs,regular_week_5_plus
+2025,401760397,Nevada,True,regular,9,Boise State,True,fbs_fbs,regular_week_5_plus
+2025,401752750,Oklahoma,True,regular,9,Ole Miss,True,fbs_fbs,regular_week_5_plus
+2025,401752883,Nebraska,True,regular,9,Northwestern,True,fbs_fbs,regular_week_5_plus
+2025,401752884,Purdue,True,regular,9,Rutgers,True,fbs_fbs,regular_week_5_plus
+2025,401752885,Indiana,True,regular,9,UCLA,True,fbs_fbs,regular_week_5_plus
+2025,401752942,Wake Forest,True,regular,9,SMU,True,fbs_fbs,regular_week_5_plus
+2025,401754571,Georgia Tech,True,regular,9,Syracuse,True,fbs_fbs,regular_week_5_plus
+2025,401754573,North Carolina,True,regular,9,Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401756932,Kansas,True,regular,9,Kansas State,True,fbs_fbs,regular_week_5_plus
+2025,401761635,Old Dominion,True,regular,9,App State,True,fbs_fbs,regular_week_5_plus
+2025,401762494,Memphis,True,regular,9,South Florida,True,fbs_fbs,regular_week_5_plus
+2025,401762846,Kent State,True,regular,9,Bowling Green,True,fbs_fbs,regular_week_5_plus
+2025,401762848,Eastern Michigan,True,regular,9,Ohio,True,fbs_fbs,regular_week_5_plus
+2025,401752746,Arkansas,True,regular,9,Auburn,True,fbs_fbs,regular_week_5_plus
+2025,401762844,Buffalo,True,regular,9,Akron,True,fbs_fbs,regular_week_5_plus
+2025,401757172,Rice,True,regular,9,UConn,True,fbs_fbs,regular_week_5_plus
+2025,401760400,New Mexico,True,regular,9,Utah State,True,fbs_fbs,regular_week_5_plus
+2025,401752751,South Carolina,True,regular,9,Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401752752,Vanderbilt,True,regular,9,Missouri,True,fbs_fbs,regular_week_5_plus
+2025,401752880,Washington,True,regular,9,Illinois,True,fbs_fbs,regular_week_5_plus
+2025,401752882,Iowa,True,regular,9,Minnesota,True,fbs_fbs,regular_week_5_plus
+2025,401752952,Washington State,True,regular,9,Toledo,True,fbs_fbs,regular_week_5_plus
+2025,401754574,Pittsburgh,True,regular,9,NC State,True,fbs_fbs,regular_week_5_plus
+2025,401756931,Iowa State,True,regular,9,BYU,True,fbs_fbs,regular_week_5_plus
+2025,401760399,Fresno State,True,regular,9,San Diego State,True,fbs_fbs,regular_week_5_plus
+2025,401761637,Southern Miss,True,regular,9,UL Monroe,True,fbs_fbs,regular_week_5_plus
+2025,401762493,Navy,True,regular,9,Florida Atlantic,True,fbs_fbs,regular_week_5_plus
+2025,401762495,Tulsa,True,regular,9,Temple,True,fbs_fbs,regular_week_5_plus
+2025,401762845,Northern Illinois,True,regular,9,Ball State,True,fbs_fbs,regular_week_5_plus
+2025,401762847,Central Michigan,True,regular,9,Massachusetts,True,fbs_fbs,regular_week_5_plus
+2025,401762874,Miami (OH),True,regular,9,Western Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401756930,Cincinnati,True,regular,9,Baylor,True,fbs_fbs,regular_week_5_plus
+2025,401756933,Texas Tech,True,regular,9,Oklahoma State,True,fbs_fbs,regular_week_5_plus
+2025,401752749,Mississippi State,True,regular,9,Texas,True,fbs_fbs,regular_week_5_plus
+2025,401756935,West Virginia,True,regular,9,TCU,True,fbs_fbs,regular_week_5_plus
+2025,401752886,Oregon,True,regular,9,Wisconsin,True,fbs_fbs,regular_week_5_plus
+2025,401754572,Miami,True,regular,9,Stanford,True,fbs_fbs,regular_week_5_plus
+2025,401761636,Arkansas State,True,regular,9,Georgia Southern,True,fbs_fbs,regular_week_5_plus
+2025,401761638,Troy,True,regular,9,Louisiana,True,fbs_fbs,regular_week_5_plus
+2025,401752748,LSU,True,regular,9,Texas A&M,True,fbs_fbs,regular_week_5_plus
+2025,401752881,Michigan State,True,regular,9,Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401754570,Louisville,True,regular,9,Boston College,True,fbs_fbs,regular_week_5_plus
+2025,401760398,Wyoming,True,regular,9,Colorado State,True,fbs_fbs,regular_week_5_plus
+2025,401752747,Kentucky,True,regular,9,Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401756929,Arizona State,True,regular,9,Houston,True,fbs_fbs,regular_week_5_plus
+2025,401756934,Utah,True,regular,9,Colorado,True,fbs_fbs,regular_week_5_plus
+2025,401757289,Kennesaw State,True,regular,10,UTEP,True,fbs_fbs,regular_week_5_plus
+2025,401761639,Texas State,True,regular,10,James Madison,True,fbs_fbs,regular_week_5_plus
+2025,401757292,Middle Tennessee,True,regular,10,Jacksonville State,True,fbs_fbs,regular_week_5_plus
+2025,401757291,Missouri State,True,regular,10,Florida International,True,fbs_fbs,regular_week_5_plus
+2025,401761640,Coastal Carolina,True,regular,10,Marshall,True,fbs_fbs,regular_week_5_plus
+2025,401762443,UTSA,True,regular,10,Tulane,True,fbs_fbs,regular_week_5_plus
+2025,401762497,Rice,True,regular,10,Memphis,True,fbs_fbs,regular_week_5_plus
+2025,401754575,Syracuse,True,regular,10,North Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401757290,Louisiana Tech,True,regular,10,Sam Houston,True,fbs_fbs,regular_week_5_plus
+2025,401752758,Texas,True,regular,10,Vanderbilt,True,fbs_fbs,regular_week_5_plus
+2025,401752889,Ohio State,True,regular,10,Penn State,True,fbs_fbs,regular_week_5_plus
+2025,401752891,Illinois,True,regular,10,Rutgers,True,fbs_fbs,regular_week_5_plus
+2025,401754577,Clemson,True,regular,10,Duke,True,fbs_fbs,regular_week_5_plus
+2025,401754581,SMU,True,regular,10,Miami,True,fbs_fbs,regular_week_5_plus
+2025,401756936,Baylor,True,regular,10,UCF,True,fbs_fbs,regular_week_5_plus
+2025,401756938,Houston,True,regular,10,West Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401757173,UConn,True,regular,10,UAB,True,fbs_fbs,regular_week_5_plus
+2025,401760401,Air Force,True,regular,10,Army,True,fbs_fbs,regular_week_5_plus
+2025,401762499,North Texas,True,regular,10,Navy,True,fbs_fbs,regular_week_5_plus
+2025,401762849,Bowling Green,True,regular,10,Buffalo,True,fbs_fbs,regular_week_5_plus
+2025,401756939,Iowa State,True,regular,10,Arizona State,True,fbs_fbs,regular_week_5_plus
+2025,401762498,Temple,True,regular,10,East Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401754580,Virginia Tech,True,regular,10,Louisville,True,fbs_fbs,regular_week_5_plus
+2025,401760404,UNLV,True,regular,10,New Mexico,True,fbs_fbs,regular_week_5_plus
+2025,401752755,Florida,True,regular,10,Georgia,True,fbs_fbs,regular_week_5_plus
+2025,401752887,Maryland,True,regular,10,Indiana,True,fbs_fbs,regular_week_5_plus
+2025,401752888,Minnesota,True,regular,10,Michigan State,True,fbs_fbs,regular_week_5_plus
+2025,401754582,Stanford,True,regular,10,Pittsburgh,True,fbs_fbs,regular_week_5_plus
+2025,401754583,Boston College,True,regular,10,Notre Dame,True,fbs_fbs,regular_week_5_plus
+2025,401756941,Kansas State,True,regular,10,Texas Tech,True,fbs_fbs,regular_week_5_plus
+2025,401757293,Liberty,True,regular,10,Delaware,True,fbs_fbs,regular_week_5_plus
+2025,401757294,Western Kentucky,True,regular,10,New Mexico State,True,fbs_fbs,regular_week_5_plus
+2025,401760402,Boise State,True,regular,10,Fresno State,True,fbs_fbs,regular_week_5_plus
+2025,401761641,UL Monroe,True,regular,10,Old Dominion,True,fbs_fbs,regular_week_5_plus
+2025,401761642,South Alabama,True,regular,10,Louisiana,True,fbs_fbs,regular_week_5_plus
+2025,401754576,California,True,regular,10,Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401752753,Arkansas,True,regular,10,Mississippi State,True,fbs_fbs,regular_week_5_plus
+2025,401756940,Kansas,True,regular,10,Oklahoma State,True,fbs_fbs,regular_week_5_plus
+2025,401762850,Western Michigan,True,regular,10,Central Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401752756,Ole Miss,True,regular,10,South Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401752890,Michigan,True,regular,10,Purdue,True,fbs_fbs,regular_week_5_plus
+2025,401756937,Colorado,True,regular,10,Arizona,True,fbs_fbs,regular_week_5_plus
+2025,401760405,San Diego State,True,regular,10,Wyoming,True,fbs_fbs,regular_week_5_plus
+2025,401752754,Auburn,True,regular,10,Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401752757,Tennessee,True,regular,10,Oklahoma,True,fbs_fbs,regular_week_5_plus
+2025,401752892,Nebraska,True,regular,10,USC,True,fbs_fbs,regular_week_5_plus
+2025,401752943,Oregon State,True,regular,10,Washington State,True,fbs_fbs,regular_week_5_plus
+2025,401754578,Florida State,True,regular,10,Wake Forest,True,fbs_fbs,regular_week_5_plus
+2025,401754579,NC State,True,regular,10,Georgia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401761643,Troy,True,regular,10,Arkansas State,True,fbs_fbs,regular_week_5_plus
+2025,401756942,Utah,True,regular,10,Cincinnati,True,fbs_fbs,regular_week_5_plus
+2025,401760403,San José State,True,regular,10,Hawai'i,True,fbs_fbs,regular_week_5_plus
+2025,401762851,Akron,True,regular,11,Massachusetts,True,fbs_fbs,regular_week_5_plus
+2025,401762852,Ohio,True,regular,11,Miami (OH),True,fbs_fbs,regular_week_5_plus
+2025,401762853,Ball State,True,regular,11,Kent State,True,fbs_fbs,regular_week_5_plus
+2025,401762854,Toledo,True,regular,11,Northern Illinois,True,fbs_fbs,regular_week_5_plus
+2025,401761644,App State,True,regular,11,Georgia Southern,True,fbs_fbs,regular_week_5_plus
+2025,401762500,South Florida,True,regular,11,UTSA,True,fbs_fbs,regular_week_5_plus
+2025,401756946,UCF,True,regular,11,Houston,True,fbs_fbs,regular_week_5_plus
+2025,401752896,USC,True,regular,11,Northwestern,True,fbs_fbs,regular_week_5_plus
+2025,401762501,Memphis,True,regular,11,Tulane,True,fbs_fbs,regular_week_5_plus
+2025,401752762,Mississippi State,True,regular,11,Georgia,True,fbs_fbs,regular_week_5_plus
+2025,401752893,Penn State,True,regular,11,Indiana,True,fbs_fbs,regular_week_5_plus
+2025,401754584,Boston College,True,regular,11,SMU,True,fbs_fbs,regular_week_5_plus
+2025,401756945,Texas Tech,True,regular,11,BYU,True,fbs_fbs,regular_week_5_plus
+2025,401756947,West Virginia,True,regular,11,Colorado,True,fbs_fbs,regular_week_5_plus
+2025,401761646,Marshall,True,regular,11,James Madison,True,fbs_fbs,regular_week_5_plus
+2025,401761647,Arkansas State,True,regular,11,Southern Miss,True,fbs_fbs,regular_week_5_plus
+2025,401762503,Army,True,regular,11,Temple,True,fbs_fbs,regular_week_5_plus
+2025,401752761,Ole Miss,True,regular,11,The Citadel,False,other,regular_week_5_plus
+2025,401752897,Purdue,True,regular,11,Ohio State,True,fbs_fbs,regular_week_5_plus
+2025,401757299,Liberty,True,regular,11,Missouri State,True,fbs_fbs,regular_week_5_plus
+2025,401762855,Eastern Michigan,True,regular,11,Bowling Green,True,fbs_fbs,regular_week_5_plus
+2025,401762502,Rice,True,regular,11,UAB,True,fbs_fbs,regular_week_5_plus
+2025,401752894,Rutgers,True,regular,11,Maryland,True,fbs_fbs,regular_week_5_plus
+2025,401757295,Delaware,True,regular,11,Louisiana Tech,True,fbs_fbs,regular_week_5_plus
+2025,401757296,Middle Tennessee,True,regular,11,Florida International,True,fbs_fbs,regular_week_5_plus
+2025,401757297,UTEP,True,regular,11,Jacksonville State,True,fbs_fbs,regular_week_5_plus
+2025,401762504,East Carolina,True,regular,11,Charlotte,True,fbs_fbs,regular_week_5_plus
+2025,401762505,Florida Atlantic,True,regular,11,Tulsa,True,fbs_fbs,regular_week_5_plus
+2025,401752763,Missouri,True,regular,11,Texas A&M,True,fbs_fbs,regular_week_5_plus
+2025,401752898,Iowa,True,regular,11,Oregon,True,fbs_fbs,regular_week_5_plus
+2025,401754587,Miami,True,regular,11,Syracuse,True,fbs_fbs,regular_week_5_plus
+2025,401754590,UConn,True,regular,11,Duke,True,fbs_fbs,regular_week_5_plus
+2025,401756943,Arizona,True,regular,11,Kansas,True,fbs_fbs,regular_week_5_plus
+2025,401756944,TCU,True,regular,11,Iowa State,True,fbs_fbs,regular_week_5_plus
+2025,401752764,Vanderbilt,True,regular,11,Auburn,True,fbs_fbs,regular_week_5_plus
+2025,401757298,New Mexico State,True,regular,11,Kennesaw State,True,fbs_fbs,regular_week_5_plus
+2025,401761645,Coastal Carolina,True,regular,11,Georgia State,True,fbs_fbs,regular_week_5_plus
+2025,401752899,Wisconsin,True,regular,11,Washington,True,fbs_fbs,regular_week_5_plus
+2025,401754588,North Carolina,True,regular,11,Stanford,True,fbs_fbs,regular_week_5_plus
+2025,401761648,Louisiana,True,regular,11,Texas State,True,fbs_fbs,regular_week_5_plus
+2025,401760406,San José State,True,regular,11,Air Force,True,fbs_fbs,regular_week_5_plus
+2025,401754585,Louisville,True,regular,11,California,True,fbs_fbs,regular_week_5_plus
+2025,401754586,Clemson,True,regular,11,Florida State,True,fbs_fbs,regular_week_5_plus
+2025,401754589,Virginia,True,regular,11,Wake Forest,True,fbs_fbs,regular_week_5_plus
+2025,401752759,Alabama,True,regular,11,LSU,True,fbs_fbs,regular_week_5_plus
+2025,401752760,Kentucky,True,regular,11,Florida,True,fbs_fbs,regular_week_5_plus
+2025,401757166,Notre Dame,True,regular,11,Navy,True,fbs_fbs,regular_week_5_plus
+2025,401760409,Utah State,True,regular,11,Nevada,True,fbs_fbs,regular_week_5_plus
+2025,401752895,UCLA,True,regular,11,Nebraska,True,fbs_fbs,regular_week_5_plus
+2025,401760407,Colorado State,True,regular,11,UNLV,True,fbs_fbs,regular_week_5_plus
+2025,401752944,Oregon State,True,regular,11,Sam Houston,True,fbs_fbs,regular_week_5_plus
+2025,401760408,Hawai'i,True,regular,11,San Diego State,True,fbs_fbs,regular_week_5_plus
+2025,401762856,Akron,True,regular,12,Kent State,True,fbs_fbs,regular_week_5_plus
+2025,401762857,Western Michigan,True,regular,12,Ohio,True,fbs_fbs,regular_week_5_plus
+2025,401762858,Central Michigan,True,regular,12,Buffalo,True,fbs_fbs,regular_week_5_plus
+2025,401762859,Massachusetts,True,regular,12,Northern Illinois,True,fbs_fbs,regular_week_5_plus
+2025,401762860,Miami (OH),True,regular,12,Toledo,True,fbs_fbs,regular_week_5_plus
+2025,401761649,Old Dominion,True,regular,12,Troy,True,fbs_fbs,regular_week_5_plus
+2025,401754591,Louisville,True,regular,12,Clemson,True,fbs_fbs,regular_week_5_plus
+2025,401752904,Oregon,True,regular,12,Minnesota,True,fbs_fbs,regular_week_5_plus
+2025,401752772,Texas A&M,True,regular,12,South Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401752901,Indiana,True,regular,12,Wisconsin,True,fbs_fbs,regular_week_5_plus
+2025,401752905,Northwestern,True,regular,12,Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401754597,Pittsburgh,True,regular,12,Notre Dame,True,fbs_fbs,regular_week_5_plus
+2025,401756951,Cincinnati,True,regular,12,Arizona,True,fbs_fbs,regular_week_5_plus
+2025,401756952,Oklahoma State,True,regular,12,Kansas State,True,fbs_fbs,regular_week_5_plus
+2025,401757174,UConn,True,regular,12,Air Force,True,fbs_fbs,regular_week_5_plus
+2025,401762507,Charlotte,True,regular,12,UTSA,True,fbs_fbs,regular_week_5_plus
+2025,401762510,Navy,True,regular,12,South Florida,True,fbs_fbs,regular_week_5_plus
+2025,401762861,Ball State,True,regular,12,Eastern Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401752768,LSU,True,regular,12,Arkansas,True,fbs_fbs,regular_week_5_plus
+2025,401752945,Tulsa,True,regular,12,Oregon State,True,fbs_fbs,regular_week_5_plus
+2025,401756948,Arizona State,True,regular,12,West Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401752767,Kentucky,True,regular,12,Tennessee Tech,False,other,regular_week_5_plus
+2025,401761651,Georgia State,True,regular,12,Marshall,True,fbs_fbs,regular_week_5_plus
+2025,401762506,UAB,True,regular,12,North Texas,True,fbs_fbs,regular_week_5_plus
+2025,401757304,Missouri State,True,regular,12,UTEP,True,fbs_fbs,regular_week_5_plus
+2025,401760411,New Mexico,True,regular,12,Colorado State,True,fbs_fbs,regular_week_5_plus
+2025,401752765,Alabama,True,regular,12,Oklahoma,True,fbs_fbs,regular_week_5_plus
+2025,401752903,Michigan State,True,regular,12,Penn State,True,fbs_fbs,regular_week_5_plus
+2025,401752906,Illinois,True,regular,12,Maryland,True,fbs_fbs,regular_week_5_plus
+2025,401752907,USC,True,regular,12,Iowa,True,fbs_fbs,regular_week_5_plus
+2025,401754592,Boston College,True,regular,12,Georgia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401754593,Duke,True,regular,12,Virginia,True,fbs_fbs,regular_week_5_plus
+2025,401754595,Miami,True,regular,12,NC State,True,fbs_fbs,regular_week_5_plus
+2025,401756953,Texas Tech,True,regular,12,UCF,True,fbs_fbs,regular_week_5_plus
+2025,401757303,Western Kentucky,True,regular,12,Middle Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401760413,Nevada,True,regular,12,San José State,True,fbs_fbs,regular_week_5_plus
+2025,401761652,James Madison,True,regular,12,App State,True,fbs_fbs,regular_week_5_plus
+2025,401761653,UL Monroe,True,regular,12,South Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401761654,Southern Miss,True,regular,12,Texas State,True,fbs_fbs,regular_week_5_plus
+2025,401762508,East Carolina,True,regular,12,Memphis,True,fbs_fbs,regular_week_5_plus
+2025,401762509,Tulane,True,regular,12,Florida Atlantic,True,fbs_fbs,regular_week_5_plus
+2025,401752771,Tennessee,True,regular,12,New Mexico State,True,fbs_fbs,regular_week_5_plus
+2025,401754596,Wake Forest,True,regular,12,North Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401757301,Florida International,True,regular,12,Liberty,True,fbs_fbs,regular_week_5_plus
+2025,401761650,Georgia Southern,True,regular,12,Coastal Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401752769,Ole Miss,True,regular,12,Florida,True,fbs_fbs,regular_week_5_plus
+2025,401752902,Washington,True,regular,12,Purdue,True,fbs_fbs,regular_week_5_plus
+2025,401756949,Baylor,True,regular,12,Utah,True,fbs_fbs,regular_week_5_plus
+2025,401757300,Sam Houston,True,regular,12,Delaware,True,fbs_fbs,regular_week_5_plus
+2025,401760414,UNLV,True,regular,12,Utah State,True,fbs_fbs,regular_week_5_plus
+2025,401752766,Georgia,True,regular,12,Texas,True,fbs_fbs,regular_week_5_plus
+2025,401752900,Ohio State,True,regular,12,UCLA,True,fbs_fbs,regular_week_5_plus
+2025,401754594,Florida State,True,regular,12,Virginia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401752770,Missouri,True,regular,12,Mississippi State,True,fbs_fbs,regular_week_5_plus
+2025,401757302,Jacksonville State,True,regular,12,Kennesaw State,True,fbs_fbs,regular_week_5_plus
+2025,401752953,Washington State,True,regular,12,Louisiana Tech,True,fbs_fbs,regular_week_5_plus
+2025,401756950,BYU,True,regular,12,TCU,True,fbs_fbs,regular_week_5_plus
+2025,401760410,San Diego State,True,regular,12,Boise State,True,fbs_fbs,regular_week_5_plus
+2025,401760412,Fresno State,True,regular,12,Wyoming,True,fbs_fbs,regular_week_5_plus
+2025,401762862,Bowling Green,True,regular,13,Akron,True,fbs_fbs,regular_week_5_plus
+2025,401762863,Ohio,True,regular,13,Massachusetts,True,fbs_fbs,regular_week_5_plus
+2025,401762864,Northern Illinois,True,regular,13,Western Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401762865,Buffalo,True,regular,13,Miami (OH),True,fbs_fbs,regular_week_5_plus
+2025,401762866,Kent State,True,regular,13,Central Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401761655,Arkansas State,True,regular,13,Louisiana,True,fbs_fbs,regular_week_5_plus
+2025,401754598,NC State,True,regular,13,Florida State,True,fbs_fbs,regular_week_5_plus
+2025,401760418,UNLV,True,regular,13,Hawai'i,True,fbs_fbs,regular_week_5_plus
+2025,401752778,Oklahoma,True,regular,13,Missouri,True,fbs_fbs,regular_week_5_plus
+2025,401752781,Texas A&M,True,regular,13,Samford,False,other,regular_week_5_plus
+2025,401752909,Northwestern,True,regular,13,Minnesota,True,fbs_fbs,regular_week_5_plus
+2025,401752912,Ohio State,True,regular,13,Rutgers,True,fbs_fbs,regular_week_5_plus
+2025,401754602,SMU,True,regular,13,Louisville,True,fbs_fbs,regular_week_5_plus
+2025,401754603,Virginia Tech,True,regular,13,Miami,True,fbs_fbs,regular_week_5_plus
+2025,401754606,Wake Forest,True,regular,13,Delaware,True,fbs_fbs,regular_week_5_plus
+2025,401756958,Iowa State,True,regular,13,Kansas,True,fbs_fbs,regular_week_5_plus
+2025,401762512,Army,True,regular,13,Tulsa,True,fbs_fbs,regular_week_5_plus
+2025,401752776,Georgia,True,regular,13,Charlotte,True,fbs_fbs,regular_week_5_plus
+2025,401752954,James Madison,True,regular,13,Washington State,True,fbs_fbs,regular_week_5_plus
+2025,401756954,Arizona,True,regular,13,Baylor,True,fbs_fbs,regular_week_5_plus
+2025,401761657,Georgia Southern,True,regular,13,Old Dominion,True,fbs_fbs,regular_week_5_plus
+2025,401752773,Alabama,True,regular,13,Eastern Illinois,False,other,regular_week_5_plus
+2025,401752774,Auburn,True,regular,13,Mercer,False,other,regular_week_5_plus
+2025,401757306,Kennesaw State,True,regular,13,Missouri State,True,fbs_fbs,regular_week_5_plus
+2025,401760419,Wyoming,True,regular,13,Nevada,True,fbs_fbs,regular_week_5_plus
+2025,401762867,Toledo,True,regular,13,Ball State,True,fbs_fbs,regular_week_5_plus
+2025,401761656,App State,True,regular,13,Marshall,True,fbs_fbs,regular_week_5_plus
+2025,401757175,Florida Atlantic,True,regular,13,UConn,True,fbs_fbs,regular_week_5_plus
+2025,401757307,Louisiana Tech,True,regular,13,Liberty,True,fbs_fbs,regular_week_5_plus
+2025,401757308,Middle Tennessee,True,regular,13,Sam Houston,True,fbs_fbs,regular_week_5_plus
+2025,401757309,UTEP,True,regular,13,New Mexico State,True,fbs_fbs,regular_week_5_plus
+2025,401762511,UAB,True,regular,13,South Florida,True,fbs_fbs,regular_week_5_plus
+2025,401752780,Texas,True,regular,13,Arkansas,True,fbs_fbs,regular_week_5_plus
+2025,401752782,Vanderbilt,True,regular,13,Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401752911,Oregon,True,regular,13,USC,True,fbs_fbs,regular_week_5_plus
+2025,401752913,Iowa,True,regular,13,Michigan State,True,fbs_fbs,regular_week_5_plus
+2025,401754600,North Carolina,True,regular,13,Duke,True,fbs_fbs,regular_week_5_plus
+2025,401754604,Notre Dame,True,regular,13,Syracuse,True,fbs_fbs,regular_week_5_plus
+2025,401757305,Florida International,True,regular,13,Jacksonville State,True,fbs_fbs,regular_week_5_plus
+2025,401761658,South Alabama,True,regular,13,Southern Miss,True,fbs_fbs,regular_week_5_plus
+2025,401762513,UTSA,True,regular,13,East Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401762515,Temple,True,regular,13,Tulane,True,fbs_fbs,regular_week_5_plus
+2025,401752914,Maryland,True,regular,13,Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401756957,Houston,True,regular,13,TCU,True,fbs_fbs,regular_week_5_plus
+2025,401756959,UCF,True,regular,13,Oklahoma State,True,fbs_fbs,regular_week_5_plus
+2025,401756960,Utah,True,regular,13,Kansas State,True,fbs_fbs,regular_week_5_plus
+2025,401761660,Troy,True,regular,13,Georgia State,True,fbs_fbs,regular_week_5_plus
+2025,401752779,South Carolina,True,regular,13,Coastal Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401754605,Clemson,True,regular,13,Furman,False,other,regular_week_5_plus
+2025,401761659,Texas State,True,regular,13,UL Monroe,True,fbs_fbs,regular_week_5_plus
+2025,401752908,Penn State,True,regular,13,Nebraska,True,fbs_fbs,regular_week_5_plus
+2025,401754601,Georgia Tech,True,regular,13,Pittsburgh,True,fbs_fbs,regular_week_5_plus
+2025,401760415,Air Force,True,regular,13,New Mexico,True,fbs_fbs,regular_week_5_plus
+2025,401760416,Boise State,True,regular,13,Colorado State,True,fbs_fbs,regular_week_5_plus
+2025,401752775,Florida,True,regular,13,Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401752915,Wisconsin,True,regular,13,Illinois,True,fbs_fbs,regular_week_5_plus
+2025,401754599,Stanford,True,regular,13,California,True,fbs_fbs,regular_week_5_plus
+2025,401762514,Rice,True,regular,13,North Texas,True,fbs_fbs,regular_week_5_plus
+2025,401752777,LSU,True,regular,13,Western Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401756955,Cincinnati,True,regular,13,BYU,True,fbs_fbs,regular_week_5_plus
+2025,401756956,Colorado,True,regular,13,Arizona State,True,fbs_fbs,regular_week_5_plus
+2025,401752910,UCLA,True,regular,13,Washington,True,fbs_fbs,regular_week_5_plus
+2025,401760417,Fresno State,True,regular,13,Utah State,True,fbs_fbs,regular_week_5_plus
+2025,401760420,San Diego State,True,regular,13,San José State,True,fbs_fbs,regular_week_5_plus
+2025,401762868,Massachusetts,True,regular,14,Bowling Green,True,fbs_fbs,regular_week_5_plus
+2025,401762869,Eastern Michigan,True,regular,14,Western Michigan,True,fbs_fbs,regular_week_5_plus
+2025,401762516,Memphis,True,regular,14,Navy,True,fbs_fbs,regular_week_5_plus
+2025,401752788,Mississippi State,True,regular,14,Ole Miss,True,fbs_fbs,regular_week_5_plus
+2025,401752916,Nebraska,True,regular,14,Iowa,True,fbs_fbs,regular_week_5_plus
+2025,401756964,Kansas,True,regular,14,Utah,True,fbs_fbs,regular_week_5_plus
+2025,401762870,Buffalo,True,regular,14,Ohio,True,fbs_fbs,regular_week_5_plus
+2025,401762871,Northern Illinois,True,regular,14,Kent State,True,fbs_fbs,regular_week_5_plus
+2025,401760421,Colorado State,True,regular,14,Air Force,True,fbs_fbs,regular_week_5_plus
+2025,401752786,Georgia Tech,True,regular,14,Georgia,True,fbs_fbs,regular_week_5_plus
+2025,401760426,New Mexico,True,regular,14,San Diego State,True,fbs_fbs,regular_week_5_plus
+2025,401762442,North Texas,True,regular,14,Temple,True,fbs_fbs,regular_week_5_plus
+2025,401760422,Utah State,True,regular,14,Boise State,True,fbs_fbs,regular_week_5_plus
+2025,401752792,Texas,True,regular,14,Texas A&M,True,fbs_fbs,regular_week_5_plus
+2025,401752924,Purdue,True,regular,14,Indiana,True,fbs_fbs,regular_week_5_plus
+2025,401756961,Arizona State,True,regular,14,Arizona,True,fbs_fbs,regular_week_5_plus
+2025,401752787,Louisville,True,regular,14,Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401752790,South Carolina,True,regular,14,Clemson,True,fbs_fbs,regular_week_5_plus
+2025,401752921,Michigan,True,regular,14,Ohio State,True,fbs_fbs,regular_week_5_plus
+2025,401754611,Pittsburgh,True,regular,14,Miami,True,fbs_fbs,regular_week_5_plus
+2025,401756962,Baylor,True,regular,14,Houston,True,fbs_fbs,regular_week_5_plus
+2025,401756965,Kansas State,True,regular,14,Colorado,True,fbs_fbs,regular_week_5_plus
+2025,401756966,Oklahoma State,True,regular,14,Iowa State,True,fbs_fbs,regular_week_5_plus
+2025,401756968,West Virginia,True,regular,14,Texas Tech,True,fbs_fbs,regular_week_5_plus
+2025,401762519,Florida Atlantic,True,regular,14,East Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401762872,Central Michigan,True,regular,14,Toledo,True,fbs_fbs,regular_week_5_plus
+2025,401762875,Miami (OH),True,regular,14,Ball State,True,fbs_fbs,regular_week_5_plus
+2025,401756963,BYU,True,regular,14,UCF,True,fbs_fbs,regular_week_5_plus
+2025,401757310,Delaware,True,regular,14,UTEP,True,fbs_fbs,regular_week_5_plus
+2025,401757311,Sam Houston,True,regular,14,Florida International,True,fbs_fbs,regular_week_5_plus
+2025,401761663,Marshall,True,regular,14,Georgia Southern,True,fbs_fbs,regular_week_5_plus
+2025,401757312,Jacksonville State,True,regular,14,Western Kentucky,True,fbs_fbs,regular_week_5_plus
+2025,401757314,Missouri State,True,regular,14,Louisiana Tech,True,fbs_fbs,regular_week_5_plus
+2025,401761664,Old Dominion,True,regular,14,Georgia State,True,fbs_fbs,regular_week_5_plus
+2025,401761661,App State,True,regular,14,Arkansas State,True,fbs_fbs,regular_week_5_plus
+2025,401754608,Syracuse,True,regular,14,Boston College,True,fbs_fbs,regular_week_5_plus
+2025,401757315,New Mexico State,True,regular,14,Middle Tennessee,True,fbs_fbs,regular_week_5_plus
+2025,401761665,Louisiana,True,regular,14,UL Monroe,True,fbs_fbs,regular_week_5_plus
+2025,401761667,Texas State,True,regular,14,South Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401762517,Tulsa,True,regular,14,UAB,True,fbs_fbs,regular_week_5_plus
+2025,401752783,Arkansas,True,regular,14,Missouri,True,fbs_fbs,regular_week_5_plus
+2025,401752789,Oklahoma,True,regular,14,LSU,True,fbs_fbs,regular_week_5_plus
+2025,401752791,Tennessee,True,regular,14,Vanderbilt,True,fbs_fbs,regular_week_5_plus
+2025,401752917,Washington,True,regular,14,Oregon,True,fbs_fbs,regular_week_5_plus
+2025,401752918,Minnesota,True,regular,14,Wisconsin,True,fbs_fbs,regular_week_5_plus
+2025,401752920,Rutgers,True,regular,14,Penn State,True,fbs_fbs,regular_week_5_plus
+2025,401754610,Duke,True,regular,14,Wake Forest,True,fbs_fbs,regular_week_5_plus
+2025,401756967,TCU,True,regular,14,Cincinnati,True,fbs_fbs,regular_week_5_plus
+2025,401757313,Liberty,True,regular,14,Kennesaw State,True,fbs_fbs,regular_week_5_plus
+2025,401761666,Southern Miss,True,regular,14,Troy,True,fbs_fbs,regular_week_5_plus
+2025,401762441,UTSA,True,regular,14,Army,True,fbs_fbs,regular_week_5_plus
+2025,401761662,Coastal Carolina,True,regular,14,James Madison,True,fbs_fbs,regular_week_5_plus
+2025,401752785,Florida,True,regular,14,Florida State,True,fbs_fbs,regular_week_5_plus
+2025,401752946,Washington State,True,regular,14,Oregon State,True,fbs_fbs,regular_week_5_plus
+2025,401752923,Michigan State,True,regular,14,Maryland,True,fbs_fbs,regular_week_5_plus
+2025,401754613,Virginia,True,regular,14,Virginia Tech,True,fbs_fbs,regular_week_5_plus
+2025,401762520,South Florida,True,regular,14,Rice,True,fbs_fbs,regular_week_5_plus
+2025,401752784,Auburn,True,regular,14,Alabama,True,fbs_fbs,regular_week_5_plus
+2025,401752919,USC,True,regular,14,UCLA,True,fbs_fbs,regular_week_5_plus
+2025,401752922,Illinois,True,regular,14,Northwestern,True,fbs_fbs,regular_week_5_plus
+2025,401754612,NC State,True,regular,14,North Carolina,True,fbs_fbs,regular_week_5_plus
+2025,401762518,Tulane,True,regular,14,Charlotte,True,fbs_fbs,regular_week_5_plus
+2025,401754609,California,True,regular,14,SMU,True,fbs_fbs,regular_week_5_plus
+2025,401760425,Nevada,True,regular,14,UNLV,True,fbs_fbs,regular_week_5_plus
+2025,401754614,Stanford,True,regular,14,Notre Dame,True,fbs_fbs,regular_week_5_plus
+2025,401760423,San José State,True,regular,14,Fresno State,True,fbs_fbs,regular_week_5_plus
+2025,401760424,Hawai'i,True,regular,14,Wyoming,True,fbs_fbs,regular_week_5_plus
+2025,401777325,Jacksonville State,True,regular,15,Kennesaw State,True,fbs_fbs,regular_week_5_plus
+2025,401777352,James Madison,True,regular,15,Troy,True,fbs_fbs,regular_week_5_plus
+2025,401777324,Tulane,True,regular,15,North Texas,True,fbs_fbs,regular_week_5_plus
+2025,401777326,Boise State,True,regular,15,UNLV,True,fbs_fbs,regular_week_5_plus
+2025,401777327,Texas Tech,True,regular,15,BYU,True,fbs_fbs,regular_week_5_plus
+2025,401777329,Western Michigan,True,regular,15,Miami (OH),True,fbs_fbs,regular_week_5_plus
+2025,401777351,Alabama,True,regular,15,Georgia,True,fbs_fbs,regular_week_5_plus
+2025,401777328,Virginia,True,regular,15,Duke,True,fbs_fbs,regular_week_5_plus
+2025,401777353,Ohio State,True,regular,15,Indiana,True,fbs_fbs,regular_week_5_plus
+2025,401762521,Navy,True,regular,16,Army,True,fbs_fbs,regular_week_5_plus
+2025,401778302,Washington,True,postseason,1,Boise State,True,fbs_fbs,postseason
+2025,401778303,Jacksonville State,True,postseason,1,Troy,True,fbs_fbs,postseason
+2025,401778304,South Florida,True,postseason,1,Old Dominion,True,fbs_fbs,postseason
+2025,401778305,Delaware,True,postseason,1,Louisiana,True,fbs_fbs,postseason
+2025,401838053,Arkansas State,True,postseason,1,Missouri State,True,fbs_fbs,postseason
+2025,401778306,Western Michigan,True,postseason,1,Kennesaw State,True,fbs_fbs,postseason
+2025,401778307,NC State,True,postseason,1,Memphis,True,fbs_fbs,postseason
+2025,401779840,Oklahoma,True,postseason,1,Alabama,True,fbs_fbs,postseason
+2025,401779841,Texas A&M,True,postseason,1,Miami,True,fbs_fbs,postseason
+2025,401779842,Ole Miss,True,postseason,1,Tulane,True,fbs_fbs,postseason
+2025,401779843,Oregon,True,postseason,1,James Madison,True,fbs_fbs,postseason
+2025,401778308,Utah State,True,postseason,1,Washington State,True,fbs_fbs,postseason
+2025,401778309,Louisville,True,postseason,1,Toledo,True,fbs_fbs,postseason
+2025,401778310,Southern Miss,True,postseason,1,Western Kentucky,True,fbs_fbs,postseason
+2025,401778311,Ohio,True,postseason,1,UNLV,True,fbs_fbs,postseason
+2025,401778312,Hawai'i,True,postseason,1,California,True,fbs_fbs,postseason
+2025,401778313,Northwestern,True,postseason,1,Central Michigan,True,fbs_fbs,postseason
+2025,401778314,Minnesota,True,postseason,1,New Mexico,True,fbs_fbs,postseason
+2025,401778315,UTSA,True,postseason,1,Florida International,True,fbs_fbs,postseason
+2025,401778316,East Carolina,True,postseason,1,Pittsburgh,True,fbs_fbs,postseason
+2025,401778317,Clemson,True,postseason,1,Penn State,True,fbs_fbs,postseason
+2025,401778318,Army,True,postseason,1,UConn,True,fbs_fbs,postseason
+2025,401778319,BYU,True,postseason,1,Georgia Tech,True,fbs_fbs,postseason
+2025,401778320,Fresno State,True,postseason,1,Miami (OH),True,fbs_fbs,postseason
+2025,401778321,San Diego State,True,postseason,1,North Texas,True,fbs_fbs,postseason
+2025,401778322,Missouri,True,postseason,1,Virginia,True,fbs_fbs,postseason
+2025,401778323,Houston,True,postseason,1,LSU,True,fbs_fbs,postseason
+2025,401778324,App State,True,postseason,1,Georgia Southern,True,fbs_fbs,postseason
+2025,401778325,Louisiana Tech,True,postseason,1,Coastal Carolina,True,fbs_fbs,postseason
+2025,401778326,Illinois,True,postseason,1,Tennessee,True,fbs_fbs,postseason
+2025,401778327,TCU,True,postseason,1,USC,True,fbs_fbs,postseason
+2025,401778328,Vanderbilt,True,postseason,1,Iowa,True,fbs_fbs,postseason
+2025,401778329,Duke,True,postseason,1,Arizona State,True,fbs_fbs,postseason
+2025,401778330,Texas,True,postseason,1,Michigan,True,fbs_fbs,postseason
+2025,401778331,Utah,True,postseason,1,Nebraska,True,fbs_fbs,postseason
+2025,401769070,Ohio State,True,postseason,1,Miami,True,fbs_fbs,postseason
+2025,401769071,Texas Tech,True,postseason,1,Oregon,True,fbs_fbs,postseason
+2025,401769072,Indiana,True,postseason,1,Alabama,True,fbs_fbs,postseason
+2025,401769073,Georgia,True,postseason,1,Ole Miss,True,fbs_fbs,postseason
+2025,401778332,Texas State,True,postseason,1,Rice,True,fbs_fbs,postseason
+2025,401778333,Cincinnati,True,postseason,1,Navy,True,fbs_fbs,postseason
+2025,401778334,Mississippi State,True,postseason,1,Wake Forest,True,fbs_fbs,postseason
+2025,401831583,SMU,True,postseason,1,Arizona,True,fbs_fbs,postseason
+2025,401769075,Ole Miss,True,postseason,1,Miami,True,fbs_fbs,postseason
+2025,401769074,Indiana,True,postseason,1,Oregon,True,fbs_fbs,postseason
+2025,401769076,Indiana,True,postseason,1,Miami,True,fbs_fbs,postseason

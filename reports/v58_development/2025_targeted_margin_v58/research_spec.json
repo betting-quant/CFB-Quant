@@ -1,0 +1,19 @@
+{
+  "model": "CFB-Quant v5.8 research challenger",
+  "status": "RESEARCH_ONLY_NOT_PRODUCTION",
+  "evaluation_year": 2025,
+  "point_model_training_end": 2024,
+  "residual_pool_end": 2024,
+  "margin_point_model": "v4.5",
+  "total_point_model": "v3",
+  "early_phase": "regular_weeks_1_4",
+  "early_margin_same_phase_share": 0.7,
+  "early_margin_pooled_share": 0.3,
+  "other_margin_sampling": "pooled",
+  "total_sampling": "pooled",
+  "simulation_samples": 1200,
+  "selection_uses_2025_results": true,
+  "independent_validation_required": true,
+  "joint_margin_total_dependence_unverified": true,
+  "upstream_point_in_time_verification": false
+}
