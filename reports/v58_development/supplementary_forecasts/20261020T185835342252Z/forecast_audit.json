@@ -1,0 +1,109 @@
+{
+  "created_utc": "2026-10-20T18:58:35.895428+00:00",
+  "snapshot_asof_utc": "2026-10-20T18:56:28.507251+00:00",
+  "research_only": true,
+  "season": 2026,
+  "slate_date_eastern": "2026-10-24",
+  "original_forecast_count": 33,
+  "supplementary_forecast_count": 11,
+  "combined_fbs_fbs_coverage": 44,
+  "historical_games_used_2026": 510,
+  "training_cutoff_season": 2025,
+  "boosting_weight": 0.15,
+  "boosting_training_games": 10231,
+  "boosting_parameters": {
+    "categorical_features": "from_dtype",
+    "early_stopping": false,
+    "interaction_cst": null,
+    "l2_regularization": 20.0,
+    "learning_rate": 0.035,
+    "loss": "squared_error",
+    "max_bins": 128,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 125,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 60,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "quantile": null,
+    "random_state": 20261020,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "schedule_source": "ESPN-verified research repair",
+  "independent_second_provider_confirmed": false,
+  "feature_bridge_audit": {
+    "history_games": 10879,
+    "history_team_rows": 21758,
+    "2026_completed_history_games": 510,
+    "2026_history_rows": 1020,
+    "historical_files": 13,
+    "slate_date_eastern": "2026-10-24",
+    "asof_utc": "2026-10-20T18:56:28.507251+00:00",
+    "slate_games": 44,
+    "slate_team_rows": 88,
+    "feature_count": 287,
+    "v3_historical_parity": true,
+    "v45_historical_parity": true,
+    "missing_v3_feature_values": 0,
+    "advanced_coverage_2026": [
+      {
+        "season": 2026,
+        "rows": 1108,
+        "matched": 910,
+        "coverage_pct": 82.13
+      }
+    ],
+    "no_current_game_outcomes": true,
+    "warnings": [
+      "Historical source snapshots not audited as point-in-time. No models trained or predictions produced.",
+      "Current season 2026 caches can change after games; archive source snapshots before predicting."
+    ]
+  },
+  "margin_training_audit": {
+    "training_rows": 20492,
+    "training_seasons": "2014-2025",
+    "features": 287,
+    "excluded_outside_2014_2025": {},
+    "historical_sha256": "3c9c2ac111af054251c3474181440f6c574b0c08dfb77b6c1d26e4ebbba44344"
+  },
+  "total_training_audit": {
+    "training_rows": 20492,
+    "training_seasons": "2014-2025",
+    "features": 267,
+    "excluded_outside_2014_2025": {},
+    "historical_sha256": "bd48c521a2711a2825c8cf661f85d833b6497aa1396e3335be3af2e1d726090c"
+  },
+  "files": {
+    "paired_forecasts.csv": "0f7d67dcf11bfbde066098a5f083fe18bea0746be29dfc9bea2dfbee6625477e",
+    "pregame_features.parquet": "f7d2b453503f4803eeff52cfa12f1536e1367a28463e1a6d6b6864f387cc7fd0",
+    "games_2026_repaired.json": "6e2bf7e24aeb8a32c3ebc97837292a1859fa8e9fadf19d7ff19f5dd64acbc257",
+    "team_games_2026_candidate.parquet": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563"
+  },
+  "protected_source_hashes": {
+    "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\kickoff_repair_v1\\20261020T184550Z\\games_2026_repaired.json": "6e2bf7e24aeb8a32c3ebc97837292a1859fa8e9fadf19d7ff19f5dd64acbc257",
+    "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\team_history_refresh_v2\\team_games_2026_candidate.parquet": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563",
+    "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\prospective_forecasts\\2026-10-24_20261020T171902666599Z\\paired_forecasts.csv": "1fd63a93229a2c73dc771fb8fbf62bca06117c77120cb4bd2ce5efc7ed4b91e9",
+    "C:\\Users\\dlaplante\\CFB-Quant\\data\\raw\\cfbd\\games\\games_2026.json": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+    "C:\\Users\\dlaplante\\CFB-Quant\\data\\processed\\team_games_2026.parquet": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3"
+  },
+  "game_ids": [
+    "401856834",
+    "401856835",
+    "401856836",
+    "401856837",
+    "401856838",
+    "401856839",
+    "401856840",
+    "401858276",
+    "401858495",
+    "401858497",
+    "401858499"
+  ],
+  "historical_pit_provenance_certified": false,
+  "model_promotion_authorized": false
+}
