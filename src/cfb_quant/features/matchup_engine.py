@@ -109,6 +109,31 @@ def _sort_frame(
         order = ["season", "kickoff_utc", "game_id", "team"]
     else:
         order = ["season", "_season_type_order", "week", "game_id", "team"]
+
+    if "kickoff_utc" in out.columns:
+        if out.duplicated(["team", "kickoff_utc"]).any():
+            bad = out.loc[
+                out.duplicated(
+                    ["team", "kickoff_utc"],
+                    keep=False
+                ),
+                ["team", "game_id", "kickoff_utc"]
+            ].head(10)
+            raise ValueError(
+                "Duplicate team kickoff: unsafe chronology. "
+                "Refusing pregame feature construction.\n"
+                + bad.to_string(index=False)
+            )
+
+        if "opponent" in out.columns:
+            if out.duplicated(
+                ["opponent", "kickoff_utc"]
+            ).any():
+                raise ValueError(
+                    "Duplicate defensive team kickoff: "
+                    "unsafe chronology"
+                )
+
     return out.sort_values(order, kind="mergesort").reset_index(drop=True)
 
 

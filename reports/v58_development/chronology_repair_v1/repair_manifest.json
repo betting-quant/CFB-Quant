@@ -1,0 +1,14 @@
+{
+  "step": 94,
+  "created_utc": "2026-10-20T15:21:23.437348+00:00",
+  "source": "CFBD games API; original historical map",
+  "season": 2026,
+  "api_games_returned": 3678,
+  "source_team_rows": 21648,
+  "validated_map_rows": 21648,
+  "unmatched_source_rows": 0,
+  "duplicate_team_kickoffs_2026": 0,
+  "invalid_pairs_2026": 0,
+  "existing_timestamp_conflicts": 0,
+  "status": "RESEARCH_ONLY"
+}
