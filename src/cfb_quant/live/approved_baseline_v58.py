@@ -98,6 +98,75 @@ def verify(registry, expected_season=None):
     return snapshot, record
 
 
+
+def verify_portable(registry, expected_season=None):
+    """Verify a portable, hash-pinned research schedule."""
+    registry = Path(registry).resolve()
+    record = json.loads(registry.read_text(encoding="utf-8"))
+
+    if not isinstance(record, dict):
+        raise ValueError("Portable approval must be an object")
+    if record.get("schema") != "portable_baseline_v58_v1":
+        raise ValueError("Unsupported portable approval schema")
+    if record.get("research_only") is not True:
+        raise ValueError("Unexpected approval scope")
+    if record.get("auto_rotation_allowed") is not False:
+        raise ValueError("Unsafe automatic baseline rotation")
+    if record.get("derived_from_original_approval") is not True:
+        raise ValueError("Missing original approval provenance")
+    if record.get("schedule_file") != "schedule.json":
+        raise ValueError("Unsafe portable schedule path")
+
+    season = int(record["season"])
+    if expected_season is not None and season != expected_season:
+        raise ValueError("Approved baseline season mismatch")
+
+    snapshot = (registry.parent / "schedule.json").resolve()
+    if snapshot.parent != registry.parent:
+        raise ValueError("Portable schedule escapes approval directory")
+    if not snapshot.is_file():
+        raise FileNotFoundError(snapshot)
+
+    digest = record.get("snapshot_sha256")
+    if (
+        not isinstance(digest, str)
+        or len(digest) != 64
+        or any(c not in "0123456789abcdef" for c in digest.lower())
+    ):
+        raise ValueError("Invalid approved SHA256")
+
+    if fingerprint(snapshot) != digest.lower():
+        raise RuntimeError("Approved schedule SHA256 mismatch")
+
+    count = int(record["season_games"])
+    games = validate(
+        json.loads(snapshot.read_text(encoding="utf-8")),
+        season,
+        count,
+    )
+    if len(games) != count:
+        raise RuntimeError("Approved schedule game count mismatch")
+
+    return snapshot, record
+
+
+def verify_any(registry, expected_season=None):
+    """Verify either legacy or portable schedule approval."""
+    registry = Path(registry).resolve()
+    record = json.loads(registry.read_text(encoding="utf-8"))
+
+    if not isinstance(record, dict):
+        raise ValueError("Approval record must be an object")
+
+    schema = record.get("schema")
+    if schema == "approved_baseline_v58_v1":
+        return verify(registry, expected_season)
+    if schema == "portable_baseline_v58_v1":
+        return verify_portable(registry, expected_season)
+
+    raise ValueError("Unsupported approval schema")
+
+
 def main():
     parser = argparse.ArgumentParser()
     mode = parser.add_mutually_exclusive_group(required=True)
@@ -116,13 +185,18 @@ def main():
             parser.error("--approve requires --reason")
         approve(args.snapshot, args.registry, args.season, args.reason)
 
-    snapshot, record = verify(args.registry, args.season)
+    snapshot, record = verify_any(args.registry, args.season)
     print("APPROVED BASELINE: VERIFIED")
     print("Season:", record["season"])
     print("Games:", record["season_games"])
     print("Snapshot:", snapshot)
     print("SHA256:", record["snapshot_sha256"])
-    print("Approval:", record["approved_at_utc"])
+    if record["schema"] == "portable_baseline_v58_v1":
+        print("Original approval:", record["original_approval_utc"])
+        print("Approval type: PORTABLE")
+    else:
+        print("Approval:", record["approved_at_utc"])
+        print("Approval type: LEGACY")
     print("Automatic rotation: DISABLED")
 
 

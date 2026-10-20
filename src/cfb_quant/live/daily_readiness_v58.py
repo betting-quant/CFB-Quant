@@ -7,7 +7,7 @@ from pathlib import Path
 
 from cfb_quant.live.daily_schedule_sync_v58 import run as sync_schedule
 from cfb_quant.live.forecast_coverage_v58 import run as audit_coverage
-from cfb_quant.live.approved_baseline_v58 import verify as verify_approved
+from cfb_quant.live.approved_baseline_v58 import verify_any as verify_approved
 
 
 def run(season, start, end, approval_registry, archives, output):
