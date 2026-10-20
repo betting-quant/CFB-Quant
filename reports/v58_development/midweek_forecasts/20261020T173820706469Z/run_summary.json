@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-20T17:46:46.009827+00:00",
+  "model": "frozen 85/15 Ridge/boosting research challenger",
+  "completed": [
+    {
+      "date": "2026-10-20",
+      "games": 3
+    },
+    {
+      "date": "2026-10-21",
+      "games": 1
+    },
+    {
+      "date": "2026-10-22",
+      "games": 3
+    },
+    {
+      "date": "2026-10-23",
+      "games": 5
+    }
+  ],
+  "skipped": [],
+  "source_hashes": {
+    "C:\\Users\\dlaplante\\CFB-Quant\\data\\raw\\cfbd\\games\\games_2026.json": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+    "C:\\Users\\dlaplante\\CFB-Quant\\data\\processed\\team_games_2026.parquet": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+    "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\schedule_refresh_v1\\games_2026_candidate.json": "8e26d2eca805108a1732bc656d6ed7403211f88ed7df616980dcaa9447045fb7",
+    "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\team_history_refresh_v2\\team_games_2026_candidate.parquet": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563"
+  },
+  "research_only": true,
+  "production_unchanged": true
+}
