@@ -1,0 +1,27 @@
+{
+  "step": "115B",
+  "created_utc": "2026-10-20T16:25:49.315963+00:00",
+  "model": "HistGradientBoostingRegressor",
+  "games": 5056,
+  "baseline_mae": 13.435782957838118,
+  "challenger_mae": 13.627293695954306,
+  "delta_mae": 0.19151073811618566,
+  "paired_95ci": [
+    0.054061159711875216,
+    0.32830697269437553
+  ],
+  "test_seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "baseline_matched_exactly": true,
+  "excluded_test_games": 12,
+  "training_2014_2018_eligibility_unverified": true,
+  "point_in_time_availability_not_fully_certified": true,
+  "research_only": true,
+  "feature_sha256": "8868a43ea9bdbeda90664a2545255d9d9aa491318d326fe7c678d93bd43079f7"
+}

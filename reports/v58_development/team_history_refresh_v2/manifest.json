@@ -1,0 +1,31 @@
+{
+  "step": 104,
+  "created_utc": "2026-10-20T15:54:23.651897+00:00",
+  "weeks": [
+    7,
+    8
+  ],
+  "source_sha256": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+  "candidate_sha256": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563",
+  "source_games": 455,
+  "candidate_games": 510,
+  "new_games": 55,
+  "candidate_rows": 1020,
+  "audit": {
+    "existing_games": 455,
+    "existing_team_rows": 910,
+    "completed_fbs_involved_week4_to_6": 62,
+    "completed_by_week": {
+      "7": 62
+    },
+    "added_by_week": {
+      "7": 55
+    },
+    "added_games": 55,
+    "added_team_rows": 110,
+    "result_games": 510,
+    "result_team_rows": 1020,
+    "nulls_new_rows": {}
+  },
+  "research_only": true
+}

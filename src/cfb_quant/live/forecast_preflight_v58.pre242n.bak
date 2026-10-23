@@ -1,0 +1,53 @@
+"""Research-only, fail-closed CFB live forecast preflight."""
+
+import argparse
+import json
+from pathlib import Path
+
+import pandas as pd
+
+from cfb_quant.live.data_freshness_gate_v58 import audit
+
+
+def preflight(root, cutoff_utc, max_age_hours=24):
+    cutoff = pd.to_datetime(cutoff_utc, utc=True, errors="raise")
+    if pd.isna(cutoff):
+        raise ValueError("Invalid cutoff")
+
+    result = audit(Path(root).resolve(), cutoff, max_age_hours)
+
+    return {
+        "schema": "cfb_v58_forecast_preflight_v1",
+        "research_only": True,
+        "production_integration_enabled": False,
+        "source_completeness_independently_certified": False,
+        "historical_point_in_time_certified": False,
+        "data_freshness": result,
+        "can_proceed_to_research_review": result["status"] == "READY",
+        "can_publish_production_forecast": False,
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", default=".")
+    parser.add_argument("--cutoff-utc", required=True)
+    parser.add_argument("--max-age-hours", type=float, default=24)
+    args = parser.parse_args()
+
+    if args.max_age_hours <= 0:
+        parser.error("Maximum age must be positive")
+
+    result = preflight(
+        args.root,
+        args.cutoff_utc,
+        args.max_age_hours,
+    )
+    print(json.dumps(result, indent=2))
+
+    if not result["can_proceed_to_research_review"]:
+        raise SystemExit(2)
+
+
+if __name__ == "__main__":
+    main()

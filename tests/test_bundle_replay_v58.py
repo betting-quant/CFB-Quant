@@ -1,0 +1,257 @@
+"""Research-only bundle execution boundary tests."""
+
+from pathlib import Path
+
+import pandas as pd
+import pytest
+
+from cfb_quant.live import bundle_replay_v58 as replay
+
+
+def mock_plan(tmp_path, monkeypatch):
+    bundle = tmp_path / "bundle"
+    bundle.mkdir()
+
+    output = tmp_path / "repository" / "reports" / "replays"
+    output.parent.mkdir(parents=True)
+
+    snapshot = bundle / "reports" / "snapshot"
+
+    plan = {
+        "input_root": bundle,
+        "snapshot": snapshot,
+        "output_root": output,
+        "bundle_identity": "abc123",
+        "bundle_manifest_sha256": "d" * 64,
+    }
+
+    monkeypatch.setattr(replay, "prepare", lambda *args: plan)
+
+    monkeypatch.setattr(
+        replay,
+        "resolve",
+        lambda *args: {
+            "data_root": bundle,
+            "snapshot": snapshot,
+            "bundle_identity": "abc123",
+        },
+    )
+
+    provenance = {
+        "schema": "cfb_v58_execution_provenance_v1",
+        "research_only": True,
+        "code_identity": "a" * 64,
+        "environment_identity": "b" * 64,
+        "execution_identity": "c" * 64,
+        "source_file_count": 2,
+        "prospective_performance_eligible": False,
+        "production_forecast_authorized": False,
+    }
+
+    monkeypatch.setattr(
+        replay, "capture", lambda *args, **kwargs: provenance
+    )
+    monkeypatch.setattr(
+        replay,
+        "verify_sources",
+        lambda *args, **kwargs: {
+            "status": "UNCHANGED"
+        },
+    )
+
+    monkeypatch.setattr(
+        replay,
+        "verify_environment",
+        lambda *args, **kwargs: {
+            "status": "UNCHANGED"
+        },
+    )
+
+    return plan
+
+
+def audit():
+    return {
+        "chronology_gate": {
+            "status": "PASS",
+            "archive_override_requested": True,
+        },
+        "forecast_classification": "RETROSPECTIVE_RESEARCH",
+        "source_availability_certified": False,
+        "prospective_performance_eligible": False,
+        "production_forecast_authorized": False,
+    }
+
+
+def test_predictor_uses_bundled_root_and_snapshot(
+    tmp_path, monkeypatch
+):
+    plan = mock_plan(tmp_path, monkeypatch)
+    events = []
+
+    def fake_run(root, snapshot, **kwargs):
+        events.append("run")
+        assert root == plan["input_root"]
+        assert snapshot == plan["snapshot"]
+        assert kwargs["allow_started"] is True
+        return pd.DataFrame({"game_id": ["100"]}), audit()
+
+    def fake_lineage(root, model_audit):
+        events.append("lineage")
+        assert root == plan["input_root"]
+        return {
+            "schema": "cfb_v58_forecast_publication_lineage_v1",
+            "publication_check": {"status": "UNCHANGED"},
+        }
+
+    def fake_publish(parent, frame, model_audit, **kwargs):
+        events.append("publish")
+        assert parent == plan["output_root"]
+        assert model_audit["bundle_replay"]["bundle_identity"] == "abc123"
+        assert model_audit["prospective_performance_eligible"] is False
+        result = kwargs["lineage_check"]()
+        assert result["publication_check"]["status"] == "UNCHANGED"
+        provenance = kwargs["provenance_check"]()
+        assert provenance["code_identity"] == "a" * 64
+        return parent / "mocked_publication"
+
+    monkeypatch.setattr(replay, "run", fake_run)
+    monkeypatch.setattr(replay, "validate_lineage", fake_lineage)
+    monkeypatch.setattr(replay, "publish", fake_publish)
+
+    result = replay.execute(
+        plan["input_root"], tmp_path / "repository",
+        samples=100, seed=57,
+    )
+
+    assert result.name == "mocked_publication"
+    assert events == ["run", "lineage", "publish", "lineage"]
+
+
+def test_nonretrospective_run_is_rejected(tmp_path, monkeypatch):
+    plan = mock_plan(tmp_path, monkeypatch)
+
+    def fake_run(*args, **kwargs):
+        result = audit()
+        result["forecast_classification"] = "CHRONOLOGY_VALID_RESEARCH"
+        return pd.DataFrame({"game_id": ["100"]}), result
+
+    monkeypatch.setattr(replay, "run", fake_run)
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Invalid replay reached publication")
+
+    monkeypatch.setattr(replay, "publish", forbidden)
+
+    with pytest.raises(ValueError, match="retrospective research"):
+        replay.execute(plan["input_root"], tmp_path / "repository")
+
+
+def test_changed_resolution_blocks_before_run(tmp_path, monkeypatch):
+    plan = mock_plan(tmp_path, monkeypatch)
+
+    monkeypatch.setattr(
+        replay, "resolve",
+        lambda *args: {
+            "data_root": tmp_path / "wrong_root",
+            "snapshot": plan["snapshot"],
+            "bundle_identity": "abc123",
+        },
+    )
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Invalid bundle reached model execution")
+
+    monkeypatch.setattr(replay, "run", forbidden)
+
+    with pytest.raises(ValueError, match="resolution changed"):
+        replay.execute(plan["input_root"], tmp_path / "repository")
+
+
+def test_lineage_failure_blocks_publish(tmp_path, monkeypatch):
+    plan = mock_plan(tmp_path, monkeypatch)
+
+    monkeypatch.setattr(
+        replay, "run",
+        lambda *args, **kwargs: (
+            pd.DataFrame({"game_id": ["100"]}), audit()
+        ),
+    )
+
+    def bad_lineage(*args, **kwargs):
+        raise ValueError("Input lineage changed")
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Unverified replay published")
+
+    monkeypatch.setattr(replay, "validate_lineage", bad_lineage)
+    monkeypatch.setattr(replay, "publish", forbidden)
+
+    with pytest.raises(ValueError, match="Input lineage changed"):
+        replay.execute(plan["input_root"], tmp_path / "repository")
+
+
+
+def test_source_mutation_after_model_run_blocks_publish(
+    tmp_path, monkeypatch
+):
+    plan = mock_plan(tmp_path, monkeypatch)
+
+    monkeypatch.setattr(
+        replay, "run",
+        lambda *args, **kwargs: (
+            pd.DataFrame({"game_id": ["100"]}), audit()
+        ),
+    )
+
+    def changed_source(*args, **kwargs):
+        raise ValueError("Source identity changed: model.py")
+
+    def forbidden_publish(*args, **kwargs):
+        raise AssertionError("Changed code reached publication")
+
+    monkeypatch.setattr(
+        replay, "verify_sources", changed_source
+    )
+    monkeypatch.setattr(replay, "publish", forbidden_publish)
+
+    with pytest.raises(ValueError, match="Source identity changed"):
+        replay.execute(
+            plan["input_root"], tmp_path / "repository"
+        )
+
+
+
+def test_environment_drift_after_model_run_blocks_publish(
+    tmp_path, monkeypatch
+):
+    plan = mock_plan(tmp_path, monkeypatch)
+
+    monkeypatch.setattr(
+        replay, "run",
+        lambda *args, **kwargs: (
+            pd.DataFrame({"game_id": ["100"]}), audit()
+        ),
+    )
+
+    def changed_environment(*args, **kwargs):
+        raise ValueError("Execution environment changed")
+
+    def forbidden_publish(*args, **kwargs):
+        raise AssertionError(
+            "Environment drift reached publication"
+        )
+
+    monkeypatch.setattr(
+        replay, "verify_environment", changed_environment
+    )
+    monkeypatch.setattr(
+        replay, "publish", forbidden_publish
+    )
+
+    with pytest.raises(
+        ValueError, match="Execution environment changed"
+    ):
+        replay.execute(
+            plan["input_root"], tmp_path / "repository"
+        )

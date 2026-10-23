@@ -1,0 +1,453 @@
+{
+  "schema": "cfb_v58_execution_provenance_v1",
+  "research_only": true,
+  "source_files": {
+    "pyproject.toml": {
+      "sha256": "1609519cdc3a7c31265302fd2f90512997238813256a64f236174bd7abe8b4d2",
+      "bytes": 348
+    },
+    "requirements.txt": {
+      "sha256": "1cd6a9837de3527f13cb3d4dd231dd440df9003353e6f0a5d7c55dc1166166da",
+      "bytes": 1812
+    },
+    "src/cfb_quant/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/cfb_quant/data/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/cfb_quant/data/audit_pbp_quality.py": {
+      "sha256": "48c9bcedbd37546b89b743f7b20a5f6349a7db1cd51f37ba278be64f88a4264b",
+      "bytes": 16391
+    },
+    "src/cfb_quant/data/build_canonical_player_games.py": {
+      "sha256": "d7da8c4f59364d40d117046fff9d2cb7dc12e99c1c86ec2950bfe6de0a071746",
+      "bytes": 21347
+    },
+    "src/cfb_quant/data/build_pbp_player_games.py": {
+      "sha256": "b964ce23bc6c6804427325f109137b16ba9e3b37010499b5c7d5586203f1991f",
+      "bytes": 25980
+    },
+    "src/cfb_quant/data/build_player_games.py": {
+      "sha256": "f4cf796d087f76626947bc6878e557476e284f9c7ca0828b6afab514cb7698dc",
+      "bytes": 20634
+    },
+    "src/cfb_quant/data/build_team_games.py": {
+      "sha256": "d4dff2c5ea0bbcfed33f774f2553f2254c17f8c4dffcf6f4c46d3d8773da238d",
+      "bytes": 21188
+    },
+    "src/cfb_quant/data/check_sources.py": {
+      "sha256": "048265fdebb829b55b29e29397cd3743b9066a680b43cc93c8273f089f0e19b5",
+      "bytes": 2399
+    },
+    "src/cfb_quant/data/download_history.py": {
+      "sha256": "5bc987fd99b81bb9879f213bac5cd3e1b3e2ecb0473f307f69d32362f78ab89f",
+      "bytes": 14097
+    },
+    "src/cfb_quant/data/zero_catch_receivers.py": {
+      "sha256": "1849a64babec49e8524812eb8ea4d40e4e93c8cf4f24be1341ec6aea6ec456f8",
+      "bytes": 18103
+    },
+    "src/cfb_quant/evaluation/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/cfb_quant/features/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/cfb_quant/features/engine.py": {
+      "sha256": "b09f6f4cc7908fec4ae07f18894f5d477e93e6a5e2a33fdb56f282f2265bb47c",
+      "bytes": 21627
+    },
+    "src/cfb_quant/features/matchup_engine.py": {
+      "sha256": "0bcb77a33d3e956e6819c12ee1a99389aa7c2110b5238838a73123c4eedc8e9a",
+      "bytes": 21131
+    },
+    "src/cfb_quant/features/player_matchup_merge.py": {
+      "sha256": "ae6fcc2538766c87057ae0b9ebad7e41756fe8f9070e47811e7568cfb43a6dbc",
+      "bytes": 5738
+    },
+    "src/cfb_quant/features/player_matchup_production_merge.py": {
+      "sha256": "8a64dfec1456f44ee79cba972db0ba55052b0e53e64296128b2d80fde060825e",
+      "bytes": 13156
+    },
+    "src/cfb_quant/live/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/cfb_quant/live/acquisition_receipt_v58.py": {
+      "sha256": "e676fff655dbc01037a5ee6f1a54050251244f0f80272b8d1a410a21bc57322a",
+      "bytes": 5081
+    },
+    "src/cfb_quant/live/approved_baseline_v58.py": {
+      "sha256": "d829899c4123732a840fed9127d9a52fc37a77b60ad483f4b89f509e40437009",
+      "bytes": 7217
+    },
+    "src/cfb_quant/live/automatic_readiness_v58.py": {
+      "sha256": "780fd1043126d2a753fb9a9084e4a8943a201bdd2738892218f402989cf27671",
+      "bytes": 3737
+    },
+    "src/cfb_quant/live/bundle_execution_v58.py": {
+      "sha256": "ef1df773eaa817c434f8d644f9c425f0401df1cd03a54951fd803d4b4eb8b7af",
+      "bytes": 2496
+    },
+    "src/cfb_quant/live/bundle_replay_plan_v58.py": {
+      "sha256": "b75aeee1092b9e4c1ed9464fdf1df8c9fa2b1d99a195424b966ccd0fb15b8db0",
+      "bytes": 2339
+    },
+    "src/cfb_quant/live/bundle_replay_v58.py": {
+      "sha256": "474759c347c9c40547a298652d1a312113a425ba0fdb0e8b7efd7ae6202237b7",
+      "bytes": 4178
+    },
+    "src/cfb_quant/live/daily_readiness_v58.py": {
+      "sha256": "b6b1b6f1bbab961a242ff97f84b31d86b2da9e11bf5b4382e2fa2001a2aa2ce2",
+      "bytes": 5469
+    },
+    "src/cfb_quant/live/daily_schedule_sync_v58.py": {
+      "sha256": "515f8fe5462949aabe121652751d19d271fc838b5da0f91c861bde747808191c",
+      "bytes": 9713
+    },
+    "src/cfb_quant/live/data_freshness_gate_v58.pre242f.py": {
+      "sha256": "f0ccabb94d4f44b8e879140ea54b39694242c9070fa37e0c02f040e51c09690d",
+      "bytes": 6086
+    },
+    "src/cfb_quant/live/data_freshness_gate_v58.pre242k.py": {
+      "sha256": "cf4b0976112e80fb37b4fa42c01838c304e28b1b1cdc012b11a3ec74bc88a83c",
+      "bytes": 11246
+    },
+    "src/cfb_quant/live/data_freshness_gate_v58.py": {
+      "sha256": "83cdf80c96bfa614bb88fe04ba9c3f414ea5ffb23417ae98a4602e03e5da36cf",
+      "bytes": 12476
+    },
+    "src/cfb_quant/live/derivation_receipt_v58.py": {
+      "sha256": "247bd2b8d4219a155c33681fd6b0b23261c5f467b0f8e80543b46d4e86b2d638",
+      "bytes": 5670
+    },
+    "src/cfb_quant/live/execution_provenance_v58.py": {
+      "sha256": "d9adec6db7e023e6095a160d8d9af24e437aa2087176399525a288519eaaeb58",
+      "bytes": 5661
+    },
+    "src/cfb_quant/live/feature_bridge_v56.py": {
+      "sha256": "5863b1b9371411a6079a2bd6cd851f33c94676300f34ee38da66c399efe6a250",
+      "bytes": 20906
+    },
+    "src/cfb_quant/live/feature_snapshot_save_gate_v58.py": {
+      "sha256": "1b49b684e3073c6dcfddbdc8c6041f0134500194e820c8d4edfea2db0ae8aded",
+      "bytes": 2530
+    },
+    "src/cfb_quant/live/final_bet_report.py": {
+      "sha256": "47f3e6c2d67f317ef87d455dcddca5b04c0e1d72d4cc08e0bd7bf3ad4c65ecd6",
+      "bytes": 4248
+    },
+    "src/cfb_quant/live/final_portfolio.py": {
+      "sha256": "b7adab09728a5e5b1a70b620410ccad013ed717fe1b1946edf88360dcc04cc8e",
+      "bytes": 2618
+    },
+    "src/cfb_quant/live/final_review.py": {
+      "sha256": "d328eebd5beda95c15f182bf874293d92b8ceb2770563ed21ee0611f1b14fa6e",
+      "bytes": 1698
+    },
+    "src/cfb_quant/live/forecast_archive_discovery_v58.py": {
+      "sha256": "f5efb7c18d0290a9978b4fb8936fb4341b0810c1456743c68fc806bd0f6f4611",
+      "bytes": 6148
+    },
+    "src/cfb_quant/live/forecast_authenticity_v58.py": {
+      "sha256": "fc27e4dd9451e64efd8475297dafedc6d1f3f9402d9c33747d0fd9091e22d523",
+      "bytes": 6321
+    },
+    "src/cfb_quant/live/forecast_coverage_v58.py": {
+      "sha256": "5c33f9dcd3fe9e11820f8ead458d8d71ef3416002eafa7c470300f273351bd53",
+      "bytes": 10431
+    },
+    "src/cfb_quant/live/forecast_input_bundle_v58.py": {
+      "sha256": "f84944e052be2f5046dd1a1d3ee59f1a2292206410ef9e705370a702a80ee881",
+      "bytes": 6514
+    },
+    "src/cfb_quant/live/forecast_input_freeze_v58.py": {
+      "sha256": "e43e572611ca2b522eac21a11a3397d72ac0e2e94af0fd13491793cd91428200",
+      "bytes": 4805
+    },
+    "src/cfb_quant/live/forecast_preflight_v58.py": {
+      "sha256": "e9ac8a0b6ae48aa97c43163909a451b4bd51b6d4a1dc5c756d58db5a40d70510",
+      "bytes": 1817
+    },
+    "src/cfb_quant/live/forecast_publication_lineage_v58.py": {
+      "sha256": "3c6538974336ff4b9184da165dc4b9d06514a860c8141ad45c20da81c2e8fc33",
+      "bytes": 3357
+    },
+    "src/cfb_quant/live/forecast_publication_v58.py": {
+      "sha256": "9380e0b727743935c7bbf40f2d9a9fa64d1cb7c92c39a505be70b315f267aabe",
+      "bytes": 8269
+    },
+    "src/cfb_quant/live/market_join_v2.py": {
+      "sha256": "ef449c51dd0f495cb27a588bd3d65e1c102290d43c81b03ccedbd3e04914c842",
+      "bytes": 11428
+    },
+    "src/cfb_quant/live/market_probability.py": {
+      "sha256": "5799c5d16f8b3e125098c9fd9307dcc13b7ed140e084aebd5851a60dfd9e945d",
+      "bytes": 6636
+    },
+    "src/cfb_quant/live/market_probability_calibrated.py": {
+      "sha256": "1f105378c1cb8e24c7112a3541c591c331b0afb71556de9d2137d6be88ee7fa2",
+      "bytes": 4741
+    },
+    "src/cfb_quant/live/market_probability_v2.py": {
+      "sha256": "27eeee40d7ab9dea05f55fa7546e27523b1715db384cb82805ecf88a80df8ddb",
+      "bytes": 7194
+    },
+    "src/cfb_quant/live/market_role_audit.py": {
+      "sha256": "98c5c3cab24ff2cf5231275ea7be2253f087b9cfd0ce3488cf64e41c44917ce1",
+      "bytes": 6609
+    },
+    "src/cfb_quant/live/market_shortlist.py": {
+      "sha256": "2b511707dc8f22a51defd75d0659ea00ff6c22abd330fb673a50c81d943e56f2",
+      "bytes": 3892
+    },
+    "src/cfb_quant/live/market_shortlist_audit.py": {
+      "sha256": "89e113da868550ce0e2d1e9437d9d958be64e7989e8129cbf4300b797f2d6f66",
+      "bytes": 4008
+    },
+    "src/cfb_quant/live/market_uncertainty.py": {
+      "sha256": "7451ff4e3cb9e3afc2c1cf7025fb2695faeb78c411a2397fc69b627e2e0c20c7",
+      "bytes": 5656
+    },
+    "src/cfb_quant/live/matchup_live.py": {
+      "sha256": "d62e915c3d4f01b8e30930809e8826c70a3fc8e4235d8bb17224fa75e446e8b5",
+      "bytes": 16193
+    },
+    "src/cfb_quant/live/player_production.py": {
+      "sha256": "9ed561a8058009f90aa99f48de0c7e05f2b712c8a7f9e070194a79a2459631cf",
+      "bytes": 18234
+    },
+    "src/cfb_quant/live/portable_advanced_verify_v58.py": {
+      "sha256": "83ffb0f08b5e81decce3e7f566b24b1cf2bfcdc787930f16a9e2e11ac155b81b",
+      "bytes": 4038
+    },
+    "src/cfb_quant/live/portable_schedule_verify_v58.py": {
+      "sha256": "d9bfc72f733865fe18fb678552459c3dd4a16e8dec00a82460a3859ce770b96f",
+      "bytes": 4673
+    },
+    "src/cfb_quant/live/predict.py": {
+      "sha256": "afdf54948498c14804e5dd6954a8cdcc95d359c749f5b7b4fc6125ea6543a0c7",
+      "bytes": 16508
+    },
+    "src/cfb_quant/live/predict_v57.py": {
+      "sha256": "0d6c122a4c88f9f1e65b2366aba2ed2c17f2f4c3b3d47b61576e72f31c654c09",
+      "bytes": 19717
+    },
+    "src/cfb_quant/live/pregame_chronology_gate_v58.py": {
+      "sha256": "a75860bfeb8170f890668189b146f1e04e12e8c4385233e8222322b4846b489e",
+      "bytes": 3096
+    },
+    "src/cfb_quant/live/pregame_presave_gate_v58.py": {
+      "sha256": "94045ceccef47afff7a47520d9207ff4618772765f316fd1f16c7e942592b26b",
+      "bytes": 2806
+    },
+    "src/cfb_quant/live/prospective_blend_v58.py": {
+      "sha256": "5618930f22ca9978358a833726a09b670628e922cb6858cf663c8ebd05721827",
+      "bytes": 10460
+    },
+    "src/cfb_quant/live/relevant_slate.py": {
+      "sha256": "309d4448127f671dd06fc9adbfbffde7f97f33392205c232d951600e9c78b795",
+      "bytes": 4970
+    },
+    "src/cfb_quant/live/research_lineage_gate_v58.py": {
+      "sha256": "c04e3d3281f4a3876e96bcc5e7a06dbf62af6c0e550c0a2d6a92da5d52217392",
+      "bytes": 5492
+    },
+    "src/cfb_quant/live/run_market_pipeline.py": {
+      "sha256": "7453375d8ae2171c210913fe9d7e15586e9cc42ca61399c052c40b14824f0a55",
+      "bytes": 1324
+    },
+    "src/cfb_quant/live/slate.py": {
+      "sha256": "d9a177ae63812b5acba99b51feb4a5720a14e3dc2a92aacb36aa48a9fb4730e7",
+      "bytes": 14936
+    },
+    "src/cfb_quant/live/source_capture_guard_v58.py": {
+      "sha256": "5ef310b778bb341a8990769b651cfa15e4b6d5b84942a53515452fbc8b023f8d",
+      "bytes": 5283
+    },
+    "src/cfb_quant/live/source_reconciliation_v58.py": {
+      "sha256": "c6b9d7704e6101f5da950e0716a52163923b089acabd29fdee97e165c495a631",
+      "bytes": 8205
+    },
+    "src/cfb_quant/live/team_history_refresh_2026.py": {
+      "sha256": "0cafb7981a150055430a51ec27fd8bf93c5ad0ab8b17124d54c60a4bfafc12e2",
+      "bytes": 15659
+    },
+    "src/cfb_quant/live/tracked_derivation_v58.py": {
+      "sha256": "09779028a894f3e1821a63247f2761c4faee64159c040a26e4eb26576331a609",
+      "bytes": 3239
+    },
+    "src/cfb_quant/live/tracked_history_refresh_v58.py": {
+      "sha256": "ad97b6357d7e0312b05ba50d1d7ed0534702f908b65a45ed661ac53fbfd92a8d",
+      "bytes": 4873
+    },
+    "src/cfb_quant/models/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "src/cfb_quant/models/game_direct_tournament.py": {
+      "sha256": "2ae3d97a196dbf35e7d01bda5d7b56731bbdedd98573742ad9177c3dceb6c6cf",
+      "bytes": 18363
+    },
+    "src/cfb_quant/models/market_movement_tournament.py": {
+      "sha256": "4a48a95e03290526f0f500d4503dddd921063037f28c9a01b6f6bdf69ab54bd8",
+      "bytes": 22153
+    },
+    "src/cfb_quant/models/market_residual_tournament.py": {
+      "sha256": "503df19dbb801ee8419a82cc282bd6234a253601ca440ce9899583cf1db6c933",
+      "bytes": 22881
+    },
+    "src/cfb_quant/models/matchup_predictions.py": {
+      "sha256": "36ad514d44718c4e25fb228a728d23e5b8db8cc84e3c0e087e127ac1fa293160",
+      "bytes": 9501
+    },
+    "src/cfb_quant/models/matchup_production.py": {
+      "sha256": "10f8af2ae5be69491375c9e4864be4a74b28b93e790f41b1833788fb1a39a9b2",
+      "bytes": 9010
+    },
+    "src/cfb_quant/models/matchup_tournament.py": {
+      "sha256": "888735f26b72598e6f9d98414ec3871bbf3918f24cf70f02ea3a02f6892a084a",
+      "bytes": 30334
+    },
+    "src/cfb_quant/models/matchup_walkforward_2026.py": {
+      "sha256": "bec6e934bc114884d7990a102ccb2b7803ff6cfb3c00eb676266179a64a10162",
+      "bytes": 4907
+    },
+    "src/cfb_quant/models/player_holdout_predictions.py": {
+      "sha256": "b8722f0386d87242b88fb9f73a170f33f6860aa5c8aa8ad024e5af60b1913044",
+      "bytes": 3114
+    },
+    "src/cfb_quant/models/player_matchup_blend_test.py": {
+      "sha256": "fcb3551a74693d7293bdeb385d944e9ed9169eb385a7390aa80732870111b7ba",
+      "bytes": 5932
+    },
+    "src/cfb_quant/models/player_matchup_blend_validation.py": {
+      "sha256": "77126b5bba1b14fee38e0d2f876563bd0d68a20805324172a268a3f5c8859f98",
+      "bytes": 11376
+    },
+    "src/cfb_quant/models/player_matchup_paired_test.py": {
+      "sha256": "278dcfe54aec321e5b2662fc93090c7f6605a90a2299836ea812643a16668d86",
+      "bytes": 6348
+    },
+    "src/cfb_quant/models/player_matchup_tournament.py": {
+      "sha256": "dd0985e679238ce8a1a46bc7e756b74c1282f3a5c9d3e1c022540f610a7cc3a2",
+      "bytes": 10237
+    },
+    "src/cfb_quant/models/player_probability_calibration.py": {
+      "sha256": "81d884a6956084850b97352e331dc722fba32501549ac34e82e6cd8fbe5f6672",
+      "bytes": 3995
+    },
+    "src/cfb_quant/models/player_probability_calibrator.py": {
+      "sha256": "fc7f79780207767e85650fad96fb7625a4e49311a76f97c0ed3e2f0983f4d155",
+      "bytes": 4048
+    },
+    "src/cfb_quant/models/player_production.py": {
+      "sha256": "fd57439ebfafbc668055450972ef1b5a99012ba7e29ccdffe164c7a1532dfa9f",
+      "bytes": 11183
+    },
+    "src/cfb_quant/models/tournament.py": {
+      "sha256": "7d864e6f92b27e76d12e7171a004a9b32985cad60024058d7cfddfb8057912c5",
+      "bytes": 21467
+    },
+    "src/cfb_quant/spread_total/__init__.py": {
+      "sha256": "e36097b77832235bfec7ddc3ae9b2c58c3c167894ae196c54c1f4371f2605881",
+      "bytes": 82
+    },
+    "src/cfb_quant/spread_total/ablation_v4.py": {
+      "sha256": "db5722d585be7c960e5375d860693e8e4cda995db073c47b6499645ca3402aa9",
+      "bytes": 7871
+    },
+    "src/cfb_quant/spread_total/advanced_v4.py": {
+      "sha256": "02245d09858de89e2953d349df7f003d9af54da8405662e40be4b0cd21f6fcf1",
+      "bytes": 18850
+    },
+    "src/cfb_quant/spread_total/calibration_audit_v54.py": {
+      "sha256": "aa6ae4247a767f277b0ad9c1c7497d5e3a2b9a4b9228454d51b4df891e810c98",
+      "bytes": 8649
+    },
+    "src/cfb_quant/spread_total/cli.py": {
+      "sha256": "6ec359e313b5abac28677a0a572b0d6f81d13e1ae8c286375ed89ea290f933a5",
+      "bytes": 12635
+    },
+    "src/cfb_quant/spread_total/compare_opponent_v45.py": {
+      "sha256": "a2d426529adee46a3b56ecfc1bc45d52287c0bf02ccb88afbc7bd3f82c16f33d",
+      "bytes": 5116
+    },
+    "src/cfb_quant/spread_total/core.py": {
+      "sha256": "975d47d41fa2afcffc5001fe6e0ba1732d3c60e35b63a7a468c58ce47ab8abe1",
+      "bytes": 10787
+    },
+    "src/cfb_quant/spread_total/diagnostics.py": {
+      "sha256": "dca6ac4b7aa0ae5a49346a43100b8a55e97e52786988eefadcc290a2806360de",
+      "bytes": 7915
+    },
+    "src/cfb_quant/spread_total/direct_margin_v5.py": {
+      "sha256": "2163396e4c1949af5aaa391fda521944b5605872c23f61cf04c65c9e3910efd5",
+      "bytes": 12416
+    },
+    "src/cfb_quant/spread_total/fbs_calibration_v52.py": {
+      "sha256": "4507ed1223acd6391a580f85482d836568acaa58b60208206fe5ae7699f48613",
+      "bytes": 9705
+    },
+    "src/cfb_quant/spread_total/feature_preflight.py": {
+      "sha256": "b90ca5fd4df2fdfd2f87701c5455f6cb29e191b676d41fde92eb5d74f039489f",
+      "bytes": 8178
+    },
+    "src/cfb_quant/spread_total/hybrid_probability_v51.py": {
+      "sha256": "6ab06e15f3c9f97eaa2fe44ae0d4721a2a85006b9b987dc8472b361c365cf644",
+      "bytes": 9122
+    },
+    "src/cfb_quant/spread_total/oof_points.py": {
+      "sha256": "ecc06170140b5e526909455dfcc2c34deb6247241f6f4b74de35b00c9a582134",
+      "bytes": 3540
+    },
+    "src/cfb_quant/spread_total/opponent_v45.py": {
+      "sha256": "c5c8a88842c79ac397e6d99663bdd0b55c3125dd8fbdaf1ea924937e8c763272",
+      "bytes": 10664
+    },
+    "src/cfb_quant/spread_total/phase_volatility_v53.py": {
+      "sha256": "3b0ef204526f9fc6e536f8d1ea9427bef3f7324753b63d1e476c2d3144616190",
+      "bytes": 10042
+    },
+    "src/cfb_quant/spread_total/rolling_calibration_v55.py": {
+      "sha256": "17f6f9d5ac06a79ecb19206b588e37a5c0e412c8716ec9437472b1e87f4ae9e1",
+      "bytes": 9437
+    }
+  },
+  "source_file_count": 104,
+  "code_identity": "58f033d66783b907075640c6a335368e492c99afa8a54a2eba92e1525e7ac1f1",
+  "environment": {
+    "python_version": "3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)]",
+    "python_implementation": "CPython",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "pyarrow": "26.0.0",
+      "joblib": "1.6.0"
+    }
+  },
+  "environment_identity": "3eb5a1687998d7dac7c0c20bae2b8192ace21d858c3d1a547ef8e7fb12fc43ca",
+  "git": {
+    "commit": "3c29f48265d6dd5893c77b895e20f412fbfb74a0",
+    "tracked_worktree_dirty": true,
+    "untracked_file_count": 382
+  },
+  "configuration": {
+    "bundle_identity": "89433951ad8ef4a7db1613d493a2d7cd78a1ec51ad23317ed1bfe33d2b1cd99c",
+    "samples": 10000,
+    "seed": 57
+  },
+  "execution_identity": "3e8d38048500168d5fad0b08569f70ae06f8df405ee93f5e475d362ee6b2d95c",
+  "historical_point_in_time_certified": false,
+  "source_availability_certified": false,
+  "prospective_performance_eligible": false,
+  "production_forecast_authorized": false
+}

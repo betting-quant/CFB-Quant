@@ -1,0 +1,56 @@
+{
+  "version": "forecast_coverage_v58_v1",
+  "research_only": true,
+  "created_utc": "2026-10-20T19:17:57.534694+00:00",
+  "window_eastern": [
+    "2026-10-20",
+    "2026-10-24"
+  ],
+  "schedule_snapshot": "reports/v58_development/daily_schedule_sync_v58/20261020T190612581737Z/cfbd_games.json",
+  "schedule_sha256": "ccf2547751574c539173a0e6a7f89e34dd4f365f6653fd06dea225468e35ca45",
+  "forecast_sources": [
+    {
+      "path": "reports/v58_development/midweek_forecasts/20261020T173820706469Z/2026-10-20/paired_forecasts.csv",
+      "sha256": "4c28c6bb169ff409ca98f3165ed1f5708af924f6e64ee27ac2ecf9dbe82fc49f",
+      "games": 3
+    },
+    {
+      "path": "reports/v58_development/midweek_forecasts/20261020T173820706469Z/2026-10-21/paired_forecasts.csv",
+      "sha256": "1ce31f68eb487fe16a14c1d37a13e393c69c482b3cba3c4675107248d6d9fa8e",
+      "games": 1
+    },
+    {
+      "path": "reports/v58_development/midweek_forecasts/20261020T173820706469Z/2026-10-22/paired_forecasts.csv",
+      "sha256": "f4269b91c4c4f9df54fde4ef8df5adad1c2c677bc5c663f3b3fc7805fd588f61",
+      "games": 3
+    },
+    {
+      "path": "reports/v58_development/midweek_forecasts/20261020T173820706469Z/2026-10-23/paired_forecasts.csv",
+      "sha256": "a2b6f11f005da352d40f2fb9a7f8fd86edc45155c82bd7511510250e5acbecba",
+      "games": 5
+    },
+    {
+      "path": "reports/v58_development/prospective_forecasts/2026-10-24_20261020T171902666599Z/paired_forecasts.csv",
+      "sha256": "1fd63a93229a2c73dc771fb8fbf62bca06117c77120cb4bd2ce5efc7ed4b91e9",
+      "games": 33
+    },
+    {
+      "path": "reports/v58_development/supplementary_forecasts/20261020T185835342252Z/paired_forecasts.csv",
+      "sha256": "0f7d67dcf11bfbde066098a5f083fe18bea0746be29dfc9bea2dfbee6625477e",
+      "games": 11
+    }
+  ],
+  "coverage_registry_sha256": "73ab97f1f84f3cdadc90d49b85503a5ac7edd82060edd2cfcc422b72f95f0b23",
+  "total_games": 56,
+  "matchup_types": {
+    "FBS_FBS": 56
+  },
+  "statuses": {
+    "ARCHIVED": 56
+  },
+  "all_fbs_games_accounted_for": true,
+  "all_fbs_fbs_forecasted": true,
+  "model_run": false,
+  "production_modified": false,
+  "independent_schedule_completeness_certified": false
+}

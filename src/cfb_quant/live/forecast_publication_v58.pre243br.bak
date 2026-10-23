@@ -1,0 +1,255 @@
+"""Atomic publication of research forecasts; no production authorization."""
+
+from datetime import datetime, timezone
+import json
+from pathlib import Path
+import tempfile
+
+import pandas as pd
+
+
+def utc(value, label):
+    value = pd.Timestamp(value)
+    if pd.isna(value) or value.tzinfo is None:
+        raise ValueError(f"{label} requires timezone-aware time")
+    return value.tz_convert("UTC")
+
+
+def validate(frame, audit, current):
+    if frame is None or frame.empty:
+        raise ValueError("Empty forecast")
+    if not isinstance(audit, dict):
+        raise ValueError("Missing model audit")
+
+    gate = audit.get("chronology_gate")
+    if not isinstance(gate, dict) or gate.get("status") != "PASS":
+        raise ValueError("Missing or failed pre-save chronology gate")
+
+    archive = gate.get("archive_override_requested")
+    classification = (
+        "RETROSPECTIVE_RESEARCH"
+        if archive is True
+        else "CHRONOLOGY_VALID_RESEARCH"
+    )
+
+    if archive not in (True, False):
+        raise ValueError("Invalid archive override")
+
+    if audit.get("forecast_classification") != classification:
+        raise ValueError("Forecast classification mismatch")
+
+    if (
+        audit.get("production_forecast_authorized") is not False
+        or audit.get("source_availability_certified") is not False
+        or audit.get("prospective_performance_eligible") is not False
+    ):
+        raise ValueError("Research authorization flags inconsistent")
+
+    if "kickoff_utc" not in frame or "game_id" not in frame:
+        raise ValueError("Missing forecast identifiers or kickoff")
+
+    kickoff = pd.to_datetime(
+        frame["kickoff_utc"], utc=True, errors="raise"
+    )
+    if kickoff.isna().any():
+        raise ValueError("Invalid kickoff")
+
+    earliest = kickoff.min()
+    now = utc(current, "publication time")
+    asof = utc(
+        audit["snapshot_metadata"]["asof_utc"],
+        "snapshot asof",
+    )
+    created = utc(
+        audit["snapshot_metadata"]["created_at_utc"],
+        "snapshot creation",
+    )
+    generated = utc(audit["generated_at_utc"], "generation")
+
+    if not (asof <= created <= generated <= now):
+        raise ValueError("Inconsistent forecast chronology")
+
+    if asof >= earliest:
+        raise ValueError("Snapshot asof not before kickoff")
+
+    if not archive and (
+        created >= earliest or
+        generated >= earliest or
+        now >= earliest
+    ):
+        raise ValueError(
+            "Forecast publication rejected: game already started"
+        )
+
+    return {
+        "classification": classification,
+        "publication_check_utc": now.isoformat(),
+        "earliest_kickoff_utc": earliest.isoformat(),
+        "research_only": True,
+        "source_availability_certified": False,
+        "production_forecast_authorized": False,
+        "prospective_performance_eligible": False,
+    }
+
+
+def publish(parent, frame, audit, *, clock=None, lineage_check=None, provenance_check=None):
+    if clock is None:
+        clock = lambda: datetime.now(timezone.utc)
+
+    parent = Path(parent)
+    validate(frame, audit, clock())
+
+    day = audit["snapshot_metadata"]["slate_date_eastern"]
+    if not isinstance(day, str) or not (
+        len(day) == 10 and
+        day[4] == "-" and day[7] == "-" and
+        day.replace("-", "").isdigit()
+    ):
+        raise ValueError("Invalid slate date")
+
+    stamp = utc(clock(), "directory timestamp").strftime(
+        "%Y%m%dT%H%M%SZ"
+    )
+    dest = parent / f"{day}_{stamp}"
+
+    if dest.exists():
+        raise FileExistsError(dest)
+
+    parent.mkdir(parents=True, exist_ok=True)
+
+    with tempfile.TemporaryDirectory(
+        prefix=".pending_forecast_", dir=parent
+    ) as temp:
+        stage = Path(temp)
+        csv_path = stage / "slate_forecasts.csv"
+        audit_path = stage / "model_audit.json"
+
+        frame.to_csv(csv_path, index=False)
+        readback = pd.read_csv(csv_path)
+
+        if (
+            len(readback) != len(frame)
+            or list(readback.columns) != list(frame.columns)
+        ):
+            raise ValueError("Forecast CSV read-back mismatch")
+
+        saved_audit = dict(audit)
+        saved_audit["publication"] = validate(
+            frame, audit, clock()
+        )
+        saved_audit["research_only"] = True
+        saved_audit["prospective_performance_eligible"] = False
+
+        audit_path.write_text(
+            json.dumps(saved_audit, indent=2, default=str),
+            encoding="utf-8",
+        )
+
+        if json.loads(
+            audit_path.read_text(encoding="utf-8")
+        ) != json.loads(json.dumps(saved_audit, default=str)):
+            raise ValueError("Forecast audit read-back mismatch")
+
+        # Final clock check before exposing the completed directory.
+        validate(frame, audit, clock())
+
+        if lineage_check is not None:
+            lineage = lineage_check()
+            if (
+                lineage.get("schema")
+                != "cfb_v58_forecast_publication_lineage_v1"
+                or lineage.get("publication_check", {}).get("status")
+                != "UNCHANGED"
+            ):
+                raise ValueError(
+                    "Strict publication lineage validation failed"
+                )
+
+            lineage_path = stage / "forecast_input_lineage_v1.json"
+            lineage_path.write_text(
+                json.dumps(lineage, indent=2, default=str),
+                encoding="utf-8",
+            )
+
+            if json.loads(
+                lineage_path.read_text(encoding="utf-8")
+            ) != json.loads(json.dumps(lineage, default=str)):
+                raise ValueError("Lineage read-back mismatch")
+
+            # Strict mode checks the clock once more after writing
+            # its additional lineage artifact.
+            validate(frame, audit, clock())
+
+        if provenance_check is not None:
+            provenance = provenance_check()
+
+            if (
+                not isinstance(provenance, dict)
+                or provenance.get("schema")
+                != "cfb_v58_execution_provenance_v1"
+                or provenance.get("research_only") is not True
+                or provenance.get("prospective_performance_eligible")
+                is not False
+                or provenance.get("production_forecast_authorized")
+                is not False
+            ):
+                raise ValueError("Invalid execution provenance")
+
+            provenance_path = (
+                stage / "execution_provenance_v1.json"
+            )
+            provenance_path.write_text(
+                json.dumps(provenance, indent=2),
+                encoding="utf-8",
+            )
+
+            readback = json.loads(
+                provenance_path.read_text(encoding="utf-8")
+            )
+            if readback != provenance:
+                raise ValueError(
+                    "Execution provenance read-back mismatch"
+                )
+
+            # Recheck code identity immediately before promotion.
+            if provenance_check() != provenance:
+                raise ValueError(
+                    "Execution provenance changed during publication"
+                )
+
+            validate(frame, audit, clock())
+
+        if dest.exists():
+            raise FileExistsError(dest)
+
+        stage.rename(dest)
+
+    return dest
+
+
+def publish_verified(root, parent, frame, audit, *, clock=None):
+    """Require verified execution lineage and publish three artifacts."""
+    from cfb_quant.live.forecast_publication_lineage_v58 import (
+        validate_lineage,
+    )
+
+    root = Path(root).resolve()
+    parent = Path(parent).resolve()
+
+    try:
+        parent.relative_to(root)
+    except ValueError as exc:
+        raise ValueError(
+            "Forecast output must be inside repository"
+        ) from exc
+
+    # Reject invalid or missing lineage before creating a stage.
+    validate_lineage(root, audit)
+
+    return publish(
+        parent,
+        frame,
+        audit,
+        clock=clock,
+        lineage_check=lambda: validate_lineage(root, audit),
+    )

@@ -1,0 +1,166 @@
+{
+  "schema": "cfb_v58_full_input_capture_v1",
+  "research_only": true,
+  "capture_kind": "local_file_copy",
+  "capture_completed_at_utc": "2026-10-20T21:24:00.432495+00:00",
+  "source_count": 38,
+  "files": {
+    "data/processed/cfb_matchup_features_kickoff_v3.parquet": {
+      "sha256": "bd48c521a2711a2825c8cf661f85d833b6497aa1396e3335be3af2e1d726090c",
+      "bytes": 17708646
+    },
+    "data/processed/cfb_matchup_features_opponent_v45.parquet": {
+      "sha256": "3c9c2ac111af054251c3474181440f6c574b0c08dfb77b6c1d26e4ebbba44344",
+      "bytes": 43490254
+    },
+    "data/processed/team_games_2014.parquet": {
+      "sha256": "dc6e7fd8763e316f6c85ebbf3643350ebe86016ff8f1dbdaae92b5618b63553f",
+      "bytes": 68249
+    },
+    "data/processed/team_games_2015.parquet": {
+      "sha256": "85da9bb91ab3af71a016bd160cb8d6acfa68077f5e1a709f644739117b3247fe",
+      "bytes": 68375
+    },
+    "data/processed/team_games_2016.parquet": {
+      "sha256": "1f21c23890c12fc2754050a3af64721d939094b87431479fdae5fa294af9bbaf",
+      "bytes": 71827
+    },
+    "data/processed/team_games_2017.parquet": {
+      "sha256": "4ac1aa1f93180ed29f06c0ba215eadea5ea6152cea4edbb529a53f08be9b1fef",
+      "bytes": 72408
+    },
+    "data/processed/team_games_2018.parquet": {
+      "sha256": "4d426cd71da9aec777519c4f45973f06d05a1e2e1dd76b3a275281f2b94d5f9b",
+      "bytes": 72572
+    },
+    "data/processed/team_games_2019.parquet": {
+      "sha256": "7e89028f57b3a6ad51980dd156e5d26aada7f645029d3629575427f64e2313c1",
+      "bytes": 72973
+    },
+    "data/processed/team_games_2020.parquet": {
+      "sha256": "952f89ff4689132190ed953a0c1a3e2f5f577b025423ed37dc66ddb65fca48a3",
+      "bytes": 54193
+    },
+    "data/processed/team_games_2021.parquet": {
+      "sha256": "cff30b54d2da11d6c5bfaccc8082663041c5d6748d43ef796b14d274cfde2599",
+      "bytes": 72587
+    },
+    "data/processed/team_games_2022.parquet": {
+      "sha256": "492ee714b963a16894d35bacc6562a20f13eae6effe39d6b6b8faf54ed96872b",
+      "bytes": 72742
+    },
+    "data/processed/team_games_2023.parquet": {
+      "sha256": "fbbab6c8e5110f05cc407e5a9dafa0f9d9672fd84050b9c4c195b1aa18c8e265",
+      "bytes": 73175
+    },
+    "data/processed/team_games_2024.parquet": {
+      "sha256": "3b58816adcd4322b3c1f188a30a65849a5250ff16eb6ef05d45fa01c4c1cd905",
+      "bytes": 73161
+    },
+    "data/processed/team_games_2025.parquet": {
+      "sha256": "fd00fef2ab2befe090115a7bf5a3ceb3152f15afc1e9be00aacc950aa8fbfb51",
+      "bytes": 74012
+    },
+    "data/processed/team_games_2026.parquet": {
+      "sha256": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+      "bytes": 51428
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2014.json": {
+      "sha256": "6a8ed79af844fddba522e7733a514188f8de4c04d75ae3c235cf6c1d1b34ac00",
+      "bytes": 3152609
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2015.json": {
+      "sha256": "59c7050fa144954a8e7431b71b1418fdceb6985f24b75ed96605a75dc078bf77",
+      "bytes": 3203065
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2016.json": {
+      "sha256": "b09ed389bacfc17b32e894f75fe52464b2db8ad38811de811bbf68c6bfe935c0",
+      "bytes": 3182387
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2017.json": {
+      "sha256": "934bff67f4678ac80865e34be04c454bc0235d6de866b7969ddd746bf1bd1409",
+      "bytes": 3221447
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2018.json": {
+      "sha256": "ceb6d0884df821b2baa248ef5c276fdcf646926e52fbd37638ed78f7fe7efb18",
+      "bytes": 3267239
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2019.json": {
+      "sha256": "c90c3ef8b962543b9aa5bfcc17d6df42c161f076bf05ee10ccfce532e96f6d50",
+      "bytes": 3286699
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2020.json": {
+      "sha256": "1ed9f103c8d46a54511a8318c49ae064a9aac6dc39d79e252458dfba761ac5ad",
+      "bytes": 2105295
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2021.json": {
+      "sha256": "cffd1bf2909285b77b5753d5cd57490343ad9c1e8c1a304e7c9c4233fa3e23fc",
+      "bytes": 3280389
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2022.json": {
+      "sha256": "72aa6c48d87ed8bd14c583394dfa9da7e1792ea670ec111513505a020e1ac1ec",
+      "bytes": 5396367
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2023.json": {
+      "sha256": "6c79fe929ce1ded99fe5e5e2523b37377a08abfc22812f741377dcd77255f651",
+      "bytes": 5517191
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2024.json": {
+      "sha256": "f2f2482e714f3e49673d5573eb73f9a8d36f4f0cce09882abcaaba346c0caf31",
+      "bytes": 5941321
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2025.json": {
+      "sha256": "77914e86c0238d03eb10d01f6b8f8a44c3544f76a7c38a26d26e0cdb8e406699",
+      "bytes": 6140545
+    },
+    "data/raw/cfbd/advanced_game_v4/advanced_2026.json": {
+      "sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "bytes": 3013463
+    },
+    "data/raw/cfbd/games/games_2026.json": {
+      "sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "bytes": 928980
+    },
+    "reports/cfb_matchup_feature_manifest_kickoff_v3.json": {
+      "sha256": "e4e88625223653e1925e271067863a92a29e040e6b882ecd6f25e2b8727b5f41",
+      "bytes": 11324
+    },
+    "reports/cfb_matchup_feature_manifest_opponent_v45.json": {
+      "sha256": "bebfd25949a0bfdeb08c10a1a78c8890ce792b9c26821552890407ad65e6ffbc",
+      "bytes": 12445
+    },
+    "reports/spread_total_fbs_calibration_v52/universe_audit.csv": {
+      "sha256": "26bc2dfba31df887aff4672798242b1dd14c9ba8b6fba531db8961a460933964",
+      "bytes": 320232
+    },
+    "reports/spread_total_opponent_v45/paired_game_errors.csv": {
+      "sha256": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+      "bytes": 1147333
+    },
+    "reports/spread_total_schedule_chronology_v2/team_game_kickoff_map.csv": {
+      "sha256": "cc80935e33d9d076a000938356cebf51542017805777b502ad573797a8cdda2f",
+      "bytes": 1669797
+    },
+    "reports/v58_development/2025_phase_calibration_v58/game_predictions.csv": {
+      "sha256": "1b5a01ebed64ef25be3fb870f45e55c1842309e1db6c737f2523ead4bb26af3c",
+      "bytes": 210958
+    },
+    "reports/v58_development/feature_dataset_v2/cfb_matchup_features_v58_research.parquet": {
+      "sha256": "8868a43ea9bdbeda90664a2545255d9d9aa491318d326fe7c678d93bd43079f7",
+      "bytes": 18562455
+    },
+    "reports/v58_development/feature_dataset_v2/feature_manifest.json": {
+      "sha256": "c831d9d2cfc1f7dcdeec5a46c33bc5d2f1172dc34979f31e947b9cbcf6f92217",
+      "bytes": 12095
+    },
+    "reports/v58_development/historical_paired_predictions.csv": {
+      "sha256": "9e250e880e96a572231385cd4754429674c5cc0431526c6dda54e1b0f68badb4",
+      "bytes": 718466
+    }
+  },
+  "historical_pit_certified": false,
+  "provider_publication_times_verified": false,
+  "independent_external_timestamp_verified": false,
+  "production_modified": false,
+  "model_executed": false
+}

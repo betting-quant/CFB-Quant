@@ -1,0 +1,8 @@
+{
+  "step": 109,
+  "created_utc": "2026-10-20T16:10:17.729695+00:00",
+  "candidate_artifacts": 24,
+  "research_dataset_rows": 21758,
+  "classification": "PENDING",
+  "note": "File modification time does not prove a prediction was generated before kickoff."
+}

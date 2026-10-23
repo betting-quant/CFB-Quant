@@ -1,0 +1,176 @@
+{
+  "version": "daily_schedule_sync_v58_v1",
+  "research_only": true,
+  "season": 2026,
+  "window_eastern": [
+    "2026-10-20",
+    "2026-10-24"
+  ],
+  "request_started_utc": "2026-10-20T19:06:11.624625+00:00",
+  "request_completed_utc": "2026-10-20T19:06:12.581737+00:00",
+  "source": "CFBD /games",
+  "parameters": {
+    "year": 2026,
+    "seasonType": "both",
+    "classification": "fbs"
+  },
+  "baseline_sha256": "8e26d2eca805108a1732bc656d6ed7403211f88ed7df616980dcaa9447045fb7",
+  "snapshot_sha256": "ccf2547751574c539173a0e6a7f89e34dd4f365f6653fd06dea225468e35ca45",
+  "baseline_games": 888,
+  "fresh_games": 888,
+  "eligible_games": 56,
+  "matchup_counts": {
+    "FBS_FBS": 56
+  },
+  "added_game_ids": [],
+  "removed_game_ids": [],
+  "changed_games": [
+    {
+      "game_id": "401856834",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T17:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401856835",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T19:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401856836",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T23:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401856837",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-25T02:15:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401856838",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T23:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401856839",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T19:45:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401856840",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T16:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401858276",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T23:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401858495",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T19:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401858497",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T19:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "game_id": "401858499",
+      "changes": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "new": "2026-10-24T19:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "new": false
+        }
+      }
+    }
+  ],
+  "unresolved_kickoffs": [],
+  "schedule_completeness_independently_certified": false,
+  "production_modified": false,
+  "models_executed": false
+}

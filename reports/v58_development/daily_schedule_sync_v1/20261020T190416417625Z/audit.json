@@ -1,0 +1,184 @@
+{
+  "version": "daily_schedule_sync_v1",
+  "research_only": true,
+  "request_started_utc": "2026-10-20T19:04:15.279950+00:00",
+  "request_completed_utc": "2026-10-20T19:04:16.417625+00:00",
+  "api_endpoint": "/games",
+  "api_parameters": {
+    "year": 2026,
+    "seasonType": "both",
+    "classification": "fbs"
+  },
+  "previous_schedule_sha256": "8e26d2eca805108a1732bc656d6ed7403211f88ed7df616980dcaa9447045fb7",
+  "fresh_snapshot_sha256": "7b7c9cc2f14426419f1c068ae5f202fc23b4904d5c2367b1a538003380888c60",
+  "previous_schedule_count": 888,
+  "fresh_schedule_count": 888,
+  "week8_previous_count": 56,
+  "week8_fresh_count": 56,
+  "week8_classifications": {
+    "FBS_FBS": 56
+  },
+  "week8_added_ids": [],
+  "week8_removed_ids": [],
+  "week8_changed": [
+    {
+      "game_id": "401856834",
+      "matchup": "Baylor @ Kansas",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T17:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401856835",
+      "matchup": "BYU @ UCF",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T19:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401856836",
+      "matchup": "Colorado @ Oklahoma State",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T23:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401856837",
+      "matchup": "Houston @ Utah",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-25T02:15:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401856838",
+      "matchup": "Iowa State @ Arizona",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T23:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401856839",
+      "matchup": "Kansas State @ Arizona State",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T19:45:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401856840",
+      "matchup": "Texas Tech @ Cincinnati",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T16:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401858276",
+      "matchup": "Virginia Tech @ Clemson",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T23:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401858495",
+      "matchup": "Oregon @ Illinois",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T19:00:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401858497",
+      "matchup": "Iowa @ Minnesota",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T19:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    },
+    {
+      "game_id": "401858499",
+      "matchup": "Michigan State @ UCLA",
+      "differences": {
+        "startDate": {
+          "old": "2026-10-24T04:00:00.000Z",
+          "fresh": "2026-10-24T19:30:00.000Z"
+        },
+        "startTimeTBD": {
+          "old": true,
+          "fresh": false
+        }
+      }
+    }
+  ],
+  "week8_tbd_kickoffs": [],
+  "model_files_modified": false,
+  "forecasts_modified": false,
+  "production_schedule_modified": false,
+  "schedule_completeness_independently_certified": false
+}

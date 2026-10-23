@@ -1,0 +1,43 @@
+{
+  "experiment": "v221_elo_challenger_prospective",
+  "locked_at_utc": "2026-10-21T20:44:50.309609+00:00",
+  "games_locked": 20,
+  "training_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "training_games": 1956,
+  "model": "sklearn.linear_model.Ridge",
+  "sklearn_version": "1.9.1",
+  "alpha": 50.0,
+  "fit_intercept": true,
+  "feature_names": [
+    "original_margin_home_div_14",
+    "elo_diff_home_div_400"
+  ],
+  "intercept": 2.3048082733281836,
+  "coefficients": [
+    6.781700752974181,
+    11.119675570792522
+  ],
+  "input_hashes": {
+    "reports\\spread_total_direct_margin_v5\\paired_game_errors.csv": "efbeb7a83598cf29336ffc87f89e11469a5a7664615908a6bf753587559f67be",
+    "reports\\v58_development\\2025_oos_points\\paired_game_errors.csv": "724afcb5e6c05415a3c4bfacd690910a02ed585af2b02dfb5bac742a012eec47",
+    "reports\\v58_development\\elo_research_v212\\20261021T202642Z\\historical_pregame_elo.csv": "8326672e26162d0904bcdc95f7100b22e7b19ebf4a7df0e8b7a6665539d28115",
+    "reports\\v58_development\\elo_pit_snapshots\\20261021T204101997596Z\\pregame_elo.csv": "a05a89cb3b1e3928952ed0724c85abba0aa4d8f52250ab474a21e3842807e010"
+  },
+  "locked_predictions_sha256": "85f463c587e17ea1f0028a2712127b1be092f5999cdf9e18c6c93619d206d77d",
+  "source_forecast_computation_time_verified": false,
+  "source_feature_cutoffs_certified": false,
+  "historical_elo_pit_certified": false,
+  "live_elo_capture_timestamp_verified": true,
+  "2026_outcomes_used_in_training": false,
+  "market_data_used_in_training": false,
+  "production_model_changed": false,
+  "append_only_directory_not_tamper_proof": true
+}

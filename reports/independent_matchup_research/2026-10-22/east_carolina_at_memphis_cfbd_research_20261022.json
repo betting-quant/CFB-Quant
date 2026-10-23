@@ -1,0 +1,266 @@
+{
+  "schema": "cfbd_matchup_research_v1",
+  "game": {
+    "game_id": "401862807",
+    "date": "2026-10-22",
+    "away": "East Carolina",
+    "home": "Memphis",
+    "kickoff_utc": "2026-10-22T23:30:00+00:00"
+  },
+  "provenance": {
+    "source": "CollegeFootballData API",
+    "endpoint": "/stats/season/advanced",
+    "season": 2026,
+    "retrieved_at_utc": "2026-10-22T21:49:16.476415+00:00",
+    "snapshot_asof_utc": "2026-10-22T21:06:47.967765+00:00",
+    "snapshot_path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\live_feature_bridge_v56\\2026-10-22_20261022T210901Z",
+    "source_point_in_time_certified": false,
+    "retrieved_before_kickoff": true,
+    "cfbd_ppa_is_not_epa": true,
+    "epa_available": false,
+    "warning": "These are current API season-to-date records. Historical source publication timing is not independently certified. Do not use as proof of point-in-time data availability."
+  },
+  "team_advanced_stats": {
+    "East Carolina": [
+      {
+        "season": 2026,
+        "team": "East Carolina",
+        "conference": "American Athletic",
+        "offense": {
+          "plays": 397,
+          "drives": 78,
+          "ppa": -0.009499096529782678,
+          "totalPPA": -3.771141322323723,
+          "successRate": 0.3778337531486146,
+          "explosiveness": 1.1971169433314859,
+          "powerSuccess": 0.68,
+          "stuffRate": 0.19117647058823528,
+          "lineYards": 2.780392156862745,
+          "lineYardsTotal": 567,
+          "secondLevelYards": 0.9607843137254902,
+          "secondLevelYardsTotal": 196,
+          "openFieldYards": 1.4362745098039216,
+          "openFieldYardsTotal": 293,
+          "totalOpportunies": 35,
+          "pointsPerOpportunity": 3.0285714285714285,
+          "fieldPosition": {
+            "averageStart": 71.4,
+            "averagePredictedPoints": 1.297
+          },
+          "havoc": {
+            "total": 0.186,
+            "frontSeven": 0.123,
+            "db": 0.063
+          },
+          "standardDowns": {
+            "rate": 0.6675062972292192,
+            "ppa": 0.03731225900639442,
+            "successRate": 0.4528301886792453,
+            "explosiveness": 0.9974943348354601
+          },
+          "passingDowns": {
+            "rate": 0.33249370277078083,
+            "ppa": -0.10347643908347154,
+            "successRate": 0.22727272727272727,
+            "explosiveness": 1.995607377315589
+          },
+          "rushingPlays": {
+            "rate": 0.5138539042821159,
+            "ppa": -0.05085563262165828,
+            "totalPPA": -10.374549054818289,
+            "successRate": 0.3627450980392157,
+            "explosiveness": 0.9247696897765828
+          },
+          "passingPlays": {
+            "rate": 0.45843828715365237,
+            "ppa": 0.08720727575365708,
+            "totalPPA": 15.87172418716559,
+            "successRate": 0.3901098901098901,
+            "explosiveness": 1.519465687324257
+          }
+        },
+        "defense": {
+          "plays": 424,
+          "drives": 79,
+          "ppa": -0.041295303841919054,
+          "totalPPA": -17.50920882897368,
+          "successRate": 0.3419811320754717,
+          "explosiveness": 1.2599931009361423,
+          "powerSuccess": 0.6,
+          "stuffRate": 0.30864197530864196,
+          "lineYards": 2.1670781893004114,
+          "lineYardsTotal": 527,
+          "secondLevelYards": 0.9629629629629629,
+          "secondLevelYardsTotal": 234,
+          "openFieldYards": 0.897119341563786,
+          "openFieldYardsTotal": 0,
+          "totalOpportunies": 34,
+          "pointsPerOpportunity": 3.0294117647058822,
+          "fieldPosition": {
+            "averageStart": 72.4,
+            "averagePredictedPoints": -1.214
+          },
+          "havoc": {
+            "total": 0.212,
+            "frontSeven": 0.165,
+            "db": 0.047
+          },
+          "standardDowns": {
+            "rate": 0.6061320754716981,
+            "ppa": -0.15074129902548525,
+            "successRate": 0.3735408560311284,
+            "explosiveness": 0.8673637050712556
+          },
+          "passingDowns": {
+            "rate": 0.3938679245283019,
+            "ppa": 0.12713356299746126,
+            "totalPPA": -5.328161435644984,
+            "successRate": 0.2934131736526946,
+            "explosiveness": 2.0292262030387773
+          },
+          "rushingPlays": {
+            "rate": 0.5731132075471698,
+            "ppa": -0.011483171072920581,
+            "totalPPA": -2.7904105707197013,
+            "successRate": 0.35802469135802467,
+            "explosiveness": 1.0440318229155534
+          },
+          "passingPlays": {
+            "rate": 0.4056603773584906,
+            "ppa": -0.030977682765377816,
+            "totalPPA": -5.328161435644984,
+            "successRate": 0.3313953488372093,
+            "explosiveness": 1.609368882066461
+          }
+        }
+      }
+    ],
+    "Memphis": [
+      {
+        "season": 2026,
+        "team": "Memphis",
+        "conference": "American Athletic",
+        "offense": {
+          "plays": 491,
+          "drives": 84,
+          "ppa": 0.18899512664196974,
+          "totalPPA": 92.79660718120714,
+          "successRate": 0.48676171079429736,
+          "explosiveness": 1.2427996954942282,
+          "powerSuccess": 0.7857142857142857,
+          "stuffRate": 0.13427561837455831,
+          "lineYards": 3.5003533568904595,
+          "lineYardsTotal": 991,
+          "secondLevelYards": 1.3109540636042403,
+          "secondLevelYardsTotal": 371,
+          "openFieldYards": 1.756183745583039,
+          "openFieldYardsTotal": 497,
+          "totalOpportunies": 49,
+          "pointsPerOpportunity": 3.9183673469387754,
+          "fieldPosition": {
+            "averageStart": 74,
+            "averagePredictedPoints": 1.124
+          },
+          "havoc": {
+            "total": 0.141,
+            "frontSeven": 0.077,
+            "db": 0.063
+          },
+          "standardDowns": {
+            "rate": 0.7535641547861507,
+            "ppa": 0.16063391807770655,
+            "successRate": 0.5351351351351351,
+            "explosiveness": 0.9958065130639635
+          },
+          "passingDowns": {
+            "rate": 0.24643584521384929,
+            "ppa": 0.27571948340872493,
+            "successRate": 0.33884297520661155,
+            "explosiveness": 2.4355960399135554
+          },
+          "rushingPlays": {
+            "rate": 0.5763747454175153,
+            "ppa": 0.14308009762838486,
+            "totalPPA": 40.491667628832914,
+            "successRate": 0.4911660777385159,
+            "explosiveness": 0.9204849844617252
+          },
+          "passingPlays": {
+            "rate": 0.40122199592668023,
+            "ppa": 0.403321865189955,
+            "totalPPA": 79.45440744242113,
+            "successRate": 0.5025380710659898,
+            "explosiveness": 1.7069471046371822
+          }
+        },
+        "defense": {
+          "plays": 447,
+          "drives": 83,
+          "ppa": 0.05416434288941131,
+          "totalPPA": 24.211461271566858,
+          "successRate": 0.38031319910514544,
+          "explosiveness": 1.3528306805816637,
+          "powerSuccess": 0.8518518518518519,
+          "stuffRate": 0.16877637130801687,
+          "lineYards": 2.981012658227848,
+          "lineYardsTotal": 707,
+          "secondLevelYards": 1.10126582278481,
+          "secondLevelYardsTotal": 261,
+          "openFieldYards": 1.7468354430379747,
+          "openFieldYardsTotal": 0,
+          "totalOpportunies": 39,
+          "pointsPerOpportunity": 3.230769230769231,
+          "fieldPosition": {
+            "averageStart": 72.6,
+            "averagePredictedPoints": -1.211
+          },
+          "havoc": {
+            "total": 0.168,
+            "frontSeven": 0.116,
+            "db": 0.051
+          },
+          "standardDowns": {
+            "rate": 0.6554809843400448,
+            "ppa": 0.0975614643475512,
+            "successRate": 0.4641638225255973,
+            "explosiveness": 1.107257595234849
+          },
+          "passingDowns": {
+            "rate": 0.34451901565995524,
+            "ppa": -0.02840290767704964,
+            "totalPPA": 5.15894498390027,
+            "successRate": 0.22077922077922077,
+            "explosiveness": 2.335123021968923
+          },
+          "rushingPlays": {
+            "rate": 0.5302013422818792,
+            "ppa": 0.11590086029470825,
+            "totalPPA": 27.468503889845856,
+            "successRate": 0.4008438818565401,
+            "explosiveness": 1.0716814707000855
+          },
+          "passingPlays": {
+            "rate": 0.4429530201342282,
+            "ppa": 0.026055277696466008,
+            "totalPPA": 5.15894498390027,
+            "successRate": 0.36363636363636365,
+            "explosiveness": 1.6991433461714551
+          }
+        }
+      }
+    ]
+  },
+  "missing_research": [
+    "Verified quarterback and injury reports",
+    "Weather and game environment",
+    "True EPA, unless independently sourced",
+    "Opponent-adjusted efficiency, unless supplied",
+    "Personnel-level pass-block and pressure metrics",
+    "Complete 2026 game-level advanced-stat history"
+  ],
+  "independence": {
+    "sportsbook_data_used": false,
+    "cfb_quant_predictions_used": false,
+    "current_game_outcomes_used": false
+  }
+}

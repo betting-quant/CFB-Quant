@@ -1,0 +1,14 @@
+{
+  "step": 111,
+  "created_utc": "2026-10-20T16:12:39.238879+00:00",
+  "classification": "PREGAME_TIME_CANDIDATE",
+  "independently_verified_live": false,
+  "eligible_forecasts": 49,
+  "graded_forecasts": 49,
+  "missing_results": 0,
+  "retrospective_forecasts_excluded": 49,
+  "source_registry_sha256": "1c899e950290c83e379754feb0895844610c0e616aa9afb212b697cd76c53d4d",
+  "source_results_sha256": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563",
+  "research_only": true,
+  "notes": "Performance is provisional until forecast provenance, model freeze, and input availability are corroborated."
+}

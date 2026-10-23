@@ -70,6 +70,7 @@ def cfbd_get(
     *,
     params: dict[str, Any],
     attempts: int = 4,
+    response_capture=None,
 ) -> Any:
     api_key = os.environ.get(
         "CFBD_API_KEY"
@@ -85,6 +86,12 @@ def cfbd_get(
         f"{endpoint}"
     )
 
+    class _CaptureFailure(RuntimeError):
+        pass
+
+    if response_capture is not None:
+        from datetime import datetime, timezone
+
     last_error: Exception | None = None
 
     for attempt in range(
@@ -92,6 +99,10 @@ def cfbd_get(
         attempts + 1,
     ):
         try:
+            request_started_utc = (
+                datetime.now(timezone.utc).isoformat()
+                if response_capture is not None else None
+            )
             response = requests.get(
                 url,
                 params=params,
@@ -101,6 +112,10 @@ def cfbd_get(
                     )
                 },
                 timeout=90,
+            )
+            request_completed_utc = (
+                datetime.now(timezone.utc).isoformat()
+                if response_capture is not None else None
             )
 
             if response.status_code == 429:
@@ -122,9 +137,28 @@ def cfbd_get(
 
             response.raise_for_status()
 
-            return response.json()
+            parsed = response.json()
+
+            if response_capture is not None:
+                try:
+                    response_capture(
+                        endpoint=endpoint,
+                        parameters=dict(params),
+                        request_started_utc=request_started_utc,
+                        request_completed_utc=request_completed_utc,
+                        status_code=response.status_code,
+                        response_bytes=response.content,
+                    )
+                except Exception as exc:
+                    raise _CaptureFailure(
+                        "CFBD acquisition capture failed; no retry"
+                    ) from exc
+
+            return parsed
 
         except Exception as exc:
+            if isinstance(exc, _CaptureFailure):
+                raise
             last_error = exc
 
             if attempt == attempts:

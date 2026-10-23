@@ -1,0 +1,136 @@
+{
+  "schema": "cfb_v58_forecast_lineage_audit_v1",
+  "research_only": true,
+  "audited_at_utc": "2026-10-22T19:26:16.995293+00:00",
+  "forecast_audit_path": "reports/live_predictions_v57/2026-10-21_20261021T213342Z/model_audit.json",
+  "forecast_audit_sha256": "61f114148441b260441b64eed6082adf228aed99ec0fc2c2d0974c1701b28093",
+  "forecast_csv_path": "reports/live_predictions_v57/2026-10-21_20261021T213342Z/slate_forecasts.csv",
+  "forecast_csv_sha256": "77abd35bd07316af4b44941d1134997a4fe6f2c15eac5bac194a8e87f8838852",
+  "snapshot_audit_path": "reports/live_feature_bridge_v56/2026-10-21_20261021T212658Z/audit.json",
+  "snapshot_audit_exists": true,
+  "full_input_capture_path": "reports/v58_development/full_input_captures_v1/20261020T212603070013Z/input_manifest.json",
+  "full_input_capture_sha256": "f25f3b18601d5da89297dc624482eb67406cbdf9e384ab5dce132b7d3ab513f7",
+  "source_capture_path": "reports/v58_development/source_captures_v1/20261020T211406248597Z/capture_manifest.json",
+  "source_capture_sha256": "3e0051197e07542a86cda82a96251c1f038cef9fa037211714e28f4d316e8b2d",
+  "generated_at_utc": "2026-10-21T21:33:40.934889+00:00",
+  "declared_snapshot_asof_utc": "2026-10-21T21:24:49.264004+00:00",
+  "physical_snapshot_creation_utc": "2026-10-21T21:26:58.789717+00:00",
+  "dependency_checks": [
+    {
+      "label": "Snapshot feature Parquet",
+      "path": "reports/live_feature_bridge_v56/2026-10-21_20261021T212658Z/pregame_features.parquet",
+      "expected_sha256": "a156c053e81754ba838877873b280b3b8e89048d5b262bf6c0d337ac05406a13",
+      "actual_sha256": "a156c053e81754ba838877873b280b3b8e89048d5b262bf6c0d337ac05406a13",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": null,
+      "matches_oct20_capture_record": null,
+      "point_in_time_availability_certified": false
+    },
+    {
+      "label": "v3 training dataset",
+      "path": "data/processed/cfb_matchup_features_kickoff_v3.parquet",
+      "expected_sha256": "bd48c521a2711a2825c8cf661f85d833b6497aa1396e3335be3af2e1d726090c",
+      "actual_sha256": "bd48c521a2711a2825c8cf661f85d833b6497aa1396e3335be3af2e1d726090c",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "bd48c521a2711a2825c8cf661f85d833b6497aa1396e3335be3af2e1d726090c",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false
+    },
+    {
+      "label": "v4.5 training dataset",
+      "path": "data/processed/cfb_matchup_features_opponent_v45.parquet",
+      "expected_sha256": "3c9c2ac111af054251c3474181440f6c574b0c08dfb77b6c1d26e4ebbba44344",
+      "actual_sha256": "3c9c2ac111af054251c3474181440f6c574b0c08dfb77b6c1d26e4ebbba44344",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "3c9c2ac111af054251c3474181440f6c574b0c08dfb77b6c1d26e4ebbba44344",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false
+    },
+    {
+      "label": "Residual pairing",
+      "path": "reports/spread_total_opponent_v45/paired_game_errors.csv",
+      "expected_sha256": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+      "actual_sha256": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false
+    },
+    {
+      "label": "Residual universe",
+      "path": "reports/spread_total_fbs_calibration_v52/universe_audit.csv",
+      "expected_sha256": "26bc2dfba31df887aff4672798242b1dd14c9ba8b6fba531db8961a460933964",
+      "actual_sha256": "26bc2dfba31df887aff4672798242b1dd14c9ba8b6fba531db8961a460933964",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "26bc2dfba31df887aff4672798242b1dd14c9ba8b6fba531db8961a460933964",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false
+    },
+    {
+      "label": "2026 schedule",
+      "path": "data/raw/cfbd/games/games_2026.json",
+      "expected_sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "actual_sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false
+    },
+    {
+      "label": "2026 advanced statistics",
+      "path": "data/raw/cfbd/advanced_game_v4/advanced_2026.json",
+      "expected_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "actual_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false
+    },
+    {
+      "label": "Feature manifest (capture reference only)",
+      "path": "reports/cfb_matchup_feature_manifest_kickoff_v3.json",
+      "expected_sha256": "e4e88625223653e1925e271067863a92a29e040e6b882ecd6f25e2b8727b5f41",
+      "actual_sha256": "e4e88625223653e1925e271067863a92a29e040e6b882ecd6f25e2b8727b5f41",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "e4e88625223653e1925e271067863a92a29e040e6b882ecd6f25e2b8727b5f41",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false,
+      "forecast_directly_records_hash": false
+    },
+    {
+      "label": "Feature manifest (capture reference only)",
+      "path": "reports/cfb_matchup_feature_manifest_opponent_v45.json",
+      "expected_sha256": "bebfd25949a0bfdeb08c10a1a78c8890ce792b9c26821552890407ad65e6ffbc",
+      "actual_sha256": "bebfd25949a0bfdeb08c10a1a78c8890ce792b9c26821552890407ad65e6ffbc",
+      "integrity_status": "MATCH",
+      "oct20_capture_hash": "bebfd25949a0bfdeb08c10a1a78c8890ce792b9c26821552890407ad65e6ffbc",
+      "matches_oct20_capture_record": true,
+      "point_in_time_availability_certified": false,
+      "forecast_directly_records_hash": false
+    }
+  ],
+  "integrity_counts": {
+    "MATCH": 9
+  },
+  "source_capture_comparison": {
+    "schedule_2026": {
+      "source_capture_sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "full_capture_sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "same_recorded_file_version": true,
+      "provider_publication_time_verified": false
+    },
+    "advanced_2026": {
+      "source_capture_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "full_capture_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "same_recorded_file_version": true,
+      "provider_publication_time_verified": false
+    }
+  },
+  "direct_forecast_manifest_hashes_verified": false,
+  "historical_chronology_gate_present": false,
+  "provider_publication_times_verified": false,
+  "historical_point_in_time_certified": false,
+  "prospective_performance_eligible": false,
+  "production_forecast_authorized": false,
+  "assessment": "RETROSPECTIVE_LINEAGE_VERIFICATION_ONLY: Hashes confirm file identity where matched, not independent source availability or which bytes were actually read during the original execution."
+}

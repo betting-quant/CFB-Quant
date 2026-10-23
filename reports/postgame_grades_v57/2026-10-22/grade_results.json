@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "date": "2026-10-22",
+    "game_count": 3,
+    "margin_mae": 10.238567022830011,
+    "total_mae": 12.505988332932896,
+    "winner_accuracy": 0.6666666666666666,
+    "source_csv_sha256": "73ACBF0D6268133B998F835AB61531B92C675D62D1C7F4F4560E4D3D6E33B0AD",
+    "graded_at_utc": "2026-10-23T15:55:28.166321+00:00",
+    "source": "CFBD GET /games?id=<game_id>",
+    "notes": [
+      "Original locked forecasts were not modified.",
+      "Three games are insufficient to establish model calibration.",
+      "Errors are signed as forecast minus actual.",
+      "This report uses final scores, not updated postgame features."
+    ]
+  },
+  "games": [
+    {
+      "game_id": 401869845,
+      "away": "James Madison",
+      "home": "App State",
+      "away_points": 31,
+      "home_points": 34,
+      "predicted_home_margin": -5.244295296975828,
+      "actual_home_margin": 3,
+      "margin_error": -8.244295296975828,
+      "absolute_margin_error": 8.244295296975828,
+      "predicted_total": 53.097194006983585,
+      "actual_total": 65,
+      "total_error": -11.902805993016415,
+      "absolute_total_error": 11.902805993016415,
+      "winner_correct": false
+    },
+    {
+      "game_id": 401871056,
+      "away": "Liberty",
+      "home": "Kennesaw State",
+      "away_points": 34,
+      "home_points": 6,
+      "predicted_home_margin": -12.891872790898105,
+      "actual_home_margin": -28,
+      "margin_error": 15.108127209101895,
+      "absolute_margin_error": 15.108127209101895,
+      "predicted_total": 50.682268703246265,
+      "actual_total": 40,
+      "total_error": 10.682268703246265,
+      "absolute_total_error": 10.682268703246265,
+      "winner_correct": true
+    },
+    {
+      "game_id": 401862807,
+      "away": "East Carolina",
+      "home": "Memphis",
+      "away_points": 34,
+      "home_points": 41,
+      "predicted_home_margin": 14.363278562412312,
+      "actual_home_margin": 7,
+      "margin_error": 7.363278562412312,
+      "absolute_margin_error": 7.363278562412312,
+      "predicted_total": 60.06710969746399,
+      "actual_total": 75,
+      "total_error": -14.93289030253601,
+      "absolute_total_error": 14.93289030253601,
+      "winner_correct": true
+    }
+  ]
+}

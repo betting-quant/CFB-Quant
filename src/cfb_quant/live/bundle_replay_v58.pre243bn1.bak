@@ -1,0 +1,85 @@
+"""Retrospective research replay from verified input bundles."""
+
+from pathlib import Path
+
+from cfb_quant.live.bundle_replay_plan_v58 import prepare
+from cfb_quant.live.bundle_execution_v58 import resolve
+from cfb_quant.live.predict_v57 import run
+from cfb_quant.live.forecast_publication_v58 import publish
+from cfb_quant.live.forecast_publication_lineage_v58 import (
+    validate_lineage,
+)
+
+
+def execute(bundle, repository_root, *, samples=10000, seed=57):
+    """Execute research forecasts using the frozen bundle only."""
+    plan = prepare(bundle, repository_root)
+
+    input_root = Path(plan["input_root"]).resolve()
+    snapshot = Path(plan["snapshot"]).resolve()
+    output_root = Path(plan["output_root"]).resolve()
+
+    # Verify again immediately before the predictor executes.
+    context = resolve(input_root)
+
+    if (
+        context["data_root"] != input_root
+        or context["snapshot"] != snapshot
+        or context["bundle_identity"] != plan["bundle_identity"]
+    ):
+        raise ValueError("Bundle replay resolution changed")
+
+    # All predictor filesystem inputs are resolved against input_root.
+    frame, audit = run(
+        input_root,
+        snapshot,
+        samples=samples,
+        seed=seed,
+        allow_started=True,
+    )
+
+    if not isinstance(audit, dict):
+        raise ValueError("Replay produced invalid audit")
+
+    gate = audit.get("chronology_gate", {})
+
+    if (
+        not isinstance(gate, dict)
+        or gate.get("status") != "PASS"
+        or gate.get("archive_override_requested") is not True
+        or audit.get("forecast_classification")
+        != "RETROSPECTIVE_RESEARCH"
+    ):
+        raise ValueError(
+            "Bundle replay must remain retrospective research"
+        )
+
+    audit["bundle_replay"] = {
+        "execution_mode": "BUNDLE_BACKED_RETROSPECTIVE_RESEARCH",
+        "bundle_identity": plan["bundle_identity"],
+        "bundle_manifest_sha256": plan["bundle_manifest_sha256"],
+        "input_root": str(input_root),
+        "output_root": str(output_root),
+        "research_only": True,
+        "prospective_performance_eligible": False,
+        "production_forecast_authorized": False,
+    }
+
+    audit["research_only"] = True
+    audit["source_availability_certified"] = False
+    audit["prospective_performance_eligible"] = False
+    audit["production_forecast_authorized"] = False
+
+    # Validate against the input bundle, not the mutable repository.
+    validate_lineage(input_root, audit)
+
+    # A separate output location is intentional. The ordinary
+    # publish_verified(root, parent) method only accepts outputs
+    # within the input root, so replay uses the same atomic
+    # publisher with a mandatory lineage-check callback.
+    return publish(
+        output_root,
+        frame,
+        audit,
+        lineage_check=lambda: validate_lineage(input_root, audit),
+    )

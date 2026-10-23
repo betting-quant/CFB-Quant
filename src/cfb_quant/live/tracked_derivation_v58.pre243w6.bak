@@ -1,0 +1,106 @@
+"""Track research derivations with pre/post source verification."""
+
+from datetime import datetime, timezone
+from pathlib import Path
+
+from cfb_quant.live.derivation_receipt_v58 import (
+    checked_path,
+    digest,
+    make_receipt,
+    verify_derivation,
+)
+
+
+def now_utc():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def run_tracked(
+    root,
+    *,
+    input_paths,
+    output_path,
+    receipt_path,
+    operation,
+):
+    """Execute an operation, then receipt unchanged source inputs.
+
+    The caller must supply an isolated research workspace. This
+    function does not roll back an operation if it raises.
+    """
+    root = Path(root).resolve(strict=True)
+
+    if not callable(operation):
+        raise TypeError("Derivation operation must be callable")
+
+    if not isinstance(input_paths, (list, tuple)) or not input_paths:
+        raise ValueError("At least one derivation input required")
+
+    if len(set(input_paths)) != len(input_paths):
+        raise ValueError("Duplicate derivation inputs")
+
+    if output_path in input_paths:
+        raise ValueError("Output cannot also be an input")
+
+    inputs = {
+        name: digest(checked_path(root, name))
+        for name in input_paths
+    }
+
+    # The history-refresh operation replaces an existing Parquet file.
+    # Requiring it here prevents unnoticed output-path creation.
+    output = checked_path(root, output_path)
+    output_before = digest(output)
+
+    receipt = root / receipt_path
+    if receipt.exists():
+        raise FileExistsError(receipt)
+
+    # Validate the receipt destination before performing any work.
+    parent = receipt.parent.resolve(strict=True)
+    if not parent.is_relative_to(root):
+        raise ValueError("Receipt destination escapes research workspace")
+    if receipt == output or receipt in (
+        checked_path(root, name) for name in input_paths
+    ):
+        raise ValueError("Receipt path collides with an artifact")
+
+    started = now_utc()
+
+    # No receipt is issued if the operation raises.
+    result = operation()
+
+    completed = now_utc()
+
+    for name, before_hash in inputs.items():
+        after_hash = digest(checked_path(root, name))
+        if before_hash != after_hash:
+            raise ValueError(
+                f"Input changed during derivation: {name}"
+            )
+
+    # Require the output to remain a valid, accessible workspace file.
+    output_after = digest(checked_path(root, output_path))
+
+    receipt_file = make_receipt(
+        root,
+        input_paths=list(input_paths),
+        output_path=output_path,
+        started_utc=started,
+        completed_utc=completed,
+        receipt_path=receipt_path,
+    )
+
+    verification = verify_derivation(root, receipt_path)
+
+    return {
+        "status": "PASS",
+        "research_only": True,
+        "receipt_path": str(receipt_file.relative_to(root)),
+        "output_before_sha256": output_before,
+        "output_after_sha256": output_after,
+        "output_changed": output_before != output_after,
+        "verification": verification,
+        "operation_result": result,
+        "production_forecast_authorized": False,
+    }

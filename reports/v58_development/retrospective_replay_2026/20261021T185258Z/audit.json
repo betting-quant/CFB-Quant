@@ -1,0 +1,29 @@
+{
+  "label": "RESEARCH RETROSPECTIVE CHRONOLOGICAL REPLAY; NOT SAVED PROSPECTIVE FORECASTS",
+  "archive_asof_utc": "2026-10-20T17:38:20.706628+00:00",
+  "graded_FBS_FBS_games": 336,
+  "last_cached_kickoff": "2026-10-16 00:00:00+00:00",
+  "source_raw_schedule_sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+  "source_team_games_sha256": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+  "source_advanced_2026_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+  "original_archived_snapshot_sha256": "65544c843b3043432074db620bc635ac6a6607da72d9d971601fe3e6c0887a08",
+  "archived_feature_parity": true,
+  "archived_prediction_parity": true,
+  "no_future_data_samples_passed": 3,
+  "historical_CFBD_publication_times_certified": false,
+  "v57_training_seasons": "2014-2025",
+  "v58_graded": false,
+  "metrics": {
+    "n": 336,
+    "margin_mae": 13.098085662845811,
+    "margin_rmse": 16.616722863932523,
+    "margin_bias_pred_minus_actual": -2.2079621555830586,
+    "winner_accuracy": 0.7410714285714286,
+    "total_mae": 12.41393944342561,
+    "total_rmse": 15.666037662094066,
+    "total_bias_pred_minus_actual": -0.35008638000406767,
+    "margin_over_14_abs_error": 131,
+    "total_over_20_abs_error": 62
+  },
+  "created_at_utc": "2026-10-21T18:52:58.878694+00:00"
+}

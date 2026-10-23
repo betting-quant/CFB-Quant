@@ -1,0 +1,76 @@
+{
+  "schema": "cfb_v58_forecast_publication_lineage_v1",
+  "research_only": true,
+  "checked_at_utc": "2026-10-22T20:31:48.199754+00:00",
+  "snapshot_folder": "reports/live_feature_bridge_v56/2026-10-21_20261021T212658Z",
+  "snapshot_sha256": "a156c053e81754ba838877873b280b3b8e89048d5b262bf6c0d337ac05406a13",
+  "dependency_count": 10,
+  "dependencies": {
+    "v3_training": {
+      "path": "data/processed/cfb_matchup_features_kickoff_v3.parquet",
+      "sha256": "bd48c521a2711a2825c8cf661f85d833b6497aa1396e3335be3af2e1d726090c",
+      "bytes": 17708646
+    },
+    "v45_training": {
+      "path": "data/processed/cfb_matchup_features_opponent_v45.parquet",
+      "sha256": "3c9c2ac111af054251c3474181440f6c574b0c08dfb77b6c1d26e4ebbba44344",
+      "bytes": 43490254
+    },
+    "v3_feature_manifest": {
+      "path": "reports/cfb_matchup_feature_manifest_kickoff_v3.json",
+      "sha256": "e4e88625223653e1925e271067863a92a29e040e6b882ecd6f25e2b8727b5f41",
+      "bytes": 11324
+    },
+    "v45_feature_manifest": {
+      "path": "reports/cfb_matchup_feature_manifest_opponent_v45.json",
+      "sha256": "bebfd25949a0bfdeb08c10a1a78c8890ce792b9c26821552890407ad65e6ffbc",
+      "bytes": 12445
+    },
+    "residual_pairing": {
+      "path": "reports/spread_total_opponent_v45/paired_game_errors.csv",
+      "sha256": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+      "bytes": 1147333
+    },
+    "residual_universe": {
+      "path": "reports/spread_total_fbs_calibration_v52/universe_audit.csv",
+      "sha256": "26bc2dfba31df887aff4672798242b1dd14c9ba8b6fba531db8961a460933964",
+      "bytes": 320232
+    },
+    "schedule_2026": {
+      "path": "data/raw/cfbd/games/games_2026.json",
+      "sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "bytes": 928980
+    },
+    "advanced_2026": {
+      "path": "data/raw/cfbd/advanced_game_v4/advanced_2026.json",
+      "sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "bytes": 3013463
+    },
+    "snapshot_parquet": {
+      "path": "reports/live_feature_bridge_v56/2026-10-21_20261021T212658Z/pregame_features.parquet",
+      "sha256": "a156c053e81754ba838877873b280b3b8e89048d5b262bf6c0d337ac05406a13",
+      "bytes": 231402
+    },
+    "snapshot_audit": {
+      "path": "reports/live_feature_bridge_v56/2026-10-21_20261021T212658Z/audit.json",
+      "sha256": "69f110ae920b6e59cc8df38fe7a98330a0adffd4d852920277d3c8d4d2121fc4",
+      "bytes": 1079
+    }
+  },
+  "execution_check": {
+    "status": "UNCHANGED",
+    "verified_dependency_count": 10,
+    "source_availability_certified": false,
+    "historical_point_in_time_certified": false
+  },
+  "publication_check": {
+    "status": "UNCHANGED",
+    "verified_dependency_count": 10,
+    "source_availability_certified": false,
+    "historical_point_in_time_certified": false
+  },
+  "source_availability_certified": false,
+  "historical_point_in_time_certified": false,
+  "prospective_performance_eligible": false,
+  "production_forecast_authorized": false
+}

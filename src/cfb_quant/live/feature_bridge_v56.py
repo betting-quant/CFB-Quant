@@ -321,15 +321,88 @@ def main() -> None:
     if not args.save:
         print('AUDIT COMPLETE: no files changed; no predictions produced.')
         return
+    from cfb_quant.live.feature_snapshot_save_gate_v58 import assess
+    save_gate = assess(
+        info,
+        output,
+        datetime.now(timezone.utc),
+    )
+    if save_gate["status"] != "PASS":
+        raise ValueError(
+            "Feature snapshot save rejected: "
+            + ", ".join(save_gate["reasons"])
+        )
+    # Stage and validate a complete snapshot before publishing it.
+    import tempfile
+
     timestamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-    dest=root/OUT_DIR/f'{args.date}_{timestamp}'
-    dest.mkdir(parents=True,exist_ok=False)
+    parent=root/OUT_DIR
+    dest=parent/f'{args.date}_{timestamp}'
+    if dest.exists():
+        raise FileExistsError(dest)
+
+    source_paths={
+        'schedule_sha256': root/SCHEDULE,
+        'advanced_2026_sha256': root/'data/raw/cfbd/advanced_game_v4/advanced_2026.json',
+    }
+    input_hashes={
+        name: hashlib.sha256(path.read_bytes()).hexdigest()
+        for name,path in source_paths.items()
+    }
+
+    parent.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='.pending_',dir=parent) as temp:
+        stage=Path(temp)
+        staged_features=stage/'pregame_features.parquet'
+        output.to_parquet(staged_features,index=False)
+
+        verified=pd.read_parquet(staged_features)
+        if len(verified)!=len(output) or list(verified.columns)!=list(output.columns):
+            raise ValueError('Staged feature snapshot read-back mismatch')
+
+        # Recheck at completion, not only before serialization.
+        completed_at=datetime.now(timezone.utc)
+        completed_gate=assess(info,output,completed_at)
+        if completed_gate['status']!='PASS':
+            raise ValueError(
+                'Feature snapshot publication rejected: '
+                + ', '.join(completed_gate['reasons'])
+            )
+
+        if {
+            name: hashlib.sha256(path.read_bytes()).hexdigest()
+            for name,path in source_paths.items()
+        } != input_hashes:
+            raise ValueError('Feature snapshot sources changed during serialization')
+
+        info.update(input_hashes)
+        info['created_at_utc']=completed_at.isoformat()
+        info['snapshot_save_gate']=completed_gate
+        info['source_availability_certified']=False
+        info['historical_point_in_time_certified']=False
+        info['production_forecast_authorized']=False
+
+        staged_audit=stage/'audit.json'
+        staged_audit.write_text(
+            json.dumps(info,indent=2,default=str),encoding='utf-8'
+        )
+
+        if json.loads(staged_audit.read_text(encoding='utf-8'))['created_at_utc'] != info['created_at_utc']:
+            raise ValueError('Staged audit read-back mismatch')
+
+        # Final timing check directly before publishing.
+        final_gate=assess(info,output,datetime.now(timezone.utc))
+        if final_gate['status']!='PASS':
+            raise ValueError(
+                'Feature snapshot final publication rejected: '
+                + ', '.join(final_gate['reasons'])
+            )
+
+        if dest.exists():
+            raise FileExistsError(dest)
+        stage.rename(dest)
+
     output_path=dest/'pregame_features.parquet'
-    output.to_parquet(output_path,index=False)
-    info['schedule_sha256']=hashlib.sha256((root/SCHEDULE).read_bytes()).hexdigest()
-    info['advanced_2026_sha256']=hashlib.sha256((root/'data/raw/cfbd/advanced_game_v4/advanced_2026.json').read_bytes()).hexdigest()
-    info['created_at_utc']=datetime.now(timezone.utc).isoformat()
-    (dest/'audit.json').write_text(json.dumps(info,indent=2,default=str),encoding='utf-8')
     print(f'Pregame feature snapshot: {output_path}')
     print(f'Audit: {dest / "audit.json"}')
     print('No historical artifacts modified. No predictions or +EV claims.')

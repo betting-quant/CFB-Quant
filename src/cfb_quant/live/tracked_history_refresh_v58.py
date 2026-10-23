@@ -1,0 +1,162 @@
+"""Research-only tracked 2026 team-history refresh."""
+
+import argparse
+import json
+import uuid
+from datetime import datetime, timezone
+from pathlib import Path
+
+from cfb_quant.live import team_history_refresh_2026 as refresh
+from cfb_quant.live.derivation_receipt_v58 import digest
+from cfb_quant.live.tracked_derivation_v58 import run_tracked
+
+
+RESEARCH_BASE = Path(
+    "reports/v58_development/week7_isolated_runs"
+)
+
+
+def validate_workspace(root):
+    root = Path(root).resolve(strict=True)
+    allowed = (Path.cwd() / RESEARCH_BASE).resolve(strict=True)
+
+    if not root.is_relative_to(allowed) or root == allowed:
+        raise ValueError(
+            "Only a child of the isolated v5.8 research workspace "
+            "directory may be refreshed"
+        )
+
+    history = root / refresh.HISTORY
+    schedule = root / refresh.SCHEDULE
+
+    if not history.is_file() or not schedule.is_file():
+        raise FileNotFoundError(
+            "Research workspace lacks schedule or processed history"
+        )
+
+    production = (Path.cwd() / refresh.HISTORY).resolve()
+    if history.resolve() == production:
+        raise ValueError("Production history cannot be modified")
+
+    return root
+
+
+def source_paths(root):
+    sources = [root / refresh.SCHEDULE]
+    box_root = root / refresh.BOX_ROOT
+
+    if not box_root.is_dir():
+        raise FileNotFoundError(box_root)
+
+    boxes = sorted(p for p in box_root.rglob("*.json") if p.is_file())
+    if not boxes:
+        raise ValueError("No cached box-score JSON files found")
+
+    sources.extend(boxes)
+
+    return [p.relative_to(root).as_posix() for p in sources]
+
+
+def run(root, *, weeks=(7,), apply=False):
+    root = validate_workspace(root)
+    weeks = tuple(sorted(set(int(w) for w in weeks)))
+
+    if not weeks or any(w < 1 or w > 16 for w in weeks):
+        raise ValueError("Invalid refresh weeks")
+
+    inputs = source_paths(root)
+    history_path = Path(refresh.HISTORY).as_posix()
+
+    before = {
+        path: digest(root / path)
+        for path in inputs
+    }
+
+    print("TRACKED HISTORY REFRESH — RESEARCH")
+    print("Workspace:", root)
+    print("Weeks:", weeks)
+    print("Source files:", len(inputs))
+    print("Apply:", apply)
+
+    preview = refresh.run(root, apply=False, weeks=weeks)
+
+    for path, expected in before.items():
+        if digest(root / path) != expected:
+            raise ValueError(
+                f"Research input changed during preflight: {path}"
+            )
+
+    if not apply:
+        return {
+            "status": "PREVIEW",
+            "research_only": True,
+            "source_files": len(inputs),
+            "source_fingerprints_verified": True,
+            "history_sha256": digest(root / history_path),
+            "audit": preview,
+            "production_forecast_authorized": False,
+        }
+
+    if not preview.get("added_games"):
+        return {
+            "status": "NO_CHANGES",
+            "research_only": True,
+            "audit": preview,
+            "production_forecast_authorized": False,
+        }
+
+    # Keep receipt paths comfortably below Windows legacy MAX_PATH.
+    # A timestamp plus 12 UUID hex digits preserves useful uniqueness.
+    receipt_parent = root / "reports/receipts"
+    receipt_parent.mkdir(parents=True, exist_ok=True)
+    receipt_name = (
+        datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+        + "_" + uuid.uuid4().hex[:12]
+        + ".json"
+    )
+    receipt_relative = (
+        receipt_parent / receipt_name
+    ).relative_to(root).as_posix()
+
+    # The tracked-derivation helper expects a workspace-relative path.
+    # Ensure the final destination exists before invoking the operation.
+    destination = root / receipt_relative
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    if destination.exists():
+        raise FileExistsError(destination)
+
+    result = run_tracked(
+        root,
+        input_paths=inputs,
+        output_path=history_path,
+        receipt_path=receipt_relative,
+        operation=lambda: refresh.run(
+            root,
+            apply=True,
+            weeks=weeks,
+        ),
+    )
+
+    result["refresh_weeks"] = list(weeks)
+    result["preflight_audit"] = preview
+    return result
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--workspace", required=True)
+    parser.add_argument("--weeks", default="7")
+    parser.add_argument("--apply", action="store_true")
+    args = parser.parse_args()
+
+    weeks = tuple(int(x.strip()) for x in args.weeks.split(","))
+    result = run(
+        args.workspace,
+        weeks=weeks,
+        apply=args.apply,
+    )
+    print(json.dumps(result, indent=2, default=str))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,54 @@
+{
+  "step": 112,
+  "created_utc": "2026-10-20T16:13:58.109145+00:00",
+  "sample_size": 49,
+  "bootstrap_resamples": 20000,
+  "seed": 20261020,
+  "metrics": {
+    "margin_mae": {
+      "n": 49,
+      "mean": 11.942643657526695,
+      "ci_lower": 9.31743601296109,
+      "ci_upper": 14.797166387775183,
+      "median": 10.008822628169424,
+      "p90": 24.512332986279663,
+      "worst": 39.92856250604128
+    },
+    "total_mae": {
+      "n": 49,
+      "mean": 11.011248407398414,
+      "ci_lower": 8.63298878028127,
+      "ci_upper": 13.514894877920879,
+      "median": 9.895251447195308,
+      "p90": 24.594154205476386,
+      "worst": 36.958307313642905
+    },
+    "home_win_brier": {
+      "n": 49,
+      "mean": 0.22569490795918365,
+      "ci_lower": 0.16458737681632646,
+      "ci_upper": 0.2883160214081631,
+      "median": 0.1131649599999999,
+      "p90": 0.5682267280000002,
+      "worst": 0.79852096
+    }
+  },
+  "paired_model_minus_constant_brier": {
+    "n": 49,
+    "mean": -0.024305092040816365,
+    "ci_lower": -0.08434360079081639,
+    "ci_upper": 0.03877793846938765,
+    "median": -0.1368350400000001,
+    "p90": 0.3182267280000002,
+    "worst": 0.54852096
+  },
+  "research_only": true,
+  "independently_verified_live": false,
+  "caveats": [
+    "Small sample of pregame-timed candidates",
+    "No independently authenticated forecast archive",
+    "Bootstrap estimates sampling uncertainty only",
+    "50% benchmark is not a sportsbook benchmark",
+    "Games may share teams or other dependencies"
+  ]
+}

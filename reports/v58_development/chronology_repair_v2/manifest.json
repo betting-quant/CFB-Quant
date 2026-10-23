@@ -1,0 +1,21 @@
+{
+  "step": 105,
+  "created_utc": "2026-10-20T15:55:31.512372+00:00",
+  "games": 10879,
+  "team_rows": 21758,
+  "season_2026_games": 510,
+  "source_candidate_sha256": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563",
+  "previous_map_sha256": "cf7667ad8dba6e23ebb73763c116fbd63989312ca4083d118fd85f3ae065e4f9",
+  "new_map_sha256": "ec381f8939b1da58eeec2cde49e841a0c47781f1ecec0656d263723c2b553089",
+  "validation": {
+    "expected_rows": true,
+    "expected_games": true,
+    "unique_game_teams": true,
+    "valid_timestamps": true,
+    "unique_team_kickoffs": true,
+    "unique_defense_kickoffs": true,
+    "valid_pairs": true,
+    "consistent_pair_kickoffs": true
+  },
+  "research_only": true
+}

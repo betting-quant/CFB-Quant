@@ -1,0 +1,356 @@
+"""CFB-Quant v5.8 research data freshness gate."""
+
+from pathlib import Path
+import argparse
+import hashlib
+import json
+
+import pandas as pd
+
+
+def normalize_id(value):
+    return str(value).strip().removesuffix(".0")
+
+
+def sha256(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def check_source(root, relative, cutoff, max_age_hours):
+    path = root / relative
+    metadata_path = path.with_suffix(".meta.json")
+
+    if not path.is_file():
+        return {
+            "status": "INCOMPLETE",
+            "reason": "Source file missing",
+        }
+
+    if not metadata_path.is_file():
+        return {
+            "status": "UNVERIFIED",
+            "reason": "Retrieval metadata missing",
+        }
+
+    try:
+        metadata = json.loads(
+            metadata_path.read_text(encoding="utf-8-sig")
+        )
+        timestamp = pd.to_datetime(
+            metadata["downloaded_at_utc"],
+            utc=True,
+            errors="raise",
+        )
+        expected_hash = metadata["sha256"]
+    except (KeyError, ValueError, TypeError):
+        return {
+            "status": "UNVERIFIED",
+            "reason": "Invalid source metadata",
+        }
+
+    if pd.isna(timestamp):
+        return {
+            "status": "UNVERIFIED",
+            "reason": "Invalid retrieval timestamp",
+        }
+
+    if sha256(path) != expected_hash:
+        return {
+            "status": "INCOMPLETE",
+            "reason": "SHA256 fingerprint mismatch",
+        }
+
+    age_hours = (cutoff - timestamp).total_seconds() / 3600
+
+    if age_hours < 0:
+        status = "UNVERIFIED"
+        reason = "Source retrieved after forecast cutoff"
+    elif age_hours > max_age_hours:
+        status = "STALE"
+        reason = f"Source age {age_hours:.2f} hours"
+    else:
+        status = "READY"
+        reason = f"Source age {age_hours:.2f} hours"
+
+    return {
+        "status": status,
+        "reason": reason,
+        "retrieved_at_utc": timestamp.isoformat(),
+    }
+
+
+def audit(root, cutoff, max_age_hours=24):
+    sources = {
+        "schedule": Path(
+            "data/raw/cfbd/games/games_2026.json"
+        ),
+        "history": Path(
+            "data/processed/team_games_2026.parquet"
+        ),
+        "advanced": Path(
+            "data/raw/cfbd/advanced_game_v4/advanced_2026.json"
+        ),
+    }
+
+    checks = {
+        name: check_source(root, path, cutoff, max_age_hours)
+        for name, path in sources.items()
+    }
+
+    issues = []
+
+    if all((root / path).is_file() for path in sources.values()):
+        schedule = json.loads(
+            (root / sources["schedule"]).read_text(
+                encoding="utf-8-sig"
+            )
+        )
+        history = pd.read_parquet(root / sources["history"])
+        advanced = json.loads(
+            (root / sources["advanced"]).read_text(
+                encoding="utf-8-sig"
+            )
+        )
+
+        if not isinstance(schedule, list) or not isinstance(advanced, list):
+            issues.append("Unexpected source JSON structure")
+        else:
+            schedule_map = {}
+
+            for game in schedule:
+                key = normalize_id(game["id"])
+                if key in schedule_map:
+                    issues.append(f"Duplicate schedule ID: {key}")
+                schedule_map[key] = game
+
+            advanced_counts = {}
+
+            for record in advanced:
+                key = normalize_id(record["gameId"])
+                advanced_counts[key] = (
+                    advanced_counts.get(key, 0) + 1
+                )
+
+            history = history.copy()
+            history["game_id"] = history.game_id.map(
+                normalize_id
+            )
+
+            for game_id, group in history.groupby("game_id"):
+                if (
+                    len(group) != 2
+                    or set(group.home_away) != {"home", "away"}
+                ):
+                    issues.append(
+                        f"Invalid historical game pair: {game_id}"
+                    )
+
+                game = schedule_map.get(game_id)
+
+                if game is None:
+                    issues.append(
+                        f"Historical game missing schedule: {game_id}"
+                    )
+                    continue
+
+                kickoff = pd.to_datetime(
+                    game.get("startDate"),
+                    utc=True,
+                    errors="coerce",
+                )
+
+                if (
+                    game.get("completed") is not True
+                    or pd.isna(kickoff)
+                    or kickoff >= cutoff
+                ):
+                    issues.append(
+                        f"Unsafe historical outcome: {game_id}"
+                    )
+
+                if advanced_counts.get(game_id, 0) != 2:
+                    issues.append(
+                        f"Incomplete advanced statistics: {game_id}"
+                    )
+
+
+    # STEP_242F_INTEGRITY_CHECKS
+    # Research-only provisional eligibility rule.
+    # Replace with an independently certified FBS universe before
+    # integrating with the production forecast pipeline.
+    if all((root / p).is_file() for p in sources.values()):
+        if isinstance(schedule, list) and isinstance(advanced, list):
+            history_groups = {
+                game_id: group
+                for game_id, group in history.groupby("game_id")
+            }
+
+            advanced_groups = {}
+            for record in advanced:
+                key = normalize_id(record["gameId"])
+                advanced_groups.setdefault(key, []).append(record)
+
+            def clean_team(value):
+                return str(value).strip() if value is not None else ""
+
+            # Validate scores and team identity for all stored games.
+            for game_id, group in history_groups.items():
+                game = schedule_map.get(game_id)
+                if game is None:
+                    continue
+
+                if (
+                    len(group) != 2
+                    or set(group.home_away) != {"home", "away"}
+                ):
+                    continue
+
+                home = group.loc[group.home_away == "home"].iloc[0]
+                away = group.loc[group.home_away == "away"].iloc[0]
+
+                expected_home = clean_team(game.get("homeTeam"))
+                expected_away = clean_team(game.get("awayTeam"))
+
+                if (
+                    clean_team(home.team) != expected_home
+                    or clean_team(away.team) != expected_away
+                ):
+                    issues.append(
+                        f"History team identity mismatch: {game_id}"
+                    )
+
+                home_score = pd.to_numeric(
+                    pd.Series([home.points]), errors="coerce"
+                ).iloc[0]
+                away_score = pd.to_numeric(
+                    pd.Series([away.points]), errors="coerce"
+                ).iloc[0]
+
+                if (
+                    pd.isna(home_score)
+                    or pd.isna(away_score)
+                    or pd.isna(game.get("homePoints"))
+                    or pd.isna(game.get("awayPoints"))
+                    or home_score != float(game["homePoints"])
+                    or away_score != float(game["awayPoints"])
+                ):
+                    issues.append(
+                        f"Historical score mismatch: {game_id}"
+                    )
+
+                records = advanced_groups.get(game_id, [])
+                actual_teams = [
+                    clean_team(record.get("team"))
+                    for record in records
+                ]
+
+                if (
+                    len(records) == 2
+                    and (
+                        not all(actual_teams)
+                        or len(set(actual_teams)) != 2
+                        or set(actual_teams) != {
+                            expected_home, expected_away
+                        }
+                    )
+                ):
+                    issues.append(
+                        f"Advanced team identity mismatch: {game_id}"
+                    )
+
+            # Candidate missing-history detection.
+            # Schedule + a two-team advanced pair supplies an independent
+            # indication of a completed game, but not definitive FBS
+            # eligibility. Keep this gate research-only.
+            for game_id, game in schedule_map.items():
+                if game_id in history_groups:
+                    continue
+
+                kickoff = pd.to_datetime(
+                    game.get("startDate"),
+                    utc=True,
+                    errors="coerce",
+                )
+
+                if (
+                    game.get("completed") is not True
+                    or pd.isna(kickoff)
+                    or kickoff >= cutoff
+                    or game.get("homePoints") is None
+                    or game.get("awayPoints") is None
+                ):
+                    continue
+
+                records = advanced_groups.get(game_id, [])
+                if len(records) != 2:
+                    continue
+
+                expected_teams = {
+                    clean_team(game.get("homeTeam")),
+                    clean_team(game.get("awayTeam")),
+                }
+                actual_teams = {
+                    clean_team(record.get("team"))
+                    for record in records
+                }
+
+                if (
+                    len(expected_teams) == 2
+                    and "" not in expected_teams
+                    and actual_teams == expected_teams
+                ):
+                    issues.append(
+                        f"Completed candidate game missing history: {game_id}"
+                    )
+
+    statuses = [value["status"] for value in checks.values()]
+
+    if issues or "INCOMPLETE" in statuses:
+        overall = "INCOMPLETE"
+    elif "STALE" in statuses:
+        overall = "STALE"
+    elif "UNVERIFIED" in statuses:
+        overall = "UNVERIFIED"
+    else:
+        overall = "READY"
+
+    return {
+        "status": overall,
+        "cutoff_utc": cutoff.isoformat(),
+        "max_age_hours": max_age_hours,
+        "sources": checks,
+        "issue_count": len(issues),
+        "issues": issues[:25],
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", default=".")
+    parser.add_argument("--cutoff-utc", required=True)
+    parser.add_argument(
+        "--max-age-hours", type=float, default=24
+    )
+    args = parser.parse_args()
+
+    if args.max_age_hours <= 0:
+        parser.error("--max-age-hours must be positive")
+
+    cutoff = pd.to_datetime(
+        args.cutoff_utc, utc=True, errors="raise"
+    )
+
+    result = audit(
+        Path(args.root).resolve(),
+        cutoff,
+        args.max_age_hours,
+    )
+
+    print(json.dumps(result, indent=2))
+
+    if result["status"] != "READY":
+        raise SystemExit(2)
+
+
+if __name__ == "__main__":
+    main()

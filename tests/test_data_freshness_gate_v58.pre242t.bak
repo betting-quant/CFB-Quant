@@ -1,0 +1,341 @@
+"""Regression tests for CFB-Quant v5.8 data freshness gate."""
+
+import hashlib
+import json
+
+import pandas as pd
+
+from cfb_quant.live.data_freshness_gate_v58 import (
+    audit,
+    check_source,
+)
+
+CUTOFF = pd.Timestamp("2026-10-21T21:00:00Z")
+RETRIEVED = "2026-10-21T20:30:00Z"
+
+
+def write_metadata(path, retrieved=RETRIEVED):
+    meta = {
+        "downloaded_at_utc": retrieved,
+        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+    }
+    path.with_suffix(".meta.json").write_text(
+        json.dumps(meta), encoding="utf-8"
+    )
+
+
+def fixture_root(tmp_path):
+    schedule_path = (
+        tmp_path / "data/raw/cfbd/games/games_2026.json"
+    )
+    history_path = (
+        tmp_path / "data/processed/team_games_2026.parquet"
+    )
+    advanced_path = (
+        tmp_path / "data/raw/cfbd/advanced_game_v4/advanced_2026.json"
+    )
+
+    for path in (schedule_path, history_path, advanced_path):
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+    schedule = [{
+        "id": 123456,
+        "startDate": "2026-10-17T18:00:00Z",
+        "completed": True,
+        "homeTeam": "Test Home",
+        "awayTeam": "Test Away",
+        "homePoints": 28,
+        "awayPoints": 21,
+    }]
+
+    history = pd.DataFrame([
+        {"game_id": 123456, "home_away": "home",
+         "team": "Test Home", "points": 28},
+        {"game_id": 123456, "home_away": "away",
+         "team": "Test Away", "points": 21},
+    ])
+
+    advanced = [
+        {"gameId": 123456, "team": "Test Home"},
+        {"gameId": 123456, "team": "Test Away"},
+    ]
+
+    schedule_path.write_text(json.dumps(schedule), encoding="utf-8")
+    history.to_parquet(history_path, index=False)
+    advanced_path.write_text(json.dumps(advanced), encoding="utf-8")
+
+    for path in (schedule_path, history_path, advanced_path):
+        write_metadata(path)
+
+    return tmp_path, schedule_path, history_path, advanced_path
+
+
+def test_complete_fresh_dataset_is_ready(tmp_path):
+    root, *_ = fixture_root(tmp_path)
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "READY"
+    assert result["issue_count"] == 0
+    assert all(
+        v["status"] == "READY"
+        for v in result["sources"].values()
+    )
+
+
+def test_stale_advanced_source_blocks_ready(tmp_path):
+    root, _, _, advanced = fixture_root(tmp_path)
+    write_metadata(advanced, retrieved="2026-10-16T19:47:24Z")
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "STALE"
+    assert result["sources"]["advanced"]["status"] == "STALE"
+
+
+def test_missing_schedule_metadata_is_unverified(tmp_path):
+    root, schedule, *_ = fixture_root(tmp_path)
+    schedule.with_suffix(".meta.json").unlink()
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "UNVERIFIED"
+    assert result["sources"]["schedule"]["status"] == "UNVERIFIED"
+
+
+def test_corrupted_advanced_fingerprint_is_incomplete(tmp_path):
+    root, _, _, advanced = fixture_root(tmp_path)
+    advanced.write_text(
+        advanced.read_text(encoding="utf-8") + " ",
+        encoding="utf-8",
+    )
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "INCOMPLETE"
+    assert result["sources"]["advanced"]["status"] == "INCOMPLETE"
+
+
+def test_missing_advanced_pair_is_incomplete(tmp_path):
+    root, _, _, advanced = fixture_root(tmp_path)
+
+    advanced.write_text(
+        json.dumps([{"gameId": 123456, "team": "Test Home"}]),
+        encoding="utf-8",
+    )
+    write_metadata(advanced)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "INCOMPLETE"
+    assert any(
+        "Incomplete advanced statistics" in issue
+        for issue in result["issues"]
+    )
+
+
+def test_future_retrieval_is_not_valid_pregame(tmp_path):
+    root, schedule, *_ = fixture_root(tmp_path)
+    write_metadata(schedule, retrieved="2026-10-22T01:00:00Z")
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "UNVERIFIED"
+    assert result["sources"]["schedule"]["status"] == "UNVERIFIED"
+
+
+def test_history_score_mismatch_is_incomplete(tmp_path):
+    """History must agree with the completed schedule's score."""
+    root, _, history_path, _ = fixture_root(tmp_path)
+
+    history = pd.read_parquet(history_path)
+    history.loc[
+        history["home_away"] == "home", "points"
+    ] = 35
+    history.to_parquet(history_path, index=False)
+    write_metadata(history_path)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "INCOMPLETE"
+    assert result["issue_count"] > 0
+
+
+def test_schedule_completed_game_missing_history_is_incomplete(tmp_path):
+    """A completed eligible FBS game cannot disappear from history."""
+    root, schedule_path, _, advanced_path = fixture_root(tmp_path)
+
+    schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
+    schedule.append({
+        "id": 789012,
+        "startDate": "2026-10-18T18:00:00Z",
+        "completed": True,
+        "homeTeam": "Second Home",
+        "awayTeam": "Second Away",
+        "homeClassification": "fbs",
+        "awayClassification": "fbs",
+        "homePoints": 17,
+        "awayPoints": 14,
+    })
+    schedule_path.write_text(json.dumps(schedule), encoding="utf-8")
+    write_metadata(schedule_path)
+
+    advanced = json.loads(advanced_path.read_text(encoding="utf-8"))
+    advanced.extend([
+        {"gameId": 789012, "team": "Second Home"},
+        {"gameId": 789012, "team": "Second Away"},
+    ])
+    advanced_path.write_text(json.dumps(advanced), encoding="utf-8")
+    write_metadata(advanced_path)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "INCOMPLETE"
+    assert result["issue_count"] > 0
+
+
+def test_advanced_pair_wrong_team_identity_is_incomplete(tmp_path):
+    """Two advanced records must represent the correct two teams."""
+    root, _, _, advanced_path = fixture_root(tmp_path)
+
+    advanced = [
+        {"gameId": 123456, "team": "Wrong Team A"},
+        {"gameId": 123456, "team": "Wrong Team B"},
+    ]
+
+    advanced_path.write_text(json.dumps(advanced), encoding="utf-8")
+    write_metadata(advanced_path)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "INCOMPLETE"
+    assert result["issue_count"] > 0
+
+
+def test_fcs_only_game_not_required_in_history(tmp_path):
+    """FCS-only contests are outside the model history universe."""
+    root, schedule_path, _, advanced_path = fixture_root(tmp_path)
+
+    schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
+    schedule[0]["homeClassification"] = "fbs"
+    schedule[0]["awayClassification"] = "fbs"
+
+    schedule.append({
+        "id": 789012,
+        "startDate": "2026-10-18T18:00:00Z",
+        "completed": True,
+        "homeTeam": "FCS Home",
+        "awayTeam": "FCS Away",
+        "homeClassification": "fcs",
+        "awayClassification": "fcs",
+        "homePoints": 17,
+        "awayPoints": 14,
+    })
+
+    schedule_path.write_text(json.dumps(schedule), encoding="utf-8")
+    write_metadata(schedule_path)
+
+    advanced = json.loads(advanced_path.read_text(encoding="utf-8"))
+    advanced.extend([
+        {"gameId": 789012, "team": "FCS Home"},
+        {"gameId": 789012, "team": "FCS Away"},
+    ])
+    advanced_path.write_text(json.dumps(advanced), encoding="utf-8")
+    write_metadata(advanced_path)
+
+    result = audit(root, CUTOFF)
+    assert result["status"] == "READY"
+    assert result["issue_count"] == 0
+
+
+def test_fbs_fcs_game_missing_all_stats_is_incomplete(tmp_path):
+    """A completed FBS-involving game is required even without advanced data."""
+    root, schedule_path, _, _ = fixture_root(tmp_path)
+
+    schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
+    schedule[0]["homeClassification"] = "fbs"
+    schedule[0]["awayClassification"] = "fbs"
+
+    schedule.append({
+        "id": 789012,
+        "startDate": "2026-10-18T18:00:00Z",
+        "completed": True,
+        "homeTeam": "FBS Home",
+        "awayTeam": "FCS Away",
+        "homeClassification": "fbs",
+        "awayClassification": "fcs",
+        "homePoints": 28,
+        "awayPoints": 7,
+    })
+
+    schedule_path.write_text(json.dumps(schedule), encoding="utf-8")
+    write_metadata(schedule_path)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "INCOMPLETE"
+    assert result["issue_count"] > 0
+    assert any("789012" in issue for issue in result["issues"])
+
+
+def test_unknown_game_classification_is_unverified(tmp_path):
+    """Unknown classifications require an explicit eligibility decision."""
+    root, schedule_path, _, _ = fixture_root(tmp_path)
+
+    schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
+    schedule[0]["homeClassification"] = "fbs"
+    schedule[0]["awayClassification"] = "fbs"
+
+    schedule.append({
+        "id": 789012,
+        "startDate": "2026-10-18T18:00:00Z",
+        "completed": True,
+        "homeTeam": "Unknown Home",
+        "awayTeam": "Unknown Away",
+        "homeClassification": None,
+        "awayClassification": "fcs",
+        "homePoints": 14,
+        "awayPoints": 10,
+    })
+
+    schedule_path.write_text(json.dumps(schedule), encoding="utf-8")
+    write_metadata(schedule_path)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "UNVERIFIED"
+    assert result["issue_count"] > 0
+
+
+def test_existing_history_unknown_classification(tmp_path):
+    """An existing history game still needs verified classification."""
+    root, schedule_path, _, _ = fixture_root(tmp_path)
+
+    schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
+    schedule[0]["homeClassification"] = None
+    schedule[0]["awayClassification"] = "fcs"
+
+    schedule_path.write_text(json.dumps(schedule), encoding="utf-8")
+    write_metadata(schedule_path)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "UNVERIFIED"
+    assert result["issue_count"] > 0
+
+
+def test_completed_history_game_missing_schedule_score(tmp_path):
+    """A completed game cannot be certified without its final score."""
+    root, schedule_path, _, _ = fixture_root(tmp_path)
+
+    schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
+    schedule[0]["homeClassification"] = "fbs"
+    schedule[0]["awayClassification"] = "fbs"
+    schedule[0]["homePoints"] = None
+
+    schedule_path.write_text(json.dumps(schedule), encoding="utf-8")
+    write_metadata(schedule_path)
+
+    result = audit(root, CUTOFF)
+
+    assert result["status"] == "INCOMPLETE"
+    assert result["issue_count"] > 0

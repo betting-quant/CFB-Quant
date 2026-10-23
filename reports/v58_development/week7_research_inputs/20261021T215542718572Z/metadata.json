@@ -1,0 +1,11 @@
+{
+  "source": "https://api.collegefootballdata.com/stats/game/advanced",
+  "year": 2026,
+  "retrieved_at_utc": "2026-10-21T21:55:42.718572+00:00",
+  "record_count": 1860,
+  "game_count": 930,
+  "validated_week7_added_games": 55,
+  "sha256": "fb4f9eeb0254b9e3bc5dd3116941a0ac0c79fdf90ce4bf0a76b7c8907db6fa2c",
+  "research_only": true,
+  "original_production_cache_modified": false
+}

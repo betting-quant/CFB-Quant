@@ -1,0 +1,32 @@
+{
+  "version": "daily_schedule_sync_v58_v1",
+  "research_only": true,
+  "season": 2026,
+  "window_eastern": [
+    "2026-10-20",
+    "2026-10-24"
+  ],
+  "request_started_utc": "2026-10-20T19:42:11.305493+00:00",
+  "request_completed_utc": "2026-10-20T19:42:12.122279+00:00",
+  "source": "CFBD /games",
+  "parameters": {
+    "year": 2026,
+    "seasonType": "both",
+    "classification": "fbs"
+  },
+  "baseline_sha256": "d06a4b29b9cd66278277edffaacfe2bf8d16165d4eb258886131b0c0755c2a90",
+  "snapshot_sha256": "986110b82d360f35ad855f2a4292ea4cdfb8f1394d8b027255c9f121780111e7",
+  "baseline_games": 888,
+  "fresh_games": 888,
+  "eligible_games": 56,
+  "matchup_counts": {
+    "FBS_FBS": 56
+  },
+  "added_game_ids": [],
+  "removed_game_ids": [],
+  "changed_games": [],
+  "unresolved_kickoffs": [],
+  "schedule_completeness_independently_certified": false,
+  "production_modified": false,
+  "models_executed": false
+}

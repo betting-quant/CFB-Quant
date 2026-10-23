@@ -1,0 +1,15 @@
+{
+  "retrieved_at_utc": "2026-10-21T20:41:01.997596+00:00",
+  "source_endpoint": "https://api.collegefootballdata.com/games",
+  "source_year": 2026,
+  "season_type": "regular",
+  "raw_response_sha256": "02429517a42e6fd1a300417c3959f180f455ec48626c2c781eab53b2822ef268",
+  "source_game_count": 3678,
+  "eligible_future_games": 114,
+  "minimum_lead_minutes": 30,
+  "capture_horizon_days": 14,
+  "historical_point_in_time_certified": false,
+  "live_capture_timestamp_recorded": true,
+  "model_predictions_frozen": false,
+  "postgame_elo_in_feature_snapshot": false
+}

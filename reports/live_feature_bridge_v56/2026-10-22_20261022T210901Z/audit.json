@@ -1,0 +1,48 @@
+{
+  "history_games": 10824,
+  "history_team_rows": 21648,
+  "2026_completed_history_games": 455,
+  "2026_history_rows": 910,
+  "historical_files": 13,
+  "slate_date_eastern": "2026-10-22",
+  "asof_utc": "2026-10-22T21:06:47.967765+00:00",
+  "slate_games": 3,
+  "slate_team_rows": 6,
+  "feature_count": 287,
+  "v3_historical_parity": true,
+  "v45_historical_parity": true,
+  "missing_v3_feature_values": 0,
+  "advanced_coverage_2026": [
+    {
+      "season": 2026,
+      "rows": 916,
+      "matched": 910,
+      "coverage_pct": 99.34
+    }
+  ],
+  "no_current_game_outcomes": true,
+  "warnings": [
+    "Historical source snapshots not audited as point-in-time. No models trained or predictions produced.",
+    "Current season 2026 caches can change after games; archive source snapshots before predicting."
+  ],
+  "schedule_sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+  "advanced_2026_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+  "created_at_utc": "2026-10-22T21:09:01.800141+00:00",
+  "snapshot_save_gate": {
+    "schema": "cfb_v58_feature_snapshot_save_gate_v1",
+    "status": "PASS",
+    "reasons": [],
+    "actual_save_check_utc": "2026-10-22T21:09:01.800141+00:00",
+    "declared_asof_utc": "2026-10-22T21:06:47.967765+00:00",
+    "earliest_kickoff_utc": "2026-10-22T23:00:00+00:00",
+    "lead_seconds": 6658.199859,
+    "minimum_lead_seconds": 60,
+    "source_availability_certified": false,
+    "historical_point_in_time_certified": false,
+    "production_forecast_authorized": false,
+    "research_only": true
+  },
+  "source_availability_certified": false,
+  "historical_point_in_time_certified": false,
+  "production_forecast_authorized": false
+}

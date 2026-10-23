@@ -1,0 +1,30 @@
+{
+  "step": 117,
+  "created_utc": "2026-10-20T16:30:12.066238+00:00",
+  "games": 5056,
+  "seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "observed_delta_mae": -0.0555682741343502,
+  "season_block_ci_95": [
+    -0.08393015840933021,
+    -0.024220530466692307
+  ],
+  "bootstrap_draws": 20000,
+  "improves_all_seasons": false,
+  "improves_all_leave_one_out": true,
+  "research_only": true,
+  "promotion_eligible": false,
+  "source_sha256": "5365855c1c40fa2b0802b44f30cd3f2120373764527a81b9dc6e538f2c65a661",
+  "limitations": [
+    "Only six season blocks",
+    "Historical seasons previously explored",
+    "Blend weight requires independent confirmation",
+    "No claim of betting profitability"
+  ]
+}

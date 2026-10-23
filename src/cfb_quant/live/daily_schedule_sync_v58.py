@@ -80,7 +80,7 @@ def validate(games, season, baseline_count):
     return indexed
 
 
-def run(season, start, end, baseline, output):
+def run(season, start, end, baseline, output, *, capture_http=False):
     if end < start:
         raise ValueError("End date precedes start date")
     if not baseline.is_file():
@@ -91,14 +91,40 @@ def run(season, start, end, baseline, output):
     old_index = index_games(old)
 
     started = datetime.now(timezone.utc)
-    fresh = cfbd_get(
-        "/games",
-        params={
-            "year": season,
-            "seasonType": "both",
-            "classification": "fbs",
-        },
-    )
+    request_params = {
+        "year": season,
+        "seasonType": "both",
+        "classification": "fbs",
+    }
+    acquisition = {}
+
+    if capture_http:
+        from cfb_quant.live.acquisition_receipt_v58 import (
+            capture_response,
+            verify_receipt,
+        )
+
+        def save_acquisition(**kwargs):
+            archive_dir = capture_response(
+                output / "_http_acquisitions",
+                **kwargs,
+            )
+            receipt = verify_receipt(archive_dir)
+            acquisition["directory"] = str(archive_dir)
+            acquisition["receipt"] = receipt
+
+        fresh = cfbd_get(
+            "/games",
+            params=request_params,
+            response_capture=save_acquisition,
+        )
+        if not acquisition:
+            raise RuntimeError(
+                "HTTP capture requested but no receipt was created"
+            )
+    else:
+        fresh = cfbd_get("/games", params=request_params)
+
     fetched = datetime.now(timezone.utc)
 
     new_index = validate(fresh, season, len(old_index))
@@ -178,6 +204,22 @@ def run(season, start, end, baseline, output):
         "production_modified": False,
         "models_executed": False,
     }
+
+    if capture_http:
+        audit["http_acquisition"] = {
+            "receipt_directory": acquisition["directory"],
+            "receipt_relative_to_output": str(
+                Path(acquisition["directory"]).resolve().relative_to(
+                    output.resolve()
+                )
+            ).replace("\\", "/"),
+            "response_sha256": acquisition["receipt"]["response_sha256"],
+            "request_started_utc": acquisition["receipt"]["request_started_utc"],
+            "request_completed_utc": acquisition["receipt"]["request_completed_utc"],
+            "source_bytes_archived": True,
+            "historical_point_in_time_certified": False,
+            "production_forecast_authorized": False,
+        }
 
     audit_path = destination / "audit.json"
     audit_path.write_text(json.dumps(audit, indent=2), encoding="utf-8")

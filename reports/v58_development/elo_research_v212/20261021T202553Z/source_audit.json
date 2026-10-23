@@ -1,0 +1,24 @@
+{
+  "retrieved_at_utc": "2026-10-21T20:25:53.490578+00:00",
+  "endpoint": "https://api.collegefootballdata.com/games",
+  "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "response_sha256_by_year": {
+    "2019": "9864e12ff99d7443939c9d8c9dc7f2a8932d7236e77c31150a9c93ae266fd449",
+    "2020": "6208cf6a732b13d25aca067aad57c153111ab986f9bac63e9d32fc6b28e1da9e",
+    "2021": "5e3581c0515b51f94c52ee755436619183b000327e1118bb3c4f6da9d8de9c2f",
+    "2022": "af1899fc236fc5b9faa122cb700714a3483aa58165e4874f74aeee51da908943",
+    "2023": "c0fe9e58ed8d1c4b81df8b82db1e20c4da6762722e2c9d76ee8ff299f5ca488f",
+    "2024": "542373386dffa06cd5ea1f63fe970ef0ee3fa5d6f47b2a36279632311b8d1519",
+    "2025": "f54e254c6705b6a1d75cc684378c61a33b13298dc9cc4c689fa3058b9ce720a9"
+  },
+  "historical_publication_times_certified": false,
+  "pregame_elo_originally_available_certified": false
+}

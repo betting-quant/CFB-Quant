@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-20",
+  "graded_games": 3,
+  "original_feature_sha256": "65544c843b3043432074db620bc635ac6a6607da72d9d971601fe3e6c0887a08",
+  "v57_winners_correct": 2,
+  "v58_winners_correct": 2,
+  "v57_margin_mae": 11.775710358117358,
+  "v58_margin_mae": 11.261711519516998,
+  "v57_v58_total_mae": 21.922827594169235,
+  "actual_scores_source": "Official university athletics",
+  "postgame_data_used_for_training": false,
+  "original_predictions_modified": false,
+  "historical_pit_certified": false,
+  "graded_at_utc": "2026-10-21T15:06:55.826002+00:00"
+}

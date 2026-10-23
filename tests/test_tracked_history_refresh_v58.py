@@ -1,0 +1,130 @@
+"""Offline tests of the research-only history refresh driver."""
+
+import json
+from pathlib import Path
+
+import pandas as pd
+import pytest
+
+from cfb_quant.live import tracked_history_refresh_v58 as tracked
+from cfb_quant.live import team_history_refresh_2026 as refresh
+from cfb_quant.live.derivation_receipt_v58 import verify_derivation
+
+
+def workspace(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    root = (
+        tmp_path
+        / "reports/v58_development/week7_isolated_runs"
+        / "test_workspace"
+    )
+    (root / Path(refresh.HISTORY).parent).mkdir(
+        parents=True, exist_ok=True
+    )
+    (root / Path(refresh.SCHEDULE).parent).mkdir(
+        parents=True, exist_ok=True
+    )
+    (root / refresh.BOX_ROOT).mkdir(
+        parents=True, exist_ok=True
+    )
+
+    pd.DataFrame({
+        "game_id": ["1", "1"],
+        "team": ["Home", "Away"],
+    }).to_parquet(root / refresh.HISTORY, index=False)
+
+    (root / refresh.SCHEDULE).write_text(
+        json.dumps([{"id": 1}]), encoding="utf-8"
+    )
+    (root / refresh.BOX_ROOT / "week7.json").write_text(
+        json.dumps([{"gameId": 1}]), encoding="utf-8"
+    )
+    return root
+
+
+def test_preview_is_read_only(tmp_path, monkeypatch):
+    root = workspace(tmp_path, monkeypatch)
+    history = root / refresh.HISTORY
+    original = history.read_bytes()
+
+    def fake_run(path, *, apply=False, weeks=(7,)):
+        assert apply is False
+        assert path == root
+        return {"added_games": 1}
+
+    monkeypatch.setattr(refresh, "run", fake_run)
+
+    result = tracked.run(root, weeks=(7,), apply=False)
+
+    assert result["status"] == "PREVIEW"
+    assert history.read_bytes() == original
+    assert not list(root.rglob("*tracked_history_receipts*"))
+
+
+def test_apply_tracks_real_parquet_output(tmp_path, monkeypatch):
+    root = workspace(tmp_path, monkeypatch)
+
+    def fake_run(path, *, apply=False, weeks=(7,)):
+        if apply:
+            pd.DataFrame({
+                "game_id": ["1", "1", "2", "2"],
+                "team": ["Home", "Away", "Home2", "Away2"],
+            }).to_parquet(root / refresh.HISTORY, index=False)
+        return {"added_games": 1}
+
+    monkeypatch.setattr(refresh, "run", fake_run)
+
+    result = tracked.run(root, weeks=(7,), apply=True)
+
+    assert result["status"] == "PASS"
+    assert result["output_changed"] is True
+    assert result["verification"]["status"] == "PASS"
+
+    verified = verify_derivation(root, result["receipt_path"])
+    assert verified["status"] == "PASS"
+
+    updated = pd.read_parquet(root / refresh.HISTORY)
+    assert len(updated) == 4
+
+
+def test_repository_root_rejected(tmp_path, monkeypatch):
+    root = workspace(tmp_path, monkeypatch)
+
+    with pytest.raises(ValueError, match="isolated"):
+        tracked.validate_workspace(tmp_path)
+
+    assert tracked.validate_workspace(root) == root.resolve()
+
+
+def test_source_mutation_during_refresh_rejected(tmp_path, monkeypatch):
+    root = workspace(tmp_path, monkeypatch)
+
+    def fake_run(path, *, apply=False, weeks=(7,)):
+        if apply:
+            (root / refresh.SCHEDULE).write_text(
+                "[]", encoding="utf-8"
+            )
+        return {"added_games": 1}
+
+    monkeypatch.setattr(refresh, "run", fake_run)
+
+    with pytest.raises(ValueError, match="Input changed"):
+        tracked.run(root, weeks=(7,), apply=True)
+
+    receipt_root = root / "reports/receipts"
+    assert not list(receipt_root.glob("*.json"))
+
+
+def test_no_change_skips_apply(tmp_path, monkeypatch):
+    root = workspace(tmp_path, monkeypatch)
+    calls = []
+
+    def fake_run(path, *, apply=False, weeks=(7,)):
+        calls.append(apply)
+        return {"added_games": 0}
+
+    monkeypatch.setattr(refresh, "run", fake_run)
+
+    result = tracked.run(root, weeks=(7,), apply=True)
+    assert result["status"] == "NO_CHANGES"
+    assert calls == [False]

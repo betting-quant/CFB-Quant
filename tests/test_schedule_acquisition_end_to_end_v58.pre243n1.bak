@@ -1,0 +1,121 @@
+"""End-to-end research schedule acquisition audit tests."""
+
+import hashlib
+import json
+from datetime import date
+from pathlib import Path
+
+from cfb_quant.live import daily_schedule_sync_v58 as sync
+from cfb_quant.live.acquisition_receipt_v58 import verify_receipt
+
+
+def sha256(payload):
+    return hashlib.sha256(payload).hexdigest()
+
+
+def test_successful_schedule_archive_links_exact_http_receipt(
+    tmp_path, monkeypatch
+):
+    game = {
+        "id": 401999001,
+        "season": 2026,
+        "seasonType": "regular",
+        "week": 8,
+        "startDate": "2026-10-22T23:00:00Z",
+        "startTimeTBD": False,
+        "completed": False,
+        "homeTeam": "Synthetic Home",
+        "awayTeam": "Synthetic Away",
+        "homeId": 101,
+        "awayId": 202,
+        "homeClassification": "fbs",
+        "awayClassification": "fbs",
+        "homePoints": None,
+        "awayPoints": None,
+    }
+
+    # Valid existing schedule and valid new response.
+    baseline = tmp_path / "baseline.json"
+    baseline.write_text(
+        json.dumps([game]), encoding="utf-8"
+    )
+
+    # Deliberately use compact raw HTTP bytes.
+    response_bytes = json.dumps(
+        [game], separators=(",", ":")
+    ).encode("utf-8")
+
+    requests = []
+
+    def fake_cfbd_get(endpoint, *, params, response_capture=None):
+        requests.append(endpoint)
+
+        assert endpoint == "/games"
+        assert params["year"] == 2026
+        assert response_capture is not None
+
+        response_capture(
+            endpoint=endpoint,
+            parameters=params,
+            request_started_utc="2026-10-22T15:00:00Z",
+            request_completed_utc="2026-10-22T15:00:01Z",
+            status_code=200,
+            response_bytes=response_bytes,
+        )
+
+        return json.loads(response_bytes)
+
+    monkeypatch.setattr(sync, "cfbd_get", fake_cfbd_get)
+
+    output = tmp_path / "research_archive"
+
+    audit = sync.run(
+        season=2026,
+        start=date(2026, 10, 22),
+        end=date(2026, 10, 22),
+        baseline=baseline,
+        output=output,
+        capture_http=True,
+    )
+
+    assert requests == ["/games"]
+    assert audit["research_only"] is True
+    assert audit["production_modified"] is False
+
+    acquisition = audit["http_acquisition"]
+    receipt_dir = Path(acquisition["receipt_directory"])
+
+    # Verify the original captured HTTP response.
+    receipt = verify_receipt(receipt_dir)
+    assert (receipt_dir / "response.json").read_bytes() == response_bytes
+    assert acquisition["response_sha256"] == sha256(response_bytes)
+    assert receipt["response_sha256"] == sha256(response_bytes)
+    assert receipt["endpoint"] == "/games"
+    assert receipt["parameters"]["year"] == 2026
+
+    # Verify the separately serialized schedule archive.
+    snapshots = list(output.glob("*/cfbd_games.json"))
+    assert len(snapshots) == 1
+
+    snapshot = snapshots[0]
+    saved_audit = json.loads(
+        (snapshot.parent / "audit.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert json.loads(snapshot.read_text(encoding="utf-8")) == [game]
+    assert saved_audit["snapshot_sha256"] == sha256(
+        snapshot.read_bytes()
+    )
+    assert saved_audit["http_acquisition"] == acquisition
+    assert saved_audit["fresh_games"] == 1
+
+    # The HTTP response and formatted snapshot may have different
+    # byte hashes; their decoded payloads must be identical.
+    assert json.loads(
+        (receipt_dir / "response.json").read_bytes()
+    ) == json.loads(snapshot.read_bytes())
+
+    assert acquisition["historical_point_in_time_certified"] is False
+    assert acquisition["production_forecast_authorized"] is False

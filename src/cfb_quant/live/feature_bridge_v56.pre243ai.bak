@@ -1,0 +1,350 @@
+"""Read-only preparation of prospective 2026 pregame v3 + v4.5 features.
+
+The main historical training artifacts are NEVER modified. No API or odds calls.
+No prediction is generated in this version. The selected FBS slate is determined
+in US Eastern date; only games not yet kicked off as of run time are eligible.
+
+Fail-closed design:
+ * Completed games only (and kickoff before as-of) can enter team history.
+ * A team may occur only once in the requested slate; future placeholders cannot
+   contaminate subsequent future placeholders.
+ * Canonical 2014-2025 features and opponent ratings are re-derived and compared
+   against the frozen historical baselines before any prospective features are saved.
+ * Pregame placeholder rows have no observed/current-game statistics.
+ * Historical kickoff order is reconstructed from verified map, with 2026 times
+   from the up-to-date schedule, never sorted only by week or game ID.
+ * Previously cached advanced stats are consumed for completed games only.
+"""
+from __future__ import annotations
+
+import argparse
+import glob
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import numpy as np
+import pandas as pd
+
+from cfb_quant.features.matchup_engine import build_features
+from cfb_quant.spread_total.advanced_v4 import load_all_years
+from cfb_quant.spread_total.opponent_v45 import build_adjustments, feature_names
+
+INPUT_GLOB = 'data/processed/team_games_*.parquet'
+HISTORIC_MAP = Path('reports/spread_total_schedule_chronology_v2/team_game_kickoff_map.csv')
+SCHEDULE = Path('data/raw/cfbd/games/games_2026.json')
+BASELINE_V3 = Path('data/processed/cfb_matchup_features_kickoff_v3.parquet')
+BASELINE_V45 = Path('data/processed/cfb_matchup_features_opponent_v45.parquet')
+MANIFEST_V3 = Path('reports/cfb_matchup_feature_manifest_kickoff_v3.json')
+MANIFEST_V45 = Path('reports/cfb_matchup_feature_manifest_opponent_v45.json')
+OUT_DIR = Path('reports/live_feature_bridge_v56')
+SEASON = 2026
+
+
+def gid(x) -> str:
+    if x is None or isinstance(x, bool):
+        raise ValueError('Missing/invalid numeric game ID')
+    s = str(x)
+    if s.endswith('.0') and s[:-2].isdigit():
+        s = s[:-2]
+    if not s.isdigit():
+        raise ValueError(f'Invalid CFBD game ID: {s!r}')
+    return s
+
+
+def kickoff(g: dict) -> pd.Timestamp:
+    v = pd.to_datetime(g.get('startDate'), utc=True, errors='coerce')
+    if pd.isna(v):
+        raise ValueError(f'Game {g.get("id")} missing exact kickoff timestamp')
+    return v
+
+
+def done(g: dict) -> bool:
+    return g.get('completed') is True and g.get('homePoints') is not None and g.get('awayPoints') is not None
+
+
+def fbs_both(g: dict) -> bool:
+    return all(str(g.get(f'{s}Classification', '')).strip().lower() == 'fbs'
+               for s in ('home', 'away'))
+
+
+def select_upcoming(schedule: list[dict], day: str, asof: pd.Timestamp) -> list[dict]:
+    dt = datetime.strptime(day, '%Y-%m-%d')
+    if dt.year != SEASON:
+        raise ValueError('Only 2026 future FBS slates are supported')
+    asof = pd.to_datetime(asof, utc=True)
+    chosen = []
+    seen_games: set[str] = set()
+    for g in schedule:
+        if not fbs_both(g) or int(g.get('season', -1)) != SEASON:
+            continue
+        k = kickoff(g)
+        if k.tz_convert(ZoneInfo('America/New_York')).strftime('%Y-%m-%d') != day:
+            continue
+        if g.get('startTimeTBD') is True:
+            # Not safe to claim strictly before kickoff without an exact start.
+            continue
+        if done(g) or g.get('completed') is True or k <= asof:
+            continue
+        key = gid(g.get('id'))
+        if key in seen_games:
+            raise ValueError(f'Duplicate scheduled game: {key}')
+        seen_games.add(key)
+        chosen.append(g)
+    chosen.sort(key=lambda g: (kickoff(g), gid(g['id'])))
+    teams: set[int] = set()
+    for g in chosen:
+        for s in ('home', 'away'):
+            tid = g.get(f'{s}Id')
+            if tid is None:
+                raise ValueError(f'Missing {s} team ID on {g["id"]}')
+            tid = int(tid)
+            if tid in teams:
+                raise ValueError(f'Team {tid} scheduled twice on selected slate; cannot safely batch placeholders')
+            teams.add(tid)
+    return chosen
+
+
+def load_schedule(path: Path) -> list[dict]:
+    data = json.loads(path.read_text(encoding='utf-8-sig'))
+    if not isinstance(data, list):
+        raise ValueError(f'Invalid schedule JSON list: {path}')
+    keys = [gid(g.get('id')) for g in data]
+    if len(keys) != len(set(keys)):
+        raise ValueError('Duplicate game IDs in 2026 schedule')
+    return data
+
+
+def load_histories(root: Path, schedule: list[dict], asof: pd.Timestamp) -> tuple[pd.DataFrame,dict]:
+    files = sorted(glob.glob(str(root / INPUT_GLOB)))
+    if not files:
+        raise FileNotFoundError(f'No team history matching {INPUT_GLOB}')
+    history = pd.concat([pd.read_parquet(p) for p in files], ignore_index=True, sort=False)
+    history['season'] = pd.to_numeric(history['season'], errors='raise').astype(int)
+    if history['season'].min() > 2014 or history['season'].max() != SEASON:
+        raise ValueError('Historical team history must cover 2014 through 2026')
+    if history.duplicated(['game_id','team']).any():
+        raise ValueError('Duplicate game/team rows in history')
+    if not set(history.home_away.unique()) <= {'home','away'}:
+        raise ValueError('Invalid home/away status in history')
+
+    # We require every 2026 team-history game to be already completed at as-of.
+    sched_2026 = {gid(g['id']): g for g in schedule}
+    current = history.loc[history.season.eq(SEASON)]
+    if current.empty:
+        raise ValueError('No completed 2026 team history')
+    for gameid, group in current.groupby('game_id'):
+        key = gid(gameid)
+        g = sched_2026.get(key)
+        if not g or not done(g):
+            raise ValueError(f'2026 history includes uncompleted/unknown game {key}')
+        if kickoff(g) >= asof:
+            raise ValueError(f'2026 history game {key} has kickoff in the future relative to as-of')
+        if len(group) != 2 or set(group.home_away) != {'home','away'}:
+            raise ValueError(f'Incomplete 2026 game pair {key}')
+        for s in ('home','away'):
+            row = group.loc[group.home_away.eq(s)].iloc[0]
+            if int(row.team_id) != int(g[f'{s}Id']) or str(row.team) != str(g[f'{s}Team']):
+                raise ValueError(f'2026 history game/team mismatch {key} {s}')
+            if float(row.points) != float(g[f'{s}Points']):
+                raise ValueError(f'2026 history score mismatch {key} {s}')
+
+    mappath = root / HISTORIC_MAP
+    if not mappath.is_file():
+        raise FileNotFoundError(f'Missing historical kickoff map {mappath}')
+    oldmap = pd.read_csv(mappath)
+    needed = {'game_id','season','team','home_away','kickoff_utc'}
+    if not needed <= set(oldmap):
+        raise ValueError(f'Historical kickoff map lacks {sorted(needed-set(oldmap))}')
+    oldmap = oldmap.loc[pd.to_numeric(oldmap['season'], errors='raise').lt(SEASON),list(needed)].copy()
+    rows = []
+    for _,r in current.iterrows():
+        g = sched_2026[gid(r['game_id'])]
+        rows.append({'game_id': gid(r['game_id']), 'season': SEASON,
+                     'team': str(r.team), 'home_away':str(r.home_away),
+                     'kickoff_utc': kickoff(g)})
+    combined_map = pd.concat([oldmap, pd.DataFrame(rows)], ignore_index=True)
+    hist = history.drop(columns=['kickoff_utc'], errors='ignore').copy()
+    # Composite identifiers avoid numerically lossy or mismatched joins.
+    for df in (hist,combined_map):
+        df['_id'] = df['game_id'].map(gid)
+        df['_season'] = pd.to_numeric(df['season'],errors='raise').astype(int)
+        df['_team'] = df['team'].astype(str).str.strip()
+        df['_side'] = df['home_away'].astype(str).str.strip().str.lower()
+    keys = ['_id','_season','_team','_side']
+    if combined_map.duplicated(keys).any():
+        raise ValueError('Duplicate entries in verified kickoff map')
+    combined_map['kickoff_utc'] = pd.to_datetime(combined_map['kickoff_utc'],utc=True,errors='coerce')
+    if combined_map['kickoff_utc'].isna().any():
+        raise ValueError('Null kickoff times in verified map')
+    hist = hist.merge(combined_map[keys+['kickoff_utc']],on=keys,how='left',validate='one_to_one')
+    if hist.kickoff_utc.isna().any():
+        bad=hist.loc[hist.kickoff_utc.isna(),['game_id','season','team','home_away']].head(8)
+        raise ValueError('History kickoff map missing rows:\n'+bad.to_string(index=False))
+    if hist.groupby('game_id').kickoff_utc.nunique().gt(1).any():
+        raise ValueError('Inconsistent home/away kickoff')
+    hist = hist.drop(columns=keys)
+    return hist, {'history_games':int(hist.game_id.nunique()),'history_team_rows':len(hist),
+                  '2026_completed_history_games':int(current.game_id.nunique()),
+                  '2026_history_rows':len(current),'historical_files':len(files)}
+
+
+def make_placeholders(slate: list[dict], history: pd.DataFrame) -> pd.DataFrame:
+    # A placeholder has absolutely no current game numerical outcome/stats.
+    # The historical pipeline shifts previous observations before calculating features.
+    names_by_id = {}
+    recent = history.loc[history.season.eq(SEASON)].sort_values('kickoff_utc')
+    for r in recent.itertuples():
+        tid = int(r.team_id)
+        if tid in names_by_id and names_by_id[tid] != str(r.team):
+            raise ValueError(f'2026 team {tid} uses inconsistent names: {names_by_id[tid]} vs {r.team}')
+        names_by_id[tid] = str(r.team)
+    payload = []
+    for g in slate:
+        for s in ('home', 'away'):
+            opposite = 'away' if s == 'home' else 'home'
+            team_id,opp_id=int(g[f'{s}Id']),int(g[f'{opposite}Id'])
+            team=str(g[f'{s}Team']); opponent=str(g[f'{opposite}Team'])
+            # A wrong spelling creates a cold-start team and corrupts its historical features.
+            if names_by_id.get(team_id) != team or names_by_id.get(opp_id) != opponent:
+                raise ValueError(f'Missing/inconsistent 2026 history for {team} or {opponent}; game {g["id"]}')
+            row = {column: np.nan for column in history.columns}
+            row.update({'game_id': int(g['id']), 'season': SEASON,'week':int(g['week']),
+                        'season_type':str(g['seasonType']).lower(),
+                        'team_id':team_id,'team':team,'opponent':opponent,
+                        'conference':g.get(f'{s}Conference'),
+                        'home_away':s, 'kickoff_utc':kickoff(g)})
+            payload.append(row)
+    future = pd.DataFrame(payload, columns=history.columns)
+    if not future['points'].isna().all() or not future['opponent_points'].isna().all():
+        raise AssertionError('Unplayed games have observed scores')
+    return future
+
+
+def assert_historical_parity(new_data: pd.DataFrame, old_path: Path, cols: list[str], *, name: str) -> dict:
+    old = pd.read_parquet(old_path, columns=['game_id','season','team',*cols])
+    old = old.loc[old.season.lt(SEASON)].copy()
+    new = new_data.loc[new_data.season.lt(SEASON), ['game_id','season','team',*cols]].copy()
+    for d in (old,new):
+        d['_key'] = d.game_id.map(gid) + '|' + d.team.astype(str).str.strip()
+    if old._key.duplicated().any() or new._key.duplicated().any():
+        raise ValueError(f'{name} duplicate historical records')
+    if set(old._key) != set(new._key):
+        raise ValueError(f'{name} reconstructed historical game universe differs')
+    old=old.set_index('_key').sort_index()
+    new=new.set_index('_key').reindex(old.index)
+    # Numerical feature parity, including identical NaN positions.
+    for col in cols:
+        a=pd.to_numeric(old[col],errors='coerce').to_numpy(dtype=float)
+        b=pd.to_numeric(new[col],errors='coerce').to_numpy(dtype=float)
+        if not np.allclose(a,b,atol=1e-9,rtol=1e-10,equal_nan=True):
+            disagree=~np.isclose(a,b,atol=1e-9,rtol=1e-10,equal_nan=True)
+            bad=np.flatnonzero(disagree)[:3]
+            raise ValueError(f'{name} historical feature mismatch {col}: examples '+
+                             ', '.join(f'{old.index[i]} old={a[i]} new={b[i]}' for i in bad))
+    return {'checked_rows':len(old),'checked_features':len(cols),'historical_parity':True}
+
+
+def prepare(root: Path, day: str, asof: pd.Timestamp) -> tuple[pd.DataFrame,dict]:
+    schedule=load_schedule(root / SCHEDULE)
+    slate=select_upcoming(schedule,day,asof)
+    if not slate:
+        raise ValueError(f'No unstarted, exact-time FBS-vs-FBS games for {day} as of {asof}')
+    history, info=load_histories(root,schedule,asof)
+    prospective=make_placeholders(slate,history)
+    combined=pd.concat([history,prospective],ignore_index=True)
+    features,columns=build_features(combined)
+    m3=json.loads((root/MANIFEST_V3).read_text(encoding='utf-8'))
+    m45=json.loads((root/MANIFEST_V45).read_text(encoding='utf-8'))
+    v3_columns=list(m3['feature_columns'])
+    oa_columns=feature_names()
+    if columns != v3_columns or m45['feature_columns'] != v3_columns + oa_columns:
+        raise ValueError('Current feature names/order differ from frozen v3/v4.5 manifests')
+    assert_historical_parity(features,root/BASELINE_V3,v3_columns,name='v3')
+    raw=load_all_years(root,list(range(2014,SEASON+1)))
+    # Extra fail-safe: no observations from an unstarted slate game may be present.
+    future_ids={gid(g['id']) for g in slate}
+    observed_ids=set(raw.game_id.astype(str))
+    if future_ids & observed_ids:
+        raise ValueError('Advanced cache contains observations for an unstarted game: '+str(sorted(future_ids&observed_ids)[:5]))
+    # Any observations for uncompleted 2026 games outside this slate must NOT enter
+    # opponent ratings (these should not be processed even if cache is inconsistent).
+    completed_ids={gid(g['id']) for g in schedule if done(g) and kickoff(g)<asof}
+    raw = raw.loc[~raw.game_id.astype(str).isin({gid(g['id']) for g in schedule
+                                                  if gid(g['id']) not in completed_ids})].copy()
+    # Preserve all 2014-2025 observations, restrict only 2026 to completed.
+    # (The IDs for prior years are not contained in the 2026 schedule.)
+    adjusted,coverage=build_adjustments(features,raw)
+    assert_historical_parity(adjusted,root/BASELINE_V45,oa_columns,name='v4.5 ratings')
+    output=adjusted.loc[adjusted.game_id.map(gid).isin(future_ids)].copy()
+    if len(output) != 2*len(slate):
+        raise ValueError('Upcoming records incomplete after feature construction')
+    if output['points'].notna().any():
+        raise ValueError('Unexpected same-game outcomes in prospective rows')
+    if output[oa_columns].isna().any().any():
+        raise ValueError('Missing opponent-adjusted ratings in prospective features')
+    output=output.sort_values(['kickoff_utc','game_id','home_away'],kind='mergesort').reset_index(drop=True)
+    # An honest audit of nonfinite columns, not a claim of perfect 2026 coverage.
+    nonfinite=output[v3_columns].isna().sum()
+    info.update({'slate_date_eastern':day,'asof_utc':asof.isoformat(),
+                 'slate_games':len(slate),'slate_team_rows':len(output),
+                 'feature_count':len(v3_columns+oa_columns),
+                 'v3_historical_parity':True,'v45_historical_parity':True,
+                 'missing_v3_feature_values':int(nonfinite.sum()),
+                 'advanced_coverage_2026':coverage.loc[coverage.season.eq(SEASON)].to_dict(orient='records'),
+                 'no_current_game_outcomes':True,
+                 'warnings':['Historical source snapshots not audited as point-in-time. No models trained or predictions produced.',
+                             'Current season 2026 caches can change after games; archive source snapshots before predicting.']})
+    return output,info
+
+
+def main() -> None:
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--date',required=True,help='US Eastern slate date YYYY-MM-DD')
+    p.add_argument('--asof-utc',default=None,help='Optional UTC ISO timestamp; default current UTC')
+    p.add_argument('--root',default='.')
+    p.add_argument('--save',action='store_true',help='Save a new timestamped feature snapshot after all checks')
+    args=p.parse_args()
+    root=Path(args.root).resolve()
+    asof=pd.Timestamp(datetime.now(timezone.utc)) if args.asof_utc is None else pd.to_datetime(args.asof_utc,utc=True)
+    if asof > pd.Timestamp(datetime.now(timezone.utc)) + pd.Timedelta(seconds=10):
+        raise ValueError('Refusing future as-of time (would not have source availability)')
+    output,info=prepare(root,args.date,asof)
+    print('\n2026 LIVE FEATURE BRIDGE — '+ ('SAVE' if args.save else 'AUDIT ONLY'))
+    print(json.dumps(info,indent=2,default=str))
+    print('\nEligible unstarted games:')
+    home=output.loc[output.home_away.eq('home'),['game_id','kickoff_utc','team','opponent']]
+    for r in home.itertuples():
+        print(f'  {r.kickoff_utc} | {r.opponent} @ {r.team} | game {r.game_id}')
+    if not args.save:
+        print('AUDIT COMPLETE: no files changed; no predictions produced.')
+        return
+    from cfb_quant.live.feature_snapshot_save_gate_v58 import assess
+    save_gate = assess(
+        info,
+        output,
+        datetime.now(timezone.utc),
+    )
+    if save_gate["status"] != "PASS":
+        raise ValueError(
+            "Feature snapshot save rejected: "
+            + ", ".join(save_gate["reasons"])
+        )
+    timestamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    dest=root/OUT_DIR/f'{args.date}_{timestamp}'
+    dest.mkdir(parents=True,exist_ok=False)
+    output_path=dest/'pregame_features.parquet'
+    output.to_parquet(output_path,index=False)
+    info['schedule_sha256']=hashlib.sha256((root/SCHEDULE).read_bytes()).hexdigest()
+    info['advanced_2026_sha256']=hashlib.sha256((root/'data/raw/cfbd/advanced_game_v4/advanced_2026.json').read_bytes()).hexdigest()
+    info['created_at_utc']=datetime.now(timezone.utc).isoformat()
+    (dest/'audit.json').write_text(json.dumps(info,indent=2,default=str),encoding='utf-8')
+    print(f'Pregame feature snapshot: {output_path}')
+    print(f'Audit: {dest / "audit.json"}')
+    print('No historical artifacts modified. No predictions or +EV claims.')
+
+
+if __name__=='__main__':
+    main()

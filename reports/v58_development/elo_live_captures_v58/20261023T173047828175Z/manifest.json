@@ -1,0 +1,13 @@
+{
+  "source_endpoint": "https://api.collegefootballdata.com/games",
+  "request_parameters": {
+    "year": 2026,
+    "seasonType": "regular"
+  },
+  "retrieved_at_utc": "2026-10-23T17:30:47.828175+00:00",
+  "payload_sha256": "89f834be8767715d0bfd857b17f4ecffd90792a64f5b3b0b919d4e36790cfc26",
+  "response_status": 200,
+  "capture_type": "live_observation",
+  "historical_point_in_time_certified": false,
+  "production_approved": false
+}

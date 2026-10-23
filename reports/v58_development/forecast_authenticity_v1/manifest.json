@@ -1,0 +1,9 @@
+{
+  "step": 110,
+  "created_utc": "2026-10-20T16:11:21.587290+00:00",
+  "runs": 3,
+  "forecast_rows": 98,
+  "classification": "PROVISIONAL",
+  "verified_pregame_count": 0,
+  "policy": "Generated-before-kickoff is necessary but not sufficient for verified live forecasts."
+}

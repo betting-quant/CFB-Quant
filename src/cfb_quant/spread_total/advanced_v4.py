@@ -74,7 +74,7 @@ def _cache_path(root: Path, year: int) -> Path:
     return root / CACHE_DIR / f"advanced_{year}.json"
 
 
-def fetch_one(root: Path, year: int, *, force: bool = False, session: Any = requests) -> tuple[int, str]:
+def fetch_one(root: Path, year: int, *, force: bool = False, session: Any = requests, response_capture=None) -> tuple[int, str]:
     target = _cache_path(root, year)
     if target.exists() and not force:
         records = json.loads(target.read_text(encoding="utf-8"))
@@ -84,16 +84,86 @@ def fetch_one(root: Path, year: int, *, force: bool = False, session: Any = requ
     token = _key(root)
     if not token:
         raise RuntimeError("No CFBD_API_KEY in environment or .env. Keep your key private.")
+    if response_capture is not None:
+        from datetime import datetime as _capture_datetime
+        from datetime import timezone as _capture_timezone
+        request_started_utc = _capture_datetime.now(
+            _capture_timezone.utc
+        ).isoformat()
+
     response = session.get(
         API_URL,
         params={"year": year, "seasonType": "both", "excludeGarbageTime": "false"},
         headers={"Authorization": f"Bearer {token}"},
         timeout=90,
     )
+    if response_capture is not None:
+        request_completed_utc = _capture_datetime.now(
+            _capture_timezone.utc
+        ).isoformat()
+
     response.raise_for_status()
     records = response.json()
     if not isinstance(records, list) or not records or not all(isinstance(r, dict) for r in records):
         raise ValueError(f"Unexpected/empty CFBD advanced game data for {year}; not caching")
+
+    receipt_link = None
+    if response_capture is not None:
+        from cfb_quant.live.acquisition_receipt_v58 import verify_receipt
+
+        request_params = {
+            "year": year,
+            "seasonType": "both",
+            "excludeGarbageTime": "false",
+        }
+        captured_dir = response_capture(
+            endpoint="/stats/game/advanced",
+            parameters=request_params,
+            request_started_utc=request_started_utc,
+            request_completed_utc=request_completed_utc,
+            status_code=response.status_code,
+            response_bytes=response.content,
+        )
+
+        # Existing callbacks returning None remain supported.
+        # Only verified receipt directories qualify for linkage.
+        if captured_dir is not None:
+            import hashlib as _receipt_hashlib
+            receipt = verify_receipt(captured_dir)
+            actual_sha = _receipt_hashlib.sha256(
+                response.content
+            ).hexdigest()
+
+            if (
+                receipt["response_sha256"] != actual_sha
+                or receipt["endpoint"] != "/stats/game/advanced"
+                or receipt["parameters"] != request_params
+                or receipt["status_code"] != response.status_code
+            ):
+                raise ValueError(
+                    "Advanced acquisition receipt does not match HTTP response"
+                )
+
+            # Portable linkage requires evidence inside the workspace.
+            workspace = root.resolve()
+            receipt_path = Path(captured_dir).resolve()
+            try:
+                relative_receipt = receipt_path.relative_to(workspace)
+            except ValueError as exc:
+                raise ValueError(
+                    "Acquisition receipt must be inside research workspace"
+                ) from exc
+
+            receipt_link = {
+                "receipt_directory": str(captured_dir),
+                "receipt_relative_to_root": relative_receipt.as_posix(),
+                "response_sha256": actual_sha,
+                "request_started_utc": receipt["request_started_utc"],
+                "request_completed_utc": receipt["request_completed_utc"],
+                "historical_point_in_time_certified": False,
+                "production_forecast_authorized": False,
+            }
+
     target.parent.mkdir(parents=True, exist_ok=True)
     # Atomic staging to avoid truncated caches. --force preserves prior raw payload backup.
     if target.exists() and force:
@@ -110,6 +180,8 @@ def fetch_one(root: Path, year: int, *, force: bool = False, session: Any = requ
         "record_count": len(records), "sha256": hashlib.sha256(payload).hexdigest(),
         "note": "Postgame facts; use only after prior kickoff in predictive features.",
     }
+    if receipt_link is not None:
+        metadata["http_acquisition"] = receipt_link
     target.with_suffix(".meta.json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")
     return len(records), "downloaded"
 

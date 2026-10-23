@@ -1,0 +1,25 @@
+{
+  "version": "daily_readiness_v58_v1",
+  "created_utc": "2026-10-20T20:55:06.658732+00:00",
+  "research_only": true,
+  "approval_registry": "C:\\Users\\dlaplante\\CFB-Quant\\config\\approved_baselines\\2026\\approval.json",
+  "approved_baseline_sha256": "986110b82d360f35ad855f2a4292ea4cdfb8f1394d8b027255c9f121780111e7",
+  "window_eastern": [
+    "2026-10-20",
+    "2026-10-24"
+  ],
+  "schedule_snapshot": "reports/v58_development/daily_readiness_v58/20261020T205503244433Z/schedule/20261020T205504458128Z/cfbd_games.json",
+  "scheduled_games": 56,
+  "statuses": {
+    "ARCHIVED": 56
+  },
+  "schedule_alerts": 0,
+  "missing_or_unresolved_forecasts": 0,
+  "unsupported_fbs_opponent_games": 0,
+  "all_fbs_fbs_forecasted": true,
+  "ready": true,
+  "model_executed": false,
+  "production_modified": false,
+  "historical_pit_certified": false,
+  "external_publication_certified": false
+}

@@ -1,0 +1,216 @@
+"""Read-only, research-only schedule/history/advanced reconciliation."""
+
+import argparse
+import hashlib
+import json
+from collections import defaultdict
+from pathlib import Path
+
+import pandas as pd
+
+
+def fingerprint(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def gid(value):
+    if value is None or pd.isna(value):
+        raise ValueError("Missing game ID")
+    return str(value).strip().removesuffix(".0")
+
+
+def reconcile(archive, history_path, advanced_path):
+    archive = Path(archive)
+    history_path = Path(history_path)
+    advanced_path = Path(advanced_path)
+
+    audit_path = archive / "audit.json"
+    schedule_path = archive / "cfbd_games.json"
+
+    audit = json.loads(audit_path.read_text(encoding="utf-8-sig"))
+    actual_hash = fingerprint(schedule_path)
+
+    if actual_hash != audit.get("snapshot_sha256"):
+        raise ValueError("Schedule snapshot fingerprint mismatch")
+
+    schedule = json.loads(schedule_path.read_text(encoding="utf-8-sig"))
+    history = pd.read_parquet(history_path)
+    advanced = json.loads(advanced_path.read_text(encoding="utf-8-sig"))
+
+    if not isinstance(schedule, list) or not isinstance(advanced, list):
+        raise ValueError("Expected list-shaped CFBD JSON")
+
+    if len(schedule) != audit.get("fresh_games"):
+        raise ValueError("Schedule record count mismatch")
+
+    cutoff = pd.Timestamp(audit["request_completed_utc"])
+    if pd.isna(cutoff) or cutoff.tzinfo is None:
+        raise ValueError("Invalid schedule capture cutoff")
+
+    required = {}
+    pre_issues = []
+
+    for game in schedule:
+        if not isinstance(game, dict):
+            raise ValueError("Malformed schedule game")
+
+        key = gid(game.get("id"))
+        if key in required:
+            raise ValueError(f"Duplicate eligible game: {key}")
+
+        home_class = str(
+            game.get("homeClassification") or ""
+        ).strip().lower()
+        away_class = str(
+            game.get("awayClassification") or ""
+        ).strip().lower()
+
+        if "fbs" not in {home_class, away_class}:
+            continue
+
+        kickoff = pd.to_datetime(
+            game.get("startDate"), utc=True, errors="coerce"
+        )
+
+        if (
+            game.get("completed") is True
+            and pd.notna(kickoff)
+            and kickoff < cutoff
+        ):
+            if (
+                game.get("homePoints") is None
+                or game.get("awayPoints") is None
+            ):
+                pre_issues.append(
+                    f"{key}: completed FBS game missing final score"
+                )
+            else:
+                required[key] = game
+
+    groups = {}
+    for game_id, frame in history.groupby("game_id", dropna=False):
+        key = gid(game_id)
+        if key in groups:
+            raise ValueError(f"Duplicate normalized history ID {key}")
+        groups[key] = frame
+
+    advanced_groups = defaultdict(list)
+    for record in advanced:
+        if not isinstance(record, dict):
+            raise ValueError("Malformed advanced record")
+        if record.get("gameId") is not None:
+            advanced_groups[gid(record["gameId"])].append(record)
+
+    issues = list(pre_issues)
+    valid_history = 0
+    valid_advanced = 0
+
+    for key, game in sorted(required.items()):
+        frame = groups.get(key)
+
+        if frame is None:
+            issues.append(f"{key}: history missing")
+            continue
+
+        if len(frame) != 2 or set(frame.home_away) != {"home", "away"}:
+            issues.append(f"{key}: invalid history pair")
+            continue
+
+        game_history_valid = True
+
+        for side in ("home", "away"):
+            row = frame.loc[frame.home_away == side].iloc[0]
+            expected_team = str(game[f"{side}Team"]).strip()
+
+            if str(row.team).strip() != expected_team:
+                issues.append(f"{key}: {side} name mismatch")
+                game_history_valid = False
+
+            if gid(row.team_id) != gid(game[f"{side}Id"]):
+                issues.append(f"{key}: {side} team ID mismatch")
+                game_history_valid = False
+
+            if (
+                pd.isna(row.points)
+                or float(row.points) != float(game[f"{side}Points"])
+            ):
+                issues.append(f"{key}: {side} score mismatch")
+                game_history_valid = False
+
+        if game_history_valid:
+            valid_history += 1
+
+        records = advanced_groups.get(key, [])
+        expected = {
+            str(game["homeTeam"]).strip(),
+            str(game["awayTeam"]).strip(),
+        }
+        actual = [
+            str(record.get("team") or "").strip()
+            for record in records
+        ]
+
+        if (
+            len(records) == 2
+            and len(set(actual)) == 2
+            and set(actual) == expected
+        ):
+            valid_advanced += 1
+        else:
+            issues.append(f"{key}: advanced pair mismatch")
+
+    extras = sorted(set(groups) - set(required))
+    for key in extras:
+        issues.append(f"{key}: history outside archived completed universe")
+
+    status = "PASS" if not issues else "FAIL"
+
+    return {
+        "schema": "cfb_v58_source_reconciliation_v1",
+        "status": status,
+        "research_only": True,
+        "historical_point_in_time_certified": False,
+        "independent_schedule_completeness_certified": False,
+        "schedule_retrieval_utc": cutoff.isoformat(),
+        "sources": {
+            "schedule": {
+                "path": str(schedule_path),
+                "sha256": actual_hash,
+            },
+            "history": {
+                "path": str(history_path),
+                "sha256": fingerprint(history_path),
+            },
+            "advanced": {
+                "path": str(advanced_path),
+                "sha256": fingerprint(advanced_path),
+            },
+        },
+        "required_games": len(required),
+        "history_games": len(groups),
+        "valid_history_pairs": valid_history,
+        "valid_advanced_pairs": valid_advanced,
+        "extra_history_games": len(extras),
+        "issue_count": len(issues),
+        "issues": issues[:100],
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--archive", required=True)
+    parser.add_argument("--history", required=True)
+    parser.add_argument("--advanced", required=True)
+    args = parser.parse_args()
+
+    result = reconcile(
+        args.archive, args.history, args.advanced
+    )
+    print(json.dumps(result, indent=2))
+
+    if result["status"] != "PASS":
+        raise SystemExit(2)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,37 @@
+{
+  "history_games": 10879,
+  "history_team_rows": 21758,
+  "2026_completed_history_games": 510,
+  "2026_history_rows": 1020,
+  "historical_files": 13,
+  "slate_date_eastern": "2026-10-24",
+  "asof_utc": "2026-10-20T17:13:41.562283+00:00",
+  "slate_games": 33,
+  "slate_team_rows": 66,
+  "feature_count": 287,
+  "v3_historical_parity": true,
+  "v45_historical_parity": true,
+  "missing_v3_feature_values": 0,
+  "advanced_coverage_2026": [
+    {
+      "season": 2026,
+      "rows": 1086,
+      "matched": 910,
+      "coverage_pct": 83.79
+    }
+  ],
+  "no_current_game_outcomes": true,
+  "warnings": [
+    "Historical source snapshots not audited as point-in-time. No models trained or predictions produced.",
+    "Current season 2026 caches can change after games; archive source snapshots before predicting."
+  ],
+  "created_at_utc": "2026-10-20T17:16:13.422065+00:00",
+  "research_only": true,
+  "production_unchanged": true,
+  "research_schedule_sha256": "8e26d2eca805108a1732bc656d6ed7403211f88ed7df616980dcaa9447045fb7",
+  "research_history_sha256": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563",
+  "snapshot_sha256": "2d59e66696084c3bfcee8c1bf450a37e939c34990cd9ff4fd7ed11cbd7f0aa7d",
+  "production_schedule_sha256_at_creation": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+  "production_history_sha256_at_creation": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+  "source_provenance_note": "Research candidate inputs copied into this snapshot. External immutable timestamping and full historical point-in-time provenance are not yet established."
+}

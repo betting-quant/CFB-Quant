@@ -262,6 +262,22 @@ def run(root:Path,snapshot:Path,*,samples:int=10000,seed:int=57,
     v3_cols=load_manifest(root,V3_MANIFEST)
     v45_cols=load_manifest(root,V45_MANIFEST)
     future,meta,stamp=verify_snapshot(root,snapshot,now,v3_cols,v45_cols,allow_started=allow_started)
+    from cfb_quant.live.pregame_presave_gate_v58 import assess
+    chronology_gate = assess(
+        meta,
+        future,
+        now,
+        allow_started=allow_started,
+    )
+    if chronology_gate["status"] == "REJECT":
+        raise ValueError(
+            "Pregame chronology rejected before forecasting: "
+            + ", ".join(chronology_gate["reasons"])
+        )
+
+    from cfb_quant.live import forecast_input_freeze_v58 as freeze
+    input_fingerprints = freeze.take(root, snapshot)
+
     v3_model,v3_audit=train_points(root,v3_cols,V3_DATA)
     print(f'v3 total model fitted on {v3_audit["training_rows"]:,} team games through 2025',flush=True)
     v45_model,v45_audit=train_points(root,v45_cols,V45_DATA)
@@ -272,12 +288,23 @@ def run(root:Path,snapshot:Path,*,samples:int=10000,seed:int=57,
     residuals,residual_audit=historical_fbs_residuals(root)
     print(f'v5.2 pooled FBS-only residuals: {len(residuals):,} games, 2019-2024',flush=True)
     f=add_probabilities(f,residuals,samples=samples,seed=seed,home_line=home_line,total_line=total_line)
+    input_verification = freeze.verify_unchanged(
+        root, input_fingerprints
+    )
+
     audit={'version':'v5.7 research-only','generated_at_utc':now.isoformat(),
            'snapshot_metadata':meta,'snapshot_validation':stamp,
            'v3_training':v3_audit,'v45_training':v45_audit,
            'residual_calibration':residual_audit,
            'samples':samples,'seed':seed,
            'disclaimer':'Exploratory probabilities, not prospectively calibrated; no market odds or expected-value claims; historical source timestamps not fully audited.'}
+    audit["execution_input_fingerprints"] = input_fingerprints
+    audit["execution_input_verification"] = input_verification
+    audit["chronology_gate"] = chronology_gate
+    audit["forecast_classification"] = chronology_gate["classification"]
+    audit["prospective_performance_eligible"] = False
+    audit["source_availability_certified"] = False
+    audit["production_forecast_authorized"] = False
     return f,audit
 
 
@@ -305,12 +332,9 @@ def main()->None:
     if a.audit_only:
         print('AUDIT ONLY: nothing saved')
         return
-    stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-    out=root/OUTPUT/f'{audit["snapshot_metadata"]["slate_date_eastern"]}_{stamp}'
-    out.mkdir(parents=True,exist_ok=False)
+    from cfb_quant.live.forecast_publication_v58 import publish_verified
+    out=publish_verified(root,root/OUTPUT,frame,audit)
     target=out/'slate_forecasts.csv'
-    frame.to_csv(target,index=False)
-    (out/'model_audit.json').write_text(json.dumps(audit,indent=2,default=str),encoding='utf-8')
     print('Predictions:',target)
     print('Audit:',out/'model_audit.json')
     print('Not sportsbook recommendations. No bet-size or EV outputs.')

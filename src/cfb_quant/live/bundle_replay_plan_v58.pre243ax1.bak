@@ -1,0 +1,59 @@
+"""Build a safe, retrospective-only bundle replay plan."""
+
+from pathlib import Path
+
+from cfb_quant.live.bundle_execution_v58 import resolve
+
+
+def prepare(bundle, repository_root):
+    """Separate verified frozen inputs from mutable research outputs."""
+    repository_root = Path(repository_root).resolve()
+    bundle = Path(bundle).resolve()
+
+    if not repository_root.is_dir():
+        raise FileNotFoundError(repository_root)
+
+    context = resolve(bundle)
+
+    input_root = context["data_root"]
+    snapshot = context["snapshot"]
+
+    output_root = (
+        repository_root
+        / "reports/v58_development/bundle_replays_v1"
+    ).resolve()
+
+    # Never write replay results inside the input bundle.
+    if output_root == input_root or input_root in output_root.parents:
+        raise ValueError(
+            "Replay output is inside the frozen input bundle"
+        )
+
+    # Keep the bundle itself out of the proposed output directory.
+    if output_root in input_root.parents:
+        raise ValueError(
+            "Frozen bundle is inside replay output directory"
+        )
+
+    if not snapshot.is_relative_to(input_root):
+        raise ValueError("Snapshot is outside verified bundle")
+
+    if output_root == repository_root:
+        raise ValueError("Unsafe replay output root")
+
+    return {
+        "schema": "cfb_v58_bundle_replay_plan_v1",
+        "input_root": input_root,
+        "snapshot": snapshot,
+        "output_root": output_root,
+        "bundle_identity": context["bundle_identity"],
+        "bundle_manifest_sha256":
+            context["bundle_manifest_sha256"],
+        "execution_mode": "BUNDLE_BACKED_RETROSPECTIVE_RESEARCH",
+        "allow_started_archived": True,
+        "research_only": True,
+        "source_availability_certified": False,
+        "historical_point_in_time_certified": False,
+        "prospective_performance_eligible": False,
+        "production_forecast_authorized": False,
+    }

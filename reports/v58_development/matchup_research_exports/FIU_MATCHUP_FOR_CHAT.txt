@@ -1,0 +1,2527 @@
+{
+  "schema": "cfb_reality_engine_fiu_text_v1",
+  "research_cutoff_utc": "2026-10-20T23:00:00+00:00",
+  "matchup": {
+    "game_id": "401871055",
+    "away_team": "Middle Tennessee",
+    "home_team": "Florida International",
+    "kickoff_utc": "2026-10-20T23:00:00+00:00"
+  },
+  "prior_games": [
+    {
+      "game_id": "401856807",
+      "home_team": "Kansas",
+      "away_team": "Middle Tennessee",
+      "kickoff_utc": "2026-10-03T16:00:00+00:00",
+      "home_points": 55,
+      "away_points": 0,
+      "completed": true
+    },
+    {
+      "game_id": "401862699",
+      "home_team": "South Florida",
+      "away_team": "Florida International",
+      "kickoff_utc": "2026-09-05T23:00:00+00:00",
+      "home_points": 19,
+      "away_points": 9,
+      "completed": true
+    },
+    {
+      "game_id": "401862771",
+      "home_team": "Florida Atlantic",
+      "away_team": "Florida International",
+      "kickoff_utc": "2026-09-19T22:00:00+00:00",
+      "home_points": 16,
+      "away_points": 10,
+      "completed": true
+    },
+    {
+      "game_id": "401864443",
+      "home_team": "Middle Tennessee",
+      "away_team": "Nevada",
+      "kickoff_utc": "2026-09-19T23:00:00+00:00",
+      "home_points": 27,
+      "away_points": 20,
+      "completed": true
+    },
+    {
+      "game_id": "401866414",
+      "home_team": "Florida International",
+      "away_team": "Buffalo",
+      "kickoff_utc": "2026-09-12T22:00:00+00:00",
+      "home_points": 33,
+      "away_points": 20,
+      "completed": true
+    },
+    {
+      "game_id": "401867866",
+      "home_team": "Middle Tennessee",
+      "away_team": "Murray State",
+      "kickoff_utc": "2026-09-05T23:00:00+00:00",
+      "home_points": 38,
+      "away_points": 14,
+      "completed": true
+    },
+    {
+      "game_id": "401867909",
+      "home_team": "Florida International",
+      "away_team": "Long Island University",
+      "kickoff_utc": "2026-09-26T22:00:00+00:00",
+      "home_points": 20,
+      "away_points": 3,
+      "completed": true
+    },
+    {
+      "game_id": "401871045",
+      "home_team": "Marshall",
+      "away_team": "Middle Tennessee",
+      "kickoff_utc": "2026-09-12T23:00:00+00:00",
+      "home_points": 28,
+      "away_points": 26,
+      "completed": true
+    },
+    {
+      "game_id": "401871048",
+      "home_team": "Jacksonville State",
+      "away_team": "Middle Tennessee",
+      "kickoff_utc": "2026-09-26T23:00:00+00:00",
+      "home_points": 23,
+      "away_points": 13,
+      "completed": true
+    },
+    {
+      "game_id": "401871053",
+      "home_team": "Jacksonville State",
+      "away_team": "Florida International",
+      "kickoff_utc": "2026-10-14T00:00:00+00:00",
+      "home_points": 27,
+      "away_points": 24,
+      "completed": true
+    },
+    {
+      "game_id": "401871066",
+      "home_team": "Florida International",
+      "away_team": "New Mexico State",
+      "kickoff_utc": "2026-10-07T23:30:00+00:00",
+      "home_points": 22,
+      "away_points": 3,
+      "completed": true
+    },
+    {
+      "game_id": "401871067",
+      "home_team": "Middle Tennessee",
+      "away_team": "Delaware",
+      "kickoff_utc": "2026-10-13T23:00:00+00:00",
+      "home_points": 33,
+      "away_points": 30,
+      "completed": true
+    }
+  ],
+  "advanced_statistics": [
+    {
+      "gameId": 401856807,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 5,
+      "team": "Kansas",
+      "opponent": "Middle Tennessee",
+      "offense": {
+        "plays": 85,
+        "drives": 12,
+        "ppa": 0.5371591747961179,
+        "totalPPA": 45.65852985767002,
+        "successRate": 0.6588235294117647,
+        "explosiveness": 1.1245738951685702,
+        "powerSuccess": 0.8571428571428571,
+        "stuffRate": 0.05172413793103448,
+        "lineYards": 4.713793103448276,
+        "lineYardsTotal": 273,
+        "secondLevelYards": 1.9482758620689655,
+        "secondLevelYardsTotal": 113,
+        "openFieldYards": 2.2241379310344827,
+        "openFieldYardsTotal": 129,
+        "standardDowns": {
+          "ppa": 0.5088628875707524,
+          "successRate": 0.7142857142857143,
+          "explosiveness": 0.9703672539511131
+        },
+        "passingDowns": {
+          "ppa": 0.6692085151811568,
+          "successRate": 0.4,
+          "explosiveness": 2.4096292386473794
+        },
+        "rushingPlays": {
+          "ppa": 0.6974552803894665,
+          "totalPPA": 40.45240626258906,
+          "successRate": 0.7413793103448276,
+          "explosiveness": 1.1251519182792666
+        },
+        "passingPlays": {
+          "ppa": 0.19635109265684256,
+          "totalPPA": 4.908777316421064,
+          "successRate": 0.44,
+          "explosiveness": 1.2997508513428695
+        }
+      },
+      "defense": {
+        "plays": 43,
+        "drives": 12,
+        "ppa": -0.4714028689835037,
+        "totalPPA": -20.27032336629066,
+        "successRate": 0.16279069767441862,
+        "explosiveness": 1.6421411730633724,
+        "powerSuccess": 0,
+        "stuffRate": 0.4666666666666667,
+        "lineYards": 1.5533333333333332,
+        "lineYardsTotal": 23,
+        "secondLevelYards": 0.8,
+        "secondLevelYardsTotal": 12,
+        "openFieldYards": 1.8,
+        "openFieldYardsTotal": 27,
+        "standardDowns": {
+          "ppa": -0.43808912262488947,
+          "successRate": 0.2608695652173913,
+          "explosiveness": 1.5845092693895262
+        },
+        "passingDowns": {
+          "ppa": -0.5097136772959101,
+          "successRate": 0.05,
+          "explosiveness": 1.9879325951064493
+        },
+        "rushingPlays": {
+          "ppa": -0.6232341964867647,
+          "totalPPA": -9.34851294730147,
+          "successRate": 0.2,
+          "explosiveness": 1.7181794726217932
+        },
+        "passingPlays": {
+          "ppa": -0.37482670622864733,
+          "totalPPA": -10.120321068173478,
+          "successRate": 0.14814814814814814,
+          "explosiveness": 1.585112448394557
+        }
+      }
+    },
+    {
+      "gameId": 401856807,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 5,
+      "team": "Middle Tennessee",
+      "opponent": "Kansas",
+      "offense": {
+        "plays": 43,
+        "drives": 12,
+        "ppa": -0.4714028689835037,
+        "totalPPA": -20.27032336629066,
+        "successRate": 0.16279069767441862,
+        "explosiveness": 1.6421411730633724,
+        "powerSuccess": 0,
+        "stuffRate": 0.4666666666666667,
+        "lineYards": 1.5533333333333332,
+        "lineYardsTotal": 23,
+        "secondLevelYards": 0.8,
+        "secondLevelYardsTotal": 12,
+        "openFieldYards": 1.8,
+        "openFieldYardsTotal": 27,
+        "standardDowns": {
+          "ppa": -0.43808912262488947,
+          "successRate": 0.2608695652173913,
+          "explosiveness": 1.5845092693895262
+        },
+        "passingDowns": {
+          "ppa": -0.5097136772959101,
+          "successRate": 0.05,
+          "explosiveness": 1.9879325951064493
+        },
+        "rushingPlays": {
+          "ppa": -0.6232341964867647,
+          "totalPPA": -9.34851294730147,
+          "successRate": 0.2,
+          "explosiveness": 1.7181794726217932
+        },
+        "passingPlays": {
+          "ppa": -0.37482670622864733,
+          "totalPPA": -10.120321068173478,
+          "successRate": 0.14814814814814814,
+          "explosiveness": 1.585112448394557
+        }
+      },
+      "defense": {
+        "plays": 85,
+        "drives": 12,
+        "ppa": 0.5371591747961179,
+        "totalPPA": 45.65852985767002,
+        "successRate": 0.6588235294117647,
+        "explosiveness": 1.1245738951685702,
+        "powerSuccess": 0.8571428571428571,
+        "stuffRate": 0.05172413793103448,
+        "lineYards": 4.713793103448276,
+        "lineYardsTotal": 273,
+        "secondLevelYards": 1.9482758620689655,
+        "secondLevelYardsTotal": 113,
+        "openFieldYards": 2.2241379310344827,
+        "openFieldYardsTotal": 129,
+        "standardDowns": {
+          "ppa": 0.5088628875707524,
+          "successRate": 0.7142857142857143,
+          "explosiveness": 0.9703672539511131
+        },
+        "passingDowns": {
+          "ppa": 0.6692085151811568,
+          "successRate": 0.4,
+          "explosiveness": 2.4096292386473794
+        },
+        "rushingPlays": {
+          "ppa": 0.6974552803894665,
+          "totalPPA": 40.45240626258906,
+          "successRate": 0.7413793103448276,
+          "explosiveness": 1.1251519182792666
+        },
+        "passingPlays": {
+          "ppa": 0.19635109265684256,
+          "totalPPA": 4.908777316421064,
+          "successRate": 0.44,
+          "explosiveness": 1.2997508513428695
+        }
+      }
+    },
+    {
+      "gameId": 401862699,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 1,
+      "team": "Florida International",
+      "opponent": "South Florida",
+      "offense": {
+        "plays": 76,
+        "drives": 10,
+        "ppa": -0.11861389335065944,
+        "totalPPA": -9.014655894650119,
+        "successRate": 0.3815789473684211,
+        "explosiveness": 0.9910967845218249,
+        "powerSuccess": 0.5,
+        "stuffRate": 0.25,
+        "lineYards": 2.4875,
+        "lineYardsTotal": 60,
+        "secondLevelYards": 0.6666666666666666,
+        "secondLevelYardsTotal": 16,
+        "openFieldYards": 0.375,
+        "openFieldYardsTotal": 9,
+        "standardDowns": {
+          "ppa": -0.09530162504911546,
+          "successRate": 0.4791666666666667,
+          "explosiveness": 0.9132990773624544
+        },
+        "passingDowns": {
+          "ppa": -0.158577781867592,
+          "successRate": 0.21428571428571427,
+          "explosiveness": 1.289321328632745
+        },
+        "rushingPlays": {
+          "ppa": -0.3693673672383767,
+          "totalPPA": -8.86481681372104,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 0.2599758436832648
+        },
+        "passingPlays": {
+          "ppa": 0.012137051712526832,
+          "totalPPA": 0.6189896373388685,
+          "successRate": 0.4117647058823529,
+          "explosiveness": 1.2696190476984193
+        }
+      },
+      "defense": {
+        "plays": 58,
+        "drives": 9,
+        "ppa": -0.0627460596868576,
+        "totalPPA": -3.6392714618377413,
+        "successRate": 0.43103448275862066,
+        "explosiveness": 0.6493252074099518,
+        "powerSuccess": 0.8,
+        "stuffRate": 0.24324324324324326,
+        "lineYards": 2.2162162162162162,
+        "lineYardsTotal": 82,
+        "secondLevelYards": 0.8918918918918919,
+        "secondLevelYardsTotal": 33,
+        "openFieldYards": 0.08108108108108109,
+        "openFieldYardsTotal": 3,
+        "standardDowns": {
+          "ppa": -0.03012534590662035,
+          "successRate": 0.5555555555555556,
+          "explosiveness": 0.4321627365737241
+        },
+        "passingDowns": {
+          "ppa": -0.11612540950906403,
+          "successRate": 0.22727272727272727,
+          "explosiveness": 1.5179750907548628
+        },
+        "rushingPlays": {
+          "ppa": -0.09907372864516202,
+          "totalPPA": -3.6657279598709946,
+          "successRate": 0.40540540540540543,
+          "explosiveness": 0.5413097361341198
+        },
+        "passingPlays": {
+          "ppa": 0.15583338573830777,
+          "totalPPA": 2.9608343290278474,
+          "successRate": 0.47368421052631576,
+          "explosiveness": 0.8556339259347239
+        }
+      }
+    },
+    {
+      "gameId": 401862699,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 1,
+      "team": "South Florida",
+      "opponent": "Florida International",
+      "offense": {
+        "plays": 58,
+        "drives": 9,
+        "ppa": -0.0627460596868576,
+        "totalPPA": -3.6392714618377413,
+        "successRate": 0.43103448275862066,
+        "explosiveness": 0.6493252074099518,
+        "powerSuccess": 0.8,
+        "stuffRate": 0.24324324324324326,
+        "lineYards": 2.2162162162162162,
+        "lineYardsTotal": 82,
+        "secondLevelYards": 0.8918918918918919,
+        "secondLevelYardsTotal": 33,
+        "openFieldYards": 0.08108108108108109,
+        "openFieldYardsTotal": 3,
+        "standardDowns": {
+          "ppa": -0.03012534590662035,
+          "successRate": 0.5555555555555556,
+          "explosiveness": 0.4321627365737241
+        },
+        "passingDowns": {
+          "ppa": -0.11612540950906403,
+          "successRate": 0.22727272727272727,
+          "explosiveness": 1.5179750907548628
+        },
+        "rushingPlays": {
+          "ppa": -0.09907372864516202,
+          "totalPPA": -3.6657279598709946,
+          "successRate": 0.40540540540540543,
+          "explosiveness": 0.5413097361341198
+        },
+        "passingPlays": {
+          "ppa": 0.15583338573830777,
+          "totalPPA": 2.9608343290278474,
+          "successRate": 0.47368421052631576,
+          "explosiveness": 0.8556339259347239
+        }
+      },
+      "defense": {
+        "plays": 76,
+        "drives": 10,
+        "ppa": -0.11861389335065944,
+        "totalPPA": -9.014655894650119,
+        "successRate": 0.3815789473684211,
+        "explosiveness": 0.9910967845218249,
+        "powerSuccess": 0.5,
+        "stuffRate": 0.25,
+        "lineYards": 2.4875,
+        "lineYardsTotal": 60,
+        "secondLevelYards": 0.6666666666666666,
+        "secondLevelYardsTotal": 16,
+        "openFieldYards": 0.375,
+        "openFieldYardsTotal": 9,
+        "standardDowns": {
+          "ppa": -0.09530162504911546,
+          "successRate": 0.4791666666666667,
+          "explosiveness": 0.9132990773624544
+        },
+        "passingDowns": {
+          "ppa": -0.158577781867592,
+          "successRate": 0.21428571428571427,
+          "explosiveness": 1.289321328632745
+        },
+        "rushingPlays": {
+          "ppa": -0.3693673672383767,
+          "totalPPA": -8.86481681372104,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 0.2599758436832648
+        },
+        "passingPlays": {
+          "ppa": 0.012137051712526832,
+          "totalPPA": 0.6189896373388685,
+          "successRate": 0.4117647058823529,
+          "explosiveness": 1.2696190476984193
+        }
+      }
+    },
+    {
+      "gameId": 401862771,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 3,
+      "team": "Florida Atlantic",
+      "opponent": "Florida International",
+      "offense": {
+        "plays": 67,
+        "drives": 11,
+        "ppa": 0.06098060441673512,
+        "totalPPA": 4.085700495921253,
+        "successRate": 0.3880597014925373,
+        "explosiveness": 1.0380440335479622,
+        "powerSuccess": 0.6666666666666666,
+        "stuffRate": 0.1111111111111111,
+        "lineYards": 2.5592592592592593,
+        "lineYardsTotal": 69,
+        "secondLevelYards": 0.4444444444444444,
+        "secondLevelYardsTotal": 12,
+        "openFieldYards": 0.07407407407407407,
+        "openFieldYardsTotal": 2,
+        "standardDowns": {
+          "ppa": 0.03074035886617343,
+          "successRate": 0.4222222222222222,
+          "explosiveness": 0.8175113172559711
+        },
+        "passingDowns": {
+          "ppa": 0.12283565213379312,
+          "successRate": 0.3181818181818182,
+          "explosiveness": 1.6366328349119377
+        },
+        "rushingPlays": {
+          "ppa": -0.037900759958805305,
+          "totalPPA": -1.0233205188877432,
+          "successRate": 0.2962962962962963,
+          "explosiveness": 0.926073176963691
+        },
+        "passingPlays": {
+          "ppa": 0.102214042547331,
+          "totalPPA": 3.986347659345909,
+          "successRate": 0.4358974358974359,
+          "explosiveness": 1.085758005945553
+        }
+      },
+      "defense": {
+        "plays": 78,
+        "drives": 11,
+        "ppa": -0.028373118109250323,
+        "totalPPA": -2.213103212521525,
+        "successRate": 0.358974358974359,
+        "explosiveness": 1.4078162535778345,
+        "powerSuccess": 1,
+        "stuffRate": 0.23529411764705882,
+        "lineYards": 2.2176470588235295,
+        "lineYardsTotal": 75,
+        "secondLevelYards": 0.6764705882352942,
+        "secondLevelYardsTotal": 23,
+        "openFieldYards": 0.3235294117647059,
+        "openFieldYardsTotal": 11,
+        "standardDowns": {
+          "ppa": -0.08228581671598385,
+          "successRate": 0.3673469387755102,
+          "explosiveness": 1.285153982816144
+        },
+        "passingDowns": {
+          "ppa": 0.06272075195040289,
+          "successRate": 0.3448275862068966,
+          "explosiveness": 1.628608340948877
+        },
+        "rushingPlays": {
+          "ppa": -0.05406949048610333,
+          "totalPPA": -1.8383626765275132,
+          "successRate": 0.29411764705882354,
+          "explosiveness": 1.010715514686706
+        },
+        "passingPlays": {
+          "ppa": 0.05852200958019905,
+          "totalPPA": 2.45792440236836,
+          "successRate": 0.40476190476190477,
+          "explosiveness": 1.5577679555732877
+        }
+      }
+    },
+    {
+      "gameId": 401862771,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 3,
+      "team": "Florida International",
+      "opponent": "Florida Atlantic",
+      "offense": {
+        "plays": 78,
+        "drives": 11,
+        "ppa": -0.028373118109250323,
+        "totalPPA": -2.213103212521525,
+        "successRate": 0.358974358974359,
+        "explosiveness": 1.4078162535778345,
+        "powerSuccess": 1,
+        "stuffRate": 0.23529411764705882,
+        "lineYards": 2.2176470588235295,
+        "lineYardsTotal": 75,
+        "secondLevelYards": 0.6764705882352942,
+        "secondLevelYardsTotal": 23,
+        "openFieldYards": 0.3235294117647059,
+        "openFieldYardsTotal": 11,
+        "standardDowns": {
+          "ppa": -0.08228581671598385,
+          "successRate": 0.3673469387755102,
+          "explosiveness": 1.285153982816144
+        },
+        "passingDowns": {
+          "ppa": 0.06272075195040289,
+          "successRate": 0.3448275862068966,
+          "explosiveness": 1.628608340948877
+        },
+        "rushingPlays": {
+          "ppa": -0.05406949048610333,
+          "totalPPA": -1.8383626765275132,
+          "successRate": 0.29411764705882354,
+          "explosiveness": 1.010715514686706
+        },
+        "passingPlays": {
+          "ppa": 0.05852200958019905,
+          "totalPPA": 2.45792440236836,
+          "successRate": 0.40476190476190477,
+          "explosiveness": 1.5577679555732877
+        }
+      },
+      "defense": {
+        "plays": 67,
+        "drives": 11,
+        "ppa": 0.06098060441673512,
+        "totalPPA": 4.085700495921253,
+        "successRate": 0.3880597014925373,
+        "explosiveness": 1.0380440335479622,
+        "powerSuccess": 0.6666666666666666,
+        "stuffRate": 0.1111111111111111,
+        "lineYards": 2.5592592592592593,
+        "lineYardsTotal": 69,
+        "secondLevelYards": 0.4444444444444444,
+        "secondLevelYardsTotal": 12,
+        "openFieldYards": 0.07407407407407407,
+        "openFieldYardsTotal": 2,
+        "standardDowns": {
+          "ppa": 0.03074035886617343,
+          "successRate": 0.4222222222222222,
+          "explosiveness": 0.8175113172559711
+        },
+        "passingDowns": {
+          "ppa": 0.12283565213379312,
+          "successRate": 0.3181818181818182,
+          "explosiveness": 1.6366328349119377
+        },
+        "rushingPlays": {
+          "ppa": -0.037900759958805305,
+          "totalPPA": -1.0233205188877432,
+          "successRate": 0.2962962962962963,
+          "explosiveness": 0.926073176963691
+        },
+        "passingPlays": {
+          "ppa": 0.102214042547331,
+          "totalPPA": 3.986347659345909,
+          "successRate": 0.4358974358974359,
+          "explosiveness": 1.085758005945553
+        }
+      }
+    },
+    {
+      "gameId": 401864443,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 3,
+      "team": "Middle Tennessee",
+      "opponent": "Nevada",
+      "offense": {
+        "plays": 69,
+        "drives": 11,
+        "ppa": 0.15394703180433125,
+        "totalPPA": 10.622345194498857,
+        "successRate": 0.36231884057971014,
+        "explosiveness": 1.2629846209650588,
+        "powerSuccess": 0.625,
+        "stuffRate": 0.13513513513513514,
+        "lineYards": 3.443243243243243,
+        "lineYardsTotal": 127,
+        "secondLevelYards": 1.3243243243243243,
+        "secondLevelYardsTotal": 49,
+        "openFieldYards": 0.02702702702702703,
+        "openFieldYardsTotal": 1,
+        "standardDowns": {
+          "ppa": 0.10639329583275337,
+          "successRate": 0.391304347826087,
+          "explosiveness": 1.0967003577608232
+        },
+        "passingDowns": {
+          "ppa": 0.24905450374748705,
+          "successRate": 0.30434782608695654,
+          "explosiveness": 1.6905727263473789
+        },
+        "rushingPlays": {
+          "ppa": 0.15180731767465844,
+          "totalPPA": 5.616870753962362,
+          "successRate": 0.3783783783783784,
+          "explosiveness": 0.975908070766333
+        },
+        "passingPlays": {
+          "ppa": 0.2768101030926988,
+          "totalPPA": 8.304303092780966,
+          "successRate": 0.36666666666666664,
+          "explosiveness": 1.628354775763437
+        }
+      },
+      "defense": {
+        "plays": 58,
+        "drives": 10,
+        "ppa": -0.028102417746353924,
+        "totalPPA": -1.6299402292885277,
+        "successRate": 0.3620689655172414,
+        "explosiveness": 1.182552214847553,
+        "powerSuccess": 0.42857142857142855,
+        "stuffRate": 0.2727272727272727,
+        "lineYards": 2.090909090909091,
+        "lineYardsTotal": 69,
+        "secondLevelYards": 0.7272727272727273,
+        "secondLevelYardsTotal": 24,
+        "openFieldYards": 0.18181818181818182,
+        "openFieldYardsTotal": 6,
+        "standardDowns": {
+          "ppa": -0.14286256133171182,
+          "successRate": 0.38095238095238093,
+          "explosiveness": 1.0270824464682649
+        },
+        "passingDowns": {
+          "ppa": 0.27314295916521053,
+          "successRate": 0.3125,
+          "explosiveness": 1.680055473661275
+        },
+        "rushingPlays": {
+          "ppa": -0.1696114409252506,
+          "totalPPA": -5.59717755053327,
+          "successRate": 0.36363636363636365,
+          "explosiveness": 0.8397831292017144
+        },
+        "passingPlays": {
+          "ppa": 0.17101553880689546,
+          "totalPPA": 4.104372931365491,
+          "successRate": 0.375,
+          "explosiveness": 1.6395776623753378
+        }
+      }
+    },
+    {
+      "gameId": 401864443,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 3,
+      "team": "Nevada",
+      "opponent": "Middle Tennessee",
+      "offense": {
+        "plays": 58,
+        "drives": 10,
+        "ppa": -0.028102417746353924,
+        "totalPPA": -1.6299402292885277,
+        "successRate": 0.3620689655172414,
+        "explosiveness": 1.182552214847553,
+        "powerSuccess": 0.42857142857142855,
+        "stuffRate": 0.2727272727272727,
+        "lineYards": 2.090909090909091,
+        "lineYardsTotal": 69,
+        "secondLevelYards": 0.7272727272727273,
+        "secondLevelYardsTotal": 24,
+        "openFieldYards": 0.18181818181818182,
+        "openFieldYardsTotal": 6,
+        "standardDowns": {
+          "ppa": -0.14286256133171182,
+          "successRate": 0.38095238095238093,
+          "explosiveness": 1.0270824464682649
+        },
+        "passingDowns": {
+          "ppa": 0.27314295916521053,
+          "successRate": 0.3125,
+          "explosiveness": 1.680055473661275
+        },
+        "rushingPlays": {
+          "ppa": -0.1696114409252506,
+          "totalPPA": -5.59717755053327,
+          "successRate": 0.36363636363636365,
+          "explosiveness": 0.8397831292017144
+        },
+        "passingPlays": {
+          "ppa": 0.17101553880689546,
+          "totalPPA": 4.104372931365491,
+          "successRate": 0.375,
+          "explosiveness": 1.6395776623753378
+        }
+      },
+      "defense": {
+        "plays": 69,
+        "drives": 11,
+        "ppa": 0.15394703180433125,
+        "totalPPA": 10.622345194498857,
+        "successRate": 0.36231884057971014,
+        "explosiveness": 1.2629846209650588,
+        "powerSuccess": 0.625,
+        "stuffRate": 0.13513513513513514,
+        "lineYards": 3.443243243243243,
+        "lineYardsTotal": 127,
+        "secondLevelYards": 1.3243243243243243,
+        "secondLevelYardsTotal": 49,
+        "openFieldYards": 0.02702702702702703,
+        "openFieldYardsTotal": 1,
+        "standardDowns": {
+          "ppa": 0.10639329583275337,
+          "successRate": 0.391304347826087,
+          "explosiveness": 1.0967003577608232
+        },
+        "passingDowns": {
+          "ppa": 0.24905450374748705,
+          "successRate": 0.30434782608695654,
+          "explosiveness": 1.6905727263473789
+        },
+        "rushingPlays": {
+          "ppa": 0.15180731767465844,
+          "totalPPA": 5.616870753962362,
+          "successRate": 0.3783783783783784,
+          "explosiveness": 0.975908070766333
+        },
+        "passingPlays": {
+          "ppa": 0.2768101030926988,
+          "totalPPA": 8.304303092780966,
+          "successRate": 0.36666666666666664,
+          "explosiveness": 1.628354775763437
+        }
+      }
+    },
+    {
+      "gameId": 401866414,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 2,
+      "team": "Buffalo",
+      "opponent": "Florida International",
+      "offense": {
+        "plays": 70,
+        "drives": 13,
+        "ppa": -0.03022338782529006,
+        "totalPPA": -2.115637147770304,
+        "successRate": 0.24285714285714285,
+        "explosiveness": 1.8007075796350402,
+        "powerSuccess": 0,
+        "stuffRate": 0.28,
+        "lineYards": 1.636,
+        "lineYardsTotal": 41,
+        "secondLevelYards": 0.52,
+        "secondLevelYardsTotal": 13,
+        "openFieldYards": 0.28,
+        "openFieldYardsTotal": 7,
+        "standardDowns": {
+          "ppa": -0.06824488999299008,
+          "successRate": 0.2972972972972973,
+          "explosiveness": 1.2673618007138454
+        },
+        "passingDowns": {
+          "ppa": 0.012406781271828156,
+          "successRate": 0.18181818181818182,
+          "explosiveness": 2.7785081743238975
+        },
+        "rushingPlays": {
+          "ppa": -0.21905579408722312,
+          "totalPPA": -5.476394852180578,
+          "successRate": 0.16,
+          "explosiveness": 1.0904407579058102
+        },
+        "passingPlays": {
+          "ppa": 0.08207420910424311,
+          "totalPPA": 3.611265200586697,
+          "successRate": 0.29545454545454547,
+          "explosiveness": 2.019251217090188
+        }
+      },
+      "defense": {
+        "plays": 80,
+        "drives": 14,
+        "ppa": 0.1072170475662163,
+        "totalPPA": 8.577363805297304,
+        "successRate": 0.4,
+        "explosiveness": 1.2925346495227092,
+        "powerSuccess": 0.8571428571428571,
+        "stuffRate": 0.175,
+        "lineYards": 2.9075,
+        "lineYardsTotal": 116,
+        "secondLevelYards": 0.95,
+        "secondLevelYardsTotal": 38,
+        "openFieldYards": 0.35,
+        "openFieldYardsTotal": 14,
+        "standardDowns": {
+          "ppa": 0.07030990337869017,
+          "successRate": 0.44,
+          "explosiveness": 1.3386038175161186
+        },
+        "passingDowns": {
+          "ppa": 0.16872895454542652,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.1911824799372086
+        },
+        "rushingPlays": {
+          "ppa": -0.14858842105554432,
+          "totalPPA": -5.943536842221772,
+          "successRate": 0.325,
+          "explosiveness": 0.4832932904059132
+        },
+        "passingPlays": {
+          "ppa": 0.4066060714700164,
+          "totalPPA": 15.451030715860623,
+          "successRate": 0.5,
+          "explosiveness": 1.8462261057605172
+        }
+      }
+    },
+    {
+      "gameId": 401866414,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 2,
+      "team": "Florida International",
+      "opponent": "Buffalo",
+      "offense": {
+        "plays": 80,
+        "drives": 14,
+        "ppa": 0.1072170475662163,
+        "totalPPA": 8.577363805297304,
+        "successRate": 0.4,
+        "explosiveness": 1.2925346495227092,
+        "powerSuccess": 0.8571428571428571,
+        "stuffRate": 0.175,
+        "lineYards": 2.9075,
+        "lineYardsTotal": 116,
+        "secondLevelYards": 0.95,
+        "secondLevelYardsTotal": 38,
+        "openFieldYards": 0.35,
+        "openFieldYardsTotal": 14,
+        "standardDowns": {
+          "ppa": 0.07030990337869017,
+          "successRate": 0.44,
+          "explosiveness": 1.3386038175161186
+        },
+        "passingDowns": {
+          "ppa": 0.16872895454542652,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.1911824799372086
+        },
+        "rushingPlays": {
+          "ppa": -0.14858842105554432,
+          "totalPPA": -5.943536842221772,
+          "successRate": 0.325,
+          "explosiveness": 0.4832932904059132
+        },
+        "passingPlays": {
+          "ppa": 0.4066060714700164,
+          "totalPPA": 15.451030715860623,
+          "successRate": 0.5,
+          "explosiveness": 1.8462261057605172
+        }
+      },
+      "defense": {
+        "plays": 70,
+        "drives": 13,
+        "ppa": -0.03022338782529006,
+        "totalPPA": -2.115637147770304,
+        "successRate": 0.24285714285714285,
+        "explosiveness": 1.8007075796350402,
+        "powerSuccess": 0,
+        "stuffRate": 0.28,
+        "lineYards": 1.636,
+        "lineYardsTotal": 41,
+        "secondLevelYards": 0.52,
+        "secondLevelYardsTotal": 13,
+        "openFieldYards": 0.28,
+        "openFieldYardsTotal": 7,
+        "standardDowns": {
+          "ppa": -0.06824488999299008,
+          "successRate": 0.2972972972972973,
+          "explosiveness": 1.2673618007138454
+        },
+        "passingDowns": {
+          "ppa": 0.012406781271828156,
+          "successRate": 0.18181818181818182,
+          "explosiveness": 2.7785081743238975
+        },
+        "rushingPlays": {
+          "ppa": -0.21905579408722312,
+          "totalPPA": -5.476394852180578,
+          "successRate": 0.16,
+          "explosiveness": 1.0904407579058102
+        },
+        "passingPlays": {
+          "ppa": 0.08207420910424311,
+          "totalPPA": 3.611265200586697,
+          "successRate": 0.29545454545454547,
+          "explosiveness": 2.019251217090188
+        }
+      }
+    },
+    {
+      "gameId": 401867866,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 1,
+      "team": "Middle Tennessee",
+      "opponent": "Murray State",
+      "offense": {
+        "plays": 50,
+        "drives": 8,
+        "ppa": 0.3932789011557185,
+        "totalPPA": 19.663945057785927,
+        "successRate": 0.5,
+        "explosiveness": 1.3001270636879156,
+        "powerSuccess": 0.5,
+        "stuffRate": 0.09090909090909091,
+        "lineYards": 4.445454545454545,
+        "lineYardsTotal": 98,
+        "secondLevelYards": 2.1818181818181817,
+        "secondLevelYardsTotal": 48,
+        "openFieldYards": 3.090909090909091,
+        "openFieldYardsTotal": 68,
+        "standardDowns": {
+          "ppa": 0.36628137473271105,
+          "successRate": 0.5128205128205128,
+          "explosiveness": 1.051574311362976
+        },
+        "passingDowns": {
+          "ppa": 0.4889974039281995,
+          "successRate": 0.45454545454545453,
+          "explosiveness": 2.294338072987674
+        },
+        "rushingPlays": {
+          "ppa": 0.5229141950973848,
+          "totalPPA": 11.504112292142466,
+          "successRate": 0.5454545454545454,
+          "explosiveness": 1.2605580521355675
+        },
+        "passingPlays": {
+          "ppa": 0.3175674616882728,
+          "totalPPA": 8.256754003895095,
+          "successRate": 0.5,
+          "explosiveness": 1.3366523051208523
+        }
+      },
+      "defense": {
+        "plays": 50,
+        "drives": 9,
+        "ppa": 0.13565207930812778,
+        "totalPPA": 6.782603965406389,
+        "successRate": 0.44,
+        "explosiveness": 1.1883566697542824,
+        "powerSuccess": 0.8333333333333334,
+        "stuffRate": 0.14814814814814814,
+        "lineYards": 3.1259259259259258,
+        "lineYardsTotal": 84,
+        "secondLevelYards": 1.1111111111111112,
+        "secondLevelYardsTotal": 30,
+        "openFieldYards": 1.3703703703703705,
+        "openFieldYardsTotal": 37,
+        "standardDowns": {
+          "ppa": -0.021482746373777967,
+          "successRate": 0.4857142857142857,
+          "explosiveness": 1.006856731561164
+        },
+        "passingDowns": {
+          "ppa": 0.5023000058992413,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.805456459610885
+        },
+        "rushingPlays": {
+          "ppa": 0.06499230399346646,
+          "totalPPA": 1.7547922078235942,
+          "successRate": 0.48148148148148145,
+          "explosiveness": 1.1533223251752722
+        },
+        "passingPlays": {
+          "ppa": 0.23657916534292386,
+          "totalPPA": 5.204741637544325,
+          "successRate": 0.4090909090909091,
+          "explosiveness": 1.2389618341461859
+        }
+      }
+    },
+    {
+      "gameId": 401867866,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 1,
+      "team": "Murray State",
+      "opponent": "Middle Tennessee",
+      "offense": {
+        "plays": 50,
+        "drives": 9,
+        "ppa": 0.13565207930812778,
+        "totalPPA": 6.782603965406389,
+        "successRate": 0.44,
+        "explosiveness": 1.1883566697542824,
+        "powerSuccess": 0.8333333333333334,
+        "stuffRate": 0.14814814814814814,
+        "lineYards": 3.1259259259259258,
+        "lineYardsTotal": 84,
+        "secondLevelYards": 1.1111111111111112,
+        "secondLevelYardsTotal": 30,
+        "openFieldYards": 1.3703703703703705,
+        "openFieldYardsTotal": 37,
+        "standardDowns": {
+          "ppa": -0.021482746373777967,
+          "successRate": 0.4857142857142857,
+          "explosiveness": 1.006856731561164
+        },
+        "passingDowns": {
+          "ppa": 0.5023000058992413,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.805456459610885
+        },
+        "rushingPlays": {
+          "ppa": 0.06499230399346646,
+          "totalPPA": 1.7547922078235942,
+          "successRate": 0.48148148148148145,
+          "explosiveness": 1.1533223251752722
+        },
+        "passingPlays": {
+          "ppa": 0.23657916534292386,
+          "totalPPA": 5.204741637544325,
+          "successRate": 0.4090909090909091,
+          "explosiveness": 1.2389618341461859
+        }
+      },
+      "defense": {
+        "plays": 50,
+        "drives": 8,
+        "ppa": 0.3932789011557185,
+        "totalPPA": 19.663945057785927,
+        "successRate": 0.5,
+        "explosiveness": 1.3001270636879156,
+        "powerSuccess": 0.5,
+        "stuffRate": 0.09090909090909091,
+        "lineYards": 4.445454545454545,
+        "lineYardsTotal": 98,
+        "secondLevelYards": 2.1818181818181817,
+        "secondLevelYardsTotal": 48,
+        "openFieldYards": 3.090909090909091,
+        "openFieldYardsTotal": 68,
+        "standardDowns": {
+          "ppa": 0.36628137473271105,
+          "successRate": 0.5128205128205128,
+          "explosiveness": 1.051574311362976
+        },
+        "passingDowns": {
+          "ppa": 0.4889974039281995,
+          "successRate": 0.45454545454545453,
+          "explosiveness": 2.294338072987674
+        },
+        "rushingPlays": {
+          "ppa": 0.5229141950973848,
+          "totalPPA": 11.504112292142466,
+          "successRate": 0.5454545454545454,
+          "explosiveness": 1.2605580521355675
+        },
+        "passingPlays": {
+          "ppa": 0.3175674616882728,
+          "totalPPA": 8.256754003895095,
+          "successRate": 0.5,
+          "explosiveness": 1.3366523051208523
+        }
+      }
+    },
+    {
+      "gameId": 401867909,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 4,
+      "team": "Florida International",
+      "opponent": "Long Island University",
+      "offense": {
+        "plays": 60,
+        "drives": 8,
+        "ppa": 0.08906035789999116,
+        "totalPPA": 5.34362147399947,
+        "successRate": 0.43333333333333335,
+        "explosiveness": 1.1262371562191495,
+        "powerSuccess": 1,
+        "stuffRate": 0.08571428571428572,
+        "lineYards": 3.557142857142857,
+        "lineYardsTotal": 125,
+        "secondLevelYards": 1.0857142857142856,
+        "secondLevelYardsTotal": 38,
+        "openFieldYards": 0.2,
+        "openFieldYardsTotal": 7,
+        "standardDowns": {
+          "ppa": -0.04194960603057191,
+          "successRate": 0.4878048780487805,
+          "explosiveness": 0.9459484738184563
+        },
+        "passingDowns": {
+          "ppa": 0.37176606953962726,
+          "successRate": 0.3157894736842105,
+          "explosiveness": 1.7271994308881278
+        },
+        "rushingPlays": {
+          "ppa": 0.17660492458128602,
+          "totalPPA": 6.181172360345011,
+          "successRate": 0.42857142857142855,
+          "explosiveness": 0.6091655856087194
+        },
+        "passingPlays": {
+          "ppa": 0.012636420173255418,
+          "totalPPA": 0.27800124381161917,
+          "successRate": 0.5,
+          "explosiveness": 1.8313347525061
+        }
+      },
+      "defense": {
+        "plays": 54,
+        "drives": 8,
+        "ppa": 0.013453382360297726,
+        "totalPPA": 0.7264826474560773,
+        "successRate": 0.2962962962962963,
+        "explosiveness": 1.469265434855029,
+        "powerSuccess": 0.5714285714285714,
+        "stuffRate": 0.23333333333333334,
+        "lineYards": 2.45,
+        "lineYardsTotal": 74,
+        "secondLevelYards": 1.0666666666666667,
+        "secondLevelYardsTotal": 32,
+        "openFieldYards": 0.5666666666666667,
+        "openFieldYardsTotal": 17,
+        "standardDowns": {
+          "ppa": -0.039687723854346886,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.0735115761853358
+        },
+        "passingDowns": {
+          "ppa": 0.11973559478958695,
+          "successRate": 0.2222222222222222,
+          "explosiveness": 2.656527010864109
+        },
+        "rushingPlays": {
+          "ppa": 0.1092598835746801,
+          "totalPPA": 3.277796507240403,
+          "successRate": 0.3,
+          "explosiveness": 1.3724640697909185
+        },
+        "passingPlays": {
+          "ppa": -0.21059881614741585,
+          "totalPPA": -4.633173955243149,
+          "successRate": 0.2727272727272727,
+          "explosiveness": 1.4719582794395991
+        }
+      }
+    },
+    {
+      "gameId": 401867909,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 4,
+      "team": "Long Island University",
+      "opponent": "Florida International",
+      "offense": {
+        "plays": 54,
+        "drives": 8,
+        "ppa": 0.013453382360297726,
+        "totalPPA": 0.7264826474560773,
+        "successRate": 0.2962962962962963,
+        "explosiveness": 1.469265434855029,
+        "powerSuccess": 0.5714285714285714,
+        "stuffRate": 0.23333333333333334,
+        "lineYards": 2.45,
+        "lineYardsTotal": 74,
+        "secondLevelYards": 1.0666666666666667,
+        "secondLevelYardsTotal": 32,
+        "openFieldYards": 0.5666666666666667,
+        "openFieldYardsTotal": 17,
+        "standardDowns": {
+          "ppa": -0.039687723854346886,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.0735115761853358
+        },
+        "passingDowns": {
+          "ppa": 0.11973559478958695,
+          "successRate": 0.2222222222222222,
+          "explosiveness": 2.656527010864109
+        },
+        "rushingPlays": {
+          "ppa": 0.1092598835746801,
+          "totalPPA": 3.277796507240403,
+          "successRate": 0.3,
+          "explosiveness": 1.3724640697909185
+        },
+        "passingPlays": {
+          "ppa": -0.21059881614741585,
+          "totalPPA": -4.633173955243149,
+          "successRate": 0.2727272727272727,
+          "explosiveness": 1.4719582794395991
+        }
+      },
+      "defense": {
+        "plays": 60,
+        "drives": 8,
+        "ppa": 0.08906035789999116,
+        "totalPPA": 5.34362147399947,
+        "successRate": 0.43333333333333335,
+        "explosiveness": 1.1262371562191495,
+        "powerSuccess": 1,
+        "stuffRate": 0.08571428571428572,
+        "lineYards": 3.557142857142857,
+        "lineYardsTotal": 125,
+        "secondLevelYards": 1.0857142857142856,
+        "secondLevelYardsTotal": 38,
+        "openFieldYards": 0.2,
+        "openFieldYardsTotal": 7,
+        "standardDowns": {
+          "ppa": -0.04194960603057191,
+          "successRate": 0.4878048780487805,
+          "explosiveness": 0.9459484738184563
+        },
+        "passingDowns": {
+          "ppa": 0.37176606953962726,
+          "successRate": 0.3157894736842105,
+          "explosiveness": 1.7271994308881278
+        },
+        "rushingPlays": {
+          "ppa": 0.17660492458128602,
+          "totalPPA": 6.181172360345011,
+          "successRate": 0.42857142857142855,
+          "explosiveness": 0.6091655856087194
+        },
+        "passingPlays": {
+          "ppa": 0.012636420173255418,
+          "totalPPA": 0.27800124381161917,
+          "successRate": 0.5,
+          "explosiveness": 1.8313347525061
+        }
+      }
+    },
+    {
+      "gameId": 401871045,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 2,
+      "team": "Marshall",
+      "opponent": "Middle Tennessee",
+      "offense": {
+        "plays": 63,
+        "drives": 13,
+        "ppa": 0.10393110836133634,
+        "totalPPA": 6.54765982676419,
+        "successRate": 0.42857142857142855,
+        "explosiveness": 1.1231111249660357,
+        "powerSuccess": 0.6666666666666666,
+        "stuffRate": 0.23684210526315788,
+        "lineYards": 2.876315789473684,
+        "lineYardsTotal": 109,
+        "secondLevelYards": 0.9473684210526315,
+        "secondLevelYardsTotal": 36,
+        "openFieldYards": 0.3684210526315789,
+        "openFieldYardsTotal": 14,
+        "standardDowns": {
+          "ppa": 0.13961364262400175,
+          "successRate": 0.5217391304347826,
+          "explosiveness": 1.0696456486829466
+        },
+        "passingDowns": {
+          "ppa": 0.007378368591771093,
+          "successRate": 0.17647058823529413,
+          "explosiveness": 1.5508349352307482
+        },
+        "rushingPlays": {
+          "ppa": -0.08871653235422414,
+          "totalPPA": -3.371228229460517,
+          "successRate": 0.42105263157894735,
+          "explosiveness": 0.9604418420385609
+        },
+        "passingPlays": {
+          "ppa": 0.4001730956954648,
+          "totalPPA": 9.20398120099569,
+          "successRate": 0.43478260869565216,
+          "explosiveness": 1.4735501920393237
+        }
+      },
+      "defense": {
+        "plays": 70,
+        "drives": 11,
+        "ppa": 0.16948059079772373,
+        "totalPPA": 11.863641355840661,
+        "successRate": 0.42857142857142855,
+        "explosiveness": 1.0370420485539722,
+        "powerSuccess": 1,
+        "stuffRate": 0.047619047619047616,
+        "lineYards": 3.7523809523809524,
+        "lineYardsTotal": 79,
+        "secondLevelYards": 1.2380952380952381,
+        "secondLevelYardsTotal": 26,
+        "openFieldYards": 0.9047619047619048,
+        "openFieldYardsTotal": 19,
+        "standardDowns": {
+          "ppa": 0.10610694791468081,
+          "successRate": 0.5348837209302325,
+          "explosiveness": 0.7678354828402961
+        },
+        "passingDowns": {
+          "ppa": 0.2704089850188662,
+          "successRate": 0.25925925925925924,
+          "explosiveness": 1.9215779073274788
+        },
+        "rushingPlays": {
+          "ppa": 0.03814216701036585,
+          "totalPPA": 0.8009855072176829,
+          "successRate": 0.47619047619047616,
+          "explosiveness": 0.5457652342174715
+        },
+        "passingPlays": {
+          "ppa": 0.20338978014350342,
+          "totalPPA": 9.762709446888165,
+          "successRate": 0.4166666666666667,
+          "explosiveness": 1.2826804557222224
+        }
+      }
+    },
+    {
+      "gameId": 401871045,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 2,
+      "team": "Middle Tennessee",
+      "opponent": "Marshall",
+      "offense": {
+        "plays": 70,
+        "drives": 11,
+        "ppa": 0.16948059079772373,
+        "totalPPA": 11.863641355840661,
+        "successRate": 0.42857142857142855,
+        "explosiveness": 1.0370420485539722,
+        "powerSuccess": 1,
+        "stuffRate": 0.047619047619047616,
+        "lineYards": 3.7523809523809524,
+        "lineYardsTotal": 79,
+        "secondLevelYards": 1.2380952380952381,
+        "secondLevelYardsTotal": 26,
+        "openFieldYards": 0.9047619047619048,
+        "openFieldYardsTotal": 19,
+        "standardDowns": {
+          "ppa": 0.10610694791468081,
+          "successRate": 0.5348837209302325,
+          "explosiveness": 0.7678354828402961
+        },
+        "passingDowns": {
+          "ppa": 0.2704089850188662,
+          "successRate": 0.25925925925925924,
+          "explosiveness": 1.9215779073274788
+        },
+        "rushingPlays": {
+          "ppa": 0.03814216701036585,
+          "totalPPA": 0.8009855072176829,
+          "successRate": 0.47619047619047616,
+          "explosiveness": 0.5457652342174715
+        },
+        "passingPlays": {
+          "ppa": 0.20338978014350342,
+          "totalPPA": 9.762709446888165,
+          "successRate": 0.4166666666666667,
+          "explosiveness": 1.2826804557222224
+        }
+      },
+      "defense": {
+        "plays": 63,
+        "drives": 13,
+        "ppa": 0.10393110836133634,
+        "totalPPA": 6.54765982676419,
+        "successRate": 0.42857142857142855,
+        "explosiveness": 1.1231111249660357,
+        "powerSuccess": 0.6666666666666666,
+        "stuffRate": 0.23684210526315788,
+        "lineYards": 2.876315789473684,
+        "lineYardsTotal": 109,
+        "secondLevelYards": 0.9473684210526315,
+        "secondLevelYardsTotal": 36,
+        "openFieldYards": 0.3684210526315789,
+        "openFieldYardsTotal": 14,
+        "standardDowns": {
+          "ppa": 0.13961364262400175,
+          "successRate": 0.5217391304347826,
+          "explosiveness": 1.0696456486829466
+        },
+        "passingDowns": {
+          "ppa": 0.007378368591771093,
+          "successRate": 0.17647058823529413,
+          "explosiveness": 1.5508349352307482
+        },
+        "rushingPlays": {
+          "ppa": -0.08871653235422414,
+          "totalPPA": -3.371228229460517,
+          "successRate": 0.42105263157894735,
+          "explosiveness": 0.9604418420385609
+        },
+        "passingPlays": {
+          "ppa": 0.4001730956954648,
+          "totalPPA": 9.20398120099569,
+          "successRate": 0.43478260869565216,
+          "explosiveness": 1.4735501920393237
+        }
+      }
+    },
+    {
+      "gameId": 401871048,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 4,
+      "team": "Jacksonville State",
+      "opponent": "Middle Tennessee",
+      "offense": {
+        "plays": 68,
+        "drives": 9,
+        "ppa": 0.1829921375648435,
+        "totalPPA": 12.443465354409357,
+        "successRate": 0.5588235294117647,
+        "explosiveness": 1.043272150084111,
+        "powerSuccess": 1,
+        "stuffRate": 0.05263157894736842,
+        "lineYards": 4.155263157894737,
+        "lineYardsTotal": 158,
+        "secondLevelYards": 1.7894736842105263,
+        "secondLevelYardsTotal": 68,
+        "openFieldYards": 2,
+        "openFieldYardsTotal": 76,
+        "standardDowns": {
+          "ppa": 0.14703985179950627,
+          "successRate": 0.6181818181818182,
+          "explosiveness": 1.020005453610786
+        },
+        "passingDowns": {
+          "ppa": 0.33509796195665487,
+          "successRate": 0.3076923076923077,
+          "explosiveness": 1.2410390701073715
+        },
+        "rushingPlays": {
+          "ppa": 0.3685225261711437,
+          "totalPPA": 14.003855994503462,
+          "successRate": 0.5789473684210527,
+          "explosiveness": 1.0498087819702013
+        },
+        "passingPlays": {
+          "ppa": -0.018055517121184694,
+          "totalPPA": -0.5055544793931714,
+          "successRate": 0.5714285714285714,
+          "explosiveness": 1.0342842812407367
+        }
+      },
+      "defense": {
+        "plays": 58,
+        "drives": 8,
+        "ppa": 0.11507786084567306,
+        "totalPPA": 6.674515929049038,
+        "successRate": 0.43103448275862066,
+        "explosiveness": 1.1101153024908714,
+        "powerSuccess": 1,
+        "stuffRate": 0.24,
+        "lineYards": 2.528,
+        "lineYardsTotal": 63,
+        "secondLevelYards": 1.08,
+        "secondLevelYardsTotal": 27,
+        "openFieldYards": 0.68,
+        "openFieldYardsTotal": 17,
+        "standardDowns": {
+          "ppa": 0.19217775429106962,
+          "successRate": 0.55,
+          "explosiveness": 0.9998807557614227
+        },
+        "passingDowns": {
+          "ppa": -0.056255235699652614,
+          "successRate": 0.16666666666666666,
+          "explosiveness": 1.9185019785068296
+        },
+        "rushingPlays": {
+          "ppa": -0.025314323014306556,
+          "totalPPA": -0.6328580753576639,
+          "successRate": 0.44,
+          "explosiveness": 0.6484216758235145
+        },
+        "passingPlays": {
+          "ppa": 0.19316839209315126,
+          "totalPPA": 5.988220154887689,
+          "successRate": 0.3870967741935484,
+          "explosiveness": 1.6084241898911764
+        }
+      }
+    },
+    {
+      "gameId": 401871048,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 4,
+      "team": "Middle Tennessee",
+      "opponent": "Jacksonville State",
+      "offense": {
+        "plays": 58,
+        "drives": 8,
+        "ppa": 0.11507786084567306,
+        "totalPPA": 6.674515929049038,
+        "successRate": 0.43103448275862066,
+        "explosiveness": 1.1101153024908714,
+        "powerSuccess": 1,
+        "stuffRate": 0.24,
+        "lineYards": 2.528,
+        "lineYardsTotal": 63,
+        "secondLevelYards": 1.08,
+        "secondLevelYardsTotal": 27,
+        "openFieldYards": 0.68,
+        "openFieldYardsTotal": 17,
+        "standardDowns": {
+          "ppa": 0.19217775429106962,
+          "successRate": 0.55,
+          "explosiveness": 0.9998807557614227
+        },
+        "passingDowns": {
+          "ppa": -0.056255235699652614,
+          "successRate": 0.16666666666666666,
+          "explosiveness": 1.9185019785068296
+        },
+        "rushingPlays": {
+          "ppa": -0.025314323014306556,
+          "totalPPA": -0.6328580753576639,
+          "successRate": 0.44,
+          "explosiveness": 0.6484216758235145
+        },
+        "passingPlays": {
+          "ppa": 0.19316839209315126,
+          "totalPPA": 5.988220154887689,
+          "successRate": 0.3870967741935484,
+          "explosiveness": 1.6084241898911764
+        }
+      },
+      "defense": {
+        "plays": 68,
+        "drives": 9,
+        "ppa": 0.1829921375648435,
+        "totalPPA": 12.443465354409357,
+        "successRate": 0.5588235294117647,
+        "explosiveness": 1.043272150084111,
+        "powerSuccess": 1,
+        "stuffRate": 0.05263157894736842,
+        "lineYards": 4.155263157894737,
+        "lineYardsTotal": 158,
+        "secondLevelYards": 1.7894736842105263,
+        "secondLevelYardsTotal": 68,
+        "openFieldYards": 2,
+        "openFieldYardsTotal": 76,
+        "standardDowns": {
+          "ppa": 0.14703985179950627,
+          "successRate": 0.6181818181818182,
+          "explosiveness": 1.020005453610786
+        },
+        "passingDowns": {
+          "ppa": 0.33509796195665487,
+          "successRate": 0.3076923076923077,
+          "explosiveness": 1.2410390701073715
+        },
+        "rushingPlays": {
+          "ppa": 0.3685225261711437,
+          "totalPPA": 14.003855994503462,
+          "successRate": 0.5789473684210527,
+          "explosiveness": 1.0498087819702013
+        },
+        "passingPlays": {
+          "ppa": -0.018055517121184694,
+          "totalPPA": -0.5055544793931714,
+          "successRate": 0.5714285714285714,
+          "explosiveness": 1.0342842812407367
+        }
+      }
+    },
+    {
+      "gameId": 401871053,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 7,
+      "team": "Florida International",
+      "opponent": "Jacksonville State",
+      "offense": {
+        "plays": 74,
+        "drives": 11,
+        "ppa": 0.19834105208087865,
+        "totalPPA": 14.677237853985021,
+        "successRate": 0.4189189189189189,
+        "explosiveness": 1.1866861761715692,
+        "powerSuccess": 1,
+        "stuffRate": 0.0967741935483871,
+        "lineYards": 3.432258064516129,
+        "lineYardsTotal": 106,
+        "secondLevelYards": 0.9354838709677419,
+        "secondLevelYardsTotal": 29,
+        "openFieldYards": 0.12903225806451613,
+        "openFieldYardsTotal": 4,
+        "standardDowns": {
+          "ppa": 0.05474671484287617,
+          "successRate": 0.5,
+          "explosiveness": 0.7934339099752764
+        },
+        "passingDowns": {
+          "ppa": 0.43424603468616846,
+          "successRate": 0.2857142857142857,
+          "explosiveness": 2.3172864414859116
+        },
+        "rushingPlays": {
+          "ppa": 0.0539999563653877,
+          "totalPPA": 1.6739986473270188,
+          "successRate": 0.45161290322580644,
+          "explosiveness": 0.5590545920278803
+        },
+        "passingPlays": {
+          "ppa": 0.32632674450429283,
+          "totalPPA": 13.705723269180298,
+          "successRate": 0.40476190476190477,
+          "explosiveness": 1.703559245466372
+        }
+      },
+      "defense": {
+        "plays": 56,
+        "drives": 10,
+        "ppa": 0.18322877682408253,
+        "totalPPA": 10.260811502148623,
+        "successRate": 0.44642857142857145,
+        "explosiveness": 1.3815658371178459,
+        "powerSuccess": 0.75,
+        "stuffRate": 0.22580645161290322,
+        "lineYards": 3.5258064516129033,
+        "lineYardsTotal": 109,
+        "secondLevelYards": 1.7096774193548387,
+        "secondLevelYardsTotal": 53,
+        "openFieldYards": 1.1935483870967742,
+        "openFieldYardsTotal": 37,
+        "standardDowns": {
+          "ppa": 0.025288153497660164,
+          "successRate": 0.5,
+          "explosiveness": 1.129485910118433
+        },
+        "passingDowns": {
+          "ppa": 0.5780803351401385,
+          "successRate": 0.3125,
+          "explosiveness": 2.3898855451154977
+        },
+        "rushingPlays": {
+          "ppa": 0.2168578840544817,
+          "totalPPA": 6.722594405688932,
+          "successRate": 0.45161290322580644,
+          "explosiveness": 0.9756231745466962
+        },
+        "passingPlays": {
+          "ppa": 0.20446324238307473,
+          "totalPPA": 4.702654574810719,
+          "successRate": 0.43478260869565216,
+          "explosiveness": 2.061334968734096
+        }
+      }
+    },
+    {
+      "gameId": 401871053,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 7,
+      "team": "Jacksonville State",
+      "opponent": "Florida International",
+      "offense": {
+        "plays": 56,
+        "drives": 10,
+        "ppa": 0.18322877682408253,
+        "totalPPA": 10.260811502148623,
+        "successRate": 0.44642857142857145,
+        "explosiveness": 1.3815658371178459,
+        "powerSuccess": 0.75,
+        "stuffRate": 0.22580645161290322,
+        "lineYards": 3.5258064516129033,
+        "lineYardsTotal": 109,
+        "secondLevelYards": 1.7096774193548387,
+        "secondLevelYardsTotal": 53,
+        "openFieldYards": 1.1935483870967742,
+        "openFieldYardsTotal": 37,
+        "standardDowns": {
+          "ppa": 0.025288153497660164,
+          "successRate": 0.5,
+          "explosiveness": 1.129485910118433
+        },
+        "passingDowns": {
+          "ppa": 0.5780803351401385,
+          "successRate": 0.3125,
+          "explosiveness": 2.3898855451154977
+        },
+        "rushingPlays": {
+          "ppa": 0.2168578840544817,
+          "totalPPA": 6.722594405688932,
+          "successRate": 0.45161290322580644,
+          "explosiveness": 0.9756231745466962
+        },
+        "passingPlays": {
+          "ppa": 0.20446324238307473,
+          "totalPPA": 4.702654574810719,
+          "successRate": 0.43478260869565216,
+          "explosiveness": 2.061334968734096
+        }
+      },
+      "defense": {
+        "plays": 74,
+        "drives": 11,
+        "ppa": 0.19834105208087865,
+        "totalPPA": 14.677237853985021,
+        "successRate": 0.4189189189189189,
+        "explosiveness": 1.1866861761715692,
+        "powerSuccess": 1,
+        "stuffRate": 0.0967741935483871,
+        "lineYards": 3.432258064516129,
+        "lineYardsTotal": 106,
+        "secondLevelYards": 0.9354838709677419,
+        "secondLevelYardsTotal": 29,
+        "openFieldYards": 0.12903225806451613,
+        "openFieldYardsTotal": 4,
+        "standardDowns": {
+          "ppa": 0.05474671484287617,
+          "successRate": 0.5,
+          "explosiveness": 0.7934339099752764
+        },
+        "passingDowns": {
+          "ppa": 0.43424603468616846,
+          "successRate": 0.2857142857142857,
+          "explosiveness": 2.3172864414859116
+        },
+        "rushingPlays": {
+          "ppa": 0.0539999563653877,
+          "totalPPA": 1.6739986473270188,
+          "successRate": 0.45161290322580644,
+          "explosiveness": 0.5590545920278803
+        },
+        "passingPlays": {
+          "ppa": 0.32632674450429283,
+          "totalPPA": 13.705723269180298,
+          "successRate": 0.40476190476190477,
+          "explosiveness": 1.703559245466372
+        }
+      }
+    },
+    {
+      "gameId": 401871066,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 6,
+      "team": "Florida International",
+      "opponent": "New Mexico State",
+      "offense": {
+        "plays": 68,
+        "drives": 12,
+        "ppa": -0.06883258029154414,
+        "totalPPA": -4.680615459825002,
+        "successRate": 0.38235294117647056,
+        "explosiveness": 0.7947662057018748,
+        "powerSuccess": 1,
+        "stuffRate": 0.2857142857142857,
+        "lineYards": 1.6047619047619048,
+        "lineYardsTotal": 67,
+        "secondLevelYards": 0.7619047619047619,
+        "secondLevelYardsTotal": 32,
+        "openFieldYards": 0.5,
+        "openFieldYardsTotal": 21,
+        "standardDowns": {
+          "ppa": -0.11853413738688495,
+          "successRate": 0.45454545454545453,
+          "explosiveness": 0.5383416441607111
+        },
+        "passingDowns": {
+          "ppa": 0.022286941049913994,
+          "successRate": 0.25,
+          "explosiveness": 1.6495147441724207
+        },
+        "rushingPlays": {
+          "ppa": -0.10673386967223898,
+          "totalPPA": -4.482822526234037,
+          "successRate": 0.38095238095238093,
+          "explosiveness": 0.6493072801288212
+        },
+        "passingPlays": {
+          "ppa": -0.04553860160288896,
+          "totalPPA": -1.092926438469335,
+          "successRate": 0.375,
+          "explosiveness": 1.0263520936473307
+        }
+      },
+      "defense": {
+        "plays": 59,
+        "drives": 12,
+        "ppa": -0.35424861546430253,
+        "totalPPA": -20.90066831239385,
+        "successRate": 0.3389830508474576,
+        "explosiveness": 1.0410759848248463,
+        "powerSuccess": 1,
+        "stuffRate": 0.11538461538461539,
+        "lineYards": 3.026923076923077,
+        "lineYardsTotal": 79,
+        "secondLevelYards": 0.8461538461538461,
+        "secondLevelYardsTotal": 22,
+        "openFieldYards": 0.8076923076923077,
+        "openFieldYardsTotal": 21,
+        "standardDowns": {
+          "ppa": -0.292479962516562,
+          "successRate": 0.4594594594594595,
+          "explosiveness": 0.7577854462037391
+        },
+        "passingDowns": {
+          "ppa": -0.45813225905822974,
+          "successRate": 0.13636363636363635,
+          "explosiveness": 2.646389037011121
+        },
+        "rushingPlays": {
+          "ppa": -0.07585090179014622,
+          "totalPPA": -1.9721234465438018,
+          "successRate": 0.38461538461538464,
+          "explosiveness": 0.7035835681461096
+        },
+        "passingPlays": {
+          "ppa": -0.45384382843699717,
+          "totalPPA": -14.069158681546911,
+          "successRate": 0.3225806451612903,
+          "explosiveness": 1.378568401503583
+        }
+      }
+    },
+    {
+      "gameId": 401871066,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 6,
+      "team": "New Mexico State",
+      "opponent": "Florida International",
+      "offense": {
+        "plays": 59,
+        "drives": 12,
+        "ppa": -0.35424861546430253,
+        "totalPPA": -20.90066831239385,
+        "successRate": 0.3389830508474576,
+        "explosiveness": 1.0410759848248463,
+        "powerSuccess": 1,
+        "stuffRate": 0.11538461538461539,
+        "lineYards": 3.026923076923077,
+        "lineYardsTotal": 79,
+        "secondLevelYards": 0.8461538461538461,
+        "secondLevelYardsTotal": 22,
+        "openFieldYards": 0.8076923076923077,
+        "openFieldYardsTotal": 21,
+        "standardDowns": {
+          "ppa": -0.292479962516562,
+          "successRate": 0.4594594594594595,
+          "explosiveness": 0.7577854462037391
+        },
+        "passingDowns": {
+          "ppa": -0.45813225905822974,
+          "successRate": 0.13636363636363635,
+          "explosiveness": 2.646389037011121
+        },
+        "rushingPlays": {
+          "ppa": -0.07585090179014622,
+          "totalPPA": -1.9721234465438018,
+          "successRate": 0.38461538461538464,
+          "explosiveness": 0.7035835681461096
+        },
+        "passingPlays": {
+          "ppa": -0.45384382843699717,
+          "totalPPA": -14.069158681546911,
+          "successRate": 0.3225806451612903,
+          "explosiveness": 1.378568401503583
+        }
+      },
+      "defense": {
+        "plays": 68,
+        "drives": 12,
+        "ppa": -0.06883258029154414,
+        "totalPPA": -4.680615459825002,
+        "successRate": 0.38235294117647056,
+        "explosiveness": 0.7947662057018748,
+        "powerSuccess": 1,
+        "stuffRate": 0.2857142857142857,
+        "lineYards": 1.6047619047619048,
+        "lineYardsTotal": 67,
+        "secondLevelYards": 0.7619047619047619,
+        "secondLevelYardsTotal": 32,
+        "openFieldYards": 0.5,
+        "openFieldYardsTotal": 21,
+        "standardDowns": {
+          "ppa": -0.11853413738688495,
+          "successRate": 0.45454545454545453,
+          "explosiveness": 0.5383416441607111
+        },
+        "passingDowns": {
+          "ppa": 0.022286941049913994,
+          "successRate": 0.25,
+          "explosiveness": 1.6495147441724207
+        },
+        "rushingPlays": {
+          "ppa": -0.10673386967223898,
+          "totalPPA": -4.482822526234037,
+          "successRate": 0.38095238095238093,
+          "explosiveness": 0.6493072801288212
+        },
+        "passingPlays": {
+          "ppa": -0.04553860160288896,
+          "totalPPA": -1.092926438469335,
+          "successRate": 0.375,
+          "explosiveness": 1.0263520936473307
+        }
+      }
+    },
+    {
+      "gameId": 401871067,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 7,
+      "team": "Delaware",
+      "opponent": "Middle Tennessee",
+      "offense": {
+        "plays": 67,
+        "drives": 13,
+        "ppa": 0.24487541540596425,
+        "totalPPA": 16.406652832199605,
+        "successRate": 0.417910447761194,
+        "explosiveness": 1.3473882025411776,
+        "powerSuccess": 1,
+        "stuffRate": 0.16666666666666666,
+        "lineYards": 3.625,
+        "lineYardsTotal": 87,
+        "secondLevelYards": 1.1666666666666667,
+        "secondLevelYardsTotal": 28,
+        "openFieldYards": 0.20833333333333334,
+        "openFieldYardsTotal": 5,
+        "standardDowns": {
+          "ppa": 0.07308396234961607,
+          "successRate": 0.47619047619047616,
+          "explosiveness": 0.9575965388357701
+        },
+        "passingDowns": {
+          "ppa": 0.5334850565406293,
+          "successRate": 0.32,
+          "explosiveness": 2.321867361804696
+        },
+        "rushingPlays": {
+          "ppa": 0.11774825829258699,
+          "totalPPA": 2.8259581990220877,
+          "successRate": 0.4166666666666667,
+          "explosiveness": 0.8623109286324605
+        },
+        "passingPlays": {
+          "ppa": 0.4054011496768728,
+          "totalPPA": 16.621447136751783,
+          "successRate": 0.43902439024390244,
+          "explosiveness": 1.6168755769349092
+        }
+      },
+      "defense": {
+        "plays": 62,
+        "drives": 13,
+        "ppa": 0.2539028952707538,
+        "totalPPA": 15.741979506786736,
+        "successRate": 0.41935483870967744,
+        "explosiveness": 1.5399890554098137,
+        "powerSuccess": 0.5,
+        "stuffRate": 0.25,
+        "lineYards": 2.2416666666666667,
+        "lineYardsTotal": 54,
+        "secondLevelYards": 1.0833333333333333,
+        "secondLevelYardsTotal": 26,
+        "openFieldYards": 1.625,
+        "openFieldYardsTotal": 39,
+        "standardDowns": {
+          "ppa": 0.24982990794533472,
+          "successRate": 0.4146341463414634,
+          "explosiveness": 1.4144291095778654
+        },
+        "passingDowns": {
+          "ppa": 0.26185491814419104,
+          "successRate": 0.42857142857142855,
+          "explosiveness": 1.7771578419812717
+        },
+        "rushingPlays": {
+          "ppa": 0.10907171079185157,
+          "totalPPA": 2.6177210590044377,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.5169974056062536
+        },
+        "passingPlays": {
+          "ppa": 0.33398750880325856,
+          "totalPPA": 12.023550316917309,
+          "successRate": 0.4722222222222222,
+          "explosiveness": 1.5592506265291837
+        }
+      }
+    },
+    {
+      "gameId": 401871067,
+      "season": 2026,
+      "seasonType": "regular",
+      "week": 7,
+      "team": "Middle Tennessee",
+      "opponent": "Delaware",
+      "offense": {
+        "plays": 62,
+        "drives": 13,
+        "ppa": 0.2539028952707538,
+        "totalPPA": 15.741979506786736,
+        "successRate": 0.41935483870967744,
+        "explosiveness": 1.5399890554098137,
+        "powerSuccess": 0.5,
+        "stuffRate": 0.25,
+        "lineYards": 2.2416666666666667,
+        "lineYardsTotal": 54,
+        "secondLevelYards": 1.0833333333333333,
+        "secondLevelYardsTotal": 26,
+        "openFieldYards": 1.625,
+        "openFieldYardsTotal": 39,
+        "standardDowns": {
+          "ppa": 0.24982990794533472,
+          "successRate": 0.4146341463414634,
+          "explosiveness": 1.4144291095778654
+        },
+        "passingDowns": {
+          "ppa": 0.26185491814419104,
+          "successRate": 0.42857142857142855,
+          "explosiveness": 1.7771578419812717
+        },
+        "rushingPlays": {
+          "ppa": 0.10907171079185157,
+          "totalPPA": 2.6177210590044377,
+          "successRate": 0.3333333333333333,
+          "explosiveness": 1.5169974056062536
+        },
+        "passingPlays": {
+          "ppa": 0.33398750880325856,
+          "totalPPA": 12.023550316917309,
+          "successRate": 0.4722222222222222,
+          "explosiveness": 1.5592506265291837
+        }
+      },
+      "defense": {
+        "plays": 67,
+        "drives": 13,
+        "ppa": 0.24487541540596425,
+        "totalPPA": 16.406652832199605,
+        "successRate": 0.417910447761194,
+        "explosiveness": 1.3473882025411776,
+        "powerSuccess": 1,
+        "stuffRate": 0.16666666666666666,
+        "lineYards": 3.625,
+        "lineYardsTotal": 87,
+        "secondLevelYards": 1.1666666666666667,
+        "secondLevelYardsTotal": 28,
+        "openFieldYards": 0.20833333333333334,
+        "openFieldYardsTotal": 5,
+        "standardDowns": {
+          "ppa": 0.07308396234961607,
+          "successRate": 0.47619047619047616,
+          "explosiveness": 0.9575965388357701
+        },
+        "passingDowns": {
+          "ppa": 0.5334850565406293,
+          "successRate": 0.32,
+          "explosiveness": 2.321867361804696
+        },
+        "rushingPlays": {
+          "ppa": 0.11774825829258699,
+          "totalPPA": 2.8259581990220877,
+          "successRate": 0.4166666666666667,
+          "explosiveness": 0.8623109286324605
+        },
+        "passingPlays": {
+          "ppa": 0.4054011496768728,
+          "totalPPA": 16.621447136751783,
+          "successRate": 0.43902439024390244,
+          "explosiveness": 1.6168755769349092
+        }
+      }
+    }
+  ],
+  "processed_team_history": [
+    {
+      "game_id": 401862699,
+      "season": 2026,
+      "week": 1,
+      "season_type": "regular",
+      "team_id": 2229,
+      "team": "Florida International",
+      "conference": "Conference USA",
+      "opponent": "South Florida",
+      "home_away": "away",
+      "points": 9.0,
+      "opponent_points": 19.0,
+      "completions": 31.0,
+      "pass_attempts": 50.0,
+      "passing_yards": 301.0,
+      "passing_touchdowns": 1.0,
+      "rush_attempts": 25.0,
+      "rushing_yards": 80.0,
+      "rushing_touchdowns": 0.0,
+      "interceptions": 2.0,
+      "turnovers": 3.0,
+      "fumbles_lost": 1.0,
+      "sacks": 1.0,
+      "tackles_for_loss": 7.0,
+      "qb_hurries": 1.0,
+      "possession_seconds": 1791.0,
+      "penalties": 8.0,
+      "penalty_yards": 50.0,
+      "yards_per_rush_attempt": 3.2,
+      "yards_per_pass": 6.0
+    },
+    {
+      "game_id": 401867866,
+      "season": 2026,
+      "week": 1,
+      "season_type": "regular",
+      "team_id": 2393,
+      "team": "Middle Tennessee",
+      "conference": "Conference USA",
+      "opponent": "Murray State",
+      "home_away": "home",
+      "points": 38.0,
+      "opponent_points": 14.0,
+      "completions": 20.0,
+      "pass_attempts": 26.0,
+      "passing_yards": 200.0,
+      "passing_touchdowns": 2.0,
+      "rush_attempts": 22.0,
+      "rushing_yards": 196.0,
+      "rushing_touchdowns": 2.0,
+      "interceptions": 0.0,
+      "turnovers": 0.0,
+      "fumbles_lost": 0.0,
+      "sacks": 0.0,
+      "tackles_for_loss": 1.0,
+      "qb_hurries": 1.0,
+      "possession_seconds": 1542.0,
+      "penalties": 10.0,
+      "penalty_yards": 81.0,
+      "yards_per_rush_attempt": 8.9,
+      "yards_per_pass": 7.7
+    },
+    {
+      "game_id": 401866414,
+      "season": 2026,
+      "week": 2,
+      "season_type": "regular",
+      "team_id": 2229,
+      "team": "Florida International",
+      "conference": "Conference USA",
+      "opponent": "Buffalo",
+      "home_away": "home",
+      "points": 33.0,
+      "opponent_points": 20.0,
+      "completions": 22.0,
+      "pass_attempts": 37.0,
+      "passing_yards": 386.0,
+      "passing_touchdowns": 4.0,
+      "rush_attempts": 39.0,
+      "rushing_yards": 154.0,
+      "rushing_touchdowns": 0.0,
+      "interceptions": 0.0,
+      "turnovers": 1.0,
+      "fumbles_lost": 1.0,
+      "sacks": 3.0,
+      "tackles_for_loss": 7.0,
+      "qb_hurries": 4.0,
+      "possession_seconds": 2302.0,
+      "penalties": 5.0,
+      "penalty_yards": 41.0,
+      "yards_per_rush_attempt": 3.9,
+      "yards_per_pass": 10.4
+    },
+    {
+      "game_id": 401871045,
+      "season": 2026,
+      "week": 2,
+      "season_type": "regular",
+      "team_id": 2393,
+      "team": "Middle Tennessee",
+      "conference": "Conference USA",
+      "opponent": "Marshall",
+      "home_away": "away",
+      "points": 26.0,
+      "opponent_points": 28.0,
+      "completions": 25.0,
+      "pass_attempts": 47.0,
+      "passing_yards": 243.0,
+      "passing_touchdowns": 2.0,
+      "rush_attempts": 22.0,
+      "rushing_yards": 109.0,
+      "rushing_touchdowns": 0.0,
+      "interceptions": 1.0,
+      "turnovers": 1.0,
+      "fumbles_lost": 0.0,
+      "sacks": 0.0,
+      "tackles_for_loss": 5.0,
+      "qb_hurries": 3.0,
+      "possession_seconds": 1966.0,
+      "penalties": 7.0,
+      "penalty_yards": 34.0,
+      "yards_per_rush_attempt": 5.0,
+      "yards_per_pass": 5.2
+    },
+    {
+      "game_id": 401862771,
+      "season": 2026,
+      "week": 3,
+      "season_type": "regular",
+      "team_id": 2229,
+      "team": "Florida International",
+      "conference": "Conference USA",
+      "opponent": "Florida Atlantic",
+      "home_away": "away",
+      "points": 10.0,
+      "opponent_points": 16.0,
+      "completions": 22.0,
+      "pass_attempts": 43.0,
+      "passing_yards": 262.0,
+      "passing_touchdowns": 0.0,
+      "rush_attempts": 35.0,
+      "rushing_yards": 95.0,
+      "rushing_touchdowns": 1.0,
+      "interceptions": 3.0,
+      "turnovers": 3.0,
+      "fumbles_lost": 0.0,
+      "sacks": 3.0,
+      "tackles_for_loss": 5.0,
+      "qb_hurries": 3.0,
+      "possession_seconds": 2028.0,
+      "penalties": 8.0,
+      "penalty_yards": 65.0,
+      "yards_per_rush_attempt": 2.7,
+      "yards_per_pass": 6.1
+    },
+    {
+      "game_id": 401864443,
+      "season": 2026,
+      "week": 3,
+      "season_type": "regular",
+      "team_id": 2393,
+      "team": "Middle Tennessee",
+      "conference": "Conference USA",
+      "opponent": "Nevada",
+      "home_away": "home",
+      "points": 27.0,
+      "opponent_points": 20.0,
+      "completions": 16.0,
+      "pass_attempts": 29.0,
+      "passing_yards": 173.0,
+      "passing_touchdowns": 2.0,
+      "rush_attempts": 38.0,
+      "rushing_yards": 157.0,
+      "rushing_touchdowns": 1.0,
+      "interceptions": 0.0,
+      "turnovers": 0.0,
+      "fumbles_lost": 0.0,
+      "sacks": 1.0,
+      "tackles_for_loss": 4.0,
+      "qb_hurries": 1.0,
+      "possession_seconds": 2068.0,
+      "penalties": 10.0,
+      "penalty_yards": 84.0,
+      "yards_per_rush_attempt": 4.1,
+      "yards_per_pass": 6.0
+    },
+    {
+      "game_id": 401856807,
+      "season": 2026,
+      "week": 5,
+      "season_type": "regular",
+      "team_id": 2393,
+      "team": "Middle Tennessee",
+      "conference": "Conference USA",
+      "opponent": "Kansas",
+      "home_away": "away",
+      "points": 0.0,
+      "opponent_points": 55.0,
+      "completions": 9.0,
+      "pass_attempts": 26.0,
+      "passing_yards": 81.0,
+      "passing_touchdowns": 0.0,
+      "rush_attempts": 16.0,
+      "rushing_yards": 55.0,
+      "rushing_touchdowns": 0.0,
+      "interceptions": 0.0,
+      "turnovers": 1.0,
+      "fumbles_lost": 1.0,
+      "sacks": 0.0,
+      "tackles_for_loss": 3.0,
+      "qb_hurries": 0.0,
+      "possession_seconds": 1145.0,
+      "penalties": 3.0,
+      "penalty_yards": 15.0,
+      "yards_per_rush_attempt": 3.4,
+      "yards_per_pass": 3.1
+    },
+    {
+      "game_id": 401867909,
+      "season": 2026,
+      "week": 4,
+      "season_type": "regular",
+      "team_id": 2229,
+      "team": "Florida International",
+      "conference": "Conference USA",
+      "opponent": "Long Island University",
+      "home_away": "home",
+      "points": 20.0,
+      "opponent_points": 3.0,
+      "completions": 12.0,
+      "pass_attempts": 21.0,
+      "passing_yards": 227.0,
+      "passing_touchdowns": 1.0,
+      "rush_attempts": 39.0,
+      "rushing_yards": 167.0,
+      "rushing_touchdowns": 1.0,
+      "interceptions": 1.0,
+      "turnovers": 1.0,
+      "fumbles_lost": 0.0,
+      "sacks": 3.0,
+      "tackles_for_loss": 8.0,
+      "qb_hurries": 3.0,
+      "possession_seconds": 1949.0,
+      "penalties": 7.0,
+      "penalty_yards": 58.0,
+      "yards_per_rush_attempt": 4.3,
+      "yards_per_pass": 10.8
+    },
+    {
+      "game_id": 401871048,
+      "season": 2026,
+      "week": 4,
+      "season_type": "regular",
+      "team_id": 2393,
+      "team": "Middle Tennessee",
+      "conference": "Conference USA",
+      "opponent": "Jacksonville State",
+      "home_away": "away",
+      "points": 13.0,
+      "opponent_points": 23.0,
+      "completions": 18.0,
+      "pass_attempts": 28.0,
+      "passing_yards": 216.0,
+      "passing_touchdowns": 2.0,
+      "rush_attempts": 30.0,
+      "rushing_yards": 103.0,
+      "rushing_touchdowns": 0.0,
+      "interceptions": 0.0,
+      "turnovers": 0.0,
+      "fumbles_lost": 0.0,
+      "sacks": 1.0,
+      "tackles_for_loss": 1.0,
+      "qb_hurries": 1.0,
+      "possession_seconds": 1642.0,
+      "penalties": 7.0,
+      "penalty_yards": 55.0,
+      "yards_per_rush_attempt": 3.4,
+      "yards_per_pass": 7.7
+    },
+    {
+      "game_id": 401871066,
+      "season": 2026,
+      "week": 6,
+      "season_type": "regular",
+      "team_id": 2229,
+      "team": "Florida International",
+      "conference": "Conference USA",
+      "opponent": "New Mexico State",
+      "home_away": "home",
+      "points": 22.0,
+      "opponent_points": 3.0,
+      "completions": 13.0,
+      "pass_attempts": 22.0,
+      "passing_yards": 120.0,
+      "passing_touchdowns": 0.0,
+      "rush_attempts": 44.0,
+      "rushing_yards": 100.0,
+      "rushing_touchdowns": 1.0,
+      "interceptions": 1.0,
+      "turnovers": 1.0,
+      "fumbles_lost": 0.0,
+      "sacks": 3.0,
+      "tackles_for_loss": 5.0,
+      "qb_hurries": 3.0,
+      "possession_seconds": 2274.0,
+      "penalties": 6.0,
+      "penalty_yards": 45.0,
+      "yards_per_rush_attempt": 2.3,
+      "yards_per_pass": 5.5
+    },
+    {
+      "game_id": 401871053,
+      "season": 2026,
+      "week": 7,
+      "season_type": "regular",
+      "team_id": 2229,
+      "team": "Florida International",
+      "conference": "Conference USA",
+      "opponent": "Jacksonville State",
+      "home_away": "away",
+      "points": 24.0,
+      "opponent_points": 27.0,
+      "completions": 25.0,
+      "pass_attempts": 41.0,
+      "passing_yards": 280.0,
+      "passing_touchdowns": 2.0,
+      "rush_attempts": 32.0,
+      "rushing_yards": 124.0,
+      "rushing_touchdowns": 1.0,
+      "interceptions": 0.0,
+      "turnovers": 0.0,
+      "fumbles_lost": 0.0,
+      "sacks": 1.0,
+      "tackles_for_loss": 5.0,
+      "qb_hurries": 2.0,
+      "possession_seconds": 2024.0,
+      "penalties": 12.0,
+      "penalty_yards": 100.0,
+      "yards_per_rush_attempt": 3.9,
+      "yards_per_pass": 6.8
+    },
+    {
+      "game_id": 401871067,
+      "season": 2026,
+      "week": 7,
+      "season_type": "regular",
+      "team_id": 2393,
+      "team": "Middle Tennessee",
+      "conference": "Conference USA",
+      "opponent": "Delaware",
+      "home_away": "home",
+      "points": 33.0,
+      "opponent_points": 30.0,
+      "completions": 22.0,
+      "pass_attempts": 33.0,
+      "passing_yards": 291.0,
+      "passing_touchdowns": 3.0,
+      "rush_attempts": 25.0,
+      "rushing_yards": 105.0,
+      "rushing_touchdowns": 1.0,
+      "interceptions": 1.0,
+      "turnovers": 2.0,
+      "fumbles_lost": 1.0,
+      "sacks": 5.0,
+      "tackles_for_loss": 5.0,
+      "qb_hurries": 8.0,
+      "possession_seconds": 1665.0,
+      "penalties": 5.0,
+      "penalty_yards": 45.0,
+      "yards_per_rush_attempt": 4.2,
+      "yards_per_pass": 8.8
+    }
+  ],
+  "provenance": {
+    "schedule_sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+    "advanced_sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+    "history_sha256": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+    "prior_capture_completed_at_utc": "2026-10-20T21:14:08.198898+00:00",
+    "data_availability_limitations": [
+      "CFBD per-record publication times are unavailable.",
+      "The caches may omit recently completed games.",
+      "Completion is checked against the local schedule snapshot.",
+      "Historical point-in-time provenance is not certified."
+    ],
+    "market_data_included": false,
+    "cfb_quant_predictions_included": false,
+    "current_game_results_included": false
+  }
+}

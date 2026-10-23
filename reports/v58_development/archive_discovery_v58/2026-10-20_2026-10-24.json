@@ -1,0 +1,115 @@
+{
+  "schema": "forecast_archive_discovery_v58_v1",
+  "research_only": true,
+  "window_eastern": [
+    "2026-10-20",
+    "2026-10-24"
+  ],
+  "archives": [
+    {
+      "path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\midweek_forecasts\\20261020T173820706469Z\\2026-10-20\\paired_forecasts.csv",
+      "sha256": "4c28c6bb169ff409ca98f3165ed1f5708af924f6e64ee27ac2ecf9dbe82fc49f",
+      "game_ids": [
+        "401871055",
+        "401871069",
+        "401871092"
+      ],
+      "rows": 3
+    },
+    {
+      "path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\midweek_forecasts\\20261020T173820706469Z\\2026-10-21\\paired_forecasts.csv",
+      "sha256": "1ce31f68eb487fe16a14c1d37a13e393c69c482b3cba3c4675107248d6d9fa8e",
+      "game_ids": [
+        "401871070"
+      ],
+      "rows": 1
+    },
+    {
+      "path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\midweek_forecasts\\20261020T173820706469Z\\2026-10-22\\paired_forecasts.csv",
+      "sha256": "f4269b91c4c4f9df54fde4ef8df5adad1c2c677bc5c663f3b3fc7805fd588f61",
+      "game_ids": [
+        "401862807",
+        "401869845",
+        "401871056"
+      ],
+      "rows": 3
+    },
+    {
+      "path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\midweek_forecasts\\20261020T173820706469Z\\2026-10-23\\paired_forecasts.csv",
+      "sha256": "a2b6f11f005da352d40f2fb9a7f8fd86edc45155c82bd7511510250e5acbecba",
+      "game_ids": [
+        "401858271",
+        "401858272",
+        "401861965",
+        "401862808",
+        "401864525"
+      ],
+      "rows": 5
+    },
+    {
+      "path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\prospective_forecasts\\2026-10-24_20261020T171902666599Z\\paired_forecasts.csv",
+      "sha256": "1fd63a93229a2c73dc771fb8fbf62bca06117c77120cb4bd2ce5efc7ed4b91e9",
+      "game_ids": [
+        "401856727",
+        "401856728",
+        "401856729",
+        "401856730",
+        "401856731",
+        "401856732",
+        "401856841",
+        "401858270",
+        "401858273",
+        "401858274",
+        "401858275",
+        "401858496",
+        "401858498",
+        "401858500",
+        "401860905",
+        "401860906",
+        "401860907",
+        "401862809",
+        "401862810",
+        "401862811",
+        "401864526",
+        "401864527",
+        "401864528",
+        "401866446",
+        "401866447",
+        "401866448",
+        "401866449",
+        "401866450",
+        "401866476",
+        "401869935",
+        "401869967",
+        "401871093",
+        "401871094"
+      ],
+      "rows": 33
+    },
+    {
+      "path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\supplementary_forecasts\\20261020T185835342252Z\\paired_forecasts.csv",
+      "sha256": "0f7d67dcf11bfbde066098a5f083fe18bea0746be29dfc9bea2dfbee6625477e",
+      "game_ids": [
+        "401856834",
+        "401856835",
+        "401856836",
+        "401856837",
+        "401856838",
+        "401856839",
+        "401856840",
+        "401858276",
+        "401858495",
+        "401858497",
+        "401858499"
+      ],
+      "rows": 11
+    }
+  ],
+  "archive_count": 6,
+  "unique_game_count": 56,
+  "overlap_count": 0,
+  "authenticity_verified": false,
+  "coverage_verified": false,
+  "model_executed": false,
+  "production_modified": false
+}

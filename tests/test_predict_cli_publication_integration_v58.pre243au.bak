@@ -1,0 +1,219 @@
+"""Integration tests of the real forecast CLI publication boundary."""
+
+import json
+import sys
+from datetime import datetime, timedelta, timezone
+
+import pandas as pd
+import pytest
+
+from cfb_quant.live import predict_v57 as predict
+
+
+DISPLAY = [
+    "away", "home", "fair_home_spread", "fair_total",
+    "projected_away_points", "projected_home_points",
+    "p_home_win", "p_home_covers_plus_7p5",
+    "p_home_covers_minus_7p5",
+]
+
+
+def configure(monkeypatch, tmp_path, *, mode, audit_only=False):
+    now = datetime.now(timezone.utc)
+
+    if mode == "future":
+        kickoff = now + timedelta(days=2)
+        archived = False
+    elif mode == "started":
+        kickoff = now - timedelta(hours=2)
+        archived = False
+    elif mode == "archive":
+        kickoff = now - timedelta(hours=2)
+        archived = True
+    else:
+        raise ValueError(mode)
+
+    if mode == "future":
+        # A valid prospective fixture must be created before publication.
+        asof = now - timedelta(hours=3)
+        created = now - timedelta(hours=2)
+        generated = now - timedelta(hours=1)
+    else:
+        # Preserve the original retrospective/started chronology.
+        asof = kickoff - timedelta(hours=5)
+        created = kickoff - timedelta(hours=4)
+        generated = kickoff - timedelta(hours=3)
+
+    frame = pd.DataFrame([{
+        "game_id": "401871070",
+        "kickoff_utc": kickoff.isoformat(),
+        "away": "New Mexico State",
+        "home": "Sam Houston",
+        "fair_home_spread": 3.5,
+        "fair_total": 50.5,
+        "projected_away_points": 27.0,
+        "projected_home_points": 23.5,
+        "p_home_win": 0.41,
+        "p_home_covers_plus_7p5": 0.65,
+        "p_home_covers_minus_7p5": 0.22,
+    }])
+
+    assert set(DISPLAY) <= set(frame.columns)
+
+    classification = (
+        "RETROSPECTIVE_RESEARCH"
+        if archived else "CHRONOLOGY_VALID_RESEARCH"
+    )
+
+    audit = {
+        "version": "v5.7 research-only",
+        "generated_at_utc": generated.isoformat(),
+        "snapshot_metadata": {
+            "slate_date_eastern": kickoff.strftime("%Y-%m-%d"),
+            "asof_utc": asof.isoformat(),
+            "created_at_utc": created.isoformat(),
+        },
+        "chronology_gate": {
+            "status": "PASS",
+            "archive_override_requested": archived,
+        },
+        "forecast_classification": classification,
+        "research_only": True,
+        "source_availability_certified": False,
+        "prospective_performance_eligible": False,
+        "production_forecast_authorized": False,
+    }
+
+    from tests.test_forecast_input_freeze_v58 import (
+        setup_inputs,
+    )
+    from cfb_quant.live.forecast_input_freeze_v58 import (
+        take,
+        verify_unchanged,
+    )
+
+    snapshot = setup_inputs(tmp_path)
+    fingerprints = take(tmp_path, snapshot)
+    verification = verify_unchanged(tmp_path, fingerprints)
+
+    audit["snapshot_validation"] = {
+        "snapshot_folder": str(snapshot),
+        "snapshot_sha256": fingerprints[
+            "dependencies"
+        ]["snapshot_parquet"]["sha256"],
+    }
+    audit["execution_input_fingerprints"] = fingerprints
+    audit["execution_input_verification"] = verification
+
+    calls = []
+
+    def fake_run(*args, **kwargs):
+        calls.append(kwargs)
+        assert kwargs["allow_started"] is archived
+        return frame.copy(), dict(audit)
+
+    monkeypatch.setattr(predict, "run", fake_run)
+
+    argv = [
+        "predict_v57",
+        "--root", str(tmp_path),
+        "--snapshot", str(snapshot),
+    ]
+
+    if archived:
+        argv.append("--include-started-archived")
+
+    if audit_only:
+        argv.append("--audit-only")
+
+    monkeypatch.setattr(sys, "argv", argv)
+    return calls
+
+
+def output_dirs(tmp_path):
+    parent = tmp_path / predict.OUTPUT
+    return list(parent.iterdir()) if parent.exists() else []
+
+
+def test_cli_publishes_valid_research_forecast(
+    tmp_path, monkeypatch
+):
+    calls = configure(monkeypatch, tmp_path, mode="future")
+    predict.main()
+
+    assert len(calls) == 1
+    folders = output_dirs(tmp_path)
+    assert len(folders) == 1
+
+    folder = folders[0]
+    assert sorted(p.name for p in folder.iterdir()) == [
+        "forecast_input_lineage_v1.json",
+        "model_audit.json",
+        "slate_forecasts.csv",
+    ]
+
+    saved = json.loads(
+        (folder / "model_audit.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    lineage = json.loads(
+        (folder / "forecast_input_lineage_v1.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert saved["publication"]["classification"] == (
+        "CHRONOLOGY_VALID_RESEARCH"
+    )
+    assert lineage["dependency_count"] == 10
+    assert lineage["publication_check"]["status"] == "UNCHANGED"
+    assert lineage["prospective_performance_eligible"] is False
+    assert saved["source_availability_certified"] is False
+    assert saved["prospective_performance_eligible"] is False
+
+
+
+
+def test_cli_blocks_started_normal_forecast(tmp_path, monkeypatch):
+    configure(monkeypatch, tmp_path, mode="started")
+
+    with pytest.raises(ValueError, match="already started"):
+        predict.main()
+
+    assert output_dirs(tmp_path) == []
+
+
+def test_cli_preserves_archive_classification(tmp_path, monkeypatch):
+    configure(monkeypatch, tmp_path, mode="archive")
+    predict.main()
+
+    folders = output_dirs(tmp_path)
+    assert len(folders) == 1
+
+    saved = json.loads(
+        (folders[0] / "model_audit.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert saved["forecast_classification"] == (
+        "RETROSPECTIVE_RESEARCH"
+    )
+    assert saved["publication"]["classification"] == (
+        "RETROSPECTIVE_RESEARCH"
+    )
+    assert saved["prospective_performance_eligible"] is False
+    assert saved["production_forecast_authorized"] is False
+
+
+def test_cli_audit_only_never_publishes(tmp_path, monkeypatch):
+    calls = configure(
+        monkeypatch, tmp_path,
+        mode="future", audit_only=True,
+    )
+
+    predict.main()
+
+    assert len(calls) == 1
+    assert output_dirs(tmp_path) == []

@@ -1,0 +1,81 @@
+{
+  "summary": {
+    "lock_sha256": "85f463c587e17ea1f0028a2712127b1be092f5999cdf9e18c6c93619d206d77d",
+    "graded_at_utc": "2026-10-23T16:16:17.376726+00:00",
+    "total_locked": 20,
+    "completed_graded": 4,
+    "pending": 16,
+    "excluded": 0,
+    "original_mae": 8.291303807486576,
+    "elo_mae": 9.137303133392336,
+    "elo_minus_original_mae": 0.8459993259057599,
+    "historical_elo_pit_certified": false,
+    "source_feature_cutoffs_certified": false,
+    "production_promotion_authorized": false
+  },
+  "games": [
+    {
+      "game_id": 401871070,
+      "away": "New Mexico State",
+      "home": "Sam Houston",
+      "actual_home_margin": -6,
+      "original_home_margin": -11.70697810784934,
+      "elo_home_margin": -7.397018567445113,
+      "original_ae": 5.70697810784934,
+      "elo_ae": 1.3970185674451132,
+      "elo_minus_original_ae": -4.309959540404226
+    },
+    {
+      "game_id": 401869845,
+      "away": "James Madison",
+      "home": "App State",
+      "actual_home_margin": 3,
+      "original_home_margin": -2.929509813993576,
+      "elo_home_margin": -13.708841549865962,
+      "original_ae": 5.929509813993576,
+      "elo_ae": 16.708841549865962,
+      "elo_minus_original_ae": 10.779331735872386
+    },
+    {
+      "game_id": 401871056,
+      "away": "Liberty",
+      "home": "Kennesaw State",
+      "actual_home_margin": -28,
+      "original_home_margin": -12.891872790898104,
+      "elo_home_margin": -16.672136213320755,
+      "original_ae": 15.108127209101896,
+      "elo_ae": 11.327863786679245,
+      "elo_minus_original_ae": -3.7802634224226512
+    },
+    {
+      "game_id": 401862807,
+      "away": "East Carolina",
+      "home": "Memphis",
+      "actual_home_margin": 7,
+      "original_home_margin": 13.420600099001495,
+      "elo_home_margin": 14.115488629579026,
+      "original_ae": 6.420600099001495,
+      "elo_ae": 7.115488629579026,
+      "elo_minus_original_ae": 0.694888530577531
+    }
+  ],
+  "pending_game_ids": [
+    401858271,
+    401861965,
+    401862808,
+    401864525,
+    401858272,
+    401856840,
+    401856834,
+    401858495,
+    401856835,
+    401858497,
+    401858499,
+    401856839,
+    401856836,
+    401858276,
+    401856838,
+    401856837
+  ],
+  "excluded": []
+}

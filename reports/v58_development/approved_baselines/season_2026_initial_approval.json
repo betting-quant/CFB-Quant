@@ -1,0 +1,12 @@
+{
+  "schema": "approved_baseline_v58_v1",
+  "research_only": true,
+  "season": 2026,
+  "approved_at_utc": "2026-10-20T19:52:44.390128+00:00",
+  "approval_reason": "Initial internally validated 2026 FBS schedule baseline; 888 games including 127 FBS-FCS; October 20-24 coverage reconciled.",
+  "snapshot_path": "C:\\Users\\dlaplante\\CFB-Quant\\reports\\v58_development\\daily_readiness_v58\\20261020T194211300213Z\\schedule\\20261020T194212122279Z\\cfbd_games.json",
+  "snapshot_sha256": "986110b82d360f35ad855f2a4292ea4cdfb8f1394d8b027255c9f121780111e7",
+  "season_games": 888,
+  "independent_schedule_completeness_certified": false,
+  "auto_rotation_allowed": false
+}

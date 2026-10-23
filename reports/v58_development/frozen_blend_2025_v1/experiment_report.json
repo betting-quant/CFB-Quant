@@ -1,0 +1,29 @@
+{
+  "step": 119,
+  "created_utc": "2026-10-20T16:33:47.714232+00:00",
+  "experiment": "frozen_85_15_blend_2025",
+  "train_end_season": 2024,
+  "test_season": 2025,
+  "training_games": 9423,
+  "evaluation_games": 808,
+  "ridge_mae": 12.873755304756928,
+  "boosting_mae": 13.181354394660952,
+  "blend_mae": 12.85246970716011,
+  "delta_mae": -0.02128559759681889,
+  "paired_game_bootstrap_ci_95": [
+    -0.06932355730031275,
+    0.02633229345265096
+  ],
+  "blend_weight": 0.15,
+  "feature_file_sha256": "8868a43ea9bdbeda90664a2545255d9d9aa491318d326fe7c678d93bd43079f7",
+  "baseline_file_sha256": "1b5a01ebed64ef25be3fb870f45e55c1842309e1db6c737f2523ead4bb26af3c",
+  "research_only": true,
+  "production_unchanged": true,
+  "limitations": [
+    "2025 was previously explored in other experiments",
+    "Pre-2019 training eligibility is not fully certified",
+    "Feature point-in-time availability requires verification",
+    "Ridge and boosting training procedures are not identical",
+    "Independent prospective validation required for promotion"
+  ]
+}

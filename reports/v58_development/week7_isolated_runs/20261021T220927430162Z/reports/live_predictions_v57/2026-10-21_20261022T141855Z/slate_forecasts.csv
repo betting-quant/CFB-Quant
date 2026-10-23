@@ -1,0 +1,2 @@
+game_id,kickoff_utc,home,away,fair_margin_home,fair_total,fair_home_spread,projected_home_points,projected_away_points,margin_p10,margin_p90,total_p10,total_p90,p_home_win,p_home_covers_minus_7p5,p_home_covers_plus_7p5,p_over_45p5,p_over_55p5,p_over_65p5
+401871070,2026-10-22 00:00:00+00:00,Sam Houston,New Mexico State,-11.53997496095069,50.16684401711399,11.53997496095069,19.31343452808165,30.853409489032337,-33.39132285721767,9.33897759405587,30.284080943147075,72.56233858229182,0.2351,0.1225,0.3898,0.6161,0.3712,0.1828

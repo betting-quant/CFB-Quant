@@ -1,0 +1,24 @@
+{
+  "step": 116,
+  "created_utc": "2026-10-20T16:27:03.518087+00:00",
+  "model": "fixed_85pct_ridge_15pct_boosting",
+  "games": 5056,
+  "error_correlation": 0.9510886240159575,
+  "ridge_mae": 13.435782957838118,
+  "blend_mae": 13.380214683703766,
+  "delta_mae": -0.055568274134350185,
+  "game_bootstrap_ci": [
+    -0.07777676957974668,
+    -0.033799826209494066
+  ],
+  "source_sha256": "570a1dcd43f2e4947e889705691cffc0e643990062a94a3ec05348890c878f6d",
+  "research_only": true,
+  "promotion_eligible": false,
+  "limitations": [
+    "Blend uses previously explored OOS seasons",
+    "Blend weight is exploratory",
+    "Game bootstrap does not capture season dependence",
+    "Ridge and challenger training protocols may differ",
+    "Independent future confirmation is required"
+  ]
+}

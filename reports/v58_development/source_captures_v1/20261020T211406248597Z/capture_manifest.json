@@ -1,0 +1,43 @@
+{
+  "schema": "cfb_v58_source_capture_v1",
+  "research_only": true,
+  "capture_completed_at_utc": "2026-10-20T21:14:08.198898+00:00",
+  "capture_kind": "local_file_copy",
+  "sources": {
+    "schedule_2026": {
+      "original_path": "data/raw/cfbd/games/games_2026.json",
+      "captured_filename": "games_2026.json",
+      "sha256": "9159f617707eb7ea3583fa9fe10dcd0ee4f39215ea30e4b25eeb03364e8091ad",
+      "bytes": 928980,
+      "captured_at_utc": "2026-10-20T21:14:06.250159+00:00",
+      "source_mtime_ns": 1792180011293145300,
+      "provider_publication_time_verified": false,
+      "pre_capture_availability_certified": false
+    },
+    "advanced_2026": {
+      "original_path": "data/raw/cfbd/advanced_game_v4/advanced_2026.json",
+      "captured_filename": "advanced_2026.json",
+      "sha256": "ff2dbad695899ab4cc6a65af3dee69f76bd99c91ea5dedaac29724b2cd215a5d",
+      "bytes": 3013463,
+      "captured_at_utc": "2026-10-20T21:14:06.912214+00:00",
+      "source_mtime_ns": 1792180044456641400,
+      "provider_publication_time_verified": false,
+      "pre_capture_availability_certified": false
+    },
+    "team_games_2026": {
+      "original_path": "data/processed/team_games_2026.parquet",
+      "captured_filename": "team_games_2026.parquet",
+      "sha256": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+      "bytes": 51428,
+      "captured_at_utc": "2026-10-20T21:14:08.187300+00:00",
+      "source_mtime_ns": 1792180707974057300,
+      "provider_publication_time_verified": false,
+      "pre_capture_availability_certified": false
+    }
+  },
+  "historical_pit_certified": false,
+  "provider_publication_times_verified": false,
+  "independent_external_timestamp_verified": false,
+  "safe_for_forecast_asof_before_capture": false,
+  "production_modified": false
+}
