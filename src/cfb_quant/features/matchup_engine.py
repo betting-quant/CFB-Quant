@@ -86,6 +86,36 @@ def _safe_divide(
     return num / den
 
 
+def _chronological_sort_columns(
+    frame: pd.DataFrame,
+    *,
+    team_col: str,
+) -> list[str]:
+    """Select chronology without changing legacy fallback behavior."""
+    columns = [
+        "season",
+        "_season_type_order",
+    ]
+
+    if "kickoff" in frame.columns:
+        kickoff = pd.to_datetime(
+            frame["kickoff"],
+            utc=True,
+            errors="coerce",
+        )
+        if kickoff.isna().any():
+            raise ValueError(
+                "Chronological feature input has missing "
+                "or invalid kickoff timestamps."
+            )
+        frame["kickoff"] = kickoff
+        columns.append("kickoff")
+    else:
+        columns.append("week")
+
+    return columns + ["game_id", team_col]
+
+
 def _sort_frame(
     frame: pd.DataFrame,
 ) -> pd.DataFrame:

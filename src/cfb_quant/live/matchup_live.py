@@ -25,6 +25,111 @@ ARTIFACT_DIR = Path("models/artifacts")
 REPORT_DIR = Path("reports")
 
 
+def _prepare_kickoff_aware_history(
+    history: pd.DataFrame,
+    games: list[dict],
+    *,
+    safety_hours: float = 6.0,
+) -> tuple[pd.DataFrame, pd.Timestamp]:
+    """Prepare conservative, timestamp-ordered pregame history."""
+    import json
+
+    if not games:
+        raise ValueError("No target games provided.")
+
+    if safety_hours < 0:
+        raise ValueError("safety_hours must be nonnegative.")
+
+    kicks = pd.to_datetime(
+        [g.get("startDate") for g in games],
+        utc=True,
+        errors="coerce",
+    )
+
+    if kicks.isna().any():
+        raise ValueError("Target kickoff timestamp missing.")
+
+    if len(set(kicks)) != 1:
+        raise ValueError(
+            "Kickoff-aware mode requires one target kickoff time. "
+            "Mixed-time weekly slates are not yet supported."
+        )
+
+    target_kickoff = pd.Timestamp(kicks[0])
+    cutoff = target_kickoff - pd.Timedelta(hours=safety_hours)
+
+    schedules = {}
+
+    for schedule_path in sorted(
+        Path("data/raw/cfbd/games").glob("games_*.json")
+    ):
+        games_data = json.loads(
+            schedule_path.read_text(encoding="utf-8-sig")
+        )
+
+        for game in games_data:
+            gid = int(game["id"])
+
+            if gid in schedules:
+                raise ValueError(
+                    f"Duplicate schedule game ID: {gid}"
+                )
+
+            schedules[gid] = game
+
+    prepared = history.copy()
+
+    prepared["game_id"] = pd.to_numeric(
+        prepared["game_id"],
+        errors="raise",
+    ).astype("int64")
+
+    missing = set(prepared["game_id"]) - set(schedules)
+
+    if missing:
+        raise ValueError(
+            f"Missing historical schedule entries: "
+            f"{len(missing)}"
+        )
+
+    prepared["kickoff"] = pd.to_datetime(
+        prepared["game_id"].map(
+            lambda gid: schedules[int(gid)].get("startDate")
+        ),
+        utc=True,
+        errors="coerce",
+    )
+
+    if prepared["kickoff"].isna().any():
+        raise ValueError(
+            "Historical kickoff timestamps missing."
+        )
+
+    completed = prepared["game_id"].map(
+        lambda gid: schedules[int(gid)].get("completed") is True
+    )
+
+    if not completed.all():
+        raise ValueError(
+            "Historical dataset contains uncompleted games."
+        )
+
+    eligible = prepared.loc[
+        prepared["kickoff"] < cutoff
+    ].copy()
+
+    print(
+        "Kickoff-aware cutoff (UTC):",
+        cutoff.isoformat(),
+    )
+    print(
+        "Historical team rows excluded:",
+        len(prepared) - len(eligible),
+    )
+
+    return eligible, target_kickoff
+
+
 def _make_team_rows(
     history: pd.DataFrame,
     games: list[dict],
@@ -374,6 +479,7 @@ def run(
     *,
     season: int,
     week: int,
+    kickoff_aware: bool = False,
 ) -> None:
 
     print("=" * 90)
@@ -423,6 +529,18 @@ def run(
         f"{len(history):,}"
     )
 
+    if kickoff_aware:
+        history, target_kickoff = (
+            _prepare_kickoff_aware_history(
+                history,
+                games,
+            )
+        )
+        print(
+            "Kickoff-aware eligible history rows:",
+            len(history),
+        )
+
     # Safety: live history must not already
     # contain target-week completed rows.
     current_or_future = history.loc[
@@ -442,7 +560,7 @@ def run(
         )
     ]
 
-    if not current_or_future.empty:
+    if not kickoff_aware and not current_or_future.empty:
         raise RuntimeError(
             "History contains rows from the "
             f"target week or later: "
@@ -455,6 +573,9 @@ def run(
         season=season,
         week=week,
     )
+
+    if kickoff_aware:
+        synthetic["kickoff_utc"] = target_kickoff
 
     print(
         f"Synthetic live team rows: "
@@ -737,11 +858,21 @@ def main() -> None:
         required=True,
     )
 
+    parser.add_argument(
+        "--kickoff-aware",
+        action="store_true",
+        help=(
+            "Enable timestamp-ordered historical features "
+            "with a conservative six-hour cutoff."
+        ),
+    )
+
     args = parser.parse_args()
 
     run(
         season=args.season,
         week=args.week,
+        kickoff_aware=args.kickoff_aware,
     )
 
 
