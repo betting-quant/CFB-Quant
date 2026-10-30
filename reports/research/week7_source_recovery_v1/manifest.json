@@ -1,0 +1,27 @@
+{
+  "schema": "cfb_week7_source_recovery_v1",
+  "created_at_utc": "2026-10-30T17:03:01.617862+00:00",
+  "season": 2026,
+  "original_rows": 910,
+  "recovered_rows": 110,
+  "recovered_games": 55,
+  "combined_rows": 1020,
+  "remaining_original_only_rows": 120,
+  "source_capture_utc": "2026-10-20T15:54:23.651897+00:00",
+  "sources_sha256": {
+    "data\\processed\\team_games_2026.parquet": "6d27fe990a65b08bf0cc068e0eb483fd7eff23b616fd3aaad4c25a517a960fd3",
+    "reports\\v58_development\\team_history_refresh_v2\\team_games_2026_candidate.parquet": "4aa439b4498c8be7adfcb004c80a750e5d5ce415ea2a0ef73ca2b696f49b6563",
+    "reports\\v58_development\\team_history_refresh_v2\\manifest.json": "2ef526f820e6ab6e1d34c466f94c760733aa2b0c42767a249b814f3819cf4bfc",
+    "data\\processed\\cfb_matchup_features_20261029.parquet": "b81f523e278e8db73aa9940ea3e5cd70738c838e8c6adc5166e03bcfbfd9743e",
+    "reports\\spread_total_schedule_chronology_v2\\team_game_kickoff_map.csv": "da484a86e4e5b3ee321cd9afcf6b97f1802c3c5373d5754046f68c24f44b2464",
+    "reports\\missing_games_evidence_20261029\\raw_schedule_result_evidence.csv": "044f6594f8c035e1187eefc2251e753c8e628291130975b75559d2fa0b3e0a19",
+    "reports\\v58_development\\chronology_repair_v2\\team_game_kickoff_map_v58.csv": "ec381f8939b1da58eeec2cde49e841a0c47781f1ecec0656d263723c2b553089"
+  },
+  "outputs_sha256": {
+    "team_games_2026_research.parquet": "6ee9d3d27553829f815876b544474c9d3bc9208f1d6685a4e8cb4dba7797acb5",
+    "team_game_kickoff_map.csv": "ea71ff5ec10929dee4c79c72ee0e9727e77a585055bde727997bf988c8f9c492"
+  },
+  "historical_source_availability_certified": false,
+  "production_approved": false,
+  "research_only": true
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "cfbd_week8_9_capture_v1",
+  "created_at_utc": "2026-10-30T17:08:15.819227+00:00",
+  "endpoint": "/games/teams",
+  "season": 2026,
+  "source_original_sha256": "b81f523e278e8db73aa9940ea3e5cd70738c838e8c6adc5166e03bcfbfd9743e",
+  "source_recovered_sha256": "6ee9d3d27553829f815876b544474c9d3bc9208f1d6685a4e8cb4dba7797acb5",
+  "captures": [
+    {
+      "week": 8,
+      "request_started_utc": "2026-10-30T17:08:15.832227+00:00",
+      "request_completed_utc": "2026-10-30T17:08:16.454218+00:00",
+      "params": {
+        "year": 2026,
+        "week": 8,
+        "seasonType": "regular"
+      },
+      "raw_response_file": "cfbd_team_stats_week_08_raw.json",
+      "raw_response_sha256": "9dae14c749e75cb58e687c99f9e0bc69d464f8e8ff702c25a354d310700feecf",
+      "selected_file": "team_stats_2026_regular_week_08.json",
+      "selected_sha256": "8344a18cc68ed357d6167a817c4e7c6ecf47a9db7c67e126daf85bc49d06e812",
+      "api_returned_games": 111,
+      "target_games": 56,
+      "matched_games": 56,
+      "missing_game_ids": [],
+      "invalid_pair_ids": [],
+      "score_mismatch_ids": []
+    },
+    {
+      "week": 9,
+      "request_started_utc": "2026-10-30T17:08:16.821187+00:00",
+      "request_completed_utc": "2026-10-30T17:08:17.213420+00:00",
+      "params": {
+        "year": 2026,
+        "week": 9,
+        "seasonType": "regular"
+      },
+      "raw_response_file": "cfbd_team_stats_week_09_raw.json",
+      "raw_response_sha256": "e3298aedb249774552da7f901a4eb970dc6bc78c5cd0803680e08640fda28ec7",
+      "selected_file": "team_stats_2026_regular_week_09.json",
+      "selected_sha256": "680ddc14a15a47b6eb0e31565a13ee8fc4fdf281f9e6fa44aba0d9cd491cdd4e",
+      "api_returned_games": 7,
+      "target_games": 4,
+      "matched_games": 4,
+      "missing_game_ids": [],
+      "invalid_pair_ids": [],
+      "score_mismatch_ids": []
+    }
+  ],
+  "research_only": true,
+  "historical_source_availability_certified": false,
+  "production_approved": false
+}

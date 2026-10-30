@@ -1,0 +1,54 @@
+{
+  "schema": "cfb_full_chronology_rebuild_v2",
+  "created_at_utc": "2026-10-30T17:16:20.959249+00:00",
+  "seasons": [
+    2014,
+    2026
+  ],
+  "team_game_rows": 21878,
+  "games": 10939,
+  "feature_count": 267,
+  "changed_rows": 379,
+  "changed_features": 264,
+  "point_history_mismatches": {
+    "off_points_lag1": 0,
+    "off_points_avg3": 0,
+    "off_points_avg5": 0,
+    "off_points_career_avg": 0,
+    "off_points_season_avg": 0,
+    "def_allowed_points_lag1": 0,
+    "def_allowed_points_avg3": 0,
+    "def_allowed_points_avg5": 0,
+    "def_allowed_points_career_avg": 0,
+    "def_allowed_points_season_avg": 0
+  },
+  "source_sha256": {
+    "reports\\research\\full_2026_source_recovery_v1\\team_games_2026_complete.parquet": "2a92653400a81a5281d1d75579328307f8c61509e3849822281e486fe3cae22f",
+    "reports\\research\\full_2026_source_recovery_v1\\team_game_kickoff_map.csv": "867f5cffab250ec25d7f508fcbe0ef15df2eb797511b5c47c4d3b48c9e4375d9",
+    "reports\\research\\full_2026_source_recovery_v1\\manifest.json": "a579560993692ef1a9923d68c9bfb822722b067d59ee3a5e798cdaf0e8dcb209",
+    "reports\\spread_total_schedule_chronology_v2\\team_game_kickoff_map.csv": "da484a86e4e5b3ee321cd9afcf6b97f1802c3c5373d5754046f68c24f44b2464",
+    "data\\processed\\cfb_matchup_features_20261029.parquet": "b81f523e278e8db73aa9940ea3e5cd70738c838e8c6adc5166e03bcfbfd9743e",
+    "reports\\cfb_matchup_feature_manifest_20261029.json": "281d44e2fc3dd3dd2fad91fd2f6a2413e87c37c8f5c81a9d2db69b79783f3535",
+    "data\\processed\\team_games_2014.parquet": "dc6e7fd8763e316f6c85ebbf3643350ebe86016ff8f1dbdaae92b5618b63553f",
+    "data\\processed\\team_games_2015.parquet": "85da9bb91ab3af71a016bd160cb8d6acfa68077f5e1a709f644739117b3247fe",
+    "data\\processed\\team_games_2016.parquet": "1f21c23890c12fc2754050a3af64721d939094b87431479fdae5fa294af9bbaf",
+    "data\\processed\\team_games_2017.parquet": "4ac1aa1f93180ed29f06c0ba215eadea5ea6152cea4edbb529a53f08be9b1fef",
+    "data\\processed\\team_games_2018.parquet": "4d426cd71da9aec777519c4f45973f06d05a1e2e1dd76b3a275281f2b94d5f9b",
+    "data\\processed\\team_games_2019.parquet": "7e89028f57b3a6ad51980dd156e5d26aada7f645029d3629575427f64e2313c1",
+    "data\\processed\\team_games_2020.parquet": "952f89ff4689132190ed953a0c1a3e2f5f577b025423ed37dc66ddb65fca48a3",
+    "data\\processed\\team_games_2021.parquet": "cff30b54d2da11d6c5bfaccc8082663041c5d6748d43ef796b14d274cfde2599",
+    "data\\processed\\team_games_2022.parquet": "492ee714b963a16894d35bacc6562a20f13eae6effe39d6b6b8faf54ed96872b",
+    "data\\processed\\team_games_2023.parquet": "fbbab6c8e5110f05cc407e5a9dafa0f9d9672fd84050b9c4c195b1aa18c8e265",
+    "data\\processed\\team_games_2024.parquet": "3b58816adcd4322b3c1f188a30a65849a5250ff16eb6ef05d45fa01c4c1cd905",
+    "data\\processed\\team_games_2025.parquet": "fd00fef2ab2befe090115a7bf5a3ceb3152f15afc1e9be00aacc950aa8fbfb51"
+  },
+  "outputs_sha256": {
+    "features_2014_2026_corrected.parquet": "dcae702ac19627a02d0cc3517d610b002c1d966ecfd1e792dd579038d27c66cc",
+    "feature_differences.csv": "04756422a773953f240d00e0c0fc21a4e9295053c041bed818c35fe1c6e5c9b8",
+    "season_change_summary.csv": "fe2c320c476470e40b8acd848e88ace9f331208ca081cdbaa1a4f6f82a8db214"
+  },
+  "week8_9_second_kickoff_source_confirmed": false,
+  "historical_source_availability_certified": false,
+  "production_approved": false,
+  "research_only": true
+}
