@@ -1,0 +1,19 @@
+{
+  "schema": "elo_2026_shadow_ledger_v1",
+  "created_at_utc": "2026-10-30T16:05:17.741343+00:00",
+  "ridge_source_sha256": "95c7b57dc93396e34303457af3636926b41357d2ca0f79717258e5070dd3c414",
+  "elo_source_sha256": "9b9da5ea3a00c880de6ac6763cf4e4ff472d5a68181c5a582920341af8b540dd",
+  "elo_manifest_sha256": "4a9b652bc1da1a23f80ae113e0d8f64ae6fa461dddf6880c60198e504c73be2b",
+  "bridge_manifest_sha256": "a93380dcc37d000a45e93705b5235b4ac6da865f0321c17678283457d796cd94",
+  "frozen_config_sha256": "06de1ac736af48ace34c7c18a07468f0d2632329d3adbe7f61c021b1cdec87c4",
+  "output_sha256": "7a1ea4fa76e6ef76ff149151ff36fcbf0073188ef52f993ea1dc708b4c42b25e",
+  "archived_ridge_games": 52,
+  "paired_forecasts": 50,
+  "future_at_ledger_creation": 50,
+  "ridge_model_compatibility_certified": false,
+  "ridge_original_forecast_timestamp_certified": false,
+  "elo_historical_pit_certified": false,
+  "frozen_correction_applied": false,
+  "production_approved": false,
+  "research_only": true
+}
