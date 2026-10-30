@@ -1,0 +1,231 @@
+game_id,season,team,home_away
+401856719,2026,Auburn,away
+401856719,2026,Georgia,home
+401856720,2026,LSU,home
+401856720,2026,Mississippi State,away
+401856721,2026,Missouri,away
+401856721,2026,Ole Miss,home
+401856722,2026,Kentucky,away
+401856722,2026,Oklahoma,home
+401856723,2026,Alabama,away
+401856723,2026,Tennessee,home
+401856724,2026,Florida,away
+401856724,2026,Texas,home
+401856725,2026,Texas A&M,home
+401856725,2026,The Citadel,away
+401856726,2026,Arkansas,away
+401856726,2026,Vanderbilt,home
+401856809,2026,BYU,home
+401856809,2026,Notre Dame,away
+401856828,2026,Arizona State,away
+401856828,2026,Texas Tech,home
+401856829,2026,Cincinnati,away
+401856829,2026,West Virginia,home
+401856830,2026,Kansas,away
+401856830,2026,Kansas State,home
+401856831,2026,Houston,home
+401856831,2026,Oklahoma State,away
+401856832,2026,Baylor,home
+401856832,2026,TCU,away
+401856833,2026,Colorado,home
+401856833,2026,Utah,away
+401858261,2026,Charleston Southern,away
+401858261,2026,Clemson,home
+401858262,2026,Elon,away
+401858262,2026,Stanford,home
+401858263,2026,Florida State,away
+401858263,2026,Miami,home
+401858264,2026,Georgia Tech,away
+401858264,2026,Virginia Tech,home
+401858265,2026,Louisville,away
+401858265,2026,Syracuse,home
+401858266,2026,Duke,home
+401858266,2026,North Carolina,away
+401858267,2026,Boston College,home
+401858267,2026,Pittsburgh,away
+401858268,2026,SMU,home
+401858268,2026,Virginia,away
+401858269,2026,California,home
+401858269,2026,Wake Forest,away
+401858488,2026,Indiana,home
+401858488,2026,Ohio State,away
+401858489,2026,Maryland,home
+401858489,2026,Rutgers,away
+401858490,2026,Michigan,home
+401858490,2026,Penn State,away
+401858491,2026,Michigan State,home
+401858491,2026,Northwestern,away
+401858492,2026,Nebraska,away
+401858492,2026,Oregon,home
+401858493,2026,Purdue,home
+401858493,2026,Washington,away
+401858494,2026,UCLA,home
+401858494,2026,Wisconsin,away
+401860903,2026,Oregon State,home
+401860903,2026,Washington State,away
+401860904,2026,Fresno State,away
+401860904,2026,San Diego State,home
+401862801,2026,Memphis,away
+401862801,2026,Tulane,home
+401862802,2026,Army,home
+401862802,2026,Florida Atlantic,away
+401862803,2026,Charlotte,away
+401862803,2026,Temple,home
+401862804,2026,Navy,away
+401862804,2026,UTSA,home
+401862805,2026,Rice,home
+401862805,2026,Tulsa,away
+401862806,2026,Kent State,away
+401862806,2026,South Florida,home
+401864520,2026,Nevada,away
+401864520,2026,North Dakota State,home
+401864521,2026,Hawai'i,home
+401864521,2026,New Mexico,away
+401864522,2026,Northern Illinois,away
+401864522,2026,Wyoming,home
+401864523,2026,San José State,away
+401864523,2026,UTEP,home
+401864524,2026,Air Force,home
+401864524,2026,UNLV,away
+401866441,2026,Ball State,away
+401866441,2026,Bowling Green,home
+401866442,2026,Buffalo,home
+401866442,2026,Massachusetts,away
+401866443,2026,Central Michigan,home
+401866443,2026,Western Michigan,away
+401866444,2026,Eastern Michigan,home
+401866444,2026,Toledo,away
+401866445,2026,Ohio,away
+401866445,2026,Sacramento State,home
+401866478,2026,Akron,away
+401866478,2026,Miami (OH),home
+401869844,2026,App State,away
+401869844,2026,Coastal Carolina,home
+401869934,2026,Arkansas State,away
+401869934,2026,Southern Miss,home
+401869957,2026,Georgia State,away
+401869957,2026,James Madison,home
+401869966,2026,Louisiana,home
+401869966,2026,Troy,away
+401871091,2026,Louisiana Tech,away
+401871091,2026,UL Monroe,home
+401856727,2026,Alabama,home
+401856727,2026,Texas A&M,away
+401856728,2026,Auburn,home
+401856728,2026,LSU,away
+401856729,2026,Kentucky,home
+401856729,2026,Vanderbilt,away
+401856730,2026,Mississippi State,home
+401856730,2026,Oklahoma,away
+401856731,2026,South Carolina,home
+401856731,2026,Tennessee,away
+401856732,2026,Ole Miss,away
+401856732,2026,Texas,home
+401856834,2026,Baylor,away
+401856834,2026,Kansas,home
+401856835,2026,BYU,away
+401856835,2026,UCF,home
+401856836,2026,Colorado,away
+401856836,2026,Oklahoma State,home
+401856837,2026,Houston,away
+401856837,2026,Utah,home
+401856838,2026,Arizona,home
+401856838,2026,Iowa State,away
+401856839,2026,Arizona State,home
+401856839,2026,Kansas State,away
+401856840,2026,Cincinnati,home
+401856840,2026,Texas Tech,away
+401856841,2026,TCU,home
+401856841,2026,West Virginia,away
+401858270,2026,California,away
+401858270,2026,SMU,home
+401858271,2026,Duke,away
+401858271,2026,Virginia,home
+401858272,2026,NC State,away
+401858272,2026,Stanford,home
+401858273,2026,Boston College,away
+401858273,2026,Georgia Tech,home
+401858274,2026,Miami,home
+401858274,2026,Pittsburgh,away
+401858275,2026,North Carolina,home
+401858275,2026,Syracuse,away
+401858276,2026,Clemson,home
+401858276,2026,Virginia Tech,away
+401858495,2026,Illinois,home
+401858495,2026,Oregon,away
+401858496,2026,Indiana,away
+401858496,2026,Michigan,home
+401858497,2026,Iowa,away
+401858497,2026,Minnesota,home
+401858498,2026,Northwestern,home
+401858498,2026,Rutgers,away
+401858499,2026,Michigan State,away
+401858499,2026,UCLA,home
+401858500,2026,USC,away
+401858500,2026,Wisconsin,home
+401860905,2026,Colorado State,home
+401860905,2026,San Diego State,away
+401860906,2026,Texas State,home
+401860906,2026,Utah State,away
+401860907,2026,Boise State,away
+401860907,2026,Washington State,home
+401861965,2026,Massachusetts,away
+401861965,2026,UConn,home
+401862807,2026,East Carolina,away
+401862807,2026,Memphis,home
+401862808,2026,Army,away
+401862808,2026,Tulsa,home
+401862809,2026,Florida Atlantic,home
+401862809,2026,Rice,away
+401862810,2026,Navy,home
+401862810,2026,North Texas,away
+401862811,2026,Tulane,home
+401862811,2026,UTSA,away
+401864525,2026,Air Force,away
+401864525,2026,Wyoming,home
+401864526,2026,Hawai'i,away
+401864526,2026,Northern Illinois,home
+401864527,2026,New Mexico,home
+401864527,2026,North Dakota State,away
+401864528,2026,Nevada,home
+401864528,2026,San José State,away
+401866446,2026,Akron,away
+401866446,2026,Kent State,home
+401866447,2026,Ball State,home
+401866447,2026,Sacramento State,away
+401866448,2026,Bowling Green,away
+401866448,2026,Buffalo,home
+401866449,2026,Eastern Michigan,away
+401866449,2026,Ohio,home
+401866450,2026,Toledo,home
+401866450,2026,Western Michigan,away
+401866476,2026,Central Michigan,home
+401866476,2026,Miami (OH),away
+401869845,2026,App State,home
+401869845,2026,James Madison,away
+401869935,2026,Arkansas State,home
+401869935,2026,Georgia State,away
+401869967,2026,Louisiana,away
+401869967,2026,Southern Miss,home
+401871055,2026,Florida International,home
+401871055,2026,Middle Tennessee,away
+401871056,2026,Kennesaw State,home
+401871056,2026,Liberty,away
+401871069,2026,Delaware,home
+401871069,2026,Missouri State,away
+401871070,2026,New Mexico State,away
+401871070,2026,Sam Houston,home
+401871092,2026,Marshall,home
+401871092,2026,South Alabama,away
+401871093,2026,Louisiana Tech,home
+401871093,2026,Old Dominion,away
+401871094,2026,Troy,home
+401871094,2026,UL Monroe,away
+401871057,2026,Jacksonville State,away
+401871057,2026,New Mexico State,home
+401871058,2026,Kennesaw State,away
+401871058,2026,Middle Tennessee,home
+401871071,2026,Delaware,away
+401871071,2026,Western Kentucky,home
+401871072,2026,Missouri State,home
+401871072,2026,Sam Houston,away
