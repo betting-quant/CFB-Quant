@@ -1,0 +1,19 @@
+{
+  "schema_version": "champion_ledger_v1",
+  "created_at_utc": "2026-10-30T15:07:43.699723+00:00",
+  "research_only": true,
+  "production_modified": false,
+  "historical_pregame_certified": false,
+  "provenance_status": "archived_timestamp_not_certified",
+  "margin_convention": "home_points_minus_away_points",
+  "games": 52,
+  "team_rows": 104,
+  "subset_games": 2,
+  "git_commit_at_export": "a291ed4eca1cc074555025451a67a1f4b89d4617",
+  "sources": {
+    "reports\\locked_forecasts\\20261029_preweek9_baseline\\matchup_games_2026_week_9.csv": "95c7b57dc93396e34303457af3636926b41357d2ca0f79717258e5070dd3c414",
+    "reports\\locked_forecasts\\20261029_preweek9_baseline\\matchup_predictions_2026_week_9.csv": "310133b7017c472aac0ef513271bd6c6b484dc1b31dca2c4adf2135b6047c393",
+    "reports\\locked_forecasts\\20261029_preweek9_baseline\\cfb_oct29_baseline_2026.csv": "bb4f5d894e02461791b0e165a50e008bac53719076e9c1a3dd769346f86ab97c"
+  },
+  "output_sha256": "b1cbfc2a922faea6666b60664511f44a12c3a961340690f44f9ef816ab92cde0"
+}
