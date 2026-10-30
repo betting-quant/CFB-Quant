@@ -13,8 +13,11 @@ from urllib.request import Request, urlopen
 
 from cfb_quant.spread_total.elo_capture_integrity_v58 import (
     validate_capture,
-    verified_schedule_and_results,
 )
+from cfb_quant.spread_total.elo_live_validation_v58 import (
+    adapt_live_capture,
+)
+from cfb_quant.spread_total.elo_incremental_v58 import merge_fbs_captures
 from cfb_quant.spread_total.elo_replay_v58 import replay_games
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -100,30 +103,6 @@ def main():
     if response_status != 200:
         raise RuntimeError("Unexpected CFBD HTTP status")
 
-    games = verified_schedule_and_results(
-        raw, manifest, raw, manifest
-    )
-
-    replay = replay_games(games)
-
-    completed = sum(
-        r.get("completed") is True for r in records
-    )
-
-    accepted = sum(
-        g.home_points is not None for g in games
-    )
-
-    assert accepted == completed
-    assert len(games) == len(records)
-    assert verified_digest == digest
-
-    assert all(
-        g.result_available_utc == retrieved
-        for g in games
-        if g.home_points is not None
-    )
-
     stamp = captured_at.strftime("%Y%m%dT%H%M%S%fZ")
     destination = BASE / stamp
 
@@ -138,6 +117,37 @@ def main():
     with manifest_path.open("x", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2)
         f.write("\n")
+
+    adapted = adapt_live_capture(raw, manifest)
+    merged = merge_fbs_captures([(raw, manifest)])
+    games = tuple(merged["games"])
+    exclusions = list(adapted["excluded"])
+
+    exclusions_path = destination / "excluded_completed_games.json"
+    with exclusions_path.open("x", encoding="utf-8") as f:
+        json.dump(exclusions, f, indent=2)
+        f.write("\n")
+
+    replay = replay_games(games)
+
+    completed = adapted["completed"]
+    accepted = adapted["accepted"]
+
+    assert accepted + len(exclusions) == completed
+    assert 0 < len(games) <= len(records)
+    assert all(
+        g.home_points is not None
+        for g in games
+        if g.result_available_utc is not None
+    )
+    assert verified_digest == digest
+    assert adapted["source_sha256"] == digest
+
+    assert all(
+        g.result_available_utc == retrieved
+        for g in games
+        if g.home_points is not None
+    )
 
     validate_capture(
         payload_path.read_bytes(),
@@ -157,7 +167,11 @@ def main():
     print("SHA256:", digest)
     print("Source records:", len(records))
     print("Completed results observed:", completed)
-    print("Adapted games:", len(games))
+    print("Completed results accepted:", accepted)
+    print("Completed results quarantined:", len(exclusions))
+    for item in exclusions[:10]:
+        print("QUARANTINED:", item)
+    print("Eligible FBS replay games:", len(games))
     print("Replay snapshots:", len(replay.snapshots))
     print("Replay updates applied:", replay.updates_applied)
     print("Future kickoffs in capture:", len(future))
