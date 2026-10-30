@@ -1,0 +1,29 @@
+{
+  "schema": "elo_spread_walkforward_v1",
+  "created_at_utc": "2026-10-30T15:28:22.646419+00:00",
+  "git_revision": "c68c91a0d1d53faa2d97f87060fdce1565fe55af",
+  "source": "reports\\research\\historical_elo_v1\\pregame_elo_features.csv",
+  "source_sha256": "d57f2efd52be8782f36fba7cc963bc6aec407ddd22b49c72f9a88cf6a9c0ff8f",
+  "predictions_sha256": "2f9c937bfb2ea764a789d033a40f02819b5993f8218ccf6c831fc214f48b3469",
+  "metrics_sha256": "437e4fb9230e1341a51826092f0652bc91e1b24f7959c4fe776c7f577ef4f763",
+  "training_policy": "strictly_earlier_seasons",
+  "model": "linear_regression_elo_difference_only",
+  "target": "actual_home_margin",
+  "margin_convention": "home_minus_away",
+  "test_seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "test_games": 6002,
+  "overall_mae": 14.94654836967491,
+  "overall_rmse": 18.80219811319752,
+  "historical_point_in_time_certified": false,
+  "eligibility": "source historical matchup universe; FBS-only equivalence not yet certified",
+  "production_approved": false,
+  "research_only": true
+}

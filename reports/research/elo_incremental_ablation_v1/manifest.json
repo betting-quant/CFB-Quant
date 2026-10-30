@@ -1,0 +1,24 @@
+{
+  "experiment": "elo_incremental_ablation_v1",
+  "research_only": true,
+  "production_approved": false,
+  "historical_pit_certified": false,
+  "ridge_oof_provenance_certified": false,
+  "seasons": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "games": 3602,
+  "ridge_source_sha256": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+  "elo_source_sha256": "2f9c937bfb2ea764a789d033a40f02819b5993f8218ccf6c831fc214f48b3469",
+  "challenger_source_sha256": "bacd1ed14f22ba8bff875c81ed7ba8953ad025645baa672e12d039502589651d",
+  "bias_only_mae": 13.421246412809882,
+  "ridge_elo_mae": 13.36438478550954,
+  "incremental_elo_gain": 0.05686162730034283,
+  "bootstrap_95_interval": [
+    -0.02600613967928389,
+    0.14065477414574268
+  ]
+}

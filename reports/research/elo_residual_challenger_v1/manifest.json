@@ -1,0 +1,21 @@
+{
+  "schema": "elo_residual_challenger_v1",
+  "created_at_utc": "2026-10-30T15:31:23.283817+00:00",
+  "git_revision": "c68c91a0d1d53faa2d97f87060fdce1565fe55af",
+  "ridge_source_sha256": "17e09530ce902d72feff38b2eea5d33f502e8ff76bca348113554e924e30b101",
+  "elo_source_sha256": "2f9c937bfb2ea764a789d033a40f02819b5993f8218ccf6c831fc214f48b3469",
+  "predictions_sha256": "bacd1ed14f22ba8bff875c81ed7ba8953ad025645baa672e12d039502589651d",
+  "metrics_sha256": "0f9d4c2aa47aecdd5a7ff4c5b91debe3cdecf289fcdd886ab46e70b0288eb077",
+  "training_policy": "strictly_earlier_seasons",
+  "evaluation_seasons": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "model": "linear_residual_correction_from_elo_ridge_disagreement",
+  "historical_point_in_time_certified": false,
+  "ridge_oof_training_provenance_certified": false,
+  "production_approved": false,
+  "research_only": true
+}

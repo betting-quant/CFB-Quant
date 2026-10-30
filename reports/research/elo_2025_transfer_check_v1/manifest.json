@@ -1,0 +1,28 @@
+{
+  "experiment": "elo_2025_transfer_check_v1",
+  "created_at_utc": "2026-10-30T15:33:21.827770+00:00",
+  "baseline_source_sha256": "f9ed76764fc3c3d2723f57ffe36ed2df855e763ef34f40a6e63948f324877128",
+  "elo_source_sha256": "2f9c937bfb2ea764a789d033a40f02819b5993f8218ccf6c831fc214f48b3469",
+  "predictions_sha256": "7fa2dae1c5f28d1317420b97d929550e038a8b8ebb7e53a913b337c8ecd03750",
+  "training_seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "test_season": 2025,
+  "training_games": 5056,
+  "test_games": 934,
+  "intercept": -0.7177186947941048,
+  "coefficient": 0.29391740419077333,
+  "baseline_mae": 13.386933988725831,
+  "bias_only_mae": 13.432317353267132,
+  "challenger_mae": 13.221434423883789,
+  "historical_point_in_time_certified": false,
+  "baseline_oof_provenance_certified": false,
+  "previously_inspected_test_period": true,
+  "research_only": true,
+  "production_approved": false
+}
