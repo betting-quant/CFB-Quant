@@ -1,0 +1,8 @@
+game_id,week,home_team,away_team,kickoff_utc,completed_in_current_schedule,before_safety_cutoff
+401862802,7,Army,Florida Atlantic,2026-10-17 16:00:00+00:00,False,True
+401869957,7,James Madison,Georgia State,2026-10-17 16:00:00+00:00,False,True
+401869966,7,Louisiana,Troy,2026-10-17 21:00:00+00:00,False,True
+401869845,8,App State,James Madison,2026-10-22 23:00:00+00:00,False,True
+401862809,8,Florida Atlantic,Rice,2026-10-24 16:00:00+00:00,False,True
+401862810,8,Navy,North Texas,2026-10-24 19:30:00+00:00,False,True
+401871094,8,Troy,UL Monroe,2026-10-24 20:00:00+00:00,False,True

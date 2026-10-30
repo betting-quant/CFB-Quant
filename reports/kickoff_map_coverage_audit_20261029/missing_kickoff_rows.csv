@@ -1,0 +1,391 @@
+game_id,season,week,team,home_away,raw_start_date,raw_completed,raw_home_team,raw_away_team,has_valid_raw_kickoff,duplicate_raw_schedule_id,raw_team_matches_side,candidate_for_review
+401856696,2026,4,Alabama,home,2026-09-26T23:00:00.000Z,True,Alabama,South Carolina,True,False,True,True
+401856696,2026,4,South Carolina,away,2026-09-26T23:00:00.000Z,True,Alabama,South Carolina,True,False,True,True
+401856697,2026,4,Arkansas,home,2026-09-27T00:00:00.000Z,True,Arkansas,Tulsa,True,False,True,True
+401856697,2026,4,Tulsa,away,2026-09-27T00:00:00.000Z,True,Arkansas,Tulsa,True,False,True,True
+401856698,2026,4,Auburn,home,2026-09-26T20:15:00.000Z,True,Auburn,Vanderbilt,True,False,True,True
+401856698,2026,4,Vanderbilt,away,2026-09-26T20:15:00.000Z,True,Auburn,Vanderbilt,True,False,True,True
+401856699,2026,4,Florida,home,2026-09-26T19:30:00.000Z,True,Florida,Ole Miss,True,False,True,True
+401856699,2026,4,Ole Miss,away,2026-09-26T19:30:00.000Z,True,Florida,Ole Miss,True,False,True,True
+401856700,2026,4,Georgia,home,2026-09-26T19:30:00.000Z,True,Georgia,Oklahoma,True,False,True,True
+401856700,2026,4,Oklahoma,away,2026-09-26T19:30:00.000Z,True,Georgia,Oklahoma,True,False,True,True
+401856702,2026,4,LSU,home,2026-09-26T23:30:00.000Z,True,LSU,Texas A&M,True,False,True,True
+401856702,2026,4,Texas A&M,away,2026-09-26T23:30:00.000Z,True,LSU,Texas A&M,True,False,True,True
+401856703,2026,4,Mississippi State,home,2026-09-26T23:45:00.000Z,True,Mississippi State,Missouri,True,False,True,True
+401856703,2026,4,Missouri,away,2026-09-26T23:45:00.000Z,True,Mississippi State,Missouri,True,False,True,True
+401856704,2026,4,Tennessee,home,2026-09-26T16:00:00.000Z,True,Tennessee,Texas,True,False,True,True
+401856704,2026,4,Texas,away,2026-09-26T16:00:00.000Z,True,Tennessee,Texas,True,False,True,True
+401856705,2026,5,Georgia,home,2026-10-03T16:45:00.000Z,True,Georgia,Vanderbilt,True,False,True,True
+401856705,2026,5,Vanderbilt,away,2026-10-03T16:45:00.000Z,True,Georgia,Vanderbilt,True,False,True,True
+401856706,2026,5,LSU,home,2026-10-03T23:45:00.000Z,True,LSU,McNeese,True,False,True,True
+401856706,2026,5,McNeese,away,2026-10-03T23:45:00.000Z,True,LSU,McNeese,True,False,True,True
+401856707,2026,5,Mississippi State,home,2026-10-03T16:00:00.000Z,True,Mississippi State,Alabama,True,False,True,True
+401856707,2026,5,Alabama,away,2026-10-03T16:00:00.000Z,True,Mississippi State,Alabama,True,False,True,True
+401856708,2026,5,Missouri,home,2026-10-03T19:30:00.000Z,True,Missouri,Florida,True,False,True,True
+401856708,2026,5,Florida,away,2026-10-03T19:30:00.000Z,True,Missouri,Florida,True,False,True,True
+401856709,2026,5,South Carolina,home,2026-10-03T20:15:00.000Z,True,South Carolina,Kentucky,True,False,True,True
+401856709,2026,5,Kentucky,away,2026-10-03T20:15:00.000Z,True,South Carolina,Kentucky,True,False,True,True
+401856710,2026,5,Tennessee,home,2026-10-03T19:30:00.000Z,True,Tennessee,Auburn,True,False,True,True
+401856710,2026,5,Auburn,away,2026-10-03T19:30:00.000Z,True,Tennessee,Auburn,True,False,True,True
+401856711,2026,5,Texas A&M,home,2026-10-03T23:00:00.000Z,True,Texas A&M,Arkansas,True,False,True,True
+401856711,2026,5,Arkansas,away,2026-10-03T23:00:00.000Z,True,Texas A&M,Arkansas,True,False,True,True
+401856804,2026,4,Washington State,home,2026-09-26T23:30:00.000Z,True,Washington State,Arizona,True,False,True,True
+401856804,2026,4,Arizona,away,2026-09-26T23:30:00.000Z,True,Washington State,Arizona,True,False,True,True
+401856805,2026,4,Texas Tech,home,2026-09-26T16:00:00.000Z,True,Texas Tech,Sam Houston,True,False,True,True
+401856805,2026,4,Sam Houston,away,2026-09-26T16:00:00.000Z,True,Texas Tech,Sam Houston,True,False,True,True
+401856806,2026,4,Georgia Southern,home,2026-09-26T20:00:00.000Z,True,Georgia Southern,Houston,True,False,True,True
+401856806,2026,4,Houston,away,2026-09-26T20:00:00.000Z,True,Georgia Southern,Houston,True,False,True,True
+401856807,2026,5,Kansas,home,2026-10-03T16:00:00.000Z,True,Kansas,Middle Tennessee,True,False,True,True
+401856807,2026,5,Middle Tennessee,away,2026-10-03T16:00:00.000Z,True,Kansas,Middle Tennessee,True,False,True,True
+401856813,2026,4,Baylor,home,2026-09-26T16:00:00.000Z,True,Baylor,Colorado,True,False,True,True
+401856813,2026,4,Colorado,away,2026-09-26T16:00:00.000Z,True,Baylor,Colorado,True,False,True,True
+401856814,2026,4,Cincinnati,home,2026-09-26T23:00:00.000Z,True,Cincinnati,Kansas State,True,False,True,True
+401856814,2026,4,Kansas State,away,2026-09-26T23:00:00.000Z,True,Cincinnati,Kansas State,True,False,True,True
+401856815,2026,4,UCF,home,2026-09-26T19:30:00.000Z,True,UCF,TCU,True,False,True,True
+401856815,2026,4,TCU,away,2026-09-26T19:30:00.000Z,True,UCF,TCU,True,False,True,True
+401856816,2026,4,Iowa State,home,2026-09-26T19:30:00.000Z,True,Iowa State,Utah,True,False,True,True
+401856816,2026,4,Utah,away,2026-09-26T19:30:00.000Z,True,Iowa State,Utah,True,False,True,True
+401856817,2026,5,Arizona State,home,2026-10-04T02:30:00.000Z,True,Arizona State,Baylor,True,False,True,True
+401856817,2026,5,Baylor,away,2026-10-04T02:30:00.000Z,True,Arizona State,Baylor,True,False,True,True
+401856818,2026,5,TCU,home,2026-10-03T23:00:00.000Z,True,TCU,BYU,True,False,True,True
+401856818,2026,5,BYU,away,2026-10-03T23:00:00.000Z,True,TCU,BYU,True,False,True,True
+401856819,2026,5,Houston,home,2026-10-03T16:00:00.000Z,True,Houston,UCF,True,False,True,True
+401856819,2026,5,UCF,away,2026-10-03T16:00:00.000Z,True,Houston,UCF,True,False,True,True
+401856820,2026,5,Arizona,home,2026-10-04T03:00:00.000Z,True,Arizona,Cincinnati,True,False,True,True
+401856820,2026,5,Cincinnati,away,2026-10-04T03:00:00.000Z,True,Arizona,Cincinnati,True,False,True,True
+401856821,2026,5,Colorado,home,2026-10-03T23:30:00.000Z,True,Colorado,Texas Tech,True,False,True,True
+401856821,2026,5,Texas Tech,away,2026-10-03T23:30:00.000Z,True,Colorado,Texas Tech,True,False,True,True
+401856822,2026,5,Iowa State,home,2026-10-03T16:00:00.000Z,True,Iowa State,West Virginia,True,False,True,True
+401856822,2026,5,West Virginia,away,2026-10-03T16:00:00.000Z,True,Iowa State,West Virginia,True,False,True,True
+401856826,2026,6,BYU,home,2026-10-10T02:15:00.000Z,True,BYU,Iowa State,True,False,True,True
+401856826,2026,6,Iowa State,away,2026-10-10T02:15:00.000Z,True,BYU,Iowa State,True,False,True,True
+401856881,2026,4,West Virginia,home,2026-09-26T23:00:00.000Z,True,West Virginia,Oklahoma State,True,False,True,True
+401856881,2026,4,Oklahoma State,away,2026-09-26T23:00:00.000Z,True,West Virginia,Oklahoma State,True,False,True,True
+401858234,2026,4,California,home,2026-09-26T02:30:00.000Z,True,California,Clemson,True,False,True,True
+401858234,2026,4,Clemson,away,2026-09-26T02:30:00.000Z,True,California,Clemson,True,False,True,True
+401858236,2026,4,Pittsburgh,home,2026-09-26T16:00:00.000Z,True,Pittsburgh,Bucknell,True,False,True,True
+401858236,2026,4,Bucknell,away,2026-09-26T16:00:00.000Z,True,Pittsburgh,Bucknell,True,False,True,True
+401858237,2026,4,Florida State,home,2026-09-26T19:00:00.000Z,True,Florida State,Central Arkansas,True,False,True,True
+401858237,2026,4,Central Arkansas,away,2026-09-26T19:00:00.000Z,True,Florida State,Central Arkansas,True,False,True,True
+401858238,2026,4,Miami,home,2026-09-26T22:30:00.000Z,True,Miami,Central Michigan,True,False,True,True
+401858238,2026,4,Central Michigan,away,2026-09-26T22:30:00.000Z,True,Miami,Central Michigan,True,False,True,True
+401858239,2026,4,Virginia,home,2026-09-26T22:00:00.000Z,True,Virginia,Delaware,True,False,True,True
+401858239,2026,4,Delaware,away,2026-09-26T22:00:00.000Z,True,Virginia,Delaware,True,False,True,True
+401858240,2026,4,Stanford,home,2026-09-27T02:30:00.000Z,True,Stanford,Georgia Tech,True,False,True,True
+401858240,2026,4,Georgia Tech,away,2026-09-27T02:30:00.000Z,True,Stanford,Georgia Tech,True,False,True,True
+401858241,2026,4,SMU,home,2026-09-27T01:00:00.000Z,True,SMU,Missouri State,True,False,True,True
+401858241,2026,4,Missouri State,away,2026-09-27T01:00:00.000Z,True,SMU,Missouri State,True,False,True,True
+401858242,2026,4,Boston College,home,2026-09-26T16:00:00.000Z,True,Boston College,Virginia Tech,True,False,True,True
+401858242,2026,4,Virginia Tech,away,2026-09-26T16:00:00.000Z,True,Boston College,Virginia Tech,True,False,True,True
+401858243,2026,4,Louisville,home,2026-09-26T16:00:00.000Z,True,Louisville,Wake Forest,True,False,True,True
+401858243,2026,4,Wake Forest,away,2026-09-26T16:00:00.000Z,True,Louisville,Wake Forest,True,False,True,True
+401858244,2026,4,Duke,home,2026-09-26T19:30:00.000Z,True,Duke,William & Mary,True,False,True,True
+401858244,2026,4,William & Mary,away,2026-09-26T19:30:00.000Z,True,Duke,William & Mary,True,False,True,True
+401858245,2026,5,Virginia Tech,home,2026-10-02T23:00:00.000Z,True,Virginia Tech,Pittsburgh,True,False,True,True
+401858245,2026,5,Pittsburgh,away,2026-10-02T23:00:00.000Z,True,Virginia Tech,Pittsburgh,True,False,True,True
+401858246,2026,5,SMU,home,2026-10-03T16:00:00.000Z,True,SMU,Boston College,True,False,True,True
+401858246,2026,5,Boston College,away,2026-10-03T16:00:00.000Z,True,SMU,Boston College,True,False,True,True
+401858247,2026,5,UNLV,home,2026-10-03T19:30:00.000Z,True,UNLV,California,True,False,True,True
+401858247,2026,5,California,away,2026-10-03T19:30:00.000Z,True,UNLV,California,True,False,True,True
+401858248,2026,5,NC State,home,2026-10-03T19:30:00.000Z,True,NC State,Louisville,True,False,True,True
+401858248,2026,5,Louisville,away,2026-10-03T19:30:00.000Z,True,NC State,Louisville,True,False,True,True
+401858249,2026,5,Clemson,home,2026-10-03T23:30:00.000Z,True,Clemson,Miami,True,False,True,True
+401858249,2026,5,Miami,away,2026-10-03T23:30:00.000Z,True,Clemson,Miami,True,False,True,True
+401858250,2026,5,North Carolina,home,2026-10-03T16:00:00.000Z,True,North Carolina,Notre Dame,True,False,True,True
+401858250,2026,5,Notre Dame,away,2026-10-03T16:00:00.000Z,True,North Carolina,Notre Dame,True,False,True,True
+401858251,2026,5,Wake Forest,home,2026-10-03T16:00:00.000Z,True,Wake Forest,Stanford,True,False,True,True
+401858251,2026,5,Stanford,away,2026-10-03T16:00:00.000Z,True,Wake Forest,Stanford,True,False,True,True
+401858252,2026,5,UConn,home,2026-10-03T16:00:00.000Z,True,UConn,Syracuse,True,False,True,True
+401858252,2026,5,Syracuse,away,2026-10-03T16:00:00.000Z,True,UConn,Syracuse,True,False,True,True
+401858253,2026,5,Florida State,home,2026-10-03T19:30:00.000Z,True,Florida State,Virginia,True,False,True,True
+401858253,2026,5,Virginia,away,2026-10-03T19:30:00.000Z,True,Florida State,Virginia,True,False,True,True
+401858254,2026,6,Louisville,home,2026-10-09T23:00:00.000Z,True,Louisville,Florida State,True,False,True,True
+401858254,2026,6,Florida State,away,2026-10-09T23:00:00.000Z,True,Louisville,Florida State,True,False,True,True
+401858461,2026,4,Indiana,home,2026-09-26T00:00:00.000Z,True,Indiana,Northwestern,True,False,True,True
+401858461,2026,4,Northwestern,away,2026-09-26T00:00:00.000Z,True,Indiana,Northwestern,True,False,True,True
+401858462,2026,4,Maryland,home,2026-09-26T17:30:00.000Z,True,Maryland,UCLA,True,False,True,True
+401858462,2026,4,UCLA,away,2026-09-26T17:30:00.000Z,True,Maryland,UCLA,True,False,True,True
+401858463,2026,4,Michigan,home,2026-09-26T19:30:00.000Z,True,Michigan,Iowa,True,False,True,True
+401858463,2026,4,Iowa,away,2026-09-26T19:30:00.000Z,True,Michigan,Iowa,True,False,True,True
+401858464,2026,4,Michigan State,home,2026-09-26T21:00:00.000Z,True,Michigan State,Nebraska,True,False,True,True
+401858464,2026,4,Nebraska,away,2026-09-26T21:00:00.000Z,True,Michigan State,Nebraska,True,False,True,True
+401858465,2026,4,Ohio State,home,2026-09-26T16:00:00.000Z,True,Ohio State,Illinois,True,False,True,True
+401858465,2026,4,Illinois,away,2026-09-26T16:00:00.000Z,True,Ohio State,Illinois,True,False,True,True
+401858466,2026,4,Penn State,home,2026-09-26T21:00:00.000Z,True,Penn State,Wisconsin,True,False,True,True
+401858466,2026,4,Wisconsin,away,2026-09-26T21:00:00.000Z,True,Penn State,Wisconsin,True,False,True,True
+401858467,2026,4,Purdue,home,2026-09-26T18:00:00.000Z,True,Purdue,Notre Dame,True,False,True,True
+401858467,2026,4,Notre Dame,away,2026-09-26T18:00:00.000Z,True,Purdue,Notre Dame,True,False,True,True
+401858468,2026,4,Rutgers,home,2026-09-25T23:00:00.000Z,True,Rutgers,Howard,True,False,True,True
+401858468,2026,4,Howard,away,2026-09-25T23:00:00.000Z,True,Rutgers,Howard,True,False,True,True
+401858469,2026,4,USC,home,2026-09-26T23:30:00.000Z,True,USC,Oregon,True,False,True,True
+401858469,2026,4,Oregon,away,2026-09-26T23:30:00.000Z,True,USC,Oregon,True,False,True,True
+401858470,2026,4,Washington,home,2026-09-27T03:00:00.000Z,True,Washington,Minnesota,True,False,True,True
+401858470,2026,4,Minnesota,away,2026-09-27T03:00:00.000Z,True,Washington,Minnesota,True,False,True,True
+401858472,2026,5,Illinois,home,2026-10-03T20:15:00.000Z,True,Illinois,Purdue,True,False,True,True
+401858472,2026,5,Purdue,away,2026-10-03T20:15:00.000Z,True,Illinois,Purdue,True,False,True,True
+401858473,2026,5,Iowa,home,2026-10-03T19:30:00.000Z,True,Iowa,Ohio State,True,False,True,True
+401858473,2026,5,Ohio State,away,2026-10-03T19:30:00.000Z,True,Iowa,Ohio State,True,False,True,True
+401858474,2026,5,Minnesota,home,2026-10-03T16:00:00.000Z,True,Minnesota,Michigan,True,False,True,True
+401858474,2026,5,Michigan,away,2026-10-03T16:00:00.000Z,True,Minnesota,Michigan,True,False,True,True
+401858475,2026,5,Nebraska,home,2026-10-03T20:00:00.000Z,True,Nebraska,Maryland,True,False,True,True
+401858475,2026,5,Maryland,away,2026-10-03T20:00:00.000Z,True,Nebraska,Maryland,True,False,True,True
+401858476,2026,5,Northwestern,home,2026-10-03T00:00:00.000Z,True,Northwestern,Penn State,True,False,True,True
+401858476,2026,5,Penn State,away,2026-10-03T00:00:00.000Z,True,Northwestern,Penn State,True,False,True,True
+401858477,2026,5,Rutgers,home,2026-10-04T00:00:00.000Z,True,Rutgers,Indiana,True,False,True,True
+401858477,2026,5,Indiana,away,2026-10-04T00:00:00.000Z,True,Rutgers,Indiana,True,False,True,True
+401858478,2026,5,USC,home,2026-10-03T23:30:00.000Z,True,USC,Washington,True,False,True,True
+401858478,2026,5,Washington,away,2026-10-03T23:30:00.000Z,True,USC,Washington,True,False,True,True
+401858479,2026,5,Wisconsin,home,2026-10-03T16:30:00.000Z,True,Wisconsin,Michigan State,True,False,True,True
+401858479,2026,5,Michigan State,away,2026-10-03T16:30:00.000Z,True,Wisconsin,Michigan State,True,False,True,True
+401858487,2026,6,Washington,home,2026-10-10T01:00:00.000Z,True,Washington,Iowa,True,False,True,True
+401858487,2026,6,Iowa,away,2026-10-10T01:00:00.000Z,True,Washington,Iowa,True,False,True,True
+401860891,2026,4,Fresno State,home,2026-09-27T02:00:00.000Z,True,Fresno State,Rice,True,False,True,True
+401860891,2026,4,Rice,away,2026-09-27T02:00:00.000Z,True,Fresno State,Rice,True,False,True,True
+401860892,2026,4,Texas State,home,2026-09-26T22:00:00.000Z,True,Texas State,Incarnate Word,True,False,True,True
+401860892,2026,4,Incarnate Word,away,2026-09-26T22:00:00.000Z,True,Texas State,Incarnate Word,True,False,True,True
+401860893,2026,4,Toledo,home,2026-09-26T16:00:00.000Z,True,Toledo,San Diego State,True,False,True,True
+401860893,2026,4,San Diego State,away,2026-09-26T16:00:00.000Z,True,Toledo,San Diego State,True,False,True,True
+401860894,2026,4,Utah State,home,2026-09-26T23:30:00.000Z,True,Utah State,Troy,True,False,True,True
+401860894,2026,4,Troy,away,2026-09-26T23:30:00.000Z,True,Utah State,Troy,True,False,True,True
+401860895,2026,4,UTEP,home,2026-09-27T01:00:00.000Z,True,UTEP,Oregon State,True,False,True,True
+401860895,2026,4,Oregon State,away,2026-09-27T01:00:00.000Z,True,UTEP,Oregon State,True,False,True,True
+401860896,2026,4,UTSA,home,2026-09-26T16:00:00.000Z,True,UTSA,Colorado State,True,False,True,True
+401860896,2026,4,Colorado State,away,2026-09-26T16:00:00.000Z,True,UTSA,Colorado State,True,False,True,True
+401860897,2026,4,Western Michigan,home,2026-09-26T19:30:00.000Z,True,Western Michigan,Boise State,True,False,True,True
+401860897,2026,4,Boise State,away,2026-09-26T19:30:00.000Z,True,Western Michigan,Boise State,True,False,True,True
+401860898,2026,5,Boise State,home,2026-10-03T23:30:00.000Z,True,Boise State,Utah State,True,False,True,True
+401860898,2026,5,Utah State,away,2026-10-03T23:30:00.000Z,True,Boise State,Utah State,True,False,True,True
+401860899,2026,5,Colorado State,home,2026-10-03T22:00:00.000Z,True,Colorado State,Oregon State,True,False,True,True
+401860899,2026,5,Oregon State,away,2026-10-03T22:00:00.000Z,True,Colorado State,Oregon State,True,False,True,True
+401860900,2026,5,San Diego State,home,2026-10-04T02:30:00.000Z,True,San Diego State,Texas State,True,False,True,True
+401860900,2026,5,Texas State,away,2026-10-04T02:30:00.000Z,True,San Diego State,Texas State,True,False,True,True
+401860921,2026,5,Washington State,home,2026-10-04T01:30:00.000Z,True,Washington State,Fresno State,True,False,True,True
+401860921,2026,5,Fresno State,away,2026-10-04T01:30:00.000Z,True,Washington State,Fresno State,True,False,True,True
+401860922,2026,6,Utah State,home,2026-10-10T01:00:00.000Z,True,Utah State,Washington State,True,False,True,True
+401860922,2026,6,Washington State,away,2026-10-10T01:00:00.000Z,True,Utah State,Washington State,True,False,True,True
+401861970,2026,4,Miami (OH),home,2026-09-26T19:30:00.000Z,True,Miami (OH),UConn,True,False,True,True
+401861970,2026,4,UConn,away,2026-09-26T19:30:00.000Z,True,Miami (OH),UConn,True,False,True,True
+401862778,2026,4,UAB,home,2026-09-25T23:00:00.000Z,True,UAB,Navy,True,False,True,True
+401862778,2026,4,Navy,away,2026-09-25T23:00:00.000Z,True,UAB,Navy,True,False,True,True
+401862779,2026,4,Temple,home,2026-09-25T20:00:00.000Z,True,Temple,Army,True,False,True,True
+401862779,2026,4,Army,away,2026-09-25T20:00:00.000Z,True,Temple,Army,True,False,True,True
+401862780,2026,4,Charlotte,home,2026-09-26T22:30:00.000Z,True,Charlotte,Louisiana,True,False,True,True
+401862780,2026,4,Louisiana,away,2026-09-26T22:30:00.000Z,True,Charlotte,Louisiana,True,False,True,True
+401862781,2026,4,East Carolina,home,2026-09-26T20:00:00.000Z,True,East Carolina,North Carolina Central,True,False,True,True
+401862781,2026,4,North Carolina Central,away,2026-09-26T20:00:00.000Z,True,East Carolina,North Carolina Central,True,False,True,True
+401862782,2026,4,UL Monroe,home,2026-09-27T00:00:00.000Z,True,UL Monroe,Florida Atlantic,True,False,True,True
+401862782,2026,4,Florida Atlantic,away,2026-09-27T00:00:00.000Z,True,UL Monroe,Florida Atlantic,True,False,True,True
+401862783,2026,4,North Texas,home,2026-09-26T23:30:00.000Z,True,North Texas,Houston Christian,True,False,True,True
+401862783,2026,4,Houston Christian,away,2026-09-26T23:30:00.000Z,True,North Texas,Houston Christian,True,False,True,True
+401862784,2026,4,Tulane,home,2026-09-26T23:00:00.000Z,True,Tulane,Southern Miss,True,False,True,True
+401862784,2026,4,Southern Miss,away,2026-09-26T23:00:00.000Z,True,Tulane,Southern Miss,True,False,True,True
+401862785,2026,4,Bowling Green,home,2026-09-26T21:00:00.000Z,True,Bowling Green,South Florida,True,False,True,True
+401862785,2026,4,South Florida,away,2026-09-26T21:00:00.000Z,True,Bowling Green,South Florida,True,False,True,True
+401862786,2026,5,Tulsa,home,2026-10-02T01:00:00.000Z,True,Tulsa,North Texas,True,False,True,True
+401862786,2026,5,North Texas,away,2026-10-02T01:00:00.000Z,True,Tulsa,North Texas,True,False,True,True
+401862787,2026,5,Charlotte,home,2026-10-03T15:00:00.000Z,True,Charlotte,Memphis,True,False,True,True
+401862787,2026,5,Memphis,away,2026-10-03T15:00:00.000Z,True,Charlotte,Memphis,True,False,True,True
+401862788,2026,5,Rice,home,2026-10-03T23:00:00.000Z,True,Rice,UTSA,True,False,True,True
+401862788,2026,5,UTSA,away,2026-10-03T23:00:00.000Z,True,Rice,UTSA,True,False,True,True
+401862790,2026,5,Florida Atlantic,home,2026-10-03T22:00:00.000Z,True,Florida Atlantic,Texas Southern,True,False,True,True
+401862790,2026,5,Texas Southern,away,2026-10-03T22:00:00.000Z,True,Florida Atlantic,Texas Southern,True,False,True,True
+401862791,2026,5,Air Force,home,2026-10-03T16:00:00.000Z,True,Air Force,Navy,True,False,True,True
+401862791,2026,5,Navy,away,2026-10-03T16:00:00.000Z,True,Air Force,Navy,True,False,True,True
+401862792,2026,5,South Florida,home,2026-10-03T23:30:00.000Z,True,South Florida,Temple,True,False,True,True
+401862792,2026,5,Temple,away,2026-10-03T23:30:00.000Z,True,South Florida,Temple,True,False,True,True
+401862793,2026,5,UAB,home,2026-10-03T19:30:00.000Z,True,UAB,Samford,True,False,True,True
+401862793,2026,5,Samford,away,2026-10-03T19:30:00.000Z,True,UAB,Samford,True,False,True,True
+401862794,2026,6,UTSA,home,2026-10-08T23:30:00.000Z,True,UTSA,South Florida,True,False,True,True
+401862794,2026,6,South Florida,away,2026-10-08T23:30:00.000Z,True,UTSA,South Florida,True,False,True,True
+401864509,2026,4,Nevada,home,2026-09-27T02:30:00.000Z,True,Nevada,Air Force,True,False,True,True
+401864509,2026,4,Air Force,away,2026-09-27T02:30:00.000Z,True,Nevada,Air Force,True,False,True,True
+401864510,2026,4,Wyoming,home,2026-09-26T19:00:00.000Z,True,Wyoming,Hawai'i,True,False,True,True
+401864510,2026,4,Hawai'i,away,2026-09-26T19:00:00.000Z,True,Wyoming,Hawai'i,True,False,True,True
+401864511,2026,4,Georgia State,home,2026-09-26T18:00:00.000Z,True,Georgia State,Northern Illinois,True,False,True,True
+401864511,2026,4,Northern Illinois,away,2026-09-26T18:00:00.000Z,True,Georgia State,Northern Illinois,True,False,True,True
+401864512,2026,4,Akron,home,2026-09-26T16:00:00.000Z,True,Akron,UNLV,True,False,True,True
+401864512,2026,4,UNLV,away,2026-09-26T16:00:00.000Z,True,Akron,UNLV,True,False,True,True
+401864513,2026,5,Hawai'i,home,2026-10-04T03:59:00.000Z,True,Hawai'i,San José State,True,False,True,True
+401864513,2026,5,San José State,away,2026-10-04T03:59:00.000Z,True,Hawai'i,San José State,True,False,True,True
+401864514,2026,5,New Mexico,home,2026-10-03T20:00:00.000Z,True,New Mexico,UTEP,True,False,True,True
+401864514,2026,5,UTEP,away,2026-10-03T20:00:00.000Z,True,New Mexico,UTEP,True,False,True,True
+401864515,2026,5,North Dakota State,home,2026-10-03T19:30:00.000Z,True,North Dakota State,Wyoming,True,False,True,True
+401864515,2026,5,Wyoming,away,2026-10-03T19:30:00.000Z,True,North Dakota State,Wyoming,True,False,True,True
+401864519,2026,6,San José State,home,2026-10-10T01:00:00.000Z,True,San José State,Wyoming,True,False,True,True
+401864519,2026,6,Wyoming,away,2026-10-10T01:00:00.000Z,True,San José State,Wyoming,True,False,True,True
+401864572,2026,4,NC State,home,2026-09-26T23:30:00.000Z,True,NC State,App State,True,False,True,True
+401864572,2026,4,App State,away,2026-09-26T23:30:00.000Z,True,NC State,App State,True,False,True,True
+401864576,2026,4,Kentucky,home,2026-09-26T16:45:00.000Z,True,Kentucky,South Alabama,True,False,True,True
+401864576,2026,4,South Alabama,away,2026-09-26T16:45:00.000Z,True,Kentucky,South Alabama,True,False,True,True
+401864579,2026,4,New Mexico State,home,2026-09-26T19:30:00.000Z,True,New Mexico State,New Mexico,True,False,True,True
+401864579,2026,4,New Mexico,away,2026-09-26T19:30:00.000Z,True,New Mexico State,New Mexico,True,False,True,True
+401866425,2026,4,Kent State,home,2026-09-26T16:00:00.000Z,True,Kent State,Ball State,True,False,True,True
+401866425,2026,4,Ball State,away,2026-09-26T16:00:00.000Z,True,Kent State,Ball State,True,False,True,True
+401866426,2026,4,Buffalo,home,2026-09-26T19:30:00.000Z,True,Buffalo,Robert Morris,True,False,True,True
+401866426,2026,4,Robert Morris,away,2026-09-26T19:30:00.000Z,True,Buffalo,Robert Morris,True,False,True,True
+401866427,2026,4,Eastern Michigan,home,2026-09-26T17:00:00.000Z,True,Eastern Michigan,Lindenwood,True,False,True,True
+401866427,2026,4,Lindenwood,away,2026-09-26T17:00:00.000Z,True,Eastern Michigan,Lindenwood,True,False,True,True
+401866428,2026,4,Ohio,home,2026-09-26T19:30:00.000Z,True,Ohio,Stonehill,True,False,True,True
+401866428,2026,4,Stonehill,away,2026-09-26T19:30:00.000Z,True,Ohio,Stonehill,True,False,True,True
+401866429,2026,4,Sacramento State,home,2026-09-27T01:00:00.000Z,True,Sacramento State,Massachusetts,True,False,True,True
+401866429,2026,4,Massachusetts,away,2026-09-27T01:00:00.000Z,True,Sacramento State,Massachusetts,True,False,True,True
+401866430,2026,5,Central Michigan,home,2026-10-03T19:30:00.000Z,True,Central Michigan,Akron,True,False,True,True
+401866430,2026,5,Akron,away,2026-10-03T19:30:00.000Z,True,Central Michigan,Akron,True,False,True,True
+401866431,2026,5,Ball State,home,2026-10-03T18:00:00.000Z,True,Ball State,Toledo,True,False,True,True
+401866431,2026,5,Toledo,away,2026-10-03T18:00:00.000Z,True,Ball State,Toledo,True,False,True,True
+401866432,2026,5,Buffalo,home,2026-10-03T17:00:00.000Z,True,Buffalo,Western Michigan,True,False,True,True
+401866432,2026,5,Western Michigan,away,2026-10-03T17:00:00.000Z,True,Buffalo,Western Michigan,True,False,True,True
+401866433,2026,5,Massachusetts,home,2026-10-03T19:30:00.000Z,True,Massachusetts,Eastern Michigan,True,False,True,True
+401866433,2026,5,Eastern Michigan,away,2026-10-03T19:30:00.000Z,True,Massachusetts,Eastern Michigan,True,False,True,True
+401866434,2026,5,Kent State,home,2026-10-03T19:30:00.000Z,True,Kent State,Ohio,True,False,True,True
+401866434,2026,5,Ohio,away,2026-10-03T19:30:00.000Z,True,Kent State,Ohio,True,False,True,True
+401866477,2026,5,Miami (OH),home,2026-10-03T19:30:00.000Z,True,Miami (OH),Bowling Green,True,False,True,True
+401866477,2026,5,Bowling Green,away,2026-10-03T19:30:00.000Z,True,Miami (OH),Bowling Green,True,False,True,True
+401867909,2026,4,Florida International,home,2026-09-26T22:00:00.000Z,True,Florida International,Long Island University,True,False,True,True
+401867909,2026,4,Long Island University,away,2026-09-26T22:00:00.000Z,True,Florida International,Long Island University,True,False,True,True
+401868188,2026,4,Marshall,home,2026-09-26T19:30:00.000Z,True,Marshall,Gardner-Webb,True,False,True,True
+401868188,2026,4,Gardner-Webb,away,2026-09-26T19:30:00.000Z,True,Marshall,Gardner-Webb,True,False,True,True
+401869842,2026,5,Louisiana Tech,home,2026-10-03T23:30:00.000Z,True,Louisiana Tech,Army,True,False,True,True
+401869842,2026,5,Army,away,2026-10-03T23:30:00.000Z,True,Louisiana Tech,Army,True,False,True,True
+401869931,2026,4,Arkansas State,home,2026-09-26T23:00:00.000Z,True,Arkansas State,Kennesaw State,True,False,True,True
+401869931,2026,4,Kennesaw State,away,2026-09-26T23:00:00.000Z,True,Arkansas State,Kennesaw State,True,False,True,True
+401869932,2026,5,Louisiana,home,2026-10-04T00:00:00.000Z,True,Louisiana,Arkansas State,True,False,True,True
+401869932,2026,5,Arkansas State,away,2026-10-04T00:00:00.000Z,True,Louisiana,Arkansas State,True,False,True,True
+401869933,2026,6,Arkansas State,home,2026-10-08T23:30:00.000Z,True,Arkansas State,South Alabama,True,False,True,True
+401869933,2026,6,South Alabama,away,2026-10-08T23:30:00.000Z,True,Arkansas State,South Alabama,True,False,True,True
+401869941,2026,4,Coastal Carolina,home,2026-09-24T23:30:00.000Z,True,Coastal Carolina,Liberty,True,False,True,True
+401869941,2026,4,Liberty,away,2026-09-24T23:30:00.000Z,True,Coastal Carolina,Liberty,True,False,True,True
+401869942,2026,5,Coastal Carolina,home,2026-10-03T23:00:00.000Z,True,Coastal Carolina,Georgia Southern,True,False,True,True
+401869942,2026,5,Georgia Southern,away,2026-10-03T23:00:00.000Z,True,Coastal Carolina,Georgia Southern,True,False,True,True
+401869956,2026,5,Georgia State,home,2026-10-03T19:30:00.000Z,True,Georgia State,Old Dominion,True,False,True,True
+401869956,2026,5,Old Dominion,away,2026-10-03T19:30:00.000Z,True,Georgia State,Old Dominion,True,False,True,True
+401869961,2026,4,Old Dominion,home,2026-09-26T22:00:00.000Z,True,Old Dominion,James Madison,True,False,True,True
+401869961,2026,4,James Madison,away,2026-09-26T22:00:00.000Z,True,Old Dominion,James Madison,True,False,True,True
+401869962,2026,5,James Madison,home,2026-10-03T19:45:00.000Z,True,James Madison,Marshall,True,False,True,True
+401869962,2026,5,Marshall,away,2026-10-03T19:45:00.000Z,True,James Madison,Marshall,True,False,True,True
+401870745,2026,4,Western Kentucky,home,2026-09-26T23:00:00.000Z,True,Western Kentucky,Mercyhurst,True,False,True,True
+401870745,2026,4,Mercyhurst,away,2026-09-26T23:00:00.000Z,True,Western Kentucky,Mercyhurst,True,False,True,True
+401870766,2026,6,Liberty,home,2026-10-08T23:00:00.000Z,True,Liberty,Sam Houston,True,False,True,True
+401870766,2026,6,Sam Houston,away,2026-10-08T23:00:00.000Z,True,Liberty,Sam Houston,True,False,True,True
+401871048,2026,4,Jacksonville State,home,2026-09-26T23:00:00.000Z,True,Jacksonville State,Middle Tennessee,True,False,True,True
+401871048,2026,4,Middle Tennessee,away,2026-09-26T23:00:00.000Z,True,Jacksonville State,Middle Tennessee,True,False,True,True
+401871049,2026,5,New Mexico State,home,2026-10-02T00:00:00.000Z,True,New Mexico State,Western Kentucky,True,False,True,True
+401871049,2026,5,Western Kentucky,away,2026-10-02T00:00:00.000Z,True,New Mexico State,Western Kentucky,True,False,True,True
+401871050,2026,5,Delaware,home,2026-10-02T23:00:00.000Z,True,Delaware,Liberty,True,False,True,True
+401871050,2026,5,Liberty,away,2026-10-02T23:00:00.000Z,True,Delaware,Liberty,True,False,True,True
+401871051,2026,6,Kennesaw State,home,2026-10-07T23:00:00.000Z,True,Kennesaw State,Jacksonville State,True,False,True,True
+401871051,2026,6,Jacksonville State,away,2026-10-07T23:00:00.000Z,True,Kennesaw State,Jacksonville State,True,False,True,True
+401871052,2026,6,Western Kentucky,home,2026-10-08T23:00:00.000Z,True,Western Kentucky,Missouri State,True,False,True,True
+401871052,2026,6,Missouri State,away,2026-10-08T23:00:00.000Z,True,Western Kentucky,Missouri State,True,False,True,True
+401871066,2026,6,Florida International,home,2026-10-07T23:30:00.000Z,True,Florida International,New Mexico State,True,False,True,True
+401871066,2026,6,New Mexico State,away,2026-10-07T23:30:00.000Z,True,Florida International,New Mexico State,True,False,True,True
+401871089,2026,5,South Alabama,home,2026-10-03T23:00:00.000Z,True,South Alabama,UL Monroe,True,False,True,True
+401871089,2026,5,UL Monroe,away,2026-10-03T23:00:00.000Z,True,South Alabama,UL Monroe,True,False,True,True
+401871090,2026,6,Troy,home,2026-10-07T00:00:00.000Z,True,Troy,Southern Miss,True,False,True,True
+401871090,2026,6,Southern Miss,away,2026-10-07T00:00:00.000Z,True,Troy,Southern Miss,True,False,True,True
+401856712,2026,6,Alabama,home,2026-10-10T23:30:00.000Z,True,Alabama,Georgia,True,False,True,True
+401856712,2026,6,Georgia,away,2026-10-10T23:30:00.000Z,True,Alabama,Georgia,True,False,True,True
+401856713,2026,6,Arkansas,home,2026-10-10T20:15:00.000Z,True,Arkansas,Tennessee,True,False,True,True
+401856713,2026,6,Tennessee,away,2026-10-10T20:15:00.000Z,True,Arkansas,Tennessee,True,False,True,True
+401856714,2026,6,Florida,home,2026-10-10T16:45:00.000Z,True,Florida,South Carolina,True,False,True,True
+401856714,2026,6,South Carolina,away,2026-10-10T16:45:00.000Z,True,Florida,South Carolina,True,False,True,True
+401856715,2026,6,Kentucky,home,2026-10-10T23:00:00.000Z,True,Kentucky,LSU,True,False,True,True
+401856715,2026,6,LSU,away,2026-10-10T23:00:00.000Z,True,Kentucky,LSU,True,False,True,True
+401856716,2026,6,Missouri,home,2026-10-10T16:00:00.000Z,True,Missouri,Texas A&M,True,False,True,True
+401856716,2026,6,Texas A&M,away,2026-10-10T16:00:00.000Z,True,Missouri,Texas A&M,True,False,True,True
+401856717,2026,6,Oklahoma,home,2026-10-10T19:30:00.000Z,True,Oklahoma,Texas,True,False,True,True
+401856717,2026,6,Texas,away,2026-10-10T19:30:00.000Z,True,Oklahoma,Texas,True,False,True,True
+401856718,2026,6,Vanderbilt,home,2026-10-10T19:30:00.000Z,True,Vanderbilt,Ole Miss,True,False,True,True
+401856718,2026,6,Ole Miss,away,2026-10-10T19:30:00.000Z,True,Vanderbilt,Ole Miss,True,False,True,True
+401856808,2026,6,Arizona State,home,2026-10-11T02:30:00.000Z,True,Arizona State,Hawai'i,True,False,True,True
+401856808,2026,6,Hawai'i,away,2026-10-11T02:30:00.000Z,True,Arizona State,Hawai'i,True,False,True,True
+401856823,2026,6,West Virginia,home,2026-10-10T16:00:00.000Z,True,West Virginia,Arizona,True,False,True,True
+401856823,2026,6,Arizona,away,2026-10-10T16:00:00.000Z,True,West Virginia,Arizona,True,False,True,True
+401856824,2026,6,Oklahoma State,home,2026-10-10T16:00:00.000Z,True,Oklahoma State,UCF,True,False,True,True
+401856824,2026,6,UCF,away,2026-10-10T16:00:00.000Z,True,Oklahoma State,UCF,True,False,True,True
+401856825,2026,6,Kansas State,home,2026-10-10T19:30:00.000Z,True,Kansas State,Houston,True,False,True,True
+401856825,2026,6,Houston,away,2026-10-10T19:30:00.000Z,True,Kansas State,Houston,True,False,True,True
+401856827,2026,6,Utah,home,2026-10-11T00:00:00.000Z,True,Utah,Kansas,True,False,True,True
+401856827,2026,6,Kansas,away,2026-10-11T00:00:00.000Z,True,Utah,Kansas,True,False,True,True
+401858255,2026,6,Georgia Tech,home,2026-10-10T19:30:00.000Z,True,Georgia Tech,Duke,True,False,True,True
+401858255,2026,6,Duke,away,2026-10-10T19:30:00.000Z,True,Georgia Tech,Duke,True,False,True,True
+401858256,2026,6,Pittsburgh,home,2026-10-10T16:00:00.000Z,True,Pittsburgh,North Carolina,True,False,True,True
+401858256,2026,6,North Carolina,away,2026-10-10T16:00:00.000Z,True,Pittsburgh,North Carolina,True,False,True,True
+401858257,2026,6,Notre Dame,home,2026-10-10T19:30:00.000Z,True,Notre Dame,Stanford,True,False,True,True
+401858257,2026,6,Stanford,away,2026-10-10T19:30:00.000Z,True,Notre Dame,Stanford,True,False,True,True
+401858258,2026,6,Virginia,home,2026-10-10T23:30:00.000Z,True,Virginia,Syracuse,True,False,True,True
+401858258,2026,6,Syracuse,away,2026-10-10T23:30:00.000Z,True,Virginia,Syracuse,True,False,True,True
+401858259,2026,6,California,home,2026-10-10T19:30:00.000Z,True,California,Virginia Tech,True,False,True,True
+401858259,2026,6,Virginia Tech,away,2026-10-10T19:30:00.000Z,True,California,Virginia Tech,True,False,True,True
+401858260,2026,6,NC State,home,2026-10-10T16:00:00.000Z,True,NC State,Wake Forest,True,False,True,True
+401858260,2026,6,Wake Forest,away,2026-10-10T16:00:00.000Z,True,NC State,Wake Forest,True,False,True,True
+401858480,2026,6,Michigan State,home,2026-10-10T19:30:00.000Z,True,Michigan State,Illinois,True,False,True,True
+401858480,2026,6,Illinois,away,2026-10-10T19:30:00.000Z,True,Michigan State,Illinois,True,False,True,True
+401858481,2026,6,Nebraska,home,2026-10-10T16:00:00.000Z,True,Nebraska,Indiana,True,False,True,True
+401858481,2026,6,Indiana,away,2026-10-10T16:00:00.000Z,True,Nebraska,Indiana,True,False,True,True
+401858482,2026,6,Northwestern,home,2026-10-10T16:30:00.000Z,True,Northwestern,Ball State,True,False,True,True
+401858482,2026,6,Ball State,away,2026-10-10T16:30:00.000Z,True,Northwestern,Ball State,True,False,True,True
+401858483,2026,6,Ohio State,home,2026-10-10T20:15:00.000Z,True,Ohio State,Maryland,True,False,True,True
+401858483,2026,6,Maryland,away,2026-10-10T20:15:00.000Z,True,Ohio State,Maryland,True,False,True,True
+401858484,2026,6,Oregon,home,2026-10-10T19:30:00.000Z,True,Oregon,UCLA,True,False,True,True
+401858484,2026,6,UCLA,away,2026-10-10T19:30:00.000Z,True,Oregon,UCLA,True,False,True,True
+401858485,2026,6,Penn State,home,2026-10-10T23:30:00.000Z,True,Penn State,USC,True,False,True,True
+401858485,2026,6,USC,away,2026-10-10T23:30:00.000Z,True,Penn State,USC,True,False,True,True
+401858486,2026,6,Purdue,home,2026-10-11T00:00:00.000Z,True,Purdue,Minnesota,True,False,True,True
+401858486,2026,6,Minnesota,away,2026-10-11T00:00:00.000Z,True,Purdue,Minnesota,True,False,True,True
+401860901,2026,6,Fresno State,home,2026-10-11T02:30:00.000Z,True,Fresno State,Boise State,True,False,True,True
+401860901,2026,6,Boise State,away,2026-10-11T02:30:00.000Z,True,Fresno State,Boise State,True,False,True,True
+401860902,2026,6,Oregon State,home,2026-10-10T22:00:00.000Z,True,Oregon State,San Diego State,True,False,True,True
+401860902,2026,6,San Diego State,away,2026-10-10T22:00:00.000Z,True,Oregon State,San Diego State,True,False,True,True
+401861964,2026,6,Temple,home,2026-10-10T19:45:00.000Z,True,Temple,UConn,True,False,True,True
+401861964,2026,6,UConn,away,2026-10-10T19:45:00.000Z,True,Temple,UConn,True,False,True,True
+401862795,2026,6,Army,home,2026-10-10T16:00:00.000Z,True,Army,Tulane,True,False,True,True
+401862795,2026,6,Tulane,away,2026-10-10T16:00:00.000Z,True,Army,Tulane,True,False,True,True
+401862796,2026,6,North Texas,home,2026-10-10T19:30:00.000Z,True,North Texas,Charlotte,True,False,True,True
+401862796,2026,6,Charlotte,away,2026-10-10T19:30:00.000Z,True,North Texas,Charlotte,True,False,True,True
+401862797,2026,6,East Carolina,home,2026-10-10T17:00:00.000Z,True,East Carolina,Rice,True,False,True,True
+401862797,2026,6,Rice,away,2026-10-10T17:00:00.000Z,True,East Carolina,Rice,True,False,True,True
+401862798,2026,6,Memphis,home,2026-10-10T23:00:00.000Z,True,Memphis,UAB,True,False,True,True
+401862798,2026,6,UAB,away,2026-10-10T23:00:00.000Z,True,Memphis,UAB,True,False,True,True
+401862799,2026,6,Navy,home,2026-10-10T19:30:00.000Z,True,Navy,Tulsa,True,False,True,True
+401862799,2026,6,Tulsa,away,2026-10-10T19:30:00.000Z,True,Navy,Tulsa,True,False,True,True
+401864516,2026,6,Northern Illinois,home,2026-10-10T23:30:00.000Z,True,Northern Illinois,Air Force,True,False,True,True
+401864516,2026,6,Air Force,away,2026-10-10T23:30:00.000Z,True,Northern Illinois,Air Force,True,False,True,True
+401864517,2026,6,UTEP,home,2026-10-10T23:00:00.000Z,True,UTEP,Nevada,True,False,True,True
+401864517,2026,6,Nevada,away,2026-10-10T23:00:00.000Z,True,UTEP,Nevada,True,False,True,True
+401864518,2026,6,UNLV,home,2026-10-10T23:00:00.000Z,True,UNLV,North Dakota State,True,False,True,True
+401864518,2026,6,North Dakota State,away,2026-10-10T23:00:00.000Z,True,UNLV,North Dakota State,True,False,True,True
+401866435,2026,6,Akron,home,2026-10-10T19:30:00.000Z,True,Akron,Eastern Michigan,True,False,True,True
+401866435,2026,6,Eastern Michigan,away,2026-10-10T19:30:00.000Z,True,Akron,Eastern Michigan,True,False,True,True
+401866436,2026,6,Bowling Green,home,2026-10-10T16:00:00.000Z,True,Bowling Green,Sacramento State,True,False,True,True
+401866436,2026,6,Sacramento State,away,2026-10-10T16:00:00.000Z,True,Bowling Green,Sacramento State,True,False,True,True
+401866437,2026,6,Toledo,home,2026-10-10T19:30:00.000Z,True,Toledo,Buffalo,True,False,True,True
+401866437,2026,6,Buffalo,away,2026-10-10T19:30:00.000Z,True,Toledo,Buffalo,True,False,True,True
+401866438,2026,6,Ohio,home,2026-10-10T19:30:00.000Z,True,Ohio,Central Michigan,True,False,True,True
+401866438,2026,6,Central Michigan,away,2026-10-10T19:30:00.000Z,True,Ohio,Central Michigan,True,False,True,True
+401866439,2026,6,Western Michigan,home,2026-10-10T19:30:00.000Z,True,Western Michigan,Kent State,True,False,True,True
+401866439,2026,6,Kent State,away,2026-10-10T19:30:00.000Z,True,Western Michigan,Kent State,True,False,True,True
+401866440,2026,6,Massachusetts,home,2026-10-10T18:00:00.000Z,True,Massachusetts,Miami (OH),True,False,True,True
+401866440,2026,6,Miami (OH),away,2026-10-10T18:00:00.000Z,True,Massachusetts,Miami (OH),True,False,True,True
+401869843,2026,6,App State,home,2026-10-10T17:00:00.000Z,True,App State,Old Dominion,True,False,True,True
+401869843,2026,6,Old Dominion,away,2026-10-10T17:00:00.000Z,True,App State,Old Dominion,True,False,True,True
+401869943,2026,6,Marshall,home,2026-10-10T23:00:00.000Z,True,Marshall,Coastal Carolina,True,False,True,True
+401869943,2026,6,Coastal Carolina,away,2026-10-10T23:00:00.000Z,True,Marshall,Coastal Carolina,True,False,True,True
+401869949,2026,6,Georgia Southern,home,2026-10-10T23:30:00.000Z,True,Georgia Southern,James Madison,True,False,True,True
+401869949,2026,6,James Madison,away,2026-10-10T23:30:00.000Z,True,Georgia Southern,James Madison,True,False,True,True
+401869965,2026,6,Louisiana Tech,home,2026-10-10T23:30:00.000Z,True,Louisiana Tech,Louisiana,True,False,True,True
+401869965,2026,6,Louisiana,away,2026-10-10T23:30:00.000Z,True,Louisiana Tech,Louisiana,True,False,True,True
+401860923,2026,7,Texas State,home,2026-10-16T00:00:00.000Z,True,Texas State,Colorado State,True,False,True,True
+401860923,2026,7,Colorado State,away,2026-10-16T00:00:00.000Z,True,Texas State,Colorado State,True,False,True,True
+401862800,2026,7,UAB,home,2026-10-15T23:30:00.000Z,True,UAB,East Carolina,True,False,True,True
+401862800,2026,7,East Carolina,away,2026-10-15T23:30:00.000Z,True,UAB,East Carolina,True,False,True,True
+401869950,2026,7,Old Dominion,home,2026-10-15T23:30:00.000Z,True,Old Dominion,Georgia Southern,True,False,True,True
+401869950,2026,7,Georgia Southern,away,2026-10-15T23:30:00.000Z,True,Old Dominion,Georgia Southern,True,False,True,True
+401871053,2026,7,Jacksonville State,home,2026-10-14T00:00:00.000Z,True,Jacksonville State,Florida International,True,False,True,True
+401871053,2026,7,Florida International,away,2026-10-14T00:00:00.000Z,True,Jacksonville State,Florida International,True,False,True,True
+401871054,2026,7,Missouri State,home,2026-10-14T23:30:00.000Z,True,Missouri State,Kennesaw State,True,False,True,True
+401871054,2026,7,Kennesaw State,away,2026-10-14T23:30:00.000Z,True,Missouri State,Kennesaw State,True,False,True,True
+401871067,2026,7,Middle Tennessee,home,2026-10-13T23:00:00.000Z,True,Middle Tennessee,Delaware,True,False,True,True
+401871067,2026,7,Delaware,away,2026-10-13T23:00:00.000Z,True,Middle Tennessee,Delaware,True,False,True,True
+401871068,2026,7,Sam Houston,home,2026-10-15T00:00:00.000Z,True,Sam Houston,Western Kentucky,True,False,True,True
+401871068,2026,7,Western Kentucky,away,2026-10-15T00:00:00.000Z,True,Sam Houston,Western Kentucky,True,False,True,True

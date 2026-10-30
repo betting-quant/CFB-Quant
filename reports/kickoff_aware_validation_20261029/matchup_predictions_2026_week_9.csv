@@ -1,0 +1,5 @@
+game_id,start_date,season,week,team,opponent,home_away,team_games_before,team_season_games_before,proj_points,proj_pass_attempts,proj_rush_attempts,proj_total_plays,proj_pass_plus_rush,proj_plays_model_gap,proj_pass_rate,proj_passing_yards,proj_rushing_yards,proj_yards,proj_possession_seconds,proj_possession_share,proj_possession_seconds_normalized
+401862812,2026-10-29T23:30:00.000Z,2026,9,Florida Atlantic,North Texas,away,152,7,29.65,38.425,36.569,72.417,74.994,-2.576,0.512,304.849,140.704,445.553,1654.429,0.46,1657.278
+401862812,2026-10-29T23:30:00.000Z,2026,9,North Texas,Florida Atlantic,home,159,7,45.138,35.002,37.395,71.365,72.397,-1.032,0.483,340.617,216.742,557.359,1939.382,0.54,1942.722
+401869963,2026-10-29T23:30:00.000Z,2026,9,Troy,James Madison,away,159,7,19.27,28.724,34.946,64.881,63.669,1.212,0.451,167.046,142.381,309.426,1900.412,0.519,1869.168
+401869963,2026-10-29T23:30:00.000Z,2026,9,James Madison,Troy,home,65,8,33.247,31.163,36.364,68.569,67.527,1.042,0.461,236.734,179.28,416.014,1759.764,0.481,1730.832

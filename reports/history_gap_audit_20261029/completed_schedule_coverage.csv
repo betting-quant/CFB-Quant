@@ -1,0 +1,456 @@
+game_id,week,home_team,away_team,kickoff_utc,in_processed_history
+401856766,1,TCU,North Carolina,2026-08-29 16:00:00+00:00,True
+401864494,1,USC,San José State,2026-08-29 19:00:00+00:00,True
+401858202,1,Virginia,NC State,2026-08-29 19:30:00+00:00,True
+401864577,1,North Dakota State,Jacksonville State,2026-08-29 21:30:00+00:00,True
+401866408,1,Eastern Michigan,Sacramento State,2026-08-29 22:30:00+00:00,True
+401864570,1,Florida State,New Mexico State,2026-08-29 23:00:00+00:00,True
+401858201,1,Stanford,Hawai'i,2026-08-29 23:00:00+00:00,True
+401862693,1,UNLV,Memphis,2026-08-30 02:00:00+00:00,True
+401858423,1,Rutgers,Massachusetts,2026-09-03 22:00:00+00:00,True
+401864425,1,Kennesaw State,West Georgia,2026-09-03 23:00:00+00:00,True
+401858204,1,Wake Forest,Akron,2026-09-03 23:00:00+00:00,True
+401856767,1,UCF,Bethune-Cookman,2026-09-03 23:00:00+00:00,True
+401864424,1,Delaware,Merrimack,2026-09-03 23:00:00+00:00,True
+401866409,1,Buffalo,UAlbany,2026-09-03 23:00:00+00:00,True
+401858422,1,Minnesota,Eastern Illinois,2026-09-04 00:00:00+00:00,True
+401856663,1,Missouri,Arkansas-Pine Bluff,2026-09-04 00:00:00+00:00,True
+401856776,1,Georgia Tech,Colorado,2026-09-04 00:00:00+00:00,True
+401856768,1,Utah,Idaho,2026-09-04 01:00:00+00:00,True
+401858424,1,Illinois,UAB,2026-09-04 01:00:00+00:00,True
+401864495,1,Eastern Michigan,San José State,2026-09-04 22:30:00+00:00,True
+401866623,1,Georgia State,North Carolina A&T,2026-09-04 23:00:00+00:00,True
+401858435,1,Purdue,Indiana State,2026-09-04 23:00:00+00:00,True
+401856664,1,Oklahoma,UTEP,2026-09-05 00:00:00+00:00,True
+401858429,1,Michigan State,Toledo,2026-09-05 00:00:00+00:00,True
+401856769,1,Kansas,Long Island University,2026-09-05 00:00:00+00:00,True
+401858206,1,Stanford,Miami,2026-09-05 01:00:00+00:00,True
+401858436,1,USC,Fresno State,2026-09-05 01:00:00+00:00,True
+401869960,1,James Madison,Liberty,2026-09-05 16:00:00+00:00,True
+401856778,1,Houston,Oregon State,2026-09-05 16:00:00+00:00,True
+401866410,1,Bowling Green,Tarleton State,2026-09-05 16:00:00+00:00,True
+401858208,1,Syracuse,New Hampshire,2026-09-05 16:00:00+00:00,True
+401861962,1,UConn,Lafayette,2026-09-05 16:00:00+00:00,True
+401858430,1,Nebraska,Ohio,2026-09-05 16:00:00+00:00,True
+401862701,1,Army,Bryant,2026-09-05 16:00:00+00:00,True
+401856634,1,Alabama,East Carolina,2026-09-05 16:00:00+00:00,True
+401856780,1,West Virginia,Coastal Carolina,2026-09-05 16:00:00+00:00,True
+401858425,1,Indiana,North Texas,2026-09-05 16:00:00+00:00,True
+401858432,1,Ohio State,Ball State,2026-09-05 16:30:00+00:00,True
+401858207,1,Pittsburgh,Miami (OH),2026-09-05 16:30:00+00:00,True
+401856665,1,South Carolina,Kent State,2026-09-05 16:45:00+00:00,True
+401864496,1,Air Force,Duquesne,2026-09-05 17:00:00+00:00,True
+401856659,1,Kentucky,Youngstown State,2026-09-05 17:00:00+00:00,True
+401856779,1,Iowa State,Southeast Missouri State,2026-09-05 17:00:00+00:00,True
+401862698,1,Temple,Rhode Island,2026-09-05 18:00:00+00:00,True
+401856658,1,Georgia,Tennessee State,2026-09-05 19:00:00+00:00,True
+401858433,1,Oregon,Boise State,2026-09-05 19:30:00+00:00,True
+401858209,1,Duke,Tulane,2026-09-05 19:30:00+00:00,True
+401862696,1,Navy,Towson,2026-09-05 19:30:00+00:00,True
+401862694,1,Charlotte,The Citadel,2026-09-05 19:30:00+00:00,True
+401856777,1,Cincinnati,Boston College,2026-09-05 19:30:00+00:00,True
+401856636,1,Auburn,Baylor,2026-09-05 19:30:00+00:00,True
+401856667,1,Texas,Texas State,2026-09-05 19:30:00+00:00,True
+401862700,1,UTSA,UT Rio Grande Valley,2026-09-05 19:30:00+00:00,True
+401864499,1,North Dakota State,Fordham,2026-09-05 19:30:00+00:00,True
+401858434,1,Penn State,Marshall,2026-09-05 19:30:00+00:00,True
+401866627,1,App State,Maine,2026-09-05 19:30:00+00:00,True
+401856666,1,Tennessee,Furman,2026-09-05 19:30:00+00:00,True
+401856772,1,Tulsa,Oklahoma State,2026-09-05 19:45:00+00:00,True
+401856635,1,Arkansas,North Alabama,2026-09-05 20:15:00+00:00,True
+401858426,1,Iowa,Northern Illinois,2026-09-05 20:15:00+00:00,True
+401868356,1,Southern Miss,Alcorn State,2026-09-05 21:00:00+00:00,True
+401867973,1,Old Dominion,Norfolk State,2026-09-05 22:00:00+00:00,True
+401860878,1,Colorado State,Wyoming,2026-09-05 22:00:00+00:00,True
+401862695,1,Memphis,Arkansas State,2026-09-05 23:00:00+00:00,True
+401862697,1,Rice,Houston Christian,2026-09-05 23:00:00+00:00,True
+401860880,1,Utah State,Idaho State,2026-09-05 23:00:00+00:00,True
+401868140,1,Jacksonville State,Eastern Kentucky,2026-09-05 23:00:00+00:00,True
+401868170,1,Georgia Southern,Charleston Southern,2026-09-05 23:00:00+00:00,True
+401856669,1,Vanderbilt,Austin Peay,2026-09-05 23:00:00+00:00,True
+401856770,1,Texas Tech,Abilene Christian,2026-09-05 23:00:00+00:00,True
+401856771,1,Kansas State,Nicholls,2026-09-05 23:00:00+00:00,True
+401868316,1,South Alabama,SE Louisiana,2026-09-05 23:00:00+00:00,True
+401856668,1,Texas A&M,Missouri State,2026-09-05 23:00:00+00:00,True
+401862699,1,South Florida,Florida International,2026-09-05 23:00:00+00:00,True
+401867866,1,Middle Tennessee,Murray State,2026-09-05 23:00:00+00:00,True
+401870763,1,Troy,Sam Houston,2026-09-05 23:00:00+00:00,True
+401856662,1,Mississippi State,UL Monroe,2026-09-05 23:30:00+00:00,True
+401858211,1,Virginia Tech,VMI,2026-09-05 23:30:00+00:00,True
+401858428,1,Michigan,Western Michigan,2026-09-05 23:30:00+00:00,True
+401869129,1,Louisiana Tech,Northwestern State,2026-09-05 23:30:00+00:00,True
+401856660,1,LSU,Clemson,2026-09-05 23:30:00+00:00,True
+401856637,1,Florida,Florida Atlantic,2026-09-05 23:45:00+00:00,True
+401858431,1,Northwestern,South Dakota State,2026-09-06 00:00:00+00:00,True
+401858427,1,Maryland,Hampton,2026-09-06 00:00:00+00:00,True
+401856775,1,BYU,Utah Tech,2026-09-06 00:00:00+00:00,True
+401869142,1,Louisiana,Lamar,2026-09-06 00:00:00+00:00,True
+401870790,1,New Mexico State,Mercyhurst,2026-09-06 01:00:00+00:00,True
+401856773,1,Arizona,Northern Arizona,2026-09-06 01:30:00+00:00,True
+401860879,1,San Diego State,Portland State,2026-09-06 01:30:00+00:00,True
+401864498,1,New Mexico,Central Michigan,2026-09-06 02:00:00+00:00,True
+401856774,1,Arizona State,Morgan State,2026-09-06 02:00:00+00:00,True
+401866411,1,Sacramento State,Mississippi Valley State,2026-09-06 02:00:00+00:00,True
+401864497,1,Hawai'i,UNLV,2026-09-06 02:00:00+00:00,True
+401864432,1,Nevada,Western Kentucky,2026-09-06 02:30:00+00:00,True
+401858210,1,California,UCLA,2026-09-06 02:30:00+00:00,True
+401858437,1,Washington,Washington State,2026-09-06 20:00:00+00:00,True
+401856661,1,Ole Miss,Louisville,2026-09-06 23:30:00+00:00,True
+401858438,1,Notre Dame,Wisconsin,2026-09-06 23:30:00+00:00,True
+401858212,1,Florida State,SMU,2026-09-07 23:30:00+00:00,True
+401858213,2,Miami,Florida A&M,2026-09-11 00:00:00+00:00,True
+401858215,2,Louisville,Villanova,2026-09-11 23:00:00+00:00,True
+401858220,2,Virginia,Norfolk State,2026-09-11 23:00:00+00:00,True
+401858222,2,NC State,Richmond,2026-09-11 23:00:00+00:00,True
+401858214,2,Boston College,Rutgers,2026-09-11 23:30:00+00:00,True
+401856678,2,Kansas,Missouri,2026-09-12 00:00:00+00:00,True
+401864571,2,East Carolina,App State,2026-09-12 16:00:00+00:00,True
+401856683,2,Texas A&M,Arizona State,2026-09-12 16:00:00+00:00,True
+401862702,2,Army,South Florida,2026-09-12 16:00:00+00:00,True
+401858224,2,Purdue,Wake Forest,2026-09-12 16:00:00+00:00,True
+401866416,2,Kent State,Wofford,2026-09-12 16:00:00+00:00,True
+401856679,2,Michigan,Oklahoma,2026-09-12 16:00:00+00:00,True
+401858442,2,Temple,Penn State,2026-09-12 16:00:00+00:00,True
+401868187,2,Liberty,Gardner-Webb,2026-09-12 16:00:00+00:00,True
+401858218,2,North Carolina,East Tennessee State,2026-09-12 16:00:00+00:00,True
+401856782,2,Oklahoma State,Oregon,2026-09-12 16:00:00+00:00,True
+401856781,2,Kansas State,Washington State,2026-09-12 16:00:00+00:00,True
+401858221,2,Virginia Tech,Old Dominion,2026-09-12 16:00:00+00:00,True
+401867929,2,James Madison,Wagner,2026-09-12 16:00:00+00:00,True
+401858439,2,Indiana,Howard,2026-09-12 16:00:00+00:00,True
+401856673,2,Georgia,Western Kentucky,2026-09-12 16:45:00+00:00,True
+401856791,2,West Virginia,UT Martin,2026-09-12 17:00:00+00:00,True
+401866415,2,Central Michigan,Colgate,2026-09-12 17:00:00+00:00,True
+401866417,2,Miami (OH),Holy Cross,2026-09-12 17:00:00+00:00,True
+401866413,2,Ball State,Stony Brook,2026-09-12 18:00:00+00:00,True
+401866412,2,Akron,Robert Morris,2026-09-12 19:30:00+00:00,True
+401858440,2,Michigan State,Eastern Michigan,2026-09-12 19:30:00+00:00,True
+401856810,2,BYU,Arizona,2026-09-12 19:30:00+00:00,True
+401866420,2,Massachusetts,Sacred Heart,2026-09-12 19:30:00+00:00,True
+401859184,2,Notre Dame,Rice,2026-09-12 19:30:00+00:00,True
+401858444,2,UConn,Maryland,2026-09-12 19:30:00+00:00,True
+401862708,2,UAB,UL Monroe,2026-09-12 19:30:00+00:00,True
+401866419,2,Toledo,Central Connecticut,2026-09-12 19:30:00+00:00,True
+401858216,2,Syracuse,California,2026-09-12 19:30:00+00:00,True
+401856790,2,Pittsburgh,UCF,2026-09-12 19:30:00+00:00,True
+401856674,2,Kentucky,Alabama,2026-09-12 19:30:00+00:00,True
+401856785,2,Colorado,Weber State,2026-09-12 19:30:00+00:00,True
+401860884,2,Texas State,UTSA,2026-09-12 19:30:00+00:00,True
+401856677,2,Minnesota,Mississippi State,2026-09-12 19:30:00+00:00,True
+401858217,2,Illinois,Duke,2026-09-12 19:30:00+00:00,True
+401858446,2,Washington,Utah State,2026-09-12 19:30:00+00:00,True
+401862705,2,North Texas,UNLV,2026-09-12 19:45:00+00:00,True
+401868326,2,Troy,Alabama State,2026-09-12 20:00:00+00:00,True
+401858223,2,SMU,UC Davis,2026-09-12 20:00:00+00:00,True
+401864506,2,Wyoming,Northern Colorado,2026-09-12 20:00:00+00:00,True
+401865252,2,New Mexico,Mercyhurst,2026-09-12 20:00:00+00:00,True
+401856684,2,Vanderbilt,Delaware,2026-09-12 20:15:00+00:00,True
+401856672,2,Florida,Campbell,2026-09-12 21:30:00+00:00,True
+401866414,2,Florida International,Buffalo,2026-09-12 22:00:00+00:00,True
+401866418,2,Ohio,Jacksonville State,2026-09-12 22:00:00+00:00,True
+401860881,2,Boise State,Memphis,2026-09-12 22:00:00+00:00,True
+401866421,2,Western Michigan,Monmouth,2026-09-12 22:30:00+00:00,True
+401858441,2,Nebraska,Bowling Green,2026-09-12 23:00:00+00:00,True
+401856680,2,South Carolina,Towson,2026-09-12 23:00:00+00:00,True
+401856786,2,Cincinnati,Western Carolina,2026-09-12 23:00:00+00:00,True
+401868241,2,Arkansas State,West Georgia,2026-09-12 23:00:00+00:00,True
+401862707,2,Sam Houston,Tulsa,2026-09-12 23:00:00+00:00,True
+401856681,2,Georgia Tech,Tennessee,2026-09-12 23:00:00+00:00,True
+401856787,2,Houston,Southern,2026-09-12 23:00:00+00:00,True
+401860882,2,Colorado State,Southern Utah,2026-09-12 23:00:00+00:00,True
+401871045,2,Marshall,Middle Tennessee,2026-09-12 23:00:00+00:00,True
+401864575,2,Tulane,South Alabama,2026-09-12 23:00:00+00:00,True
+401864503,2,Northern Illinois,Illinois State,2026-09-12 23:00:00+00:00,True
+401871046,2,Missouri State,Lindenwood,2026-09-12 23:00:00+00:00,True
+401869955,2,Kennesaw State,Georgia State,2026-09-12 23:00:00+00:00,True
+401858443,2,UCLA,San Diego State,2026-09-12 23:15:00+00:00,True
+401858447,2,Wisconsin,Western Illinois,2026-09-12 23:15:00+00:00,True
+401862703,2,Florida Atlantic,Navy,2026-09-12 23:30:00+00:00,True
+401858219,2,Clemson,Georgia Southern,2026-09-12 23:30:00+00:00,True
+401868008,2,Coastal Carolina,Fordham,2026-09-12 23:30:00+00:00,True
+401856788,2,Iowa,Iowa State,2026-09-12 23:30:00+00:00,True
+401867796,2,LSU,Louisiana Tech,2026-09-12 23:30:00+00:00,True
+401856783,2,Oregon State,Texas Tech,2026-09-12 23:30:00+00:00,True
+401856682,2,Texas,Ohio State,2026-09-12 23:30:00+00:00,True
+401856671,2,Auburn,Southern Miss,2026-09-12 23:45:00+00:00,True
+401856676,2,Ole Miss,Charlotte,2026-09-12 23:45:00+00:00,True
+401856789,2,TCU,Grambling,2026-09-13 00:00:00+00:00,True
+401856784,2,Baylor,Prairie View A&M,2026-09-13 00:08:00+00:00,True
+401864505,2,UTEP,Texas Southern,2026-09-13 01:00:00+00:00,True
+401864504,2,San José State,Cal Poly,2026-09-13 01:00:00+00:00,True
+401864502,2,Air Force,North Dakota State,2026-09-13 02:00:00+00:00,True
+401856670,2,Utah,Arkansas,2026-09-13 02:15:00+00:00,True
+401860883,2,Fresno State,Sacramento State,2026-09-13 02:30:00+00:00,True
+401864500,2,Nevada,Montana State,2026-09-13 02:30:00+00:00,True
+401858445,2,USC,Louisiana,2026-09-13 03:00:00+00:00,True
+401864578,2,Hawai'i,New Mexico State,2026-09-13 03:59:00+00:00,True
+401858225,3,Pittsburgh,Syracuse,2026-09-17 23:30:00+00:00,True
+401858226,3,Wake Forest,Miami,2026-09-18 23:30:00+00:00,True
+401856811,3,Texas Tech,Houston,2026-09-19 00:00:00+00:00,True
+401858455,3,Oregon,Portland State,2026-09-19 02:30:00+00:00,True
+401869940,3,Delaware,Coastal Carolina,2026-09-19 15:30:00+00:00,True
+401858454,3,Ohio State,Kent State,2026-09-19 16:00:00+00:00,True
+401860889,3,Texas State,North Texas,2026-09-19 16:00:00+00:00,True
+401856792,3,Kansas State,Tulane,2026-09-19 16:00:00+00:00,True
+401856812,3,Kansas,Arizona State,2026-09-19 16:00:00+00:00,True
+401858451,3,Minnesota,Akron,2026-09-19 16:00:00+00:00,True
+401858228,3,Georgia Tech,Mercer,2026-09-19 16:00:00+00:00,True
+401856798,3,Iowa State,Bowling Green,2026-09-19 16:00:00+00:00,True
+401858456,3,Penn State,Buffalo,2026-09-19 16:00:00+00:00,True
+401858229,3,Clemson,North Carolina,2026-09-19 16:00:00+00:00,True
+401856686,3,Arkansas,Georgia,2026-09-19 16:00:00+00:00,True
+401858460,3,Wisconsin,Eastern Michigan,2026-09-19 16:30:00+00:00,True
+401856695,3,Vanderbilt,NC State,2026-09-19 16:45:00+00:00,True
+401864508,3,Central Michigan,Wyoming,2026-09-19 17:00:00+00:00,True
+401858227,3,Boston College,Maine,2026-09-19 18:00:00+00:00,True
+401858448,3,Illinois,Southern Illinois,2026-09-19 18:00:00+00:00,True
+401862774,3,Toledo,Temple,2026-09-19 19:00:00+00:00,True
+401866424,3,Massachusetts,Stonehill,2026-09-19 19:30:00+00:00,True
+401856685,3,Alabama,Florida State,2026-09-19 19:30:00+00:00,True
+401858233,3,California,Wagner,2026-09-19 19:30:00+00:00,True
+401856694,3,Texas A&M,Kentucky,2026-09-19 19:30:00+00:00,True
+401860890,3,Washington State,Duquesne,2026-09-19 19:30:00+00:00,True
+401858230,3,Louisville,SMU,2026-09-19 19:30:00+00:00,True
+401858450,3,Michigan,UTEP,2026-09-19 19:30:00+00:00,True
+401856801,3,Utah,Utah State,2026-09-19 19:30:00+00:00,True
+401856797,3,Cincinnati,Miami (OH),2026-09-19 19:30:00+00:00,True
+401858457,3,Rutgers,USC,2026-09-19 19:30:00+00:00,True
+401858471,3,Iowa,Northern Iowa,2026-09-19 20:00:00+00:00,True
+401866422,3,Liberty,Ball State,2026-09-19 20:00:00+00:00,True
+401867804,3,Baylor,Louisiana Tech,2026-09-19 20:00:00+00:00,True
+401858231,3,Duke,Stanford,2026-09-19 20:00:00+00:00,True
+401858449,3,Indiana,Western Kentucky,2026-09-19 20:00:00+00:00,True
+401856691,3,South Carolina,Mississippi State,2026-09-19 20:15:00+00:00,True
+401868317,3,UL Monroe,SE Louisiana,2026-09-19 20:30:00+00:00,True
+401864574,3,App State,Charlotte,2026-09-19 22:00:00+00:00,True
+401862771,3,Florida Atlantic,Florida International,2026-09-19 22:00:00+00:00,True
+401862710,3,Old Dominion,East Carolina,2026-09-19 22:00:00+00:00,True
+401871047,3,Missouri State,Marshall,2026-09-19 22:30:00+00:00,True
+401864443,3,Middle Tennessee,Nevada,2026-09-19 23:00:00+00:00,True
+401870764,3,Sam Houston,Nicholls,2026-09-19 23:00:00+00:00,True
+401866423,3,South Alabama,Ohio,2026-09-19 23:00:00+00:00,True
+401862773,3,Rice,Western Michigan,2026-09-19 23:00:00+00:00,True
+401862777,3,South Florida,Delaware State,2026-09-19 23:00:00+00:00,True
+401856803,3,Oklahoma State,Murray State,2026-09-19 23:00:00+00:00,True
+401861963,3,Southern Miss,UConn,2026-09-19 23:00:00+00:00,True
+401856687,3,Auburn,Florida,2026-09-19 23:00:00+00:00,True
+401869948,3,Jacksonville State,Georgia Southern,2026-09-19 23:00:00+00:00,True
+401856689,3,Missouri,Troy,2026-09-19 23:00:00+00:00,True
+401856800,3,UCF,Georgia State,2026-09-19 23:00:00+00:00,True
+401862772,3,Memphis,UT Martin,2026-09-19 23:00:00+00:00,True
+401858459,3,Washington,Eastern Washington,2026-09-19 23:15:00+00:00,True
+401858452,3,Nebraska,North Dakota,2026-09-19 23:15:00+00:00,True
+401856796,3,Northwestern,Colorado,2026-09-19 23:30:00+00:00,True
+401856802,3,Virginia,West Virginia,2026-09-19 23:30:00+00:00,True
+401856688,3,Ole Miss,LSU,2026-09-19 23:30:00+00:00,True
+401858453,3,Notre Dame,Michigan State,2026-09-19 23:30:00+00:00,True
+401856795,3,Colorado State,BYU,2026-09-19 23:30:00+00:00,True
+401856690,3,Oklahoma,New Mexico,2026-09-19 23:30:00+00:00,True
+401858232,3,Maryland,Virginia Tech,2026-09-19 23:30:00+00:00,True
+401856692,3,Tennessee,Kennesaw State,2026-09-19 23:45:00+00:00,True
+401862775,3,Tulsa,East Texas A&M,2026-09-20 00:00:00+00:00,True
+401862776,3,Louisiana,UAB,2026-09-20 00:00:00+00:00,True
+401856799,3,TCU,Arkansas State,2026-09-20 00:00:00+00:00,True
+401856693,3,Texas,UTSA,2026-09-20 00:00:00+00:00,True
+401860885,3,Boise State,South Dakota,2026-09-20 02:00:00+00:00,True
+401860887,3,San Diego State,James Madison,2026-09-20 02:00:00+00:00,True
+401856793,3,Arizona,Northern Illinois,2026-09-20 02:30:00+00:00,True
+401864507,3,Sacramento State,North Dakota State,2026-09-20 02:30:00+00:00,True
+401858458,3,UCLA,Purdue,2026-09-20 03:00:00+00:00,True
+401860888,3,San José State,Fresno State,2026-09-20 03:00:00+00:00,True
+401860886,3,Oregon State,Montana,2026-09-20 03:00:00+00:00,True
+401869941,4,Coastal Carolina,Liberty,2026-09-24 23:30:00+00:00,True
+401862779,4,Temple,Army,2026-09-25 20:00:00+00:00,True
+401858468,4,Rutgers,Howard,2026-09-25 23:00:00+00:00,True
+401862778,4,UAB,Navy,2026-09-25 23:00:00+00:00,True
+401858461,4,Indiana,Northwestern,2026-09-26 00:00:00+00:00,True
+401858234,4,California,Clemson,2026-09-26 02:30:00+00:00,True
+401860896,4,UTSA,Colorado State,2026-09-26 16:00:00+00:00,True
+401866425,4,Kent State,Ball State,2026-09-26 16:00:00+00:00,True
+401856813,4,Baylor,Colorado,2026-09-26 16:00:00+00:00,True
+401856704,4,Tennessee,Texas,2026-09-26 16:00:00+00:00,True
+401856805,4,Texas Tech,Sam Houston,2026-09-26 16:00:00+00:00,True
+401858242,4,Boston College,Virginia Tech,2026-09-26 16:00:00+00:00,True
+401858243,4,Louisville,Wake Forest,2026-09-26 16:00:00+00:00,True
+401858236,4,Pittsburgh,Bucknell,2026-09-26 16:00:00+00:00,True
+401858465,4,Ohio State,Illinois,2026-09-26 16:00:00+00:00,True
+401860893,4,Toledo,San Diego State,2026-09-26 16:00:00+00:00,True
+401864512,4,Akron,UNLV,2026-09-26 16:00:00+00:00,True
+401864576,4,Kentucky,South Alabama,2026-09-26 16:45:00+00:00,True
+401866427,4,Eastern Michigan,Lindenwood,2026-09-26 17:00:00+00:00,True
+401858462,4,Maryland,UCLA,2026-09-26 17:30:00+00:00,True
+401858467,4,Purdue,Notre Dame,2026-09-26 18:00:00+00:00,True
+401864511,4,Georgia State,Northern Illinois,2026-09-26 18:00:00+00:00,True
+401864510,4,Wyoming,Hawai'i,2026-09-26 19:00:00+00:00,True
+401858237,4,Florida State,Central Arkansas,2026-09-26 19:00:00+00:00,True
+401858463,4,Michigan,Iowa,2026-09-26 19:30:00+00:00,True
+401868188,4,Marshall,Gardner-Webb,2026-09-26 19:30:00+00:00,True
+401860897,4,Western Michigan,Boise State,2026-09-26 19:30:00+00:00,True
+401856816,4,Iowa State,Utah,2026-09-26 19:30:00+00:00,True
+401856815,4,UCF,TCU,2026-09-26 19:30:00+00:00,True
+401866428,4,Ohio,Stonehill,2026-09-26 19:30:00+00:00,True
+401861970,4,Miami (OH),UConn,2026-09-26 19:30:00+00:00,True
+401856700,4,Georgia,Oklahoma,2026-09-26 19:30:00+00:00,True
+401858244,4,Duke,William & Mary,2026-09-26 19:30:00+00:00,True
+401856699,4,Florida,Ole Miss,2026-09-26 19:30:00+00:00,True
+401866426,4,Buffalo,Robert Morris,2026-09-26 19:30:00+00:00,True
+401864579,4,New Mexico State,New Mexico,2026-09-26 19:30:00+00:00,True
+401862781,4,East Carolina,North Carolina Central,2026-09-26 20:00:00+00:00,True
+401856806,4,Georgia Southern,Houston,2026-09-26 20:00:00+00:00,True
+401856698,4,Auburn,Vanderbilt,2026-09-26 20:15:00+00:00,True
+401858466,4,Penn State,Wisconsin,2026-09-26 21:00:00+00:00,True
+401858464,4,Michigan State,Nebraska,2026-09-26 21:00:00+00:00,True
+401862785,4,Bowling Green,South Florida,2026-09-26 21:00:00+00:00,True
+401869961,4,Old Dominion,James Madison,2026-09-26 22:00:00+00:00,True
+401860892,4,Texas State,Incarnate Word,2026-09-26 22:00:00+00:00,True
+401867909,4,Florida International,Long Island University,2026-09-26 22:00:00+00:00,True
+401858239,4,Virginia,Delaware,2026-09-26 22:00:00+00:00,True
+401858238,4,Miami,Central Michigan,2026-09-26 22:30:00+00:00,True
+401862780,4,Charlotte,Louisiana,2026-09-26 22:30:00+00:00,True
+401871048,4,Jacksonville State,Middle Tennessee,2026-09-26 23:00:00+00:00,True
+401856881,4,West Virginia,Oklahoma State,2026-09-26 23:00:00+00:00,True
+401856696,4,Alabama,South Carolina,2026-09-26 23:00:00+00:00,True
+401856814,4,Cincinnati,Kansas State,2026-09-26 23:00:00+00:00,True
+401869931,4,Arkansas State,Kennesaw State,2026-09-26 23:00:00+00:00,True
+401870745,4,Western Kentucky,Mercyhurst,2026-09-26 23:00:00+00:00,True
+401862784,4,Tulane,Southern Miss,2026-09-26 23:00:00+00:00,True
+401864572,4,NC State,App State,2026-09-26 23:30:00+00:00,True
+401856804,4,Washington State,Arizona,2026-09-26 23:30:00+00:00,True
+401862783,4,North Texas,Houston Christian,2026-09-26 23:30:00+00:00,True
+401858469,4,USC,Oregon,2026-09-26 23:30:00+00:00,True
+401856702,4,LSU,Texas A&M,2026-09-26 23:30:00+00:00,True
+401860894,4,Utah State,Troy,2026-09-26 23:30:00+00:00,True
+401856703,4,Mississippi State,Missouri,2026-09-26 23:45:00+00:00,True
+401862782,4,UL Monroe,Florida Atlantic,2026-09-27 00:00:00+00:00,True
+401856697,4,Arkansas,Tulsa,2026-09-27 00:00:00+00:00,True
+401860895,4,UTEP,Oregon State,2026-09-27 01:00:00+00:00,True
+401866429,4,Sacramento State,Massachusetts,2026-09-27 01:00:00+00:00,True
+401858241,4,SMU,Missouri State,2026-09-27 01:00:00+00:00,True
+401860891,4,Fresno State,Rice,2026-09-27 02:00:00+00:00,True
+401864509,4,Nevada,Air Force,2026-09-27 02:30:00+00:00,True
+401858240,4,Stanford,Georgia Tech,2026-09-27 02:30:00+00:00,True
+401858470,4,Washington,Minnesota,2026-09-27 03:00:00+00:00,True
+401871049,5,New Mexico State,Western Kentucky,2026-10-02 00:00:00+00:00,True
+401862786,5,Tulsa,North Texas,2026-10-02 01:00:00+00:00,True
+401858245,5,Virginia Tech,Pittsburgh,2026-10-02 23:00:00+00:00,True
+401871050,5,Delaware,Liberty,2026-10-02 23:00:00+00:00,True
+401858476,5,Northwestern,Penn State,2026-10-03 00:00:00+00:00,True
+401862787,5,Charlotte,Memphis,2026-10-03 15:00:00+00:00,True
+401858252,5,UConn,Syracuse,2026-10-03 16:00:00+00:00,True
+401856707,5,Mississippi State,Alabama,2026-10-03 16:00:00+00:00,True
+401856822,5,Iowa State,West Virginia,2026-10-03 16:00:00+00:00,True
+401858250,5,North Carolina,Notre Dame,2026-10-03 16:00:00+00:00,True
+401856807,5,Kansas,Middle Tennessee,2026-10-03 16:00:00+00:00,True
+401862791,5,Air Force,Navy,2026-10-03 16:00:00+00:00,True
+401858251,5,Wake Forest,Stanford,2026-10-03 16:00:00+00:00,True
+401856819,5,Houston,UCF,2026-10-03 16:00:00+00:00,True
+401858474,5,Minnesota,Michigan,2026-10-03 16:00:00+00:00,True
+401858246,5,SMU,Boston College,2026-10-03 16:00:00+00:00,True
+401858479,5,Wisconsin,Michigan State,2026-10-03 16:30:00+00:00,True
+401856705,5,Georgia,Vanderbilt,2026-10-03 16:45:00+00:00,True
+401866432,5,Buffalo,Western Michigan,2026-10-03 17:00:00+00:00,True
+401866431,5,Ball State,Toledo,2026-10-03 18:00:00+00:00,True
+401858247,5,UNLV,California,2026-10-03 19:30:00+00:00,True
+401858473,5,Iowa,Ohio State,2026-10-03 19:30:00+00:00,True
+401866430,5,Central Michigan,Akron,2026-10-03 19:30:00+00:00,True
+401869956,5,Georgia State,Old Dominion,2026-10-03 19:30:00+00:00,True
+401862793,5,UAB,Samford,2026-10-03 19:30:00+00:00,True
+401856708,5,Missouri,Florida,2026-10-03 19:30:00+00:00,True
+401866477,5,Miami (OH),Bowling Green,2026-10-03 19:30:00+00:00,True
+401856710,5,Tennessee,Auburn,2026-10-03 19:30:00+00:00,True
+401858253,5,Florida State,Virginia,2026-10-03 19:30:00+00:00,True
+401864515,5,North Dakota State,Wyoming,2026-10-03 19:30:00+00:00,True
+401866434,5,Kent State,Ohio,2026-10-03 19:30:00+00:00,True
+401866433,5,Massachusetts,Eastern Michigan,2026-10-03 19:30:00+00:00,True
+401858248,5,NC State,Louisville,2026-10-03 19:30:00+00:00,True
+401869962,5,James Madison,Marshall,2026-10-03 19:45:00+00:00,True
+401864514,5,New Mexico,UTEP,2026-10-03 20:00:00+00:00,True
+401858475,5,Nebraska,Maryland,2026-10-03 20:00:00+00:00,True
+401856709,5,South Carolina,Kentucky,2026-10-03 20:15:00+00:00,True
+401858472,5,Illinois,Purdue,2026-10-03 20:15:00+00:00,True
+401860899,5,Colorado State,Oregon State,2026-10-03 22:00:00+00:00,True
+401862790,5,Florida Atlantic,Texas Southern,2026-10-03 22:00:00+00:00,True
+401869942,5,Coastal Carolina,Georgia Southern,2026-10-03 23:00:00+00:00,True
+401862788,5,Rice,UTSA,2026-10-03 23:00:00+00:00,True
+401871089,5,South Alabama,UL Monroe,2026-10-03 23:00:00+00:00,True
+401856818,5,TCU,BYU,2026-10-03 23:00:00+00:00,True
+401856711,5,Texas A&M,Arkansas,2026-10-03 23:00:00+00:00,True
+401862792,5,South Florida,Temple,2026-10-03 23:30:00+00:00,True
+401860898,5,Boise State,Utah State,2026-10-03 23:30:00+00:00,True
+401858249,5,Clemson,Miami,2026-10-03 23:30:00+00:00,True
+401858478,5,USC,Washington,2026-10-03 23:30:00+00:00,True
+401856821,5,Colorado,Texas Tech,2026-10-03 23:30:00+00:00,True
+401869842,5,Louisiana Tech,Army,2026-10-03 23:30:00+00:00,True
+401856706,5,LSU,McNeese,2026-10-03 23:45:00+00:00,True
+401858477,5,Rutgers,Indiana,2026-10-04 00:00:00+00:00,True
+401869932,5,Louisiana,Arkansas State,2026-10-04 00:00:00+00:00,True
+401860921,5,Washington State,Fresno State,2026-10-04 01:30:00+00:00,True
+401860900,5,San Diego State,Texas State,2026-10-04 02:30:00+00:00,True
+401856817,5,Arizona State,Baylor,2026-10-04 02:30:00+00:00,True
+401856820,5,Arizona,Cincinnati,2026-10-04 03:00:00+00:00,True
+401864513,5,Hawai'i,San José State,2026-10-04 03:59:00+00:00,True
+401871090,6,Troy,Southern Miss,2026-10-07 00:00:00+00:00,True
+401871051,6,Kennesaw State,Jacksonville State,2026-10-07 23:00:00+00:00,True
+401871066,6,Florida International,New Mexico State,2026-10-07 23:30:00+00:00,True
+401871052,6,Western Kentucky,Missouri State,2026-10-08 23:00:00+00:00,True
+401870766,6,Liberty,Sam Houston,2026-10-08 23:00:00+00:00,True
+401862794,6,UTSA,South Florida,2026-10-08 23:30:00+00:00,True
+401869933,6,Arkansas State,South Alabama,2026-10-08 23:30:00+00:00,True
+401858254,6,Louisville,Florida State,2026-10-09 23:00:00+00:00,True
+401864519,6,San José State,Wyoming,2026-10-10 01:00:00+00:00,True
+401860922,6,Utah State,Washington State,2026-10-10 01:00:00+00:00,True
+401858487,6,Washington,Iowa,2026-10-10 01:00:00+00:00,True
+401856826,6,BYU,Iowa State,2026-10-10 02:15:00+00:00,True
+401866436,6,Bowling Green,Sacramento State,2026-10-10 16:00:00+00:00,True
+401858260,6,NC State,Wake Forest,2026-10-10 16:00:00+00:00,True
+401862795,6,Army,Tulane,2026-10-10 16:00:00+00:00,True
+401856823,6,West Virginia,Arizona,2026-10-10 16:00:00+00:00,True
+401856716,6,Missouri,Texas A&M,2026-10-10 16:00:00+00:00,True
+401858481,6,Nebraska,Indiana,2026-10-10 16:00:00+00:00,True
+401856824,6,Oklahoma State,UCF,2026-10-10 16:00:00+00:00,True
+401858256,6,Pittsburgh,North Carolina,2026-10-10 16:00:00+00:00,True
+401858482,6,Northwestern,Ball State,2026-10-10 16:30:00+00:00,True
+401856714,6,Florida,South Carolina,2026-10-10 16:45:00+00:00,True
+401869843,6,App State,Old Dominion,2026-10-10 17:00:00+00:00,True
+401862797,6,East Carolina,Rice,2026-10-10 17:00:00+00:00,True
+401866440,6,Massachusetts,Miami (OH),2026-10-10 18:00:00+00:00,True
+401858255,6,Georgia Tech,Duke,2026-10-10 19:30:00+00:00,True
+401856717,6,Oklahoma,Texas,2026-10-10 19:30:00+00:00,True
+401866435,6,Akron,Eastern Michigan,2026-10-10 19:30:00+00:00,True
+401866439,6,Western Michigan,Kent State,2026-10-10 19:30:00+00:00,True
+401858484,6,Oregon,UCLA,2026-10-10 19:30:00+00:00,True
+401858259,6,California,Virginia Tech,2026-10-10 19:30:00+00:00,True
+401858480,6,Michigan State,Illinois,2026-10-10 19:30:00+00:00,True
+401866438,6,Ohio,Central Michigan,2026-10-10 19:30:00+00:00,True
+401856825,6,Kansas State,Houston,2026-10-10 19:30:00+00:00,True
+401862799,6,Navy,Tulsa,2026-10-10 19:30:00+00:00,True
+401858257,6,Notre Dame,Stanford,2026-10-10 19:30:00+00:00,True
+401866437,6,Toledo,Buffalo,2026-10-10 19:30:00+00:00,True
+401862796,6,North Texas,Charlotte,2026-10-10 19:30:00+00:00,True
+401856718,6,Vanderbilt,Ole Miss,2026-10-10 19:30:00+00:00,True
+401861964,6,Temple,UConn,2026-10-10 19:45:00+00:00,True
+401858483,6,Ohio State,Maryland,2026-10-10 20:15:00+00:00,True
+401856713,6,Arkansas,Tennessee,2026-10-10 20:15:00+00:00,True
+401860902,6,Oregon State,San Diego State,2026-10-10 22:00:00+00:00,True
+401864517,6,UTEP,Nevada,2026-10-10 23:00:00+00:00,True
+401862798,6,Memphis,UAB,2026-10-10 23:00:00+00:00,True
+401856715,6,Kentucky,LSU,2026-10-10 23:00:00+00:00,True
+401869943,6,Marshall,Coastal Carolina,2026-10-10 23:00:00+00:00,True
+401864518,6,UNLV,North Dakota State,2026-10-10 23:00:00+00:00,True
+401869949,6,Georgia Southern,James Madison,2026-10-10 23:30:00+00:00,True
+401869965,6,Louisiana Tech,Louisiana,2026-10-10 23:30:00+00:00,True
+401856712,6,Alabama,Georgia,2026-10-10 23:30:00+00:00,True
+401858485,6,Penn State,USC,2026-10-10 23:30:00+00:00,True
+401864516,6,Northern Illinois,Air Force,2026-10-10 23:30:00+00:00,True
+401858258,6,Virginia,Syracuse,2026-10-10 23:30:00+00:00,True
+401856827,6,Utah,Kansas,2026-10-11 00:00:00+00:00,True
+401858486,6,Purdue,Minnesota,2026-10-11 00:00:00+00:00,True
+401860901,6,Fresno State,Boise State,2026-10-11 02:30:00+00:00,True
+401856808,6,Arizona State,Hawai'i,2026-10-11 02:30:00+00:00,True
+401871067,7,Middle Tennessee,Delaware,2026-10-13 23:00:00+00:00,True
+401871053,7,Jacksonville State,Florida International,2026-10-14 00:00:00+00:00,True
+401871054,7,Missouri State,Kennesaw State,2026-10-14 23:30:00+00:00,True
+401871068,7,Sam Houston,Western Kentucky,2026-10-15 00:00:00+00:00,True
+401862800,7,UAB,East Carolina,2026-10-15 23:30:00+00:00,True
+401869950,7,Old Dominion,Georgia Southern,2026-10-15 23:30:00+00:00,True
+401860923,7,Texas State,Colorado State,2026-10-16 00:00:00+00:00,True

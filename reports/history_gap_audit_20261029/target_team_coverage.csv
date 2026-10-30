@@ -1,0 +1,23 @@
+game_id,week,home_team,away_team,kickoff_utc,in_processed_history,missing_from_history
+401869960,1,James Madison,Liberty,2026-09-05 16:00:00+00:00,True,False
+401858425,1,Indiana,North Texas,2026-09-05 16:00:00+00:00,True,False
+401870763,1,Troy,Sam Houston,2026-09-05 23:00:00+00:00,True,False
+401856637,1,Florida,Florida Atlantic,2026-09-05 23:45:00+00:00,True,False
+401867929,2,James Madison,Wagner,2026-09-12 16:00:00+00:00,True,False
+401862705,2,North Texas,UNLV,2026-09-12 19:45:00+00:00,True,False
+401868326,2,Troy,Alabama State,2026-09-12 20:00:00+00:00,True,False
+401862703,2,Florida Atlantic,Navy,2026-09-12 23:30:00+00:00,True,False
+401860889,3,Texas State,North Texas,2026-09-19 16:00:00+00:00,True,False
+401862771,3,Florida Atlantic,Florida International,2026-09-19 22:00:00+00:00,True,False
+401856689,3,Missouri,Troy,2026-09-19 23:00:00+00:00,True,False
+401860887,3,San Diego State,James Madison,2026-09-20 02:00:00+00:00,True,False
+401869961,4,Old Dominion,James Madison,2026-09-26 22:00:00+00:00,True,False
+401862783,4,North Texas,Houston Christian,2026-09-26 23:30:00+00:00,True,False
+401860894,4,Utah State,Troy,2026-09-26 23:30:00+00:00,True,False
+401862782,4,UL Monroe,Florida Atlantic,2026-09-27 00:00:00+00:00,True,False
+401862786,5,Tulsa,North Texas,2026-10-02 01:00:00+00:00,True,False
+401869962,5,James Madison,Marshall,2026-10-03 19:45:00+00:00,True,False
+401862790,5,Florida Atlantic,Texas Southern,2026-10-03 22:00:00+00:00,True,False
+401871090,6,Troy,Southern Miss,2026-10-07 00:00:00+00:00,True,False
+401862796,6,North Texas,Charlotte,2026-10-10 19:30:00+00:00,True,False
+401869949,6,Georgia Southern,James Madison,2026-10-10 23:30:00+00:00,True,False

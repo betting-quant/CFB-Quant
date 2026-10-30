@@ -1,0 +1,9 @@
+file,size_bytes,matching_target_games,matching_record_count,game_ids
+data\raw\cfbd\player_stats\2026\player_stats_2026_regular_week_07.json,5676455,0,0,
+data\raw\cfbd\player_stats\2026\player_stats_2026_regular_week_08.json,5119096,0,0,
+data\raw\cfbd\player_stats\2026\player_stats_2026_regular_week_09.json,372631,0,0,
+data\raw\cfbd\team_stats\2026\team_stats_2026_regular_week_07.json,44472,0,0,
+data\raw\cfbd\team_stats\2026\team_stats_2026_regular_week_08.json,4,0,0,
+data\raw\cfbd\team_stats\2026\team_stats_2026_regular_week_09.json,4,0,0,
+data\raw\cfbd\advanced_game_v4\advanced_2026.json,3013463,0,0,
+data\raw\cfbd\advanced_game_v4\advanced_2026.20261016T194724Z.bak.json,2643011,0,0,
